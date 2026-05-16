@@ -1,0 +1,74 @@
+type UserPublic = 
+ record {
+   email: text;
+   id: UserId;
+   name: text;
+   phone: text;
+ };
+type UserId = nat;
+type Timestamp = int;
+type PropertyStatus = 
+ variant {
+   Offline;
+   Online;
+ };
+type PropertyId = nat;
+type Property = 
+ record {
+   address: text;
+   capacityKva: float64;
+   id: PropertyId;
+   meterNumber: text;
+   modelNumber: text;
+   status: PropertyStatus;
+   title: text;
+   userId: UserId;
+ };
+type NotificationType = 
+ variant {
+   Info;
+   Warning;
+ };
+type NotificationId = nat;
+type Notification = 
+ record {
+   createdAt: Timestamp;
+   id: NotificationId;
+   isRead: bool;
+   message: text;
+   notificationType: NotificationType;
+   userId: UserId;
+ };
+type LogId = nat;
+type EnergyType = 
+ variant {
+   Grid;
+   Solar;
+ };
+type EnergyLog = 
+ record {
+   co2Offset: float64;
+   energyType: EnergyType;
+   id: LogId;
+   kwhValue: float64;
+   propertyId: PropertyId;
+   timestamp: Timestamp;
+ };
+type AuthResult = 
+ variant {
+   err: text;
+   ok: UserPublic;
+ };
+service : {
+  addEnergyLog: (propertyId: PropertyId, energyType: EnergyType, kwhValue:
+   float64, co2Offset: float64) -> (EnergyLog);
+  authenticate: (email: text, hashedPassword: text) -> (AuthResult);
+  createProperty: (userId: UserId, title: text, address: text, meterNumber:
+   text, capacityKva: float64, modelNumber: text) -> (Property);
+  getEnergyLogs: (propertyId: PropertyId, hours: nat) -> (vec EnergyLog);
+  getNotifications: (userId: UserId) -> (vec Notification);
+  getProperties: (userId: UserId) -> (vec Property) query;
+  markNotificationRead: (notifId: NotificationId) -> (bool);
+  registerUser: (name: text, email: text, phone: text, hashedPassword:
+   text) -> (AuthResult);
+}

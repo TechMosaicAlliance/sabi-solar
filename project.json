@@ -1,0 +1,24 @@
+{
+  "overview": "Sabi Solar is a remote energy monitoring app that lets users track solar generation versus grid consumption across multiple properties. It features real-time gauges, metric cards, analytics charts, and property management in a dark mobile-first UI.",
+  "features": [
+    "3-page swipeable onboarding with email/phone OTP login",
+    "Real-time circular energy gauge with Solar/Grid toggle",
+    "Metric cards: kWh consumed, kVA capacity, CO2 reduction",
+    "24-hour bar chart auto-refreshing every 30s with mock data",
+    "Add Property and Add Solar forms with QR scan button",
+    "Analytics with Day/Week/Month segmented charts",
+    "Notification tray with excessive consumption alerts",
+    "Dark Navy + Emerald Green mobile-first UI"
+  ],
+  "category": "productivity",
+  "tags": [
+    "solar",
+    "energy",
+    "monitoring",
+    "dashboard",
+    "analytics",
+    "iot",
+    "mobile-first"
+  ],
+  "last_updated": "2026-05-16T08:14:11.193Z"
+}

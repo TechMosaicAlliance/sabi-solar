@@ -1,0 +1,91 @@
+// Version: 1.0.0
+type EnergyLog__722899528 = EnergyLog__809723596;
+type EnergyLog__809723596 =
+  {
+    co2Offset : Float;
+    energyType : EnergyType__662174929;
+    id : LogId__636185590;
+    kwhValue : Float;
+    propertyId : PropertyId__406837473;
+    timestamp : Timestamp__406780142
+  };
+type EnergyType__662174929 = {#Grid; #Solar};
+type LogId__472453763 = Nat;
+type LogId__636185590 = LogId__472453763;
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NotificationId__307495059 = Nat;
+type NotificationId__64227706 = NotificationId__307495059;
+type NotificationType__185411214 = {#Info; #Warning};
+type Notification__605184881 = Notification__766161334;
+type Notification__766161334 =
+  {
+    createdAt : Timestamp__184564705;
+    id : NotificationId__64227706;
+    isRead : Bool;
+    message : Text;
+    notificationType : NotificationType__185411214;
+    userId : UserId__141919125
+  };
+type PropertyId__339654052 = PropertyId__421252593;
+type PropertyId__406837473 = PropertyId__421252593;
+type PropertyId__421252593 = Nat;
+type PropertyStatus__714027913 = {#Offline; #Online};
+type Property__612470078 =
+  {
+    address : Text;
+    capacityKva : Float;
+    id : PropertyId__339654052;
+    meterNumber : Text;
+    modelNumber : Text;
+    status : PropertyStatus__714027913;
+    title : Text;
+    userId : UserId__111946384
+  };
+type Property__947269077 = Property__612470078;
+type Timestamp__184564705 = Timestamp__301639476;
+type Timestamp__301639476 = Int;
+type Timestamp__406780142 = Timestamp__301639476;
+type UserId__111946384 = UserId__158757552;
+type UserId__141919125 = UserId__158757552;
+type UserId__158757552 = Nat;
+type UserId__315772724 = UserId__158757552;
+type User__214800947 = User__933515552;
+type User__933515552 =
+  {
+    email : Text;
+    hashedPassword : Text;
+    id : UserId__315772724;
+    name : Text;
+    phone : Text
+  };
+actor {
+  stable energyLogs :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?EnergyLog__722899528]];
+      var elementIndex : Nat__490723111
+    };
+  stable energyState : {var nextLogId : LogId__636185590};
+  stable notifState : {var nextNotifId : NotificationId__64227706};
+  stable notifications :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Notification__605184881]];
+      var elementIndex : Nat__490723111
+    };
+  stable properties :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Property__947269077]];
+      var elementIndex : Nat__490723111
+    };
+  stable propertyState : {var nextPropertyId : PropertyId__339654052};
+  stable userState : {var nextUserId : UserId__315772724};
+  stable users :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?User__214800947]];
+      var elementIndex : Nat__490723111
+    }
+};
