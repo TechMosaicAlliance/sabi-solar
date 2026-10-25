@@ -94,4 +94,67 @@ export const MOCK_NOTIFICATIONS: AppNotification[] = [
     isRead: true,
     createdAt: Date.now() - 1000 * 60 * 60 * 24,
   },
+  {
+    id: "notif-5",
+    userId: "user-1",
+    type: "Warning",
+    message:
+      "High grid consumption detected on Main House. Grid usage is 2.1x above solar output.",
+    isRead: false,
+    createdAt: Date.now() - 1000 * 60 * 35,
+  },
+  {
+    id: "notif-6",
+    userId: "user-1",
+    type: "Warning",
+    message:
+      "Battery charging rate abnormal on Office Block. Expected 1.8A but receiving 0.4A — check connections.",
+    isRead: false,
+    createdAt: Date.now() - 1000 * 60 * 60 * 3,
+  },
+  {
+    id: "notif-7",
+    userId: "user-1",
+    type: "Warning",
+    message:
+      "Solar output below expected on Main House. Panels generating 1.2 kWh vs forecast 3.8 kWh — possible obstruction.",
+    isRead: false,
+    createdAt: Date.now() - 1000 * 60 * 60 * 6,
+  },
+  {
+    id: "notif-8",
+    userId: "user-1",
+    type: "Info",
+    message:
+      "System firmware update available (v2.4.1). Improves battery efficiency by up to 8%. Schedule during off-peak hours.",
+    isRead: false,
+    createdAt: Date.now() - 1000 * 60 * 50,
+  },
+  {
+    id: "notif-9",
+    userId: "user-1",
+    type: "Info",
+    message:
+      "Peak solar hours approaching. Expect maximum generation between 11:00 AM and 2:00 PM today.",
+    isRead: false,
+    createdAt: Date.now() - 1000 * 60 * 60 * 7,
+  },
+  {
+    id: "notif-10",
+    userId: "user-1",
+    type: "Info",
+    message:
+      "Monthly energy report for May is ready. Total solar generation: 142.6 kWh. View your full summary.",
+    isRead: true,
+    createdAt: Date.now() - 1000 * 60 * 60 * 12,
+  },
+  {
+    id: "notif-11",
+    userId: "user-1",
+    type: "Info",
+    message:
+      "CO2 savings milestone reached: 500 kg of CO2 offset across all your properties this year.",
+    isRead: true,
+    createdAt: Date.now() - 1000 * 60 * 60 * 36,
+  },
 ];

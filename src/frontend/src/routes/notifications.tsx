@@ -4,7 +4,14 @@ import { useCurrentUser } from "@/hooks/use-current-user";
 import { MOCK_NOTIFICATIONS } from "@/lib/mock-data";
 import type { AppNotification } from "@/types";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { AlertTriangle, ArrowLeft, Bell, CheckCheck, Info } from "lucide-react";
+import {
+  AlertTriangle,
+  ArrowLeft,
+  Bell,
+  CheckCheck,
+  Info,
+  X,
+} from "lucide-react";
 import { useMemo, useState } from "react";
 
 export const Route = createFileRoute("/notifications")({
@@ -25,9 +32,11 @@ function formatRelativeTime(ts: number): string {
 function NotificationCard({
   notification,
   onMarkRead,
+  onDismiss,
 }: {
   notification: AppNotification;
   onMarkRead: (id: string) => void;
+  onDismiss: (id: string) => void;
 }) {
   const isWarning = notification.type === "Warning";
   const Icon = isWarning ? AlertTriangle : Info;
@@ -36,7 +45,7 @@ function NotificationCard({
     <div
       data-ocid={`notification.card.${notification.id}`}
       className={`relative flex gap-3 p-4 rounded-2xl bg-card border border-border transition-smooth ${
-        notification.isRead ? "opacity-50" : ""
+        notification.isRead ? "opacity-60" : ""
       }`}
     >
       {/* Icon badge */}
@@ -60,7 +69,7 @@ function NotificationCard({
           >
             {notification.type}
           </span>
-          <span className="text-[11px] text-muted-foreground shrink-0">
+          <span className="text-[11px] text-muted-foreground shrink-0 pr-6">
             {formatRelativeTime(notification.createdAt)}
           </span>
         </div>
@@ -80,13 +89,26 @@ function NotificationCard({
         )}
       </div>
 
+      {/* Close / dismiss button */}
+      <button
+        type="button"
+        data-ocid={`notification.dismiss.${notification.id}`}
+        onClick={() => onDismiss(notification.id)}
+        aria-label="Dismiss notification"
+        className="absolute top-3 right-3 w-6 h-6 rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors duration-200"
+      >
+        <X size={13} />
+      </button>
+
       {/* Unread dot */}
       {!notification.isRead && (
-        <span className="absolute top-3 right-3 w-2 h-2 rounded-full bg-primary" />
+        <span className="absolute bottom-3 right-3 w-2 h-2 rounded-full bg-primary" />
       )}
     </div>
   );
 }
+
+type FilterType = "All" | "Warning" | "Information";
 
 function NotificationsPage() {
   const navigate = useNavigate();
@@ -94,6 +116,7 @@ function NotificationsPage() {
 
   const [notifications, setNotifications] =
     useState<AppNotification[]>(MOCK_NOTIFICATIONS);
+  const [activeFilter, setActiveFilter] = useState<FilterType>("All");
 
   const unreadCount = useMemo(
     () => notifications.filter((n) => !n.isRead).length,
@@ -110,10 +133,21 @@ function NotificationsPage() {
       prev.map((n) => (n.id === id ? { ...n, isRead: true } : n)),
     );
 
+  const dismiss = (id: string) =>
+    setNotifications((prev) => prev.filter((n) => n.id !== id));
+
   const markAllRead = () =>
     setNotifications((prev) => prev.map((n) => ({ ...n, isRead: true })));
 
   const allRead = unreadCount === 0;
+
+  const filteredNotifications = notifications.filter((n) => {
+    if (activeFilter === "All") return true;
+    if (activeFilter === "Warning") return n.type === "Warning";
+    return n.type === "Info";
+  });
+
+  const FILTERS: FilterType[] = ["All", "Warning", "Information"];
 
   return (
     <div data-ocid="notifications.page" className="flex flex-col min-h-full">
@@ -156,29 +190,62 @@ function NotificationsPage() {
             </Button>
           )}
         </div>
+
+        {/* Filter bar */}
+        <div
+          data-ocid="notifications.filter_bar"
+          className="flex gap-2 mt-3"
+          role="tablist"
+          aria-label="Filter notifications"
+        >
+          {FILTERS.map((f) => (
+            <button
+              key={f}
+              type="button"
+              role="tab"
+              aria-selected={activeFilter === f}
+              data-ocid={`notifications.filter.${f.toLowerCase()}`}
+              onClick={() => setActiveFilter(f)}
+              className={[
+                "px-3 py-1.5 rounded-xl text-xs font-semibold border transition-colors duration-200",
+                activeFilter === f
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-muted/50 text-muted-foreground border-border hover:text-foreground hover:border-primary/40",
+              ].join(" ")}
+            >
+              {f === "Information" ? (
+                <span className="flex items-center gap-1">
+                  <Info size={11} />
+                  {f}
+                </span>
+              ) : f === "Warning" ? (
+                <span className="flex items-center gap-1">
+                  <AlertTriangle size={11} />
+                  {f}
+                </span>
+              ) : (
+                f
+              )}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Notification List */}
       <div className="flex-1 px-4 py-4">
-        {notifications.length === 0 ? (
+        {filteredNotifications.length === 0 ? (
           <EmptyState />
         ) : (
-          <>
-            <div data-ocid="notifications.list" className="flex flex-col gap-3">
-              {notifications.map((n) => (
-                <NotificationCard
-                  key={n.id}
-                  notification={n}
-                  onMarkRead={markRead}
-                />
-              ))}
-            </div>
-            {allRead && (
-              <div className="mt-8">
-                <EmptyState />
-              </div>
-            )}
-          </>
+          <div data-ocid="notifications.list" className="flex flex-col gap-3">
+            {filteredNotifications.map((n) => (
+              <NotificationCard
+                key={n.id}
+                notification={n}
+                onMarkRead={markRead}
+                onDismiss={dismiss}
+              />
+            ))}
+          </div>
         )}
       </div>
     </div>

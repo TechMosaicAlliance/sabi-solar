@@ -1,13 +1,12 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { BarChart3, Bell, Building2, Home } from "lucide-react";
+import { BarChart3, Bell, Building2, Home, Settings } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
   { to: "/dashboard", label: "Dashboard", Icon: Home, ocid: "nav.dashboard" },
-  { to: "/property", label: "Property", Icon: Building2, ocid: "nav.property" },
   {
     to: "/analytics",
-    label: "Analytics",
+    label: "Statistics",
     Icon: BarChart3,
     ocid: "nav.analytics",
   },
@@ -16,6 +15,12 @@ const NAV_ITEMS = [
     label: "Alerts",
     Icon: Bell,
     ocid: "nav.notifications",
+  },
+  {
+    to: "/settings",
+    label: "Settings",
+    Icon: Settings,
+    ocid: "nav.settings",
   },
 ] as const;
 

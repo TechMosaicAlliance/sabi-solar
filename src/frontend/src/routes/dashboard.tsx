@@ -5,13 +5,16 @@ import { MOCK_PROPERTIES, generateMockEnergyData } from "@/lib/mock-data";
 import type { EnergySource, HourlyEnergyData, Property } from "@/types";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import {
+  CheckCircle2,
   ChevronDown,
   Flame,
+  Home,
   Leaf,
   RefreshCw,
   Sun,
   Wifi,
   WifiOff,
+  X,
   Zap,
 } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
@@ -185,6 +188,7 @@ function DashboardPage() {
   );
   const [lastRefresh, setLastRefresh] = useState(new Date());
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [showSuccessOverlay, setShowSuccessOverlay] = useState(false);
 
   // Redirect unauthenticated users
   useEffect(() => {
@@ -192,6 +196,25 @@ function DashboardPage() {
       navigate({ to: "/" });
     }
   }, [isAuthenticated, navigate]);
+
+  // Check for ?connected=true on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("connected") === "true") {
+      sessionStorage.setItem("solarConnected", "true");
+      setShowSuccessOverlay(true);
+      // Clean URL without reloading
+      const cleanUrl = window.location.pathname;
+      window.history.replaceState({}, "", cleanUrl);
+    }
+  }, []);
+
+  // Auto-dismiss overlay after 5 seconds
+  useEffect(() => {
+    if (!showSuccessOverlay) return;
+    const id = setTimeout(() => setShowSuccessOverlay(false), 5000);
+    return () => clearTimeout(id);
+  }, [showSuccessOverlay]);
 
   const refresh = useCallback(() => {
     setIsRefreshing(true);
@@ -242,11 +265,22 @@ function DashboardPage() {
               {greeting()}, {displayName} 👋
             </h1>
           </div>
-          <PropertySelector
-            properties={MOCK_PROPERTIES}
-            selected={selectedProperty}
-            onChange={setSelectedProperty}
-          />
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              aria-label="Properties"
+              data-ocid="dashboard.properties_button"
+              onClick={() => navigate({ to: "/properties" })}
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
+            >
+              <Home size={18} className="text-white" />
+            </button>
+            <PropertySelector
+              properties={MOCK_PROPERTIES}
+              selected={selectedProperty}
+              onChange={setSelectedProperty}
+            />
+          </div>
         </div>
       </header>
 
@@ -298,28 +332,49 @@ function DashboardPage() {
           data-ocid="dashboard.metrics_section"
           className="grid grid-cols-3 gap-3"
         >
-          <EnergyCard
-            data-ocid="dashboard.metric.consumed"
-            icon={Flame}
-            label="Consumed"
-            value="12.4"
-            unit="kWh"
-          />
-          <EnergyCard
-            data-ocid="dashboard.metric.capacity"
-            icon={Zap}
-            label="Capacity"
-            value={selectedProperty.capacityKva.toFixed(1)}
-            unit="kVA"
-            accent
-          />
-          <EnergyCard
-            data-ocid="dashboard.metric.co2"
-            icon={Leaf}
-            label="CO₂ Saved"
-            value="8.2"
-            unit="tCO₂e"
-          />
+          <button
+            type="button"
+            onClick={() => navigate({ to: "/analytics" })}
+            className="text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl"
+            aria-label="View energy statistics"
+          >
+            <EnergyCard
+              data-ocid="dashboard.metric.consumed"
+              icon={Flame}
+              label="Consumed"
+              value="12.4"
+              unit="kWh"
+            />
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate({ to: "/analytics" })}
+            className="text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl"
+            aria-label="View capacity statistics"
+          >
+            <EnergyCard
+              data-ocid="dashboard.metric.capacity"
+              icon={Zap}
+              label="Capacity"
+              value={selectedProperty.capacityKva.toFixed(1)}
+              unit="kVA"
+              accent
+            />
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate({ to: "/analytics" })}
+            className="text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl"
+            aria-label="View CO2 statistics"
+          >
+            <EnergyCard
+              data-ocid="dashboard.metric.co2"
+              icon={Leaf}
+              label="CO₂ Saved"
+              value="8.2"
+              unit="tCO₂e"
+            />
+          </button>
         </section>
 
         {/* ── 24h bar chart ─────────────────────────────────────────────── */}
@@ -450,6 +505,76 @@ function DashboardPage() {
           </div>
         </section>
       </main>
+
+      {/* ── Connection Success Overlay ───────────────────────────────────── */}
+      {showSuccessOverlay && (
+        <div
+          data-ocid="dashboard.success_overlay"
+          className="fixed inset-0 z-50 flex items-center justify-center p-6"
+          style={{ backgroundColor: "rgba(0,0,0,0.85)" }}
+          aria-hidden="true"
+        >
+          <div
+            data-ocid="dashboard.success_dialog"
+            className="relative bg-card rounded-3xl p-8 max-w-xs w-full flex flex-col items-center gap-5 shadow-2xl border border-border"
+            style={{
+              animation:
+                "successCardIn 0.35s cubic-bezier(0.34,1.56,0.64,1) both",
+            }}
+          >
+            {/* Close button */}
+            <button
+              type="button"
+              data-ocid="dashboard.success_overlay.close_button"
+              onClick={() => setShowSuccessOverlay(false)}
+              aria-label="Close"
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-colors duration-200"
+            >
+              <X size={16} />
+            </button>
+
+            {/* Animated checkmark */}
+            <div
+              className="w-24 h-24 rounded-full bg-primary/10 border-4 border-primary flex items-center justify-center"
+              style={{
+                animation:
+                  "checkIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s both",
+              }}
+            >
+              <CheckCircle2
+                size={48}
+                className="text-primary"
+                strokeWidth={1.5}
+              />
+            </div>
+
+            {/* Text */}
+            <div className="text-center">
+              <h2 className="text-xl font-bold text-foreground font-display">
+                Connected Successfully!
+              </h2>
+              <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
+                Your solar system is now being monitored.
+              </p>
+            </div>
+
+            {/* Dismiss button */}
+            <button
+              type="button"
+              data-ocid="dashboard.success_overlay.dismiss_button"
+              onClick={() => setShowSuccessOverlay(false)}
+              className="w-full py-3 rounded-2xl bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-colors duration-200"
+            >
+              Go to Dashboard
+            </button>
+
+            {/* Auto-close hint */}
+            <p className="text-xs text-muted-foreground">
+              Closes automatically in 5 seconds
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

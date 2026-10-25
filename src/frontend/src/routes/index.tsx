@@ -31,6 +31,19 @@ function OnboardingPage() {
   const navigate = useNavigate();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [current, setCurrent] = useState(0);
+  const [showSplash, setShowSplash] = useState(
+    () => !sessionStorage.getItem("splashShown"),
+  );
+
+  // Splash auto-dismiss after 2500ms
+  useEffect(() => {
+    if (!showSplash) return;
+    const id = setTimeout(() => {
+      setShowSplash(false);
+      sessionStorage.setItem("splashShown", "true");
+    }, 2500);
+    return () => clearTimeout(id);
+  }, [showSplash]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -52,6 +65,46 @@ function OnboardingPage() {
     }
   };
 
+  // ── Splash screen ────────────────────────────────────────────────────
+  if (showSplash) {
+    return (
+      <div
+        data-ocid="splash.page"
+        className="fixed inset-0 w-screen h-screen z-50 overflow-hidden"
+      >
+        {/* Background image */}
+        <img
+          src="/splash-bg.jpg"
+          alt="Sabi Solar"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60" />
+        {/* Centered content */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full">
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-20 h-20 rounded-3xl bg-emerald-400/20 border-2 border-emerald-400/50 flex items-center justify-center shadow-xl">
+              <Zap size={40} className="text-emerald-400" strokeWidth={1.5} />
+            </div>
+            <h1 className="text-4xl font-bold text-white tracking-tight font-display">
+              Sabi Solar
+            </h1>
+            <p className="text-lg text-emerald-400 mt-1">
+              Smart Energy Monitoring
+            </p>
+          </div>
+        </div>
+        {/* Pulsing dots */}
+        <div className="absolute bottom-16 left-0 right-0 flex justify-center gap-2 z-10">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse [animation-delay:0.2s]" />
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse [animation-delay:0.4s]" />
+        </div>
+      </div>
+    );
+  }
+
+  // ── Onboarding carousel ──────────────────────────────────────────────
   return (
     <div
       data-ocid="onboarding.page"

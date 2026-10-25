@@ -22987,7 +22987,7 @@ const Link = reactExports.forwardRef(
 function isCtrlEvent(e3) {
   return !!(e3.metaKey || e3.altKey || e3.ctrlKey || e3.shiftKey);
 }
-let Route$7 = class Route extends BaseRoute {
+let Route$d = class Route extends BaseRoute {
   /**
    * @deprecated Use the `createRoute` function instead.
    */
@@ -23039,7 +23039,7 @@ let Route$7 = class Route extends BaseRoute {
   }
 };
 function createRoute(options) {
-  return new Route$7(options);
+  return new Route$d(options);
 }
 class RootRoute extends BaseRootRoute {
   /**
@@ -23744,29 +23744,61 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$q = [
+const __iconNode$G = [
   ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
   ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$q);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$G);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$p = [
+const __iconNode$F = [
+  ["path", { d: "M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2", key: "1sdynx" }],
+  ["path", { d: "M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1", key: "1gkd3k" }],
+  ["path", { d: "m11 7-3 5h4l-3 5", key: "b4a64w" }],
+  ["line", { x1: "22", x2: "22", y1: "11", y2: "13", key: "4dh1rd" }]
+];
+const BatteryCharging = createLucideIcon("battery-charging", __iconNode$F);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$E = [
   ["rect", { width: "16", height: "10", x: "2", y: "7", rx: "2", ry: "2", key: "1w10f2" }],
   ["line", { x1: "22", x2: "22", y1: "11", y2: "13", key: "4dh1rd" }]
 ];
-const Battery = createLucideIcon("battery", __iconNode$p);
+const Battery = createLucideIcon("battery", __iconNode$E);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$o = [
+const __iconNode$D = [
+  ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
+  [
+    "path",
+    {
+      d: "M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742",
+      key: "178tsu"
+    }
+  ],
+  ["path", { d: "m2 2 20 20", key: "1ooewy" }],
+  ["path", { d: "M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05", key: "1hqiys" }]
+];
+const BellOff = createLucideIcon("bell-off", __iconNode$D);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$C = [
   ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
   [
     "path",
@@ -23776,14 +23808,14 @@ const __iconNode$o = [
     }
   ]
 ];
-const Bell = createLucideIcon("bell", __iconNode$o);
+const Bell = createLucideIcon("bell", __iconNode$C);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$n = [
+const __iconNode$B = [
   ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
   ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
   ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
@@ -23792,54 +23824,122 @@ const __iconNode$n = [
   ["path", { d: "M10 14h4", key: "kelpxr" }],
   ["path", { d: "M10 18h4", key: "1ulq68" }]
 ];
-const Building2 = createLucideIcon("building-2", __iconNode$n);
+const Building2 = createLucideIcon("building-2", __iconNode$B);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$m = [
+const __iconNode$A = [
   ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
   ["path", { d: "M18 17V9", key: "2bz60n" }],
   ["path", { d: "M13 17V5", key: "1frdt8" }],
   ["path", { d: "M8 17v-3", key: "17ska0" }]
 ];
-const ChartColumn = createLucideIcon("chart-column", __iconNode$m);
+const ChartColumn = createLucideIcon("chart-column", __iconNode$A);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$l = [
+const __iconNode$z = [
   ["path", { d: "M18 6 7 17l-5-5", key: "116fxf" }],
   ["path", { d: "m22 10-7.5 7.5L13 16", key: "ke71qq" }]
 ];
-const CheckCheck = createLucideIcon("check-check", __iconNode$l);
+const CheckCheck = createLucideIcon("check-check", __iconNode$z);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$k = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$k);
+const __iconNode$y = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$y);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$j = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$j);
+const __iconNode$x = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$x);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$i = [
+const __iconNode$w = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$w);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$v = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+];
+const CircleCheck = createLucideIcon("circle-check", __iconNode$v);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$u = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", key: "1u773s" }],
+  ["path", { d: "M12 17h.01", key: "p32p05" }]
+];
+const CircleHelp = createLucideIcon("circle-help", __iconNode$u);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$t = [
+  ["path", { d: "M12 20v2", key: "1lh1kg" }],
+  ["path", { d: "M12 2v2", key: "tus03m" }],
+  ["path", { d: "M17 20v2", key: "1rnc9c" }],
+  ["path", { d: "M17 2v2", key: "11trls" }],
+  ["path", { d: "M2 12h2", key: "1t8f8n" }],
+  ["path", { d: "M2 17h2", key: "7oei6x" }],
+  ["path", { d: "M2 7h2", key: "asdhe0" }],
+  ["path", { d: "M20 12h2", key: "1q8mjw" }],
+  ["path", { d: "M20 17h2", key: "1fpfkl" }],
+  ["path", { d: "M20 7h2", key: "1o8tra" }],
+  ["path", { d: "M7 20v2", key: "4gnj0m" }],
+  ["path", { d: "M7 2v2", key: "1i4yhu" }],
+  ["rect", { x: "4", y: "4", width: "16", height: "16", rx: "2", key: "1vbyd7" }],
+  ["rect", { x: "8", y: "8", width: "8", height: "8", rx: "1", key: "z9xiuo" }]
+];
+const Cpu = createLucideIcon("cpu", __iconNode$t);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$s = [
+  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
+  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
+  ["path", { d: "M10 9H8", key: "b1mrlr" }],
+  ["path", { d: "M16 13H8", key: "t4e002" }],
+  ["path", { d: "M16 17H8", key: "z1uh3a" }]
+];
+const FileText = createLucideIcon("file-text", __iconNode$s);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$r = [
   [
     "path",
     {
@@ -23848,27 +23948,53 @@ const __iconNode$i = [
     }
   ]
 ];
-const Flame = createLucideIcon("flame", __iconNode$i);
+const Flame = createLucideIcon("flame", __iconNode$r);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$h = [
+const __iconNode$q = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
+  ["path", { d: "M2 12h20", key: "9i4pu4" }]
+];
+const Globe = createLucideIcon("globe", __iconNode$q);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$p = [
+  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }],
+  ["path", { d: "M3 9h18", key: "1pudct" }],
+  ["path", { d: "M3 15h18", key: "5xshup" }],
+  ["path", { d: "M9 3v18", key: "fh3hqa" }],
+  ["path", { d: "M15 3v18", key: "14nvp0" }]
+];
+const Grid3x3 = createLucideIcon("grid-3x3", __iconNode$p);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$o = [
   ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
   ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
   ["line", { x1: "10", x2: "8", y1: "3", y2: "21", key: "1ggp8o" }],
   ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
 ];
-const Hash$2 = createLucideIcon("hash", __iconNode$h);
+const Hash$2 = createLucideIcon("hash", __iconNode$o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$g = [
+const __iconNode$n = [
   ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
   [
     "path",
@@ -23878,26 +24004,44 @@ const __iconNode$g = [
     }
   ]
 ];
-const House = createLucideIcon("house", __iconNode$g);
+const House = createLucideIcon("house", __iconNode$n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$f = [
+const __iconNode$m = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 16v-4", key: "1dtifu" }],
   ["path", { d: "M12 8h.01", key: "e9boi3" }]
 ];
-const Info = createLucideIcon("info", __iconNode$f);
+const Info = createLucideIcon("info", __iconNode$m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$e = [
+const __iconNode$l = [
+  ["path", { d: "M10 8h.01", key: "1r9ogq" }],
+  ["path", { d: "M12 12h.01", key: "1mp3jc" }],
+  ["path", { d: "M14 8h.01", key: "1primd" }],
+  ["path", { d: "M16 12h.01", key: "1l6xoz" }],
+  ["path", { d: "M18 8h.01", key: "emo2bl" }],
+  ["path", { d: "M6 8h.01", key: "x9i8wu" }],
+  ["path", { d: "M7 16h10", key: "wp8him" }],
+  ["path", { d: "M8 12h.01", key: "czm47f" }],
+  ["rect", { width: "20", height: "16", x: "2", y: "4", rx: "2", key: "18n3k1" }]
+];
+const Keyboard = createLucideIcon("keyboard", __iconNode$l);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$k = [
   [
     "path",
     {
@@ -23907,14 +24051,41 @@ const __iconNode$e = [
   ],
   ["path", { d: "M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12", key: "mt58a7" }]
 ];
-const Leaf = createLucideIcon("leaf", __iconNode$e);
+const Leaf = createLucideIcon("leaf", __iconNode$k);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$d = [
+const __iconNode$j = [
+  ["path", { d: "M3 12h.01", key: "nlz23k" }],
+  ["path", { d: "M3 18h.01", key: "1tta3j" }],
+  ["path", { d: "M3 6h.01", key: "1rqtza" }],
+  ["path", { d: "M8 12h13", key: "1za7za" }],
+  ["path", { d: "M8 18h13", key: "1lx6n3" }],
+  ["path", { d: "M8 6h13", key: "ik3vkj" }]
+];
+const List = createLucideIcon("list", __iconNode$j);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$i = [
+  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
+  ["path", { d: "M21 12H9", key: "dn1m92" }],
+  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
+];
+const LogOut = createLucideIcon("log-out", __iconNode$i);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$h = [
   [
     "path",
     {
@@ -23924,14 +24095,24 @@ const __iconNode$d = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$d);
+const MapPin = createLucideIcon("map-pin", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$c = [
+const __iconNode$g = [
+  ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
+];
+const Moon = createLucideIcon("moon", __iconNode$g);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$f = [
   [
     "path",
     {
@@ -23941,25 +24122,25 @@ const __iconNode$c = [
   ],
   ["path", { d: "m15 5 4 4", key: "1mk7zo" }]
 ];
-const Pencil = createLucideIcon("pencil", __iconNode$c);
+const Pencil = createLucideIcon("pencil", __iconNode$f);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$b = [
+const __iconNode$e = [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "M12 5v14", key: "s699le" }]
 ];
-const Plus = createLucideIcon("plus", __iconNode$b);
+const Plus = createLucideIcon("plus", __iconNode$e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$a = [
+const __iconNode$d = [
   ["rect", { width: "5", height: "5", x: "3", y: "3", rx: "1", key: "1tu5fj" }],
   ["rect", { width: "5", height: "5", x: "16", y: "3", rx: "1", key: "1v8r4q" }],
   ["rect", { width: "5", height: "5", x: "3", y: "16", rx: "1", key: "1x03jg" }],
@@ -23973,7 +24154,53 @@ const __iconNode$a = [
   ["path", { d: "M21 12v.01", key: "1lwtk9" }],
   ["path", { d: "M12 21v-1", key: "1880an" }]
 ];
-const QrCode = createLucideIcon("qr-code", __iconNode$a);
+const QrCode = createLucideIcon("qr-code", __iconNode$d);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$c = [
+  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
+  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
+  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
+  ["path", { d: "M8 16H3v5", key: "1cv678" }]
+];
+const RefreshCw = createLucideIcon("refresh-cw", __iconNode$c);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$b = [
+  [
+    "path",
+    {
+      d: "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z",
+      key: "1qme2f"
+    }
+  ],
+  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+];
+const Settings = createLucideIcon("settings", __iconNode$b);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$a = [
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ]
+];
+const Shield = createLucideIcon("shield", __iconNode$a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -23981,19 +24208,6 @@ const QrCode = createLucideIcon("qr-code", __iconNode$a);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$9 = [
-  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
-  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
-  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
-  ["path", { d: "M8 16H3v5", key: "1cv678" }]
-];
-const RefreshCw = createLucideIcon("refresh-cw", __iconNode$9);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$8 = [
   ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
   ["path", { d: "M12 2v2", key: "tus03m" }],
   ["path", { d: "M12 20v2", key: "1lh1kg" }],
@@ -24004,7 +24218,21 @@ const __iconNode$8 = [
   ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
   ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
 ];
-const Sun = createLucideIcon("sun", __iconNode$8);
+const Sun = createLucideIcon("sun", __iconNode$9);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$8 = [
+  ["path", { d: "M3 6h18", key: "d0wm0j" }],
+  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
+  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
+  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
+  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
+];
+const Trash2 = createLucideIcon("trash-2", __iconNode$8);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -24012,13 +24240,10 @@ const Sun = createLucideIcon("sun", __iconNode$8);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$7 = [
-  ["path", { d: "M3 6h18", key: "d0wm0j" }],
-  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
-  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
-  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
-  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
+  ["path", { d: "M16 17h6v-6", key: "t6n2it" }],
+  ["path", { d: "m22 17-8.5-8.5-5 5L2 7", key: "x473p" }]
 ];
-const Trash2 = createLucideIcon("trash-2", __iconNode$7);
+const TrendingDown = createLucideIcon("trending-down", __iconNode$7);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -24026,10 +24251,10 @@ const Trash2 = createLucideIcon("trash-2", __iconNode$7);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$6 = [
-  ["path", { d: "M16 17h6v-6", key: "t6n2it" }],
-  ["path", { d: "m22 17-8.5-8.5-5 5L2 7", key: "x473p" }]
+  ["path", { d: "M16 7h6v6", key: "box55l" }],
+  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
 ];
-const TrendingDown = createLucideIcon("trending-down", __iconNode$6);
+const TrendingUp = createLucideIcon("trending-up", __iconNode$6);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -24037,17 +24262,6 @@ const TrendingDown = createLucideIcon("trending-down", __iconNode$6);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$5 = [
-  ["path", { d: "M16 7h6v6", key: "box55l" }],
-  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
-];
-const TrendingUp = createLucideIcon("trending-up", __iconNode$5);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$4 = [
   [
     "path",
     {
@@ -24058,7 +24272,18 @@ const __iconNode$4 = [
   ["path", { d: "M12 9v4", key: "juzpu7" }],
   ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$4);
+const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$5);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$4 = [
+  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
+  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
+];
+const User = createLucideIcon("user", __iconNode$4);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -24117,10 +24342,9 @@ const __iconNode = [
 const Zap = createLucideIcon("zap", __iconNode);
 const NAV_ITEMS = [
   { to: "/dashboard", label: "Dashboard", Icon: House, ocid: "nav.dashboard" },
-  { to: "/property", label: "Property", Icon: Building2, ocid: "nav.property" },
   {
     to: "/analytics",
-    label: "Analytics",
+    label: "Statistics",
     Icon: ChartColumn,
     ocid: "nav.analytics"
   },
@@ -24129,6 +24353,12 @@ const NAV_ITEMS = [
     label: "Alerts",
     Icon: Bell,
     ocid: "nav.notifications"
+  },
+  {
+    to: "/settings",
+    label: "Settings",
+    Icon: Settings,
+    ocid: "nav.settings"
   }
 ];
 function BottomNav() {
@@ -24476,7 +24706,7 @@ var $e = reactExports.forwardRef(function(e3, t2) {
     })) : null;
   }));
 });
-const Route$6 = createRootRoute({
+const Route$c = createRootRoute({
   component: () => /* @__PURE__ */ jsxRuntimeExports.jsxs(Layout, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -24592,2538 +24822,467 @@ const MOCK_NOTIFICATIONS = [
     message: "Low battery reserve detected on Beach House. Below 20% threshold.",
     isRead: true,
     createdAt: Date.now() - 1e3 * 60 * 60 * 24
+  },
+  {
+    id: "notif-5",
+    userId: "user-1",
+    type: "Warning",
+    message: "High grid consumption detected on Main House. Grid usage is 2.1x above solar output.",
+    isRead: false,
+    createdAt: Date.now() - 1e3 * 60 * 35
+  },
+  {
+    id: "notif-6",
+    userId: "user-1",
+    type: "Warning",
+    message: "Battery charging rate abnormal on Office Block. Expected 1.8A but receiving 0.4A — check connections.",
+    isRead: false,
+    createdAt: Date.now() - 1e3 * 60 * 60 * 3
+  },
+  {
+    id: "notif-7",
+    userId: "user-1",
+    type: "Warning",
+    message: "Solar output below expected on Main House. Panels generating 1.2 kWh vs forecast 3.8 kWh — possible obstruction.",
+    isRead: false,
+    createdAt: Date.now() - 1e3 * 60 * 60 * 6
+  },
+  {
+    id: "notif-8",
+    userId: "user-1",
+    type: "Info",
+    message: "System firmware update available (v2.4.1). Improves battery efficiency by up to 8%. Schedule during off-peak hours.",
+    isRead: false,
+    createdAt: Date.now() - 1e3 * 60 * 50
+  },
+  {
+    id: "notif-9",
+    userId: "user-1",
+    type: "Info",
+    message: "Peak solar hours approaching. Expect maximum generation between 11:00 AM and 2:00 PM today.",
+    isRead: false,
+    createdAt: Date.now() - 1e3 * 60 * 60 * 7
+  },
+  {
+    id: "notif-10",
+    userId: "user-1",
+    type: "Info",
+    message: "Monthly energy report for May is ready. Total solar generation: 142.6 kWh. View your full summary.",
+    isRead: true,
+    createdAt: Date.now() - 1e3 * 60 * 60 * 12
+  },
+  {
+    id: "notif-11",
+    userId: "user-1",
+    type: "Info",
+    message: "CO2 savings milestone reached: 500 kg of CO2 offset across all your properties this year.",
+    isRead: true,
+    createdAt: Date.now() - 1e3 * 60 * 60 * 36
   }
 ];
-var isCheckBoxInput = (element) => element.type === "checkbox";
-var isDateObject = (value) => value instanceof Date;
-var isNullOrUndefined = (value) => value == null;
-const isObjectType = (value) => typeof value === "object";
-var isObject$b = (value) => !isNullOrUndefined(value) && !Array.isArray(value) && isObjectType(value) && !isDateObject(value);
-var getEventValue = (event) => isObject$b(event) && event.target ? isCheckBoxInput(event.target) ? event.target.checked : event.target.value : event;
-var getNodeParentName = (name) => name.substring(0, name.search(/\.\d+(\.|$)/)) || name;
-var isNameInFieldArray = (names, name) => names.has(getNodeParentName(name));
-var isPlainObject$2 = (tempObject) => {
-  const prototypeCopy = tempObject.constructor && tempObject.constructor.prototype;
-  return isObject$b(prototypeCopy) && prototypeCopy.hasOwnProperty("isPrototypeOf");
-};
-var isWeb = typeof window !== "undefined" && typeof window.HTMLElement !== "undefined" && typeof document !== "undefined";
-function cloneObject(data) {
-  if (data instanceof Date) {
-    return new Date(data);
-  }
-  const isFileListInstance = typeof FileList !== "undefined" && data instanceof FileList;
-  if (isWeb && (data instanceof Blob || isFileListInstance)) {
-    return data;
-  }
-  const isArray2 = Array.isArray(data);
-  if (!isArray2 && !(isObject$b(data) && isPlainObject$2(data))) {
-    return data;
-  }
-  const copy2 = isArray2 ? [] : Object.create(Object.getPrototypeOf(data));
-  for (const key in data) {
-    if (Object.prototype.hasOwnProperty.call(data, key)) {
-      copy2[key] = cloneObject(data[key]);
-    }
-  }
-  return copy2;
+const Route$b = createFileRoute("/settings")({ component: SettingsPage });
+const LANGUAGES = [
+  { code: "en", label: "English" },
+  { code: "fr", label: "French" },
+  { code: "es", label: "Spanish" },
+  { code: "pt", label: "Portuguese" },
+  { code: "ar", label: "Arabic" }
+];
+function Divider() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-5 border-t border-border" });
 }
-var isKey$4 = (value) => /^\w*$/.test(value);
-var isUndefined = (val) => val === void 0;
-var compact = (value) => Array.isArray(value) ? value.filter(Boolean) : [];
-var stringToPath$2 = (input) => compact(input.replace(/["|']|\]/g, "").split(/\.|\[/));
-var get$3 = (object2, path, defaultValue) => {
-  if (!path || !isObject$b(object2)) {
-    return defaultValue;
-  }
-  const result = (isKey$4(path) ? [path] : stringToPath$2(path)).reduce((result2, key) => isNullOrUndefined(result2) ? result2 : result2[key], object2);
-  return isUndefined(result) || result === object2 ? isUndefined(object2[path]) ? defaultValue : object2[path] : result;
-};
-var isBoolean$3 = (value) => typeof value === "boolean";
-var isFunction$4 = (value) => typeof value === "function";
-var set = (object2, path, value) => {
-  let index2 = -1;
-  const tempPath = isKey$4(path) ? [path] : stringToPath$2(path);
-  const length = tempPath.length;
-  const lastIndex = length - 1;
-  while (++index2 < length) {
-    const key = tempPath[index2];
-    let newValue = value;
-    if (index2 !== lastIndex) {
-      const objValue = object2[key];
-      newValue = isObject$b(objValue) || Array.isArray(objValue) ? objValue : !isNaN(+tempPath[index2 + 1]) ? [] : {};
-    }
-    if (key === "__proto__" || key === "constructor" || key === "prototype") {
-      return;
-    }
-    object2[key] = newValue;
-    object2 = object2[key];
-  }
-};
-const EVENTS = {
-  BLUR: "blur",
-  FOCUS_OUT: "focusout",
-  SUBMIT: "submit",
-  TRIGGER: "trigger",
-  VALID: "valid"
-};
-const VALIDATION_MODE = {
-  onBlur: "onBlur",
-  onChange: "onChange",
-  onSubmit: "onSubmit",
-  onTouched: "onTouched",
-  all: "all"
-};
-const INPUT_VALIDATION_RULES = {
-  max: "max",
-  min: "min",
-  maxLength: "maxLength",
-  minLength: "minLength",
-  pattern: "pattern",
-  required: "required",
-  validate: "validate"
-};
-const FORM_ERROR_TYPE = "form";
-const ROOT_ERROR_TYPE = "root";
-const HookFormControlContext = React$4.createContext(null);
-HookFormControlContext.displayName = "HookFormControlContext";
-var getProxyFormState = (formState, control, localProxyFormState, isRoot = true) => {
-  const result = {
-    defaultValues: control._defaultValues
-  };
-  for (const key in formState) {
-    Object.defineProperty(result, key, {
-      get: () => {
-        const _key = key;
-        if (control._proxyFormState[_key] !== VALIDATION_MODE.all) {
-          control._proxyFormState[_key] = !isRoot || VALIDATION_MODE.all;
-        }
-        return formState[_key];
+function DetailRow({ label, value }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-3", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground flex-shrink-0", children: label }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-foreground font-medium text-right break-words max-w-[60%]", children: value })
+  ] });
+}
+function SettingsRow({
+  icon,
+  label,
+  ocid,
+  isExpanded,
+  onToggle,
+  children
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "button",
+      {
+        type: "button",
+        "data-ocid": ocid,
+        onClick: onToggle,
+        className: "w-full flex items-center gap-4 px-5 py-4 hover:bg-muted/40 transition-colors",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-muted flex items-center justify-center flex-shrink-0", children: icon }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-1 text-sm font-medium text-foreground text-left", children: label }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            ChevronRight,
+            {
+              size: 16,
+              className: `text-muted-foreground transition-transform duration-200 ${isExpanded ? "rotate-90" : ""}`
+            }
+          )
+        ]
       }
-    });
-  }
-  return result;
-};
-const useIsomorphicLayoutEffect = typeof window !== "undefined" ? React$4.useLayoutEffect : React$4.useEffect;
-var isString$3 = (value) => typeof value === "string";
-var generateWatchOutput = (names, _names, formValues, isGlobal, defaultValue) => {
-  if (isString$3(names)) {
-    isGlobal && _names.watch.add(names);
-    return get$3(formValues, names, defaultValue);
-  }
-  if (Array.isArray(names)) {
-    return names.map((fieldName) => (isGlobal && _names.watch.add(fieldName), get$3(formValues, fieldName)));
-  }
-  isGlobal && (_names.watchAll = true);
-  return formValues;
-};
-var isPrimitive = (value) => isNullOrUndefined(value) || !isObjectType(value);
-function deepEqual$1(object1, object2, _internal_visited = /* @__PURE__ */ new WeakSet()) {
-  if (isPrimitive(object1) || isPrimitive(object2)) {
-    return Object.is(object1, object2);
-  }
-  if (isDateObject(object1) && isDateObject(object2)) {
-    return Object.is(object1.getTime(), object2.getTime());
-  }
-  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-  if (keys1.length !== keys2.length) {
-    return false;
-  }
-  if (_internal_visited.has(object1) || _internal_visited.has(object2)) {
-    return true;
-  }
-  _internal_visited.add(object1);
-  _internal_visited.add(object2);
-  for (const key of keys1) {
-    const val1 = object1[key];
-    if (!keys2.includes(key)) {
-      return false;
-    }
-    if (key !== "ref") {
-      const val2 = object2[key];
-      if (isDateObject(val1) && isDateObject(val2) || isObject$b(val1) && isObject$b(val2) || Array.isArray(val1) && Array.isArray(val2) ? !deepEqual$1(val1, val2, _internal_visited) : !Object.is(val1, val2)) {
-        return false;
-      }
-    }
-  }
-  return true;
+    ),
+    isExpanded && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-5 pb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-muted/40 rounded-2xl p-4", children }) })
+  ] });
 }
-const HookFormContext = React$4.createContext(null);
-HookFormContext.displayName = "HookFormContext";
-var appendErrors = (name, validateAllFieldCriteria, errors, type, message) => validateAllFieldCriteria ? {
-  ...errors[name],
-  types: {
-    ...errors[name] && errors[name].types ? errors[name].types : {},
-    [type]: message || true
-  }
-} : {};
-var convertToArrayPayload = (value) => Array.isArray(value) ? value : [value];
-var createSubject = () => {
-  let _observers2 = [];
-  const next = (value) => {
-    for (const observer of _observers2) {
-      observer.next && observer.next(value);
+function SettingsPage() {
+  var _a2;
+  const navigate = useNavigate();
+  const { user, isAuthenticated, clearUser } = useCurrentUser();
+  const [expanded, setExpanded] = reactExports.useState(null);
+  const [isDark, setIsDark] = reactExports.useState(() => {
+    try {
+      const stored = localStorage.getItem("theme");
+      if (stored) return stored === "dark";
+    } catch {
     }
-  };
-  const subscribe2 = (observer) => {
-    _observers2.push(observer);
-    return {
-      unsubscribe: () => {
-        _observers2 = _observers2.filter((o) => o !== observer);
-      }
-    };
-  };
-  const unsubscribe = () => {
-    _observers2 = [];
-  };
-  return {
-    get observers() {
-      return _observers2;
-    },
-    next,
-    subscribe: subscribe2,
-    unsubscribe
-  };
-};
-function extractFormValues(fieldsState, formValues) {
-  const values = {};
-  for (const key in fieldsState) {
-    if (fieldsState.hasOwnProperty(key)) {
-      const fieldState = fieldsState[key];
-      const fieldValue = formValues[key];
-      if (fieldState && isObject$b(fieldState) && fieldValue) {
-        const nestedFieldsState = extractFormValues(fieldState, fieldValue);
-        if (isObject$b(nestedFieldsState)) {
-          values[key] = nestedFieldsState;
-        }
-      } else if (fieldsState[key]) {
-        values[key] = fieldValue;
-      }
+    return document.documentElement.classList.contains("dark");
+  });
+  const [language, setLanguage] = reactExports.useState(() => {
+    try {
+      return localStorage.getItem("lang") || "en";
+    } catch {
+      return "en";
     }
-  }
-  return values;
-}
-var isEmptyObject = (value) => isObject$b(value) && !Object.keys(value).length;
-var isFileInput = (element) => element.type === "file";
-var isHTMLElement = (value) => {
-  if (!isWeb) {
-    return false;
-  }
-  const owner = value ? value.ownerDocument : 0;
-  return value instanceof (owner && owner.defaultView ? owner.defaultView.HTMLElement : HTMLElement);
-};
-var isMultipleSelect = (element) => element.type === `select-multiple`;
-var isRadioInput = (element) => element.type === "radio";
-var isRadioOrCheckbox = (ref) => isRadioInput(ref) || isCheckBoxInput(ref);
-var live = (ref) => isHTMLElement(ref) && ref.isConnected;
-function baseGet$4(object2, updatePath) {
-  const length = updatePath.slice(0, -1).length;
-  let index2 = 0;
-  while (index2 < length) {
-    object2 = isUndefined(object2) ? index2++ : object2[updatePath[index2++]];
-  }
-  return object2;
-}
-function isEmptyArray(obj) {
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key) && !isUndefined(obj[key])) {
-      return false;
-    }
-  }
-  return true;
-}
-function unset(object2, path) {
-  const paths = Array.isArray(path) ? path : isKey$4(path) ? [path] : stringToPath$2(path);
-  const childObject = paths.length === 1 ? object2 : baseGet$4(object2, paths);
-  const index2 = paths.length - 1;
-  const key = paths[index2];
-  if (childObject) {
-    delete childObject[key];
-  }
-  if (index2 !== 0 && (isObject$b(childObject) && isEmptyObject(childObject) || Array.isArray(childObject) && isEmptyArray(childObject))) {
-    unset(object2, paths.slice(0, -1));
-  }
-  return object2;
-}
-var objectHasFunction = (data) => {
-  for (const key in data) {
-    if (isFunction$4(data[key])) {
+  });
+  const [pushEnabled, setPushEnabled] = reactExports.useState(() => {
+    try {
+      const stored = localStorage.getItem("pushNotifications");
+      return stored !== null ? stored === "true" : true;
+    } catch {
       return true;
     }
-  }
-  return false;
-};
-function isTraversable(value) {
-  return Array.isArray(value) || isObject$b(value) && !objectHasFunction(value);
-}
-function markFieldsDirty(data, fields = {}) {
-  for (const key in data) {
-    const value = data[key];
-    if (isTraversable(value)) {
-      fields[key] = Array.isArray(value) ? [] : {};
-      markFieldsDirty(value, fields[key]);
-    } else if (!isUndefined(value)) {
-      fields[key] = true;
-    }
-  }
-  return fields;
-}
-function getDirtyFields(data, formValues, dirtyFieldsFromValues) {
-  if (!dirtyFieldsFromValues) {
-    dirtyFieldsFromValues = markFieldsDirty(formValues);
-  }
-  for (const key in data) {
-    const value = data[key];
-    if (isTraversable(value)) {
-      if (isUndefined(formValues) || isPrimitive(dirtyFieldsFromValues[key])) {
-        dirtyFieldsFromValues[key] = markFieldsDirty(value, Array.isArray(value) ? [] : {});
-      } else {
-        getDirtyFields(value, isNullOrUndefined(formValues) ? {} : formValues[key], dirtyFieldsFromValues[key]);
-      }
-    } else {
-      const formValue = formValues[key];
-      dirtyFieldsFromValues[key] = !deepEqual$1(value, formValue);
-    }
-  }
-  return dirtyFieldsFromValues;
-}
-const defaultResult = {
-  value: false,
-  isValid: false
-};
-const validResult = { value: true, isValid: true };
-var getCheckboxValue = (options) => {
-  if (Array.isArray(options)) {
-    if (options.length > 1) {
-      const values = options.filter((option) => option && option.checked && !option.disabled).map((option) => option.value);
-      return { value: values, isValid: !!values.length };
-    }
-    return options[0].checked && !options[0].disabled ? (
-      // @ts-expect-error expected to work in the browser
-      options[0].attributes && !isUndefined(options[0].attributes.value) ? isUndefined(options[0].value) || options[0].value === "" ? validResult : { value: options[0].value, isValid: true } : validResult
-    ) : defaultResult;
-  }
-  return defaultResult;
-};
-var getFieldValueAs = (value, { valueAsNumber, valueAsDate, setValueAs }) => isUndefined(value) ? value : valueAsNumber ? value === "" ? NaN : value ? +value : value : valueAsDate && isString$3(value) ? new Date(value) : setValueAs ? setValueAs(value) : value;
-const defaultReturn = {
-  isValid: false,
-  value: null
-};
-var getRadioValue = (options) => Array.isArray(options) ? options.reduce((previous, option) => option && option.checked && !option.disabled ? {
-  isValid: true,
-  value: option.value
-} : previous, defaultReturn) : defaultReturn;
-function getFieldValue(_f2) {
-  const ref = _f2.ref;
-  if (isFileInput(ref)) {
-    return ref.files;
-  }
-  if (isRadioInput(ref)) {
-    return getRadioValue(_f2.refs).value;
-  }
-  if (isMultipleSelect(ref)) {
-    return [...ref.selectedOptions].map(({ value }) => value);
-  }
-  if (isCheckBoxInput(ref)) {
-    return getCheckboxValue(_f2.refs).value;
-  }
-  return getFieldValueAs(isUndefined(ref.value) ? _f2.ref.value : ref.value, _f2);
-}
-var getResolverOptions = (fieldsNames, _fields, criteriaMode, shouldUseNativeValidation) => {
-  const fields = {};
-  for (const name of fieldsNames) {
-    const field = get$3(_fields, name);
-    field && set(fields, name, field._f);
-  }
-  return {
-    criteriaMode,
-    names: [...fieldsNames],
-    fields,
-    shouldUseNativeValidation
-  };
-};
-var isRegex = (value) => value instanceof RegExp;
-var getRuleValue = (rule) => isUndefined(rule) ? rule : isRegex(rule) ? rule.source : isObject$b(rule) ? isRegex(rule.value) ? rule.value.source : rule.value : rule;
-var getValidationModes = (mode) => ({
-  isOnSubmit: !mode || mode === VALIDATION_MODE.onSubmit,
-  isOnBlur: mode === VALIDATION_MODE.onBlur,
-  isOnChange: mode === VALIDATION_MODE.onChange,
-  isOnAll: mode === VALIDATION_MODE.all,
-  isOnTouch: mode === VALIDATION_MODE.onTouched
-});
-const ASYNC_FUNCTION = "AsyncFunction";
-var hasPromiseValidation = (fieldReference) => !!fieldReference && !!fieldReference.validate && !!(isFunction$4(fieldReference.validate) && fieldReference.validate.constructor.name === ASYNC_FUNCTION || isObject$b(fieldReference.validate) && Object.values(fieldReference.validate).find((validateFunction) => validateFunction.constructor.name === ASYNC_FUNCTION));
-var hasValidation = (options) => options.mount && (options.required || options.min || options.max || options.maxLength || options.minLength || options.pattern || options.validate);
-var isWatched = (name, _names, isBlurEvent) => !isBlurEvent && (_names.watchAll || _names.watch.has(name) || [..._names.watch].some((watchName) => name.startsWith(watchName) && /^\.\w+/.test(name.slice(watchName.length))));
-const iterateFieldsByAction = (fields, action, fieldsNames, abortEarly) => {
-  for (const key of fieldsNames || Object.keys(fields)) {
-    const field = get$3(fields, key);
-    if (field) {
-      const { _f: _f2, ...currentField } = field;
-      if (_f2) {
-        if (_f2.refs && _f2.refs[0] && action(_f2.refs[0], key) && !abortEarly) {
-          return true;
-        } else if (_f2.ref && action(_f2.ref, _f2.name) && !abortEarly) {
-          return true;
-        } else {
-          if (iterateFieldsByAction(currentField, action)) {
-            break;
-          }
-        }
-      } else if (isObject$b(currentField)) {
-        if (iterateFieldsByAction(currentField, action)) {
-          break;
-        }
-      }
-    }
-  }
-  return;
-};
-function schemaErrorLookup(errors, _fields, name) {
-  const error = get$3(errors, name);
-  if (error || isKey$4(name)) {
-    return {
-      error,
-      name
-    };
-  }
-  const names = name.split(".");
-  while (names.length) {
-    const fieldName = names.join(".");
-    const field = get$3(_fields, fieldName);
-    const foundError = get$3(errors, fieldName);
-    if (field && !Array.isArray(field) && name !== fieldName) {
-      return { name };
-    }
-    if (foundError && foundError.type) {
-      return {
-        name: fieldName,
-        error: foundError
-      };
-    }
-    if (foundError && foundError.root && foundError.root.type) {
-      return {
-        name: `${fieldName}.root`,
-        error: foundError.root
-      };
-    }
-    names.pop();
-  }
-  return {
-    name
-  };
-}
-var shouldRenderFormState = (formStateData, _proxyFormState, updateFormState, isRoot) => {
-  updateFormState(formStateData);
-  const { name, ...formState } = formStateData;
-  return isEmptyObject(formState) || Object.keys(formState).length >= Object.keys(_proxyFormState).length || Object.keys(formState).find((key) => _proxyFormState[key] === (!isRoot || VALIDATION_MODE.all));
-};
-var shouldSubscribeByName = (name, signalName, exact) => !name || !signalName || name === signalName || convertToArrayPayload(name).some((currentName) => currentName && (exact ? currentName === signalName : currentName.startsWith(signalName) || signalName.startsWith(currentName)));
-var skipValidation = (isBlurEvent, isTouched, isSubmitted, reValidateMode, mode) => {
-  if (mode.isOnAll) {
-    return false;
-  } else if (!isSubmitted && mode.isOnTouch) {
-    return !(isTouched || isBlurEvent);
-  } else if (isSubmitted ? reValidateMode.isOnBlur : mode.isOnBlur) {
-    return !isBlurEvent;
-  } else if (isSubmitted ? reValidateMode.isOnChange : mode.isOnChange) {
-    return isBlurEvent;
-  }
-  return true;
-};
-var unsetEmptyArray = (ref, name) => !compact(get$3(ref, name)).length && unset(ref, name);
-var updateFieldArrayRootError = (errors, error, name) => {
-  const fieldArrayErrors = convertToArrayPayload(get$3(errors, name));
-  set(fieldArrayErrors, ROOT_ERROR_TYPE, error[name]);
-  set(errors, name, fieldArrayErrors);
-  return errors;
-};
-function getValidateError(result, ref, type = "validate") {
-  if (isString$3(result) || Array.isArray(result) && result.every(isString$3) || isBoolean$3(result) && !result) {
-    return {
-      type,
-      message: isString$3(result) ? result : "",
-      ref
-    };
-  }
-}
-var getValueAndMessage = (validationData) => isObject$b(validationData) && !isRegex(validationData) ? validationData : {
-  value: validationData,
-  message: ""
-};
-var validateField = async (field, disabledFieldNames, formValues, validateAllFieldCriteria, shouldUseNativeValidation, isFieldArray) => {
-  const { ref, refs, required, maxLength, minLength, min: min2, max: max2, pattern, validate, name, valueAsNumber, mount } = field._f;
-  const inputValue = get$3(formValues, name);
-  if (!mount || disabledFieldNames.has(name)) {
-    return {};
-  }
-  const inputRef = refs ? refs[0] : ref;
-  const setCustomValidity = (message) => {
-    if (shouldUseNativeValidation && inputRef.reportValidity) {
-      inputRef.setCustomValidity(isBoolean$3(message) ? "" : message || "");
-      inputRef.reportValidity();
-    }
-  };
-  const error = {};
-  const isRadio = isRadioInput(ref);
-  const isCheckBox = isCheckBoxInput(ref);
-  const isRadioOrCheckbox2 = isRadio || isCheckBox;
-  const isEmpty = (valueAsNumber || isFileInput(ref)) && isUndefined(ref.value) && isUndefined(inputValue) || isHTMLElement(ref) && ref.value === "" || inputValue === "" || Array.isArray(inputValue) && !inputValue.length;
-  const appendErrorsCurry = appendErrors.bind(null, name, validateAllFieldCriteria, error);
-  const getMinMaxMessage = (exceedMax, maxLengthMessage, minLengthMessage, maxType = INPUT_VALIDATION_RULES.maxLength, minType = INPUT_VALIDATION_RULES.minLength) => {
-    const message = exceedMax ? maxLengthMessage : minLengthMessage;
-    error[name] = {
-      type: exceedMax ? maxType : minType,
-      message,
-      ref,
-      ...appendErrorsCurry(exceedMax ? maxType : minType, message)
-    };
-  };
-  if (isFieldArray ? !Array.isArray(inputValue) || !inputValue.length : required && (!isRadioOrCheckbox2 && (isEmpty || isNullOrUndefined(inputValue)) || isBoolean$3(inputValue) && !inputValue || isCheckBox && !getCheckboxValue(refs).isValid || isRadio && !getRadioValue(refs).isValid)) {
-    const { value, message } = isString$3(required) ? { value: !!required, message: required } : getValueAndMessage(required);
-    if (value) {
-      error[name] = {
-        type: INPUT_VALIDATION_RULES.required,
-        message,
-        ref: inputRef,
-        ...appendErrorsCurry(INPUT_VALIDATION_RULES.required, message)
-      };
-      if (!validateAllFieldCriteria) {
-        setCustomValidity(message);
-        return error;
-      }
-    }
-  }
-  if (!isEmpty && (!isNullOrUndefined(min2) || !isNullOrUndefined(max2))) {
-    let exceedMax;
-    let exceedMin;
-    const maxOutput = getValueAndMessage(max2);
-    const minOutput = getValueAndMessage(min2);
-    if (!isNullOrUndefined(inputValue) && !isNaN(inputValue)) {
-      const valueNumber = ref.valueAsNumber || (inputValue ? +inputValue : inputValue);
-      if (!isNullOrUndefined(maxOutput.value)) {
-        exceedMax = valueNumber > maxOutput.value;
-      }
-      if (!isNullOrUndefined(minOutput.value)) {
-        exceedMin = valueNumber < minOutput.value;
-      }
-    } else {
-      const valueDate = ref.valueAsDate || new Date(inputValue);
-      const convertTimeToDate = (time2) => /* @__PURE__ */ new Date((/* @__PURE__ */ new Date()).toDateString() + " " + time2);
-      const isTime = ref.type == "time";
-      const isWeek = ref.type == "week";
-      if (isString$3(maxOutput.value) && inputValue) {
-        exceedMax = isTime ? convertTimeToDate(inputValue) > convertTimeToDate(maxOutput.value) : isWeek ? inputValue > maxOutput.value : valueDate > new Date(maxOutput.value);
-      }
-      if (isString$3(minOutput.value) && inputValue) {
-        exceedMin = isTime ? convertTimeToDate(inputValue) < convertTimeToDate(minOutput.value) : isWeek ? inputValue < minOutput.value : valueDate < new Date(minOutput.value);
-      }
-    }
-    if (exceedMax || exceedMin) {
-      getMinMaxMessage(!!exceedMax, maxOutput.message, minOutput.message, INPUT_VALIDATION_RULES.max, INPUT_VALIDATION_RULES.min);
-      if (!validateAllFieldCriteria) {
-        setCustomValidity(error[name].message);
-        return error;
-      }
-    }
-  }
-  if ((maxLength || minLength) && !isEmpty && (isString$3(inputValue) || isFieldArray && Array.isArray(inputValue))) {
-    const maxLengthOutput = getValueAndMessage(maxLength);
-    const minLengthOutput = getValueAndMessage(minLength);
-    const exceedMax = !isNullOrUndefined(maxLengthOutput.value) && inputValue.length > +maxLengthOutput.value;
-    const exceedMin = !isNullOrUndefined(minLengthOutput.value) && inputValue.length < +minLengthOutput.value;
-    if (exceedMax || exceedMin) {
-      getMinMaxMessage(exceedMax, maxLengthOutput.message, minLengthOutput.message);
-      if (!validateAllFieldCriteria) {
-        setCustomValidity(error[name].message);
-        return error;
-      }
-    }
-  }
-  if (pattern && !isEmpty && isString$3(inputValue)) {
-    const { value: patternValue, message } = getValueAndMessage(pattern);
-    if (isRegex(patternValue) && !inputValue.match(patternValue)) {
-      error[name] = {
-        type: INPUT_VALIDATION_RULES.pattern,
-        message,
-        ref,
-        ...appendErrorsCurry(INPUT_VALIDATION_RULES.pattern, message)
-      };
-      if (!validateAllFieldCriteria) {
-        setCustomValidity(message);
-        return error;
-      }
-    }
-  }
-  if (validate) {
-    if (isFunction$4(validate)) {
-      const result = await validate(inputValue, formValues);
-      const validateError = getValidateError(result, inputRef);
-      if (validateError) {
-        error[name] = {
-          ...validateError,
-          ...appendErrorsCurry(INPUT_VALIDATION_RULES.validate, validateError.message)
-        };
-        if (!validateAllFieldCriteria) {
-          setCustomValidity(validateError.message);
-          return error;
-        }
-      }
-    } else if (isObject$b(validate)) {
-      let validationResult = {};
-      for (const key in validate) {
-        if (!isEmptyObject(validationResult) && !validateAllFieldCriteria) {
-          break;
-        }
-        const validateError = getValidateError(await validate[key](inputValue, formValues), inputRef, key);
-        if (validateError) {
-          validationResult = {
-            ...validateError,
-            ...appendErrorsCurry(key, validateError.message)
-          };
-          setCustomValidity(validateError.message);
-          if (validateAllFieldCriteria) {
-            error[name] = validationResult;
-          }
-        }
-      }
-      if (!isEmptyObject(validationResult)) {
-        error[name] = {
-          ref: inputRef,
-          ...validationResult
-        };
-        if (!validateAllFieldCriteria) {
-          return error;
-        }
-      }
-    }
-  }
-  setCustomValidity(true);
-  return error;
-};
-const defaultOptions$1 = {
-  mode: VALIDATION_MODE.onSubmit,
-  reValidateMode: VALIDATION_MODE.onChange,
-  shouldFocusError: true
-};
-function createFormControl(props = {}) {
-  let _options2 = {
-    ...defaultOptions$1,
-    ...props
-  };
-  let _formState = {
-    submitCount: 0,
-    isDirty: false,
-    isReady: false,
-    isLoading: isFunction$4(_options2.defaultValues),
-    isValidating: false,
-    isSubmitted: false,
-    isSubmitting: false,
-    isSubmitSuccessful: false,
-    isValid: false,
-    touchedFields: {},
-    dirtyFields: {},
-    validatingFields: {},
-    errors: _options2.errors || {},
-    disabled: _options2.disabled || false
-  };
-  let _fields = {};
-  let _defaultValues = isObject$b(_options2.defaultValues) || isObject$b(_options2.values) ? cloneObject(_options2.defaultValues || _options2.values) || {} : {};
-  let _formValues = _options2.shouldUnregister ? {} : cloneObject(_defaultValues);
-  let _state = {
-    action: false,
-    mount: false,
-    watch: false,
-    keepIsValid: false
-  };
-  let _names = {
-    mount: /* @__PURE__ */ new Set(),
-    disabled: /* @__PURE__ */ new Set(),
-    unMount: /* @__PURE__ */ new Set(),
-    array: /* @__PURE__ */ new Set(),
-    watch: /* @__PURE__ */ new Set()
-  };
-  let delayErrorCallback;
-  let timer = 0;
-  const defaultProxyFormState = {
-    isDirty: false,
-    dirtyFields: false,
-    validatingFields: false,
-    touchedFields: false,
-    isValidating: false,
-    isValid: false,
-    errors: false
-  };
-  const _proxyFormState = {
-    ...defaultProxyFormState
-  };
-  let _proxySubscribeFormState = {
-    ..._proxyFormState
-  };
-  const _subjects = {
-    array: createSubject(),
-    state: createSubject()
-  };
-  const shouldDisplayAllAssociatedErrors = _options2.criteriaMode === VALIDATION_MODE.all;
-  const debounce2 = (callback) => (wait) => {
-    clearTimeout(timer);
-    timer = setTimeout(callback, wait);
-  };
-  const _setValid = async (shouldUpdateValid) => {
-    if (_state.keepIsValid) {
-      return;
-    }
-    if (!_options2.disabled && (_proxyFormState.isValid || _proxySubscribeFormState.isValid || shouldUpdateValid)) {
-      let isValid;
-      if (_options2.resolver) {
-        isValid = isEmptyObject((await _runSchema()).errors);
-        _updateIsValidating();
-      } else {
-        isValid = await executeBuiltInValidation({
-          fields: _fields,
-          onlyCheckValid: true,
-          eventType: EVENTS.VALID
-        });
-      }
-      if (isValid !== _formState.isValid) {
-        _subjects.state.next({
-          isValid
-        });
-      }
-    }
-  };
-  const _updateIsValidating = (names, isValidating) => {
-    if (!_options2.disabled && (_proxyFormState.isValidating || _proxyFormState.validatingFields || _proxySubscribeFormState.isValidating || _proxySubscribeFormState.validatingFields)) {
-      (names || Array.from(_names.mount)).forEach((name) => {
-        if (name) {
-          isValidating ? set(_formState.validatingFields, name, isValidating) : unset(_formState.validatingFields, name);
-        }
-      });
-      _subjects.state.next({
-        validatingFields: _formState.validatingFields,
-        isValidating: !isEmptyObject(_formState.validatingFields)
-      });
-    }
-  };
-  const _setFieldArray = (name, values = [], method, args, shouldSetValues = true, shouldUpdateFieldsAndState = true) => {
-    if (args && method && !_options2.disabled) {
-      _state.action = true;
-      if (shouldUpdateFieldsAndState && Array.isArray(get$3(_fields, name))) {
-        const fieldValues = method(get$3(_fields, name), args.argA, args.argB);
-        shouldSetValues && set(_fields, name, fieldValues);
-      }
-      if (shouldUpdateFieldsAndState && Array.isArray(get$3(_formState.errors, name))) {
-        const errors = method(get$3(_formState.errors, name), args.argA, args.argB);
-        shouldSetValues && set(_formState.errors, name, errors);
-        unsetEmptyArray(_formState.errors, name);
-      }
-      if ((_proxyFormState.touchedFields || _proxySubscribeFormState.touchedFields) && shouldUpdateFieldsAndState && Array.isArray(get$3(_formState.touchedFields, name))) {
-        const touchedFields = method(get$3(_formState.touchedFields, name), args.argA, args.argB);
-        shouldSetValues && set(_formState.touchedFields, name, touchedFields);
-      }
-      if (_proxyFormState.dirtyFields || _proxySubscribeFormState.dirtyFields) {
-        const fullDirtyFields = getDirtyFields(_defaultValues, _formValues);
-        const rootName = getNodeParentName(name);
-        set(_formState.dirtyFields, rootName, get$3(fullDirtyFields, rootName));
-      }
-      _subjects.state.next({
-        name,
-        isDirty: _getDirty(name, values),
-        dirtyFields: _formState.dirtyFields,
-        errors: _formState.errors,
-        isValid: _formState.isValid
-      });
-    } else {
-      set(_formValues, name, values);
-    }
-  };
-  const updateErrors = (name, error) => {
-    set(_formState.errors, name, error);
-    _subjects.state.next({
-      errors: _formState.errors
-    });
-  };
-  const _setErrors = (errors) => {
-    _formState.errors = errors;
-    _subjects.state.next({
-      errors: _formState.errors,
-      isValid: false
-    });
-  };
-  const updateValidAndValue = (name, shouldSkipSetValueAs, value, ref) => {
-    const field = get$3(_fields, name);
-    if (field) {
-      const defaultValue = get$3(_formValues, name, isUndefined(value) ? get$3(_defaultValues, name) : value);
-      isUndefined(defaultValue) || ref && ref.defaultChecked || shouldSkipSetValueAs ? set(_formValues, name, shouldSkipSetValueAs ? defaultValue : getFieldValue(field._f)) : setFieldValue(name, defaultValue);
-      _state.mount && !_state.action && _setValid();
-    }
-  };
-  const updateTouchAndDirty = (name, fieldValue, isBlurEvent, shouldDirty, shouldRender) => {
-    let shouldUpdateField = false;
-    let isPreviousDirty = false;
-    const output = {
-      name
-    };
-    if (!_options2.disabled) {
-      if (!isBlurEvent || shouldDirty) {
-        if (_proxyFormState.isDirty || _proxySubscribeFormState.isDirty) {
-          isPreviousDirty = _formState.isDirty;
-          _formState.isDirty = output.isDirty = _getDirty();
-          shouldUpdateField = isPreviousDirty !== output.isDirty;
-        }
-        const isCurrentFieldPristine = deepEqual$1(get$3(_defaultValues, name), fieldValue);
-        isPreviousDirty = !!get$3(_formState.dirtyFields, name);
-        isCurrentFieldPristine ? unset(_formState.dirtyFields, name) : set(_formState.dirtyFields, name, true);
-        output.dirtyFields = _formState.dirtyFields;
-        shouldUpdateField = shouldUpdateField || (_proxyFormState.dirtyFields || _proxySubscribeFormState.dirtyFields) && isPreviousDirty !== !isCurrentFieldPristine;
-      }
-      if (isBlurEvent) {
-        const isPreviousFieldTouched = get$3(_formState.touchedFields, name);
-        if (!isPreviousFieldTouched) {
-          set(_formState.touchedFields, name, isBlurEvent);
-          output.touchedFields = _formState.touchedFields;
-          shouldUpdateField = shouldUpdateField || (_proxyFormState.touchedFields || _proxySubscribeFormState.touchedFields) && isPreviousFieldTouched !== isBlurEvent;
-        }
-      }
-      shouldUpdateField && shouldRender && _subjects.state.next(output);
-    }
-    return shouldUpdateField ? output : {};
-  };
-  const shouldRenderByError = (name, isValid, error, fieldState) => {
-    const previousFieldError = get$3(_formState.errors, name);
-    const shouldUpdateValid = (_proxyFormState.isValid || _proxySubscribeFormState.isValid) && isBoolean$3(isValid) && _formState.isValid !== isValid;
-    if (_options2.delayError && error) {
-      delayErrorCallback = debounce2(() => updateErrors(name, error));
-      delayErrorCallback(_options2.delayError);
-    } else {
-      clearTimeout(timer);
-      delayErrorCallback = null;
-      error ? set(_formState.errors, name, error) : unset(_formState.errors, name);
-    }
-    if ((error ? !deepEqual$1(previousFieldError, error) : previousFieldError) || !isEmptyObject(fieldState) || shouldUpdateValid) {
-      const updatedFormState = {
-        ...fieldState,
-        ...shouldUpdateValid && isBoolean$3(isValid) ? { isValid } : {},
-        errors: _formState.errors,
-        name
-      };
-      _formState = {
-        ..._formState,
-        ...updatedFormState
-      };
-      _subjects.state.next(updatedFormState);
-    }
-  };
-  const _runSchema = async (name) => {
-    _updateIsValidating(name, true);
-    return await _options2.resolver(_formValues, _options2.context, getResolverOptions(name || _names.mount, _fields, _options2.criteriaMode, _options2.shouldUseNativeValidation));
-  };
-  const executeSchemaAndUpdateState = async (names) => {
-    const { errors } = await _runSchema(names);
-    _updateIsValidating(names);
-    if (names) {
-      for (const name of names) {
-        const error = get$3(errors, name);
-        error ? set(_formState.errors, name, error) : unset(_formState.errors, name);
-      }
-    } else {
-      _formState.errors = errors;
-    }
-    return errors;
-  };
-  const validateForm = async ({ name, eventType }) => {
-    if (props.validate) {
-      const result = await props.validate({
-        formValues: _formValues,
-        formState: _formState,
-        name,
-        eventType
-      });
-      if (isObject$b(result)) {
-        for (const key in result) {
-          const error = result[key];
-          if (error) {
-            setError(`${FORM_ERROR_TYPE}.${key}`, {
-              message: isString$3(result.message) ? result.message : "",
-              type: INPUT_VALIDATION_RULES.validate
-            });
-          }
-        }
-      } else if (isString$3(result) || !result) {
-        setError(FORM_ERROR_TYPE, {
-          message: result || "",
-          type: INPUT_VALIDATION_RULES.validate
-        });
-      } else {
-        clearErrors(FORM_ERROR_TYPE);
-      }
-      return result;
-    }
-    return true;
-  };
-  const executeBuiltInValidation = async ({ fields, onlyCheckValid, name, eventType, context = {
-    valid: true,
-    runRootValidation: false
-  } }) => {
-    if (props.validate) {
-      context.runRootValidation = true;
-      const result = await validateForm({
-        name,
-        eventType
-      });
-      if (!result) {
-        context.valid = false;
-        if (onlyCheckValid) {
-          return context.valid;
-        }
-      }
-    }
-    for (const name2 in fields) {
-      const field = fields[name2];
-      if (field) {
-        const { _f: _f2, ...fieldValue } = field;
-        if (_f2) {
-          const isFieldArrayRoot = _names.array.has(_f2.name);
-          const isPromiseFunction = field._f && hasPromiseValidation(field._f);
-          if (isPromiseFunction && _proxyFormState.validatingFields) {
-            _updateIsValidating([_f2.name], true);
-          }
-          const fieldError = await validateField(field, _names.disabled, _formValues, shouldDisplayAllAssociatedErrors, _options2.shouldUseNativeValidation && !onlyCheckValid, isFieldArrayRoot);
-          if (isPromiseFunction && _proxyFormState.validatingFields) {
-            _updateIsValidating([_f2.name]);
-          }
-          if (fieldError[_f2.name]) {
-            context.valid = false;
-            if (onlyCheckValid) {
-              break;
-            }
-          }
-          !onlyCheckValid && (get$3(fieldError, _f2.name) ? isFieldArrayRoot ? updateFieldArrayRootError(_formState.errors, fieldError, _f2.name) : set(_formState.errors, _f2.name, fieldError[_f2.name]) : unset(_formState.errors, _f2.name));
-          if (props.shouldUseNativeValidation && fieldError[_f2.name]) {
-            break;
-          }
-        }
-        !isEmptyObject(fieldValue) && await executeBuiltInValidation({
-          context,
-          onlyCheckValid,
-          fields: fieldValue,
-          name: name2,
-          eventType
-        });
-      }
-    }
-    return context.valid;
-  };
-  const _removeUnmounted = () => {
-    for (const name of _names.unMount) {
-      const field = get$3(_fields, name);
-      field && (field._f.refs ? field._f.refs.every((ref) => !live(ref)) : !live(field._f.ref)) && unregister(name);
-    }
-    _names.unMount = /* @__PURE__ */ new Set();
-  };
-  const _getDirty = (name, data) => !_options2.disabled && (name && data && set(_formValues, name, data), !deepEqual$1(getValues(), _defaultValues));
-  const _getWatch = (names, defaultValue, isGlobal) => generateWatchOutput(names, _names, {
-    ..._state.mount ? _formValues : isUndefined(defaultValue) ? _defaultValues : isString$3(names) ? { [names]: defaultValue } : defaultValue
-  }, isGlobal, defaultValue);
-  const _getFieldArray = (name) => compact(get$3(_state.mount ? _formValues : _defaultValues, name, _options2.shouldUnregister ? get$3(_defaultValues, name, []) : []));
-  const setFieldValue = (name, value, options = {}) => {
-    const field = get$3(_fields, name);
-    let fieldValue = value;
-    if (field) {
-      const fieldReference = field._f;
-      if (fieldReference) {
-        !fieldReference.disabled && set(_formValues, name, getFieldValueAs(value, fieldReference));
-        fieldValue = isHTMLElement(fieldReference.ref) && isNullOrUndefined(value) ? "" : value;
-        if (isMultipleSelect(fieldReference.ref)) {
-          [...fieldReference.ref.options].forEach((optionRef) => optionRef.selected = fieldValue.includes(optionRef.value));
-        } else if (fieldReference.refs) {
-          if (isCheckBoxInput(fieldReference.ref)) {
-            fieldReference.refs.forEach((checkboxRef) => {
-              if (!checkboxRef.defaultChecked || !checkboxRef.disabled) {
-                if (Array.isArray(fieldValue)) {
-                  checkboxRef.checked = !!fieldValue.find((data) => data === checkboxRef.value);
-                } else {
-                  checkboxRef.checked = fieldValue === checkboxRef.value || !!fieldValue;
-                }
-              }
-            });
-          } else {
-            fieldReference.refs.forEach((radioRef) => radioRef.checked = radioRef.value === fieldValue);
-          }
-        } else if (isFileInput(fieldReference.ref)) {
-          fieldReference.ref.value = "";
-        } else {
-          fieldReference.ref.value = fieldValue;
-          if (!fieldReference.ref.type) {
-            _subjects.state.next({
-              name,
-              values: cloneObject(_formValues)
-            });
-          }
-        }
-      }
-    }
-    (options.shouldDirty || options.shouldTouch) && updateTouchAndDirty(name, fieldValue, options.shouldTouch, options.shouldDirty, true);
-    options.shouldValidate && trigger(name);
-  };
-  const setValues = (name, value, options) => {
-    for (const fieldKey in value) {
-      if (!value.hasOwnProperty(fieldKey)) {
-        return;
-      }
-      const fieldValue = value[fieldKey];
-      const fieldName = name + "." + fieldKey;
-      const field = get$3(_fields, fieldName);
-      (_names.array.has(name) || isObject$b(fieldValue) || field && !field._f) && !isDateObject(fieldValue) ? setValues(fieldName, fieldValue, options) : setFieldValue(fieldName, fieldValue, options);
-    }
-  };
-  const setValue = (name, value, options = {}) => {
-    const field = get$3(_fields, name);
-    const isFieldArray = _names.array.has(name);
-    const cloneValue = cloneObject(value);
-    set(_formValues, name, cloneValue);
-    if (isFieldArray) {
-      _subjects.array.next({
-        name,
-        values: cloneObject(_formValues)
-      });
-      if ((_proxyFormState.isDirty || _proxyFormState.dirtyFields || _proxySubscribeFormState.isDirty || _proxySubscribeFormState.dirtyFields) && options.shouldDirty) {
-        _subjects.state.next({
-          name,
-          dirtyFields: getDirtyFields(_defaultValues, _formValues),
-          isDirty: _getDirty(name, cloneValue)
-        });
-      }
-    } else {
-      field && !field._f && !isNullOrUndefined(cloneValue) ? setValues(name, cloneValue, options) : setFieldValue(name, cloneValue, options);
-    }
-    if (isWatched(name, _names)) {
-      _subjects.state.next({
-        ..._formState,
-        name,
-        values: cloneObject(_formValues)
-      });
-    } else {
-      _subjects.state.next({
-        name: _state.mount ? name : void 0,
-        values: cloneObject(_formValues)
-      });
-    }
-  };
-  const onChange = async (event) => {
-    _state.mount = true;
-    const target = event.target;
-    let name = target.name;
-    let isFieldValueUpdated = true;
-    const field = get$3(_fields, name);
-    const _updateIsFieldValueUpdated = (fieldValue) => {
-      isFieldValueUpdated = Number.isNaN(fieldValue) || isDateObject(fieldValue) && isNaN(fieldValue.getTime()) || deepEqual$1(fieldValue, get$3(_formValues, name, fieldValue));
-    };
-    const validationModeBeforeSubmit = getValidationModes(_options2.mode);
-    const validationModeAfterSubmit = getValidationModes(_options2.reValidateMode);
-    if (field) {
-      let error;
-      let isValid;
-      const fieldValue = target.type ? getFieldValue(field._f) : getEventValue(event);
-      const isBlurEvent = event.type === EVENTS.BLUR || event.type === EVENTS.FOCUS_OUT;
-      const shouldSkipValidation = !hasValidation(field._f) && !props.validate && !_options2.resolver && !get$3(_formState.errors, name) && !field._f.deps || skipValidation(isBlurEvent, get$3(_formState.touchedFields, name), _formState.isSubmitted, validationModeAfterSubmit, validationModeBeforeSubmit);
-      const watched = isWatched(name, _names, isBlurEvent);
-      set(_formValues, name, fieldValue);
-      if (isBlurEvent) {
-        if (!target || !target.readOnly) {
-          field._f.onBlur && field._f.onBlur(event);
-          delayErrorCallback && delayErrorCallback(0);
-        }
-      } else if (field._f.onChange) {
-        field._f.onChange(event);
-      }
-      const fieldState = updateTouchAndDirty(name, fieldValue, isBlurEvent);
-      const shouldRender = !isEmptyObject(fieldState) || watched;
-      !isBlurEvent && _subjects.state.next({
-        name,
-        type: event.type,
-        values: cloneObject(_formValues)
-      });
-      if (shouldSkipValidation) {
-        if (_proxyFormState.isValid || _proxySubscribeFormState.isValid) {
-          if (_options2.mode === "onBlur") {
-            if (isBlurEvent) {
-              _setValid();
-            }
-          } else if (!isBlurEvent) {
-            _setValid();
-          }
-        }
-        return shouldRender && _subjects.state.next({ name, ...watched ? {} : fieldState });
-      }
-      if (!_options2.resolver && props.validate) {
-        await validateForm({
-          name,
-          eventType: event.type
-        });
-      }
-      !isBlurEvent && watched && _subjects.state.next({ ..._formState });
-      if (_options2.resolver) {
-        const { errors } = await _runSchema([name]);
-        _updateIsValidating([name]);
-        _updateIsFieldValueUpdated(fieldValue);
-        if (isFieldValueUpdated) {
-          const previousErrorLookupResult = schemaErrorLookup(_formState.errors, _fields, name);
-          const errorLookupResult = schemaErrorLookup(errors, _fields, previousErrorLookupResult.name || name);
-          error = errorLookupResult.error;
-          name = errorLookupResult.name;
-          isValid = isEmptyObject(errors);
-        }
-      } else {
-        _updateIsValidating([name], true);
-        error = (await validateField(field, _names.disabled, _formValues, shouldDisplayAllAssociatedErrors, _options2.shouldUseNativeValidation))[name];
-        _updateIsValidating([name]);
-        _updateIsFieldValueUpdated(fieldValue);
-        if (isFieldValueUpdated) {
-          if (error) {
-            isValid = false;
-          } else if (_proxyFormState.isValid || _proxySubscribeFormState.isValid) {
-            isValid = await executeBuiltInValidation({
-              fields: _fields,
-              onlyCheckValid: true,
-              name,
-              eventType: event.type
-            });
-          }
-        }
-      }
-      if (isFieldValueUpdated) {
-        field._f.deps && (!Array.isArray(field._f.deps) || field._f.deps.length > 0) && trigger(field._f.deps);
-        shouldRenderByError(name, isValid, error, fieldState);
-      }
-    }
-  };
-  const _focusInput = (ref, key) => {
-    if (get$3(_formState.errors, key) && ref.focus) {
-      ref.focus();
-      return 1;
-    }
-    return;
-  };
-  const trigger = async (name, options = {}) => {
-    let isValid;
-    let validationResult;
-    const fieldNames = convertToArrayPayload(name);
-    if (_options2.resolver) {
-      const errors = await executeSchemaAndUpdateState(isUndefined(name) ? name : fieldNames);
-      isValid = isEmptyObject(errors);
-      validationResult = name ? !fieldNames.some((name2) => get$3(errors, name2)) : isValid;
-    } else if (name) {
-      validationResult = (await Promise.all(fieldNames.map(async (fieldName) => {
-        const field = get$3(_fields, fieldName);
-        return await executeBuiltInValidation({
-          fields: field && field._f ? { [fieldName]: field } : field,
-          eventType: EVENTS.TRIGGER
-        });
-      }))).every(Boolean);
-      !(!validationResult && !_formState.isValid) && _setValid();
-    } else {
-      validationResult = isValid = await executeBuiltInValidation({
-        fields: _fields,
-        name,
-        eventType: EVENTS.TRIGGER
-      });
-    }
-    _subjects.state.next({
-      ...!isString$3(name) || (_proxyFormState.isValid || _proxySubscribeFormState.isValid) && isValid !== _formState.isValid ? {} : { name },
-      ..._options2.resolver || !name ? { isValid } : {},
-      errors: _formState.errors
-    });
-    options.shouldFocus && !validationResult && iterateFieldsByAction(_fields, _focusInput, name ? fieldNames : _names.mount);
-    return validationResult;
-  };
-  const getValues = (fieldNames, config2) => {
-    let values = {
-      ..._state.mount ? _formValues : _defaultValues
-    };
-    if (config2) {
-      values = extractFormValues(config2.dirtyFields ? _formState.dirtyFields : _formState.touchedFields, values);
-    }
-    return isUndefined(fieldNames) ? values : isString$3(fieldNames) ? get$3(values, fieldNames) : fieldNames.map((name) => get$3(values, name));
-  };
-  const getFieldState = (name, formState) => ({
-    invalid: !!get$3((formState || _formState).errors, name),
-    isDirty: !!get$3((formState || _formState).dirtyFields, name),
-    error: get$3((formState || _formState).errors, name),
-    isValidating: !!get$3(_formState.validatingFields, name),
-    isTouched: !!get$3((formState || _formState).touchedFields, name)
   });
-  const clearErrors = (name) => {
-    const names = name ? convertToArrayPayload(name) : void 0;
-    names === null || names === void 0 ? void 0 : names.forEach((inputName) => unset(_formState.errors, inputName));
-    if (names) {
-      names.forEach((inputName) => {
-        _subjects.state.next({
-          name: inputName,
-          errors: _formState.errors
-        });
-      });
+  reactExports.useEffect(() => {
+    const root2 = document.documentElement;
+    if (isDark) {
+      root2.classList.add("dark");
+      root2.classList.remove("light");
+      localStorage.setItem("theme", "dark");
     } else {
-      _subjects.state.next({
-        errors: {}
-      });
+      root2.classList.remove("dark");
+      root2.classList.add("light");
+      localStorage.setItem("theme", "light");
     }
-  };
-  const setError = (name, error, options) => {
-    const ref = (get$3(_fields, name, { _f: {} })._f || {}).ref;
-    const currentError = get$3(_formState.errors, name) || {};
-    const { ref: currentRef, message, type, ...restOfErrorTree } = currentError;
-    set(_formState.errors, name, {
-      ...restOfErrorTree,
-      ...error,
-      ref
-    });
-    _subjects.state.next({
-      name,
-      errors: _formState.errors,
-      isValid: false
-    });
-    options && options.shouldFocus && ref && ref.focus && ref.focus();
-  };
-  const watch = (name, defaultValue) => isFunction$4(name) ? _subjects.state.subscribe({
-    next: (payload) => "values" in payload && name(_getWatch(void 0, defaultValue), payload)
-  }) : _getWatch(name, defaultValue, true);
-  const _subscribe = (props2) => _subjects.state.subscribe({
-    next: (formState) => {
-      if (shouldSubscribeByName(props2.name, formState.name, props2.exact) && shouldRenderFormState(formState, props2.formState || _proxyFormState, _setFormState, props2.reRenderRoot)) {
-        props2.callback({
-          values: { ..._formValues },
-          ..._formState,
-          ...formState,
-          defaultValues: _defaultValues
-        });
-      }
-    }
-  }).unsubscribe;
-  const subscribe2 = (props2) => {
-    _state.mount = true;
-    _proxySubscribeFormState = {
-      ..._proxySubscribeFormState,
-      ...props2.formState
-    };
-    return _subscribe({
-      ...props2,
-      formState: {
-        ...defaultProxyFormState,
-        ...props2.formState
-      }
-    });
-  };
-  const unregister = (name, options = {}) => {
-    for (const fieldName of name ? convertToArrayPayload(name) : _names.mount) {
-      _names.mount.delete(fieldName);
-      _names.array.delete(fieldName);
-      if (!options.keepValue) {
-        unset(_fields, fieldName);
-        unset(_formValues, fieldName);
-      }
-      !options.keepError && unset(_formState.errors, fieldName);
-      !options.keepDirty && unset(_formState.dirtyFields, fieldName);
-      !options.keepTouched && unset(_formState.touchedFields, fieldName);
-      !options.keepIsValidating && unset(_formState.validatingFields, fieldName);
-      !_options2.shouldUnregister && !options.keepDefaultValue && unset(_defaultValues, fieldName);
-    }
-    _subjects.state.next({
-      values: cloneObject(_formValues)
-    });
-    _subjects.state.next({
-      ..._formState,
-      ...!options.keepDirty ? {} : { isDirty: _getDirty() }
-    });
-    !options.keepIsValid && _setValid();
-  };
-  const _setDisabledField = ({ disabled, name }) => {
-    if (isBoolean$3(disabled) && _state.mount || !!disabled || _names.disabled.has(name)) {
-      const wasDisabled = _names.disabled.has(name);
-      const isDisabled = !!disabled;
-      const disabledStateChanged = wasDisabled !== isDisabled;
-      disabled ? _names.disabled.add(name) : _names.disabled.delete(name);
-      disabledStateChanged && _state.mount && !_state.action && _setValid();
-    }
-  };
-  const register = (name, options = {}) => {
-    let field = get$3(_fields, name);
-    const disabledIsDefined = isBoolean$3(options.disabled) || isBoolean$3(_options2.disabled);
-    set(_fields, name, {
-      ...field || {},
-      _f: {
-        ...field && field._f ? field._f : { ref: { name } },
-        name,
-        mount: true,
-        ...options
-      }
-    });
-    _names.mount.add(name);
-    if (field) {
-      _setDisabledField({
-        disabled: isBoolean$3(options.disabled) ? options.disabled : _options2.disabled,
-        name
-      });
-    } else {
-      updateValidAndValue(name, true, options.value);
-    }
-    return {
-      ...disabledIsDefined ? { disabled: options.disabled || _options2.disabled } : {},
-      ..._options2.progressive ? {
-        required: !!options.required,
-        min: getRuleValue(options.min),
-        max: getRuleValue(options.max),
-        minLength: getRuleValue(options.minLength),
-        maxLength: getRuleValue(options.maxLength),
-        pattern: getRuleValue(options.pattern)
-      } : {},
-      name,
-      onChange,
-      onBlur: onChange,
-      ref: (ref) => {
-        if (ref) {
-          register(name, options);
-          field = get$3(_fields, name);
-          const fieldRef = isUndefined(ref.value) ? ref.querySelectorAll ? ref.querySelectorAll("input,select,textarea")[0] || ref : ref : ref;
-          const radioOrCheckbox = isRadioOrCheckbox(fieldRef);
-          const refs = field._f.refs || [];
-          if (radioOrCheckbox ? refs.find((option) => option === fieldRef) : fieldRef === field._f.ref) {
-            return;
-          }
-          set(_fields, name, {
-            _f: {
-              ...field._f,
-              ...radioOrCheckbox ? {
-                refs: [
-                  ...refs.filter(live),
-                  fieldRef,
-                  ...Array.isArray(get$3(_defaultValues, name)) ? [{}] : []
-                ],
-                ref: { type: fieldRef.type, name }
-              } : { ref: fieldRef }
-            }
-          });
-          updateValidAndValue(name, false, void 0, fieldRef);
-        } else {
-          field = get$3(_fields, name, {});
-          if (field._f) {
-            field._f.mount = false;
-          }
-          (_options2.shouldUnregister || options.shouldUnregister) && !(isNameInFieldArray(_names.array, name) && _state.action) && _names.unMount.add(name);
-        }
-      }
-    };
-  };
-  const _focusError = () => _options2.shouldFocusError && iterateFieldsByAction(_fields, _focusInput, _names.mount);
-  const _disableForm = (disabled) => {
-    if (isBoolean$3(disabled)) {
-      _subjects.state.next({ disabled });
-      iterateFieldsByAction(_fields, (ref, name) => {
-        const currentField = get$3(_fields, name);
-        if (currentField) {
-          ref.disabled = currentField._f.disabled || disabled;
-          if (Array.isArray(currentField._f.refs)) {
-            currentField._f.refs.forEach((inputRef) => {
-              inputRef.disabled = currentField._f.disabled || disabled;
-            });
-          }
-        }
-      }, 0, false);
-    }
-  };
-  const handleSubmit = (onValid, onInvalid) => async (e3) => {
-    let onValidError = void 0;
-    if (e3) {
-      e3.preventDefault && e3.preventDefault();
-      e3.persist && e3.persist();
-    }
-    let fieldValues = cloneObject(_formValues);
-    _subjects.state.next({
-      isSubmitting: true
-    });
-    if (_options2.resolver) {
-      const { errors, values } = await _runSchema();
-      _updateIsValidating();
-      _formState.errors = errors;
-      fieldValues = cloneObject(values);
-    } else {
-      await executeBuiltInValidation({
-        fields: _fields,
-        eventType: EVENTS.SUBMIT
-      });
-    }
-    if (_names.disabled.size) {
-      for (const name of _names.disabled) {
-        unset(fieldValues, name);
-      }
-    }
-    unset(_formState.errors, ROOT_ERROR_TYPE);
-    if (isEmptyObject(_formState.errors)) {
-      _subjects.state.next({
-        errors: {}
-      });
-      try {
-        await onValid(fieldValues, e3);
-      } catch (error) {
-        onValidError = error;
-      }
-    } else {
-      if (onInvalid) {
-        await onInvalid({ ..._formState.errors }, e3);
-      }
-      _focusError();
-      setTimeout(_focusError);
-    }
-    _subjects.state.next({
-      isSubmitted: true,
-      isSubmitting: false,
-      isSubmitSuccessful: isEmptyObject(_formState.errors) && !onValidError,
-      submitCount: _formState.submitCount + 1,
-      errors: _formState.errors
-    });
-    if (onValidError) {
-      throw onValidError;
-    }
-  };
-  const resetField = (name, options = {}) => {
-    if (get$3(_fields, name)) {
-      if (isUndefined(options.defaultValue)) {
-        setValue(name, cloneObject(get$3(_defaultValues, name)));
-      } else {
-        setValue(name, options.defaultValue);
-        set(_defaultValues, name, cloneObject(options.defaultValue));
-      }
-      if (!options.keepTouched) {
-        unset(_formState.touchedFields, name);
-      }
-      if (!options.keepDirty) {
-        unset(_formState.dirtyFields, name);
-        _formState.isDirty = options.defaultValue ? _getDirty(name, cloneObject(get$3(_defaultValues, name))) : _getDirty();
-      }
-      if (!options.keepError) {
-        unset(_formState.errors, name);
-        _proxyFormState.isValid && _setValid();
-      }
-      _subjects.state.next({ ..._formState });
-    }
-  };
-  const _reset = (formValues, keepStateOptions = {}) => {
-    const updatedValues = formValues ? cloneObject(formValues) : _defaultValues;
-    const cloneUpdatedValues = cloneObject(updatedValues);
-    const isEmptyResetValues = isEmptyObject(formValues);
-    const values = isEmptyResetValues ? _defaultValues : cloneUpdatedValues;
-    if (!keepStateOptions.keepDefaultValues) {
-      _defaultValues = updatedValues;
-    }
-    if (!keepStateOptions.keepValues) {
-      if (keepStateOptions.keepDirtyValues) {
-        const fieldsToCheck = /* @__PURE__ */ new Set([
-          ..._names.mount,
-          ...Object.keys(getDirtyFields(_defaultValues, _formValues))
-        ]);
-        for (const fieldName of Array.from(fieldsToCheck)) {
-          const isDirty = get$3(_formState.dirtyFields, fieldName);
-          const existingValue = get$3(_formValues, fieldName);
-          const newValue = get$3(values, fieldName);
-          if (isDirty && !isUndefined(existingValue)) {
-            set(values, fieldName, existingValue);
-          } else if (!isDirty && !isUndefined(newValue)) {
-            setValue(fieldName, newValue);
-          }
-        }
-      } else {
-        if (isWeb && isUndefined(formValues)) {
-          for (const name of _names.mount) {
-            const field = get$3(_fields, name);
-            if (field && field._f) {
-              const fieldReference = Array.isArray(field._f.refs) ? field._f.refs[0] : field._f.ref;
-              if (isHTMLElement(fieldReference)) {
-                const form = fieldReference.closest("form");
-                if (form) {
-                  form.reset();
-                  break;
-                }
-              }
-            }
-          }
-        }
-        if (keepStateOptions.keepFieldsRef) {
-          for (const fieldName of _names.mount) {
-            setValue(fieldName, get$3(values, fieldName));
-          }
-        } else {
-          _fields = {};
-        }
-      }
-      _formValues = _options2.shouldUnregister ? keepStateOptions.keepDefaultValues ? cloneObject(_defaultValues) : {} : cloneObject(values);
-      _subjects.array.next({
-        values: { ...values }
-      });
-      _subjects.state.next({
-        values: { ...values }
-      });
-    }
-    _names = {
-      mount: keepStateOptions.keepDirtyValues ? _names.mount : /* @__PURE__ */ new Set(),
-      unMount: /* @__PURE__ */ new Set(),
-      array: /* @__PURE__ */ new Set(),
-      disabled: /* @__PURE__ */ new Set(),
-      watch: /* @__PURE__ */ new Set(),
-      watchAll: false,
-      focus: ""
-    };
-    _state.mount = !_proxyFormState.isValid || !!keepStateOptions.keepIsValid || !!keepStateOptions.keepDirtyValues || !_options2.shouldUnregister && !isEmptyObject(values);
-    _state.watch = !!_options2.shouldUnregister;
-    _state.keepIsValid = !!keepStateOptions.keepIsValid;
-    _state.action = false;
-    if (!keepStateOptions.keepErrors) {
-      _formState.errors = {};
-    }
-    _subjects.state.next({
-      submitCount: keepStateOptions.keepSubmitCount ? _formState.submitCount : 0,
-      isDirty: isEmptyResetValues ? false : keepStateOptions.keepDirty ? _formState.isDirty : !!(keepStateOptions.keepDefaultValues && !deepEqual$1(formValues, _defaultValues)),
-      isSubmitted: keepStateOptions.keepIsSubmitted ? _formState.isSubmitted : false,
-      dirtyFields: isEmptyResetValues ? {} : keepStateOptions.keepDirtyValues ? keepStateOptions.keepDefaultValues && _formValues ? getDirtyFields(_defaultValues, _formValues) : _formState.dirtyFields : keepStateOptions.keepDefaultValues && formValues ? getDirtyFields(_defaultValues, formValues) : keepStateOptions.keepDirty ? _formState.dirtyFields : {},
-      touchedFields: keepStateOptions.keepTouched ? _formState.touchedFields : {},
-      errors: keepStateOptions.keepErrors ? _formState.errors : {},
-      isSubmitSuccessful: keepStateOptions.keepIsSubmitSuccessful ? _formState.isSubmitSuccessful : false,
-      isSubmitting: false,
-      defaultValues: _defaultValues
-    });
-  };
-  const reset = (formValues, keepStateOptions) => _reset(isFunction$4(formValues) ? formValues(_formValues) : formValues, { ..._options2.resetOptions, ...keepStateOptions });
-  const setFocus = (name, options = {}) => {
-    const field = get$3(_fields, name);
-    const fieldReference = field && field._f;
-    if (fieldReference) {
-      const fieldRef = fieldReference.refs ? fieldReference.refs[0] : fieldReference.ref;
-      if (fieldRef.focus) {
-        setTimeout(() => {
-          fieldRef.focus();
-          options.shouldSelect && isFunction$4(fieldRef.select) && fieldRef.select();
-        });
-      }
-    }
-  };
-  const _setFormState = (updatedFormState) => {
-    _formState = {
-      ..._formState,
-      ...updatedFormState
-    };
-  };
-  const _resetDefaultValues = () => isFunction$4(_options2.defaultValues) && _options2.defaultValues().then((values) => {
-    reset(values, _options2.resetOptions);
-    _subjects.state.next({
-      isLoading: false
-    });
-  });
-  const methods = {
-    control: {
-      register,
-      unregister,
-      getFieldState,
-      handleSubmit,
-      setError,
-      _subscribe,
-      _runSchema,
-      _updateIsValidating,
-      _focusError,
-      _getWatch,
-      _getDirty,
-      _setValid,
-      _setFieldArray,
-      _setDisabledField,
-      _setErrors,
-      _getFieldArray,
-      _reset,
-      _resetDefaultValues,
-      _removeUnmounted,
-      _disableForm,
-      _subjects,
-      _proxyFormState,
-      get _fields() {
-        return _fields;
-      },
-      get _formValues() {
-        return _formValues;
-      },
-      get _state() {
-        return _state;
-      },
-      set _state(value) {
-        _state = value;
-      },
-      get _defaultValues() {
-        return _defaultValues;
-      },
-      get _names() {
-        return _names;
-      },
-      set _names(value) {
-        _names = value;
-      },
-      get _formState() {
-        return _formState;
-      },
-      get _options() {
-        return _options2;
-      },
-      set _options(value) {
-        _options2 = {
-          ..._options2,
-          ...value
-        };
-      }
-    },
-    subscribe: subscribe2,
-    trigger,
-    register,
-    handleSubmit,
-    watch,
-    setValue,
-    getValues,
-    reset,
-    resetField,
-    clearErrors,
-    unregister,
-    setError,
-    setFocus,
-    getFieldState
-  };
-  return {
-    ...methods,
-    formControl: methods
-  };
-}
-function useForm(props = {}) {
-  const _formControl = React$4.useRef(void 0);
-  const _values = React$4.useRef(void 0);
-  const [formState, updateFormState] = React$4.useState({
-    isDirty: false,
-    isValidating: false,
-    isLoading: isFunction$4(props.defaultValues),
-    isSubmitted: false,
-    isSubmitting: false,
-    isSubmitSuccessful: false,
-    isValid: false,
-    submitCount: 0,
-    dirtyFields: {},
-    touchedFields: {},
-    validatingFields: {},
-    errors: props.errors || {},
-    disabled: props.disabled || false,
-    isReady: false,
-    defaultValues: isFunction$4(props.defaultValues) ? void 0 : props.defaultValues
-  });
-  if (!_formControl.current) {
-    if (props.formControl) {
-      _formControl.current = {
-        ...props.formControl,
-        formState
-      };
-      if (props.defaultValues && !isFunction$4(props.defaultValues)) {
-        props.formControl.reset(props.defaultValues, props.resetOptions);
-      }
-    } else {
-      const { formControl, ...rest } = createFormControl(props);
-      _formControl.current = {
-        ...rest,
-        formState
-      };
+  }, [isDark]);
+  if (!isAuthenticated) {
+    navigate({ to: "/" });
+    return null;
+  }
+  const solar = MOCK_PROPERTIES[0];
+  function toggle(section) {
+    setExpanded((prev) => prev === section ? null : section);
+  }
+  function handleLogout() {
+    clearUser();
+    navigate({ to: "/" });
+  }
+  function handleLanguageChange(code) {
+    setLanguage(code);
+    try {
+      localStorage.setItem("lang", code);
+    } catch {
     }
   }
-  const control = _formControl.current.control;
-  control._options = props;
-  useIsomorphicLayoutEffect(() => {
-    const sub = control._subscribe({
-      formState: control._proxyFormState,
-      callback: () => updateFormState({ ...control._formState }),
-      reRenderRoot: true
-    });
-    updateFormState((data) => ({
-      ...data,
-      isReady: true
-    }));
-    control._formState.isReady = true;
-    return sub;
-  }, [control]);
-  React$4.useEffect(() => control._disableForm(props.disabled), [control, props.disabled]);
-  React$4.useEffect(() => {
-    if (props.mode) {
-      control._options.mode = props.mode;
+  function handlePushToggle() {
+    const next = !pushEnabled;
+    setPushEnabled(next);
+    try {
+      localStorage.setItem("pushNotifications", String(next));
+    } catch {
     }
-    if (props.reValidateMode) {
-      control._options.reValidateMode = props.reValidateMode;
-    }
-  }, [control, props.mode, props.reValidateMode]);
-  React$4.useEffect(() => {
-    if (props.errors) {
-      control._setErrors(props.errors);
-      control._focusError();
-    }
-  }, [control, props.errors]);
-  React$4.useEffect(() => {
-    props.shouldUnregister && control._subjects.state.next({
-      values: control._getWatch()
-    });
-  }, [control, props.shouldUnregister]);
-  React$4.useEffect(() => {
-    if (control._proxyFormState.isDirty) {
-      const isDirty = control._getDirty();
-      if (isDirty !== formState.isDirty) {
-        control._subjects.state.next({
-          isDirty
-        });
-      }
-    }
-  }, [control, formState.isDirty]);
-  React$4.useEffect(() => {
-    var _a2;
-    if (props.values && !deepEqual$1(props.values, _values.current)) {
-      control._reset(props.values, {
-        keepFieldsRef: true,
-        ...control._options.resetOptions
-      });
-      if (!((_a2 = control._options.resetOptions) === null || _a2 === void 0 ? void 0 : _a2.keepIsValid)) {
-        control._setValid();
-      }
-      _values.current = props.values;
-      updateFormState((state) => ({ ...state }));
-    } else {
-      control._resetDefaultValues();
-    }
-  }, [control, props.values]);
-  React$4.useEffect(() => {
-    if (!control._state.mount) {
-      control._setValid();
-      control._state.mount = true;
-    }
-    if (control._state.watch) {
-      control._state.watch = false;
-      control._subjects.state.next({ ...control._formState });
-    }
-    control._removeUnmounted();
-  });
-  _formControl.current.formState = React$4.useMemo(() => getProxyFormState(formState, control), [control, formState]);
-  return _formControl.current;
-}
-const Route$5 = createFileRoute("/property")({ component: PropertyPage });
-function StatusBadge({ status }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "span",
-    {
-      className: `inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full ${status === "Online" ? "bg-primary/15 text-primary" : "bg-destructive/15 text-destructive"}`,
-      children: [
+  }
+  const selectedLang = ((_a2 = LANGUAGES.find((l2) => l2.code === language)) == null ? void 0 : _a2.label) ?? "English";
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "settings.page", className: "min-h-screen bg-background pb-28", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-lg mx-auto px-4 py-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-lg font-semibold text-foreground font-display", children: "Settings" }) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-4 mt-5 bg-card border border-border rounded-2xl px-4 py-4 flex items-center gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 rounded-2xl bg-primary/15 flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(User, { size: 24, className: "text-primary", strokeWidth: 1.5 }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-semibold text-foreground font-display truncate", children: (user == null ? void 0 : user.name) ?? "Sabi Solar User" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground truncate mt-0.5", children: (user == null ? void 0 : user.email) ?? (user == null ? void 0 : user.phone) ?? "—" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-4 mt-4 bg-card border border-border rounded-2xl overflow-hidden", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "span",
+          SettingsRow,
           {
-            className: `w-1.5 h-1.5 rounded-full ${status === "Online" ? "bg-primary animate-pulse" : "bg-destructive"}`
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(User, { size: 18, className: "text-primary" }),
+            label: "Account",
+            ocid: "settings.account_row",
+            isExpanded: expanded === "account",
+            onToggle: () => toggle("account"),
+            children: user && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Name", value: user.name }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Email", value: user.email || "—" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Phone", value: user.phone || "—" }),
+              user.gender && /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Gender", value: user.gender }),
+              user.dob && /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Date of Birth", value: user.dob }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": "settings.edit_account_button",
+                  className: "mt-2 w-full py-2 rounded-xl border border-primary text-primary text-sm font-semibold hover:bg-primary/10 transition-colors",
+                  children: "Edit Profile"
+                }
+              )
+            ] })
           }
         ),
-        status
-      ]
-    }
-  );
-}
-function QrScannerModal({ onMockScan, onClose }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "div",
-    {
-      "data-ocid": "qr_scanner.dialog",
-      tabIndex: -1,
-      className: "fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm px-4",
-      onClick: (e3) => {
-        if (e3.target === e3.currentTarget) onClose();
-      },
-      onKeyDown: (e3) => {
-        if (e3.target === e3.currentTarget && (e3.key === "Enter" || e3.key === " "))
-          onClose();
-      },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-3xl p-6 w-full max-w-sm flex flex-col items-center gap-5", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between w-full", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display", children: "Scan QR Code" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SettingsRow,
+          {
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 18, className: "text-primary" }),
+            label: "Solar Details",
+            ocid: "settings.solar_row",
+            isExpanded: expanded === "solar",
+            onToggle: () => toggle("solar"),
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Model Number", value: solar.modelNumber }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Capacity", value: `${solar.capacityKva} kVA` }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Meter Number", value: solar.meterNumber }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Address", value: solar.address }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "House Type", value: "Residential" })
+            ] })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SettingsRow,
+          {
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Cpu, { size: 18, className: "text-primary" }),
+            label: "Paired Solar Panel",
+            ocid: "settings.paired_row",
+            isExpanded: expanded === "paired",
+            onToggle: () => toggle("paired"),
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Inverter Serial", value: solar.modelNumber }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Status", value: solar.status }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Meter Number", value: solar.meterNumber })
+            ] })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "button",
             {
               type: "button",
-              "data-ocid": "qr_scanner.close_button",
-              onClick: onClose,
-              className: "w-8 h-8 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 text-muted-foreground transition-colors duration-200",
-              "aria-label": "Close QR scanner",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-[280px] h-[280px] bg-black rounded-2xl overflow-hidden border-2 border-primary/60 flex items-center justify-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-primary rounded-tl-lg" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-primary rounded-tr-lg" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-primary rounded-bl-lg" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-primary rounded-br-lg" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-x-3 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent qr-scanline" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center gap-2 opacity-40", children: /* @__PURE__ */ jsxRuntimeExports.jsx(QrCode, { size: 56, className: "text-primary", strokeWidth: 1.2 }) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground text-center", children: "Point camera at QR code" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "button",
-          {
-            type: "button",
-            "data-ocid": "qr_scanner.mock_scan_button",
-            onClick: () => onMockScan("SUN-3K-PRO"),
-            className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors duration-200",
-            children: "Use Mock QR"
-          }
-        )
-      ] })
-    }
-  );
-}
-function AddSolarDialog({
-  propertyTitle,
-  onClose,
-  onSubmit
-}) {
-  const [showQr, setShowQr] = reactExports.useState(false);
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    formState: { errors }
-  } = useForm();
-  const handleMockScan = (value) => {
-    setValue("modelNumber", value);
-    setShowQr(false);
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "div",
-      {
-        "data-ocid": "add_solar.dialog",
-        className: "fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm px-4 pb-4 sm:pb-0",
-        tabIndex: -1,
-        onClick: (e3) => {
-          if (e3.target === e3.currentTarget) onClose();
-        },
-        onKeyDown: (e3) => {
-          if (e3.target === e3.currentTarget && (e3.key === "Enter" || e3.key === " "))
-            onClose();
-        },
-        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-3xl p-6 w-full max-w-sm flex flex-col gap-5", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display", children: "Add Solar System" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: propertyTitle })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "button",
-              {
-                type: "button",
-                "data-ocid": "add_solar.close_button",
-                onClick: onClose,
-                className: "w-8 h-8 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 text-muted-foreground transition-colors duration-200",
-                "aria-label": "Close dialog",
-                children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "form",
-            {
-              onSubmit: handleSubmit(onSubmit),
-              className: "flex flex-col gap-4",
+              "data-ocid": "settings.appearance_row",
+              onClick: () => toggle("appearance"),
+              className: "w-full flex items-center gap-4 px-5 py-4 hover:bg-muted/40 transition-colors",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "label",
-                    {
-                      htmlFor: "solar-model-number",
-                      className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                      children: "Model Number"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "input",
-                      {
-                        id: "solar-model-number",
-                        "data-ocid": "add_solar.model_number_input",
-                        ...register("modelNumber", { required: "Required" }),
-                        placeholder: "e.g. SUN-3K-PRO",
-                        className: "flex-1 bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                      "button",
-                      {
-                        type: "button",
-                        "data-ocid": "add_solar.qr_scan_button",
-                        onClick: () => setShowQr(true),
-                        className: "flex items-center gap-1.5 px-3 py-2 rounded-xl bg-primary/10 border border-primary/30 text-primary text-xs font-semibold hover:bg-primary/20 transition-colors duration-200",
-                        "aria-label": "Scan QR code",
-                        children: [
-                          /* @__PURE__ */ jsxRuntimeExports.jsx(QrCode, { size: 14 }),
-                          "Scan"
-                        ]
-                      }
-                    )
-                  ] }),
-                  errors.modelNumber && /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "p",
-                    {
-                      "data-ocid": "add_solar.model_number_field_error",
-                      className: "text-xs text-destructive",
-                      children: errors.modelNumber.message
-                    }
-                  )
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "label",
-                    {
-                      htmlFor: "solar-capacity",
-                      className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                      children: "Capacity (kVA)"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "input",
-                    {
-                      id: "solar-capacity",
-                      "data-ocid": "add_solar.capacity_input",
-                      type: "number",
-                      step: "0.1",
-                      ...register("capacityKva", {
-                        required: "Required",
-                        valueAsNumber: true,
-                        min: { value: 0.1, message: "Must be > 0" }
-                      }),
-                      placeholder: "e.g. 5",
-                      className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                    }
-                  ),
-                  errors.capacityKva && /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "p",
-                    {
-                      "data-ocid": "add_solar.capacity_field_error",
-                      className: "text-xs text-destructive",
-                      children: errors.capacityKva.message
-                    }
-                  )
-                ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "label",
-                    {
-                      htmlFor: "solar-meter-number",
-                      className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                      children: "Meter Number"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "input",
-                    {
-                      id: "solar-meter-number",
-                      "data-ocid": "add_solar.meter_number_input",
-                      ...register("meterNumber", { required: "Required" }),
-                      placeholder: "e.g. MTR-045892",
-                      className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                    }
-                  ),
-                  errors.meterNumber && /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "p",
-                    {
-                      "data-ocid": "add_solar.meter_field_error",
-                      className: "text-xs text-destructive",
-                      children: errors.meterNumber.message
-                    }
-                  )
-                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-muted flex items-center justify-center flex-shrink-0", children: isDark ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { size: 18, className: "text-primary" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { size: 18, className: "text-primary" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-1 text-sm font-medium text-foreground text-left", children: "Appearance" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground mr-1", children: isDark ? "Dark" : "Light" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "button",
+                  ChevronRight,
                   {
-                    type: "submit",
-                    "data-ocid": "add_solar.submit_button",
-                    className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors duration-200 mt-1",
-                    children: "Link Solar System"
+                    size: 16,
+                    className: `text-muted-foreground transition-transform duration-200 ${expanded === "appearance" ? "rotate-90" : ""}`
                   }
                 )
               ]
             }
-          )
-        ] })
-      }
-    ),
-    showQr && /* @__PURE__ */ jsxRuntimeExports.jsx(
-      QrScannerModal,
-      {
-        onMockScan: handleMockScan,
-        onClose: () => setShowQr(false)
-      }
-    )
-  ] });
-}
-const HOUSE_TYPES = ["Home", "Office", "Beach House", "Other"];
-function AddPropertyDialog({ onClose, onSubmit }) {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors }
-  } = useForm({
-    defaultValues: { houseType: "Home" }
-  });
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "div",
-    {
-      "data-ocid": "add_property.dialog",
-      tabIndex: -1,
-      className: "fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm px-4 pb-4 sm:pb-0",
-      onClick: (e3) => {
-        if (e3.target === e3.currentTarget) onClose();
-      },
-      onKeyDown: (e3) => {
-        if (e3.target === e3.currentTarget && (e3.key === "Enter" || e3.key === " "))
-          onClose();
-      },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-3xl p-6 w-full max-w-sm flex flex-col gap-5 max-h-[90vh] overflow-y-auto", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display", children: "Add Property" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "button",
-              "data-ocid": "add_property.close_button",
-              onClick: onClose,
-              className: "w-8 h-8 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 text-muted-foreground transition-colors duration-200",
-              "aria-label": "Close dialog",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleSubmit(onSubmit), className: "flex flex-col gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "label",
-              {
-                htmlFor: "property-title",
-                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                children: "Property Name"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "input",
-              {
-                id: "property-title",
-                "data-ocid": "add_property.name_input",
-                ...register("title", { required: "Property name is required" }),
-                placeholder: "e.g. Main House",
-                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              }
-            ),
-            errors.title && /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "p",
-              {
-                "data-ocid": "add_property.name_field_error",
-                className: "text-xs text-destructive",
-                children: errors.title.message
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "label",
-              {
-                htmlFor: "property-address",
-                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                children: "Address"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "input",
-              {
-                id: "property-address",
-                "data-ocid": "add_property.address_input",
-                ...register("address", { required: "Address is required" }),
-                placeholder: "e.g. 14 Adeleke Street, Lekki",
-                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              }
-            ),
-            errors.address && /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "p",
-              {
-                "data-ocid": "add_property.address_field_error",
-                className: "text-xs text-destructive",
-                children: errors.address.message
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "label",
-              {
-                htmlFor: "property-meter-number",
-                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                children: "Meter Number"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "input",
-              {
-                id: "property-meter-number",
-                "data-ocid": "add_property.meter_input",
-                ...register("meterNumber", {
-                  required: "Meter number is required"
-                }),
-                placeholder: "e.g. MTR-045892",
-                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              }
-            ),
-            errors.meterNumber && /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "p",
-              {
-                "data-ocid": "add_property.meter_field_error",
-                className: "text-xs text-destructive",
-                children: errors.meterNumber.message
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "label",
-              {
-                htmlFor: "property-capacity",
-                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                children: "Capacity (kVA)"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "input",
-              {
-                id: "property-capacity",
-                "data-ocid": "add_property.capacity_input",
-                type: "number",
-                step: "0.5",
-                ...register("capacityKva", {
-                  required: "Capacity is required",
-                  valueAsNumber: true,
-                  min: { value: 0.5, message: "Must be > 0" }
-                }),
-                placeholder: "e.g. 5",
-                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              }
-            ),
-            errors.capacityKva && /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "p",
-              {
-                "data-ocid": "add_property.capacity_field_error",
-                className: "text-xs text-destructive",
-                children: errors.capacityKva.message
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "label",
-              {
-                htmlFor: "property-house-type",
-                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
-                children: "House Type"
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "select",
-              {
-                id: "property-house-type",
-                "data-ocid": "add_property.house_type_select",
-                ...register("houseType"),
-                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring appearance-none",
-                children: HOUSE_TYPES.map((t2) => /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: t2, children: t2 }, t2))
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "submit",
-              "data-ocid": "add_property.submit_button",
-              className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors duration-200 mt-1",
-              children: "Add Property"
-            }
-          )
-        ] })
-      ] })
-    }
-  );
-}
-function PropertyCard({
-  property: property2,
-  index: index2,
-  onDelete,
-  onAddSolar
-}) {
-  const handleDelete = () => {
-    if (window.confirm("Delete this property?")) {
-      onDelete(property2.id);
-    }
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      "data-ocid": `property.item.${index2}`,
-      className: "bg-card border border-border rounded-3xl overflow-hidden transition-smooth hover:border-primary/30",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-5 pt-5 pb-3 flex items-start justify-between gap-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display truncate", children: property2.title }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 mt-1", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                MapPin,
+          ),
+          expanded === "appearance" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-5 pb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-muted/40 rounded-2xl p-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-3", children: "Choose your preferred display theme" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
                 {
-                  size: 12,
-                  className: "text-muted-foreground flex-shrink-0",
-                  strokeWidth: 1.8
+                  type: "button",
+                  "data-ocid": "settings.theme.dark_button",
+                  onClick: () => setIsDark(true),
+                  className: [
+                    "flex-1 flex flex-col items-center gap-2 py-3 rounded-xl border text-sm font-medium transition-colors duration-200",
+                    isDark ? "border-primary bg-primary/10 text-primary" : "border-border text-muted-foreground hover:border-primary/40"
+                  ].join(" "),
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { size: 20 }),
+                    "Dark Mode"
+                  ]
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground truncate", children: property2.address })
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": "settings.theme.light_button",
+                  onClick: () => setIsDark(false),
+                  className: [
+                    "flex-1 flex flex-col items-center gap-2 py-3 rounded-xl border text-sm font-medium transition-colors duration-200",
+                    !isDark ? "border-primary bg-primary/10 text-primary" : "border-border text-muted-foreground hover:border-primary/40"
+                  ].join(" "),
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { size: 20 }),
+                    "Day Mode"
+                  ]
+                }
+              )
             ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge, { status: property2.status })
+          ] }) })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-5 border-t border-border" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-5 py-3 flex items-center gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 12, className: "text-primary", strokeWidth: 1.8 }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
-              property2.capacityKva,
-              " kVA"
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Hash$2, { size: 12, className: "text-muted-foreground", strokeWidth: 1.8 }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground font-mono", children: property2.modelNumber || "—" })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-5 pb-5 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "button",
             {
               type: "button",
-              "data-ocid": `property.solar_button.${index2}`,
-              onClick: () => onAddSolar(property2),
-              className: "flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-primary/10 border border-primary/25 text-primary text-xs font-semibold hover:bg-primary/20 transition-colors duration-200",
+              "data-ocid": "settings.language_row",
+              onClick: () => toggle("language"),
+              className: "w-full flex items-center gap-4 px-5 py-4 hover:bg-muted/40 transition-colors",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 13 }),
-                "Add Solar"
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-muted flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Globe, { size: 18, className: "text-primary" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-1 text-sm font-medium text-foreground text-left", children: "Language" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground mr-1 flex items-center gap-1", children: [
+                  selectedLang,
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronDown, { size: 13, className: "text-muted-foreground" })
+                ] })
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
+          expanded === "language" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-5 pb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-muted/40 rounded-2xl p-2 flex flex-col gap-0.5", children: LANGUAGES.map((lang) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "button",
             {
               type: "button",
-              "data-ocid": `property.edit_button.${index2}`,
-              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/70 text-muted-foreground transition-colors duration-200",
-              "aria-label": "Edit property",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { size: 14, strokeWidth: 1.8 })
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "button",
-            {
-              type: "button",
-              "data-ocid": `property.delete_button.${index2}`,
-              onClick: handleDelete,
-              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-destructive/10 hover:bg-destructive/20 text-destructive transition-colors duration-200",
-              "aria-label": "Delete property",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { size: 14, strokeWidth: 1.8 })
-            }
-          )
-        ] })
-      ]
-    }
-  );
-}
-function PropertyPage() {
-  const navigate = useNavigate();
-  const { isAuthenticated } = useCurrentUser();
-  const [properties, setProperties] = reactExports.useState(MOCK_PROPERTIES);
-  const [showAddProperty, setShowAddProperty] = reactExports.useState(false);
-  const [solarTarget, setSolarTarget] = reactExports.useState(null);
-  const listRef = reactExports.useRef(null);
-  reactExports.useEffect(() => {
-    if (!isAuthenticated) navigate({ to: "/" });
-  }, [isAuthenticated, navigate]);
-  if (!isAuthenticated) return null;
-  const handleAddProperty = (data) => {
-    const newProp = {
-      id: String(Date.now()),
-      userId: "user-1",
-      title: data.title,
-      address: data.address,
-      meterNumber: data.meterNumber,
-      capacityKva: data.capacityKva,
-      modelNumber: "",
-      status: "Online"
-    };
-    setProperties((prev) => [...prev, newProp]);
-    setShowAddProperty(false);
-    ue.success("Property added!");
-  };
-  const handleDeleteProperty = (id) => {
-    setProperties((prev) => prev.filter((p2) => p2.id !== id));
-    ue.success("Property removed.");
-  };
-  const handleAddSolar = (data) => {
-    if (!solarTarget) return;
-    setProperties(
-      (prev) => prev.map(
-        (p2) => p2.id === solarTarget.id ? {
-          ...p2,
-          modelNumber: data.modelNumber,
-          capacityKva: data.capacityKva,
-          meterNumber: data.meterNumber
-        } : p2
-      )
-    );
-    setSolarTarget(null);
-    ue.success("Solar system linked!");
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "property.page", className: "min-h-screen bg-background pb-28", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-lg mx-auto px-4 py-4 flex items-center justify-between", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-lg font-semibold text-foreground font-display", children: "My Properties" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        "button",
-        {
-          type: "button",
-          "data-ocid": "property.add_property_button",
-          onClick: () => setShowAddProperty(true),
-          className: "flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2.5 rounded-2xl hover:bg-primary/90 transition-colors duration-200",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 16 }),
-            "Add Property"
-          ]
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 pt-5", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 mb-5", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xl font-bold text-foreground font-display", children: properties.length }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: "Properties" })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-px h-4 bg-border" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary animate-pulse" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground", children: [
-            properties.filter((p2) => p2.status === "Online").length,
-            " Online"
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-px h-4 bg-border" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-destructive" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground", children: [
-            properties.filter((p2) => p2.status === "Offline").length,
-            " Offline"
-          ] })
-        ] })
-      ] }),
-      properties.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        "div",
-        {
-          "data-ocid": "property.empty_state",
-          className: "flex flex-col items-center justify-center py-20 gap-4 text-center",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-16 rounded-3xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-              House,
-              {
-                size: 28,
-                className: "text-muted-foreground",
-                strokeWidth: 1.5
-              }
-            ) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-semibold text-foreground font-display", children: "No properties yet" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1", children: "Add your first property to start monitoring." })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                "data-ocid": "property.empty_add_button",
-                onClick: () => setShowAddProperty(true),
-                className: "flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-2xl hover:bg-primary/90 transition-colors duration-200",
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 16 }),
-                  "Add Property"
-                ]
-              }
-            )
-          ]
-        }
-      ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "div",
-        {
-          ref: listRef,
-          "data-ocid": "property.list",
-          className: "flex flex-col gap-4",
-          children: properties.map((property2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-            PropertyCard,
-            {
-              property: property2,
-              index: i + 1,
-              onDelete: handleDeleteProperty,
-              onAddSolar: (p2) => setSolarTarget(p2)
+              "data-ocid": `settings.language.${lang.code}`,
+              onClick: () => handleLanguageChange(lang.code),
+              className: [
+                "w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-colors duration-150",
+                language === lang.code ? "bg-primary/15 text-primary" : "text-foreground hover:bg-muted"
+              ].join(" "),
+              children: [
+                lang.label,
+                language === lang.code && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary" })
+              ]
             },
-            property2.id
-          ))
-        }
-      )
-    ] }),
-    showAddProperty && /* @__PURE__ */ jsxRuntimeExports.jsx(
-      AddPropertyDialog,
-      {
-        onClose: () => setShowAddProperty(false),
-        onSubmit: handleAddProperty
-      }
-    ),
-    solarTarget && /* @__PURE__ */ jsxRuntimeExports.jsx(
-      AddSolarDialog,
-      {
-        propertyTitle: solarTarget.title,
-        onClose: () => setSolarTarget(null),
-        onSubmit: handleAddSolar
-      }
-    )
-  ] });
-}
-function setRef(ref, value) {
-  if (typeof ref === "function") {
-    return ref(value);
-  } else if (ref !== null && ref !== void 0) {
-    ref.current = value;
-  }
-}
-function composeRefs(...refs) {
-  return (node) => {
-    let hasCleanup = false;
-    const cleanups = refs.map((ref) => {
-      const cleanup = setRef(ref, node);
-      if (!hasCleanup && typeof cleanup == "function") {
-        hasCleanup = true;
-      }
-      return cleanup;
-    });
-    if (hasCleanup) {
-      return () => {
-        for (let i = 0; i < cleanups.length; i++) {
-          const cleanup = cleanups[i];
-          if (typeof cleanup == "function") {
-            cleanup();
-          } else {
-            setRef(refs[i], null);
+            lang.code
+          )) }) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "settings.push_notifications_row",
+            onClick: handlePushToggle,
+            className: "w-full flex items-center gap-4 px-5 py-4 hover:bg-muted/40 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-muted flex items-center justify-center flex-shrink-0", children: pushEnabled ? /* @__PURE__ */ jsxRuntimeExports.jsx(Bell, { size: 18, className: "text-primary" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(BellOff, { size: 18, className: "text-muted-foreground" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-1 text-sm font-medium text-foreground text-left", children: "Push Notifications" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  "data-ocid": "settings.push_notifications_toggle",
+                  className: [
+                    "relative w-11 h-6 rounded-full transition-colors duration-300 flex-shrink-0",
+                    pushEnabled ? "bg-primary" : "bg-muted-foreground/30"
+                  ].join(" "),
+                  "aria-checked": pushEnabled,
+                  role: "switch",
+                  "aria-label": "Toggle push notifications",
+                  tabIndex: 0,
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: [
+                        "absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform duration-300",
+                        pushEnabled ? "translate-x-5" : "translate-x-0.5"
+                      ].join(" ")
+                    }
+                  )
+                }
+              )
+            ]
           }
-        }
-      };
-    }
-  };
-}
-var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-var use = React$5[" use ".trim().toString()];
-function isPromiseLike(value) {
-  return typeof value === "object" && value !== null && "then" in value;
-}
-function isLazyComponent(element) {
-  return element != null && typeof element === "object" && "$$typeof" in element && element.$$typeof === REACT_LAZY_TYPE && "_payload" in element && isPromiseLike(element._payload);
-}
-// @__NO_SIDE_EFFECTS__
-function createSlot(ownerName) {
-  const SlotClone = /* @__PURE__ */ createSlotClone(ownerName);
-  const Slot2 = reactExports.forwardRef((props, forwardedRef) => {
-    let { children, ...slotProps } = props;
-    if (isLazyComponent(children) && typeof use === "function") {
-      children = use(children._payload);
-    }
-    const childrenArray = reactExports.Children.toArray(children);
-    const slottable = childrenArray.find(isSlottable);
-    if (slottable) {
-      const newElement = slottable.props.children;
-      const newChildren = childrenArray.map((child) => {
-        if (child === slottable) {
-          if (reactExports.Children.count(newElement) > 1) return reactExports.Children.only(null);
-          return reactExports.isValidElement(newElement) ? newElement.props.children : null;
-        } else {
-          return child;
-        }
-      });
-      return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children: reactExports.isValidElement(newElement) ? reactExports.cloneElement(newElement, void 0, newChildren) : null });
-    }
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children });
-  });
-  Slot2.displayName = `${ownerName}.Slot`;
-  return Slot2;
-}
-var Slot = /* @__PURE__ */ createSlot("Slot");
-// @__NO_SIDE_EFFECTS__
-function createSlotClone(ownerName) {
-  const SlotClone = reactExports.forwardRef((props, forwardedRef) => {
-    let { children, ...slotProps } = props;
-    if (isLazyComponent(children) && typeof use === "function") {
-      children = use(children._payload);
-    }
-    if (reactExports.isValidElement(children)) {
-      const childrenRef = getElementRef(children);
-      const props2 = mergeProps(slotProps, children.props);
-      if (children.type !== reactExports.Fragment) {
-        props2.ref = forwardedRef ? composeRefs(forwardedRef, childrenRef) : childrenRef;
-      }
-      return reactExports.cloneElement(children, props2);
-    }
-    return reactExports.Children.count(children) > 1 ? reactExports.Children.only(null) : null;
-  });
-  SlotClone.displayName = `${ownerName}.SlotClone`;
-  return SlotClone;
-}
-var SLOTTABLE_IDENTIFIER = Symbol("radix.slottable");
-function isSlottable(child) {
-  return reactExports.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER;
-}
-function mergeProps(slotProps, childProps) {
-  const overrideProps = { ...childProps };
-  for (const propName in childProps) {
-    const slotPropValue = slotProps[propName];
-    const childPropValue = childProps[propName];
-    const isHandler = /^on[A-Z]/.test(propName);
-    if (isHandler) {
-      if (slotPropValue && childPropValue) {
-        overrideProps[propName] = (...args) => {
-          const result = childPropValue(...args);
-          slotPropValue(...args);
-          return result;
-        };
-      } else if (slotPropValue) {
-        overrideProps[propName] = slotPropValue;
-      }
-    } else if (propName === "style") {
-      overrideProps[propName] = { ...slotPropValue, ...childPropValue };
-    } else if (propName === "className") {
-      overrideProps[propName] = [slotPropValue, childPropValue].filter(Boolean).join(" ");
-    }
-  }
-  return { ...slotProps, ...overrideProps };
-}
-function getElementRef(element) {
-  var _a2, _b2;
-  let getter = (_a2 = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a2.get;
-  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
-  if (mayWarn) {
-    return element.ref;
-  }
-  getter = (_b2 = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b2.get;
-  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
-  if (mayWarn) {
-    return element.props.ref;
-  }
-  return element.props.ref || element.ref;
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SettingsRow,
+          {
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleHelp, { size: 18, className: "text-muted-foreground" }),
+            label: "Help & Support",
+            ocid: "settings.help_row",
+            isExpanded: expanded === "help",
+            onToggle: () => toggle("help"),
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-muted-foreground leading-relaxed", children: [
+              "Need help? Contact our support team at",
+              " ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary font-medium", children: "support@sabisolar.com" }),
+              " ",
+              "or visit our help centre for FAQs and setup guides."
+            ] })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SettingsRow,
+          {
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { size: 18, className: "text-muted-foreground" }),
+            label: "Terms & Conditions",
+            ocid: "settings.terms_row",
+            isExpanded: expanded === "terms",
+            onToggle: () => toggle("terms"),
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: "By using Sabi Solar, you agree to our Terms of Service. We reserve the right to modify these terms at any time. Continued use of the app constitutes your acceptance of any changes." })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SettingsRow,
+          {
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Shield, { size: 18, className: "text-muted-foreground" }),
+            label: "Privacy Policy",
+            ocid: "settings.privacy_row",
+            isExpanded: expanded === "privacy",
+            onToggle: () => toggle("privacy"),
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: "Sabi Solar collects energy usage data solely to provide the monitoring service. We do not sell your data to third parties. You may request deletion at any time via support@sabisolar.com." })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SettingsRow,
+          {
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { size: 18, className: "text-muted-foreground" }),
+            label: "About",
+            ocid: "settings.about_row",
+            isExpanded: expanded === "about",
+            onToggle: () => toggle("about"),
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "App Version", value: "v1.0.0" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DetailRow, { label: "Build", value: "2024.12" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground pt-1", children: "Sabi Solar — Remote energy monitoring for Nigerian homes and businesses." }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground", children: [
+                "Sabi Solar © ",
+                (/* @__PURE__ */ new Date()).getFullYear(),
+                ". All rights reserved."
+              ] })
+            ] })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Divider, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "settings.logout_button",
+            onClick: handleLogout,
+            className: "w-full flex items-center gap-4 px-5 py-4 hover:bg-destructive/5 transition-colors",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-destructive/10 flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { size: 18, className: "text-destructive" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-1 text-sm font-semibold text-destructive text-left", children: "Logout" })
+            ]
+          }
+        )
+      ] })
+    ] })
+  ] });
 }
 function r(e3) {
   var t2, f2, n2 = "";
@@ -27137,2860 +25296,6 @@ function r(e3) {
 function clsx() {
   for (var e3, t2, f2 = 0, n2 = "", o = arguments.length; f2 < o; f2++) (e3 = arguments[f2]) && (t2 = r(e3)) && (n2 && (n2 += " "), n2 += t2);
   return n2;
-}
-const falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
-const cx = clsx;
-const cva = (base, config2) => (props) => {
-  var _config_compoundVariants;
-  if ((config2 === null || config2 === void 0 ? void 0 : config2.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-  const { variants, defaultVariants } = config2;
-  const getVariantClassNames = Object.keys(variants).map((variant) => {
-    const variantProp = props === null || props === void 0 ? void 0 : props[variant];
-    const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
-    if (variantProp === null) return null;
-    const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
-    return variants[variant][variantKey];
-  });
-  const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
-    let [key, value] = param;
-    if (value === void 0) {
-      return acc;
-    }
-    acc[key] = value;
-    return acc;
-  }, {});
-  const getCompoundVariantClassNames = config2 === null || config2 === void 0 ? void 0 : (_config_compoundVariants = config2.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
-    let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
-    return Object.entries(compoundVariantOptions).every((param2) => {
-      let [key, value] = param2;
-      return Array.isArray(value) ? value.includes({
-        ...defaultVariants,
-        ...propsWithoutUndefined
-      }[key]) : {
-        ...defaultVariants,
-        ...propsWithoutUndefined
-      }[key] === value;
-    }) ? [
-      ...acc,
-      cvClass,
-      cvClassName
-    ] : acc;
-  }, []);
-  return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-};
-const CLASS_PART_SEPARATOR = "-";
-const createClassGroupUtils = (config2) => {
-  const classMap = createClassMap(config2);
-  const {
-    conflictingClassGroups,
-    conflictingClassGroupModifiers
-  } = config2;
-  const getClassGroupId = (className) => {
-    const classParts = className.split(CLASS_PART_SEPARATOR);
-    if (classParts[0] === "" && classParts.length !== 1) {
-      classParts.shift();
-    }
-    return getGroupRecursive(classParts, classMap) || getGroupIdForArbitraryProperty(className);
-  };
-  const getConflictingClassGroupIds = (classGroupId, hasPostfixModifier) => {
-    const conflicts = conflictingClassGroups[classGroupId] || [];
-    if (hasPostfixModifier && conflictingClassGroupModifiers[classGroupId]) {
-      return [...conflicts, ...conflictingClassGroupModifiers[classGroupId]];
-    }
-    return conflicts;
-  };
-  return {
-    getClassGroupId,
-    getConflictingClassGroupIds
-  };
-};
-const getGroupRecursive = (classParts, classPartObject) => {
-  var _a2;
-  if (classParts.length === 0) {
-    return classPartObject.classGroupId;
-  }
-  const currentClassPart = classParts[0];
-  const nextClassPartObject = classPartObject.nextPart.get(currentClassPart);
-  const classGroupFromNextClassPart = nextClassPartObject ? getGroupRecursive(classParts.slice(1), nextClassPartObject) : void 0;
-  if (classGroupFromNextClassPart) {
-    return classGroupFromNextClassPart;
-  }
-  if (classPartObject.validators.length === 0) {
-    return void 0;
-  }
-  const classRest = classParts.join(CLASS_PART_SEPARATOR);
-  return (_a2 = classPartObject.validators.find(({
-    validator
-  }) => validator(classRest))) == null ? void 0 : _a2.classGroupId;
-};
-const arbitraryPropertyRegex = /^\[(.+)\]$/;
-const getGroupIdForArbitraryProperty = (className) => {
-  if (arbitraryPropertyRegex.test(className)) {
-    const arbitraryPropertyClassName = arbitraryPropertyRegex.exec(className)[1];
-    const property2 = arbitraryPropertyClassName == null ? void 0 : arbitraryPropertyClassName.substring(0, arbitraryPropertyClassName.indexOf(":"));
-    if (property2) {
-      return "arbitrary.." + property2;
-    }
-  }
-};
-const createClassMap = (config2) => {
-  const {
-    theme,
-    prefix: prefix2
-  } = config2;
-  const classMap = {
-    nextPart: /* @__PURE__ */ new Map(),
-    validators: []
-  };
-  const prefixedClassGroupEntries = getPrefixedClassGroupEntries(Object.entries(config2.classGroups), prefix2);
-  prefixedClassGroupEntries.forEach(([classGroupId, classGroup]) => {
-    processClassesRecursively(classGroup, classMap, classGroupId, theme);
-  });
-  return classMap;
-};
-const processClassesRecursively = (classGroup, classPartObject, classGroupId, theme) => {
-  classGroup.forEach((classDefinition) => {
-    if (typeof classDefinition === "string") {
-      const classPartObjectToEdit = classDefinition === "" ? classPartObject : getPart(classPartObject, classDefinition);
-      classPartObjectToEdit.classGroupId = classGroupId;
-      return;
-    }
-    if (typeof classDefinition === "function") {
-      if (isThemeGetter(classDefinition)) {
-        processClassesRecursively(classDefinition(theme), classPartObject, classGroupId, theme);
-        return;
-      }
-      classPartObject.validators.push({
-        validator: classDefinition,
-        classGroupId
-      });
-      return;
-    }
-    Object.entries(classDefinition).forEach(([key, classGroup2]) => {
-      processClassesRecursively(classGroup2, getPart(classPartObject, key), classGroupId, theme);
-    });
-  });
-};
-const getPart = (classPartObject, path) => {
-  let currentClassPartObject = classPartObject;
-  path.split(CLASS_PART_SEPARATOR).forEach((pathPart) => {
-    if (!currentClassPartObject.nextPart.has(pathPart)) {
-      currentClassPartObject.nextPart.set(pathPart, {
-        nextPart: /* @__PURE__ */ new Map(),
-        validators: []
-      });
-    }
-    currentClassPartObject = currentClassPartObject.nextPart.get(pathPart);
-  });
-  return currentClassPartObject;
-};
-const isThemeGetter = (func) => func.isThemeGetter;
-const getPrefixedClassGroupEntries = (classGroupEntries, prefix2) => {
-  if (!prefix2) {
-    return classGroupEntries;
-  }
-  return classGroupEntries.map(([classGroupId, classGroup]) => {
-    const prefixedClassGroup = classGroup.map((classDefinition) => {
-      if (typeof classDefinition === "string") {
-        return prefix2 + classDefinition;
-      }
-      if (typeof classDefinition === "object") {
-        return Object.fromEntries(Object.entries(classDefinition).map(([key, value]) => [prefix2 + key, value]));
-      }
-      return classDefinition;
-    });
-    return [classGroupId, prefixedClassGroup];
-  });
-};
-const createLruCache = (maxCacheSize) => {
-  if (maxCacheSize < 1) {
-    return {
-      get: () => void 0,
-      set: () => {
-      }
-    };
-  }
-  let cacheSize = 0;
-  let cache = /* @__PURE__ */ new Map();
-  let previousCache = /* @__PURE__ */ new Map();
-  const update = (key, value) => {
-    cache.set(key, value);
-    cacheSize++;
-    if (cacheSize > maxCacheSize) {
-      cacheSize = 0;
-      previousCache = cache;
-      cache = /* @__PURE__ */ new Map();
-    }
-  };
-  return {
-    get(key) {
-      let value = cache.get(key);
-      if (value !== void 0) {
-        return value;
-      }
-      if ((value = previousCache.get(key)) !== void 0) {
-        update(key, value);
-        return value;
-      }
-    },
-    set(key, value) {
-      if (cache.has(key)) {
-        cache.set(key, value);
-      } else {
-        update(key, value);
-      }
-    }
-  };
-};
-const IMPORTANT_MODIFIER = "!";
-const createParseClassName = (config2) => {
-  const {
-    separator,
-    experimentalParseClassName
-  } = config2;
-  const isSeparatorSingleCharacter = separator.length === 1;
-  const firstSeparatorCharacter = separator[0];
-  const separatorLength = separator.length;
-  const parseClassName = (className) => {
-    const modifiers = [];
-    let bracketDepth = 0;
-    let modifierStart = 0;
-    let postfixModifierPosition;
-    for (let index2 = 0; index2 < className.length; index2++) {
-      let currentCharacter = className[index2];
-      if (bracketDepth === 0) {
-        if (currentCharacter === firstSeparatorCharacter && (isSeparatorSingleCharacter || className.slice(index2, index2 + separatorLength) === separator)) {
-          modifiers.push(className.slice(modifierStart, index2));
-          modifierStart = index2 + separatorLength;
-          continue;
-        }
-        if (currentCharacter === "/") {
-          postfixModifierPosition = index2;
-          continue;
-        }
-      }
-      if (currentCharacter === "[") {
-        bracketDepth++;
-      } else if (currentCharacter === "]") {
-        bracketDepth--;
-      }
-    }
-    const baseClassNameWithImportantModifier = modifiers.length === 0 ? className : className.substring(modifierStart);
-    const hasImportantModifier = baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
-    const baseClassName = hasImportantModifier ? baseClassNameWithImportantModifier.substring(1) : baseClassNameWithImportantModifier;
-    const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart : void 0;
-    return {
-      modifiers,
-      hasImportantModifier,
-      baseClassName,
-      maybePostfixModifierPosition
-    };
-  };
-  if (experimentalParseClassName) {
-    return (className) => experimentalParseClassName({
-      className,
-      parseClassName
-    });
-  }
-  return parseClassName;
-};
-const sortModifiers = (modifiers) => {
-  if (modifiers.length <= 1) {
-    return modifiers;
-  }
-  const sortedModifiers = [];
-  let unsortedModifiers = [];
-  modifiers.forEach((modifier) => {
-    const isArbitraryVariant = modifier[0] === "[";
-    if (isArbitraryVariant) {
-      sortedModifiers.push(...unsortedModifiers.sort(), modifier);
-      unsortedModifiers = [];
-    } else {
-      unsortedModifiers.push(modifier);
-    }
-  });
-  sortedModifiers.push(...unsortedModifiers.sort());
-  return sortedModifiers;
-};
-const createConfigUtils = (config2) => ({
-  cache: createLruCache(config2.cacheSize),
-  parseClassName: createParseClassName(config2),
-  ...createClassGroupUtils(config2)
-});
-const SPLIT_CLASSES_REGEX = /\s+/;
-const mergeClassList = (classList, configUtils) => {
-  const {
-    parseClassName,
-    getClassGroupId,
-    getConflictingClassGroupIds
-  } = configUtils;
-  const classGroupsInConflict = [];
-  const classNames = classList.trim().split(SPLIT_CLASSES_REGEX);
-  let result = "";
-  for (let index2 = classNames.length - 1; index2 >= 0; index2 -= 1) {
-    const originalClassName = classNames[index2];
-    const {
-      modifiers,
-      hasImportantModifier,
-      baseClassName,
-      maybePostfixModifierPosition
-    } = parseClassName(originalClassName);
-    let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
-    let classGroupId = getClassGroupId(hasPostfixModifier ? baseClassName.substring(0, maybePostfixModifierPosition) : baseClassName);
-    if (!classGroupId) {
-      if (!hasPostfixModifier) {
-        result = originalClassName + (result.length > 0 ? " " + result : result);
-        continue;
-      }
-      classGroupId = getClassGroupId(baseClassName);
-      if (!classGroupId) {
-        result = originalClassName + (result.length > 0 ? " " + result : result);
-        continue;
-      }
-      hasPostfixModifier = false;
-    }
-    const variantModifier = sortModifiers(modifiers).join(":");
-    const modifierId = hasImportantModifier ? variantModifier + IMPORTANT_MODIFIER : variantModifier;
-    const classId = modifierId + classGroupId;
-    if (classGroupsInConflict.includes(classId)) {
-      continue;
-    }
-    classGroupsInConflict.push(classId);
-    const conflictGroups = getConflictingClassGroupIds(classGroupId, hasPostfixModifier);
-    for (let i = 0; i < conflictGroups.length; ++i) {
-      const group = conflictGroups[i];
-      classGroupsInConflict.push(modifierId + group);
-    }
-    result = originalClassName + (result.length > 0 ? " " + result : result);
-  }
-  return result;
-};
-function twJoin() {
-  let index2 = 0;
-  let argument;
-  let resolvedValue;
-  let string2 = "";
-  while (index2 < arguments.length) {
-    if (argument = arguments[index2++]) {
-      if (resolvedValue = toValue(argument)) {
-        string2 && (string2 += " ");
-        string2 += resolvedValue;
-      }
-    }
-  }
-  return string2;
-}
-const toValue = (mix) => {
-  if (typeof mix === "string") {
-    return mix;
-  }
-  let resolvedValue;
-  let string2 = "";
-  for (let k2 = 0; k2 < mix.length; k2++) {
-    if (mix[k2]) {
-      if (resolvedValue = toValue(mix[k2])) {
-        string2 && (string2 += " ");
-        string2 += resolvedValue;
-      }
-    }
-  }
-  return string2;
-};
-function createTailwindMerge(createConfigFirst, ...createConfigRest) {
-  let configUtils;
-  let cacheGet;
-  let cacheSet;
-  let functionToCall = initTailwindMerge;
-  function initTailwindMerge(classList) {
-    const config2 = createConfigRest.reduce((previousConfig, createConfigCurrent) => createConfigCurrent(previousConfig), createConfigFirst());
-    configUtils = createConfigUtils(config2);
-    cacheGet = configUtils.cache.get;
-    cacheSet = configUtils.cache.set;
-    functionToCall = tailwindMerge;
-    return tailwindMerge(classList);
-  }
-  function tailwindMerge(classList) {
-    const cachedResult = cacheGet(classList);
-    if (cachedResult) {
-      return cachedResult;
-    }
-    const result = mergeClassList(classList, configUtils);
-    cacheSet(classList, result);
-    return result;
-  }
-  return function callTailwindMerge() {
-    return functionToCall(twJoin.apply(null, arguments));
-  };
-}
-const fromTheme = (key) => {
-  const themeGetter = (theme) => theme[key] || [];
-  themeGetter.isThemeGetter = true;
-  return themeGetter;
-};
-const arbitraryValueRegex = /^\[(?:([a-z-]+):)?(.+)\]$/i;
-const fractionRegex = /^\d+\/\d+$/;
-const stringLengths = /* @__PURE__ */ new Set(["px", "full", "screen"]);
-const tshirtUnitRegex = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/;
-const lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/;
-const colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix)\(.+\)$/;
-const shadowRegex = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/;
-const imageRegex = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/;
-const isLength$4 = (value) => isNumber$5(value) || stringLengths.has(value) || fractionRegex.test(value);
-const isArbitraryLength = (value) => getIsArbitraryValue(value, "length", isLengthOnly);
-const isNumber$5 = (value) => Boolean(value) && !Number.isNaN(Number(value));
-const isArbitraryNumber = (value) => getIsArbitraryValue(value, "number", isNumber$5);
-const isInteger = (value) => Boolean(value) && Number.isInteger(Number(value));
-const isPercent$1 = (value) => value.endsWith("%") && isNumber$5(value.slice(0, -1));
-const isArbitraryValue = (value) => arbitraryValueRegex.test(value);
-const isTshirtSize = (value) => tshirtUnitRegex.test(value);
-const sizeLabels = /* @__PURE__ */ new Set(["length", "size", "percentage"]);
-const isArbitrarySize = (value) => getIsArbitraryValue(value, sizeLabels, isNever);
-const isArbitraryPosition = (value) => getIsArbitraryValue(value, "position", isNever);
-const imageLabels = /* @__PURE__ */ new Set(["image", "url"]);
-const isArbitraryImage = (value) => getIsArbitraryValue(value, imageLabels, isImage);
-const isArbitraryShadow = (value) => getIsArbitraryValue(value, "", isShadow);
-const isAny = () => true;
-const getIsArbitraryValue = (value, label, testValue) => {
-  const result = arbitraryValueRegex.exec(value);
-  if (result) {
-    if (result[1]) {
-      return typeof label === "string" ? result[1] === label : label.has(result[1]);
-    }
-    return testValue(result[2]);
-  }
-  return false;
-};
-const isLengthOnly = (value) => (
-  // `colorFunctionRegex` check is necessary because color functions can have percentages in them which which would be incorrectly classified as lengths.
-  // For example, `hsl(0 0% 0%)` would be classified as a length without this check.
-  // I could also use lookbehind assertion in `lengthUnitRegex` but that isn't supported widely enough.
-  lengthUnitRegex.test(value) && !colorFunctionRegex.test(value)
-);
-const isNever = () => false;
-const isShadow = (value) => shadowRegex.test(value);
-const isImage = (value) => imageRegex.test(value);
-const getDefaultConfig = () => {
-  const colors = fromTheme("colors");
-  const spacing = fromTheme("spacing");
-  const blur = fromTheme("blur");
-  const brightness = fromTheme("brightness");
-  const borderColor = fromTheme("borderColor");
-  const borderRadius = fromTheme("borderRadius");
-  const borderSpacing = fromTheme("borderSpacing");
-  const borderWidth = fromTheme("borderWidth");
-  const contrast = fromTheme("contrast");
-  const grayscale = fromTheme("grayscale");
-  const hueRotate = fromTheme("hueRotate");
-  const invert2 = fromTheme("invert");
-  const gap = fromTheme("gap");
-  const gradientColorStops = fromTheme("gradientColorStops");
-  const gradientColorStopPositions = fromTheme("gradientColorStopPositions");
-  const inset = fromTheme("inset");
-  const margin = fromTheme("margin");
-  const opacity = fromTheme("opacity");
-  const padding = fromTheme("padding");
-  const saturate = fromTheme("saturate");
-  const scale = fromTheme("scale");
-  const sepia = fromTheme("sepia");
-  const skew = fromTheme("skew");
-  const space = fromTheme("space");
-  const translate = fromTheme("translate");
-  const getOverscroll = () => ["auto", "contain", "none"];
-  const getOverflow = () => ["auto", "hidden", "clip", "visible", "scroll"];
-  const getSpacingWithAutoAndArbitrary = () => ["auto", isArbitraryValue, spacing];
-  const getSpacingWithArbitrary = () => [isArbitraryValue, spacing];
-  const getLengthWithEmptyAndArbitrary = () => ["", isLength$4, isArbitraryLength];
-  const getNumberWithAutoAndArbitrary = () => ["auto", isNumber$5, isArbitraryValue];
-  const getPositions = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"];
-  const getLineStyles = () => ["solid", "dashed", "dotted", "double", "none"];
-  const getBlendModes = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"];
-  const getAlign = () => ["start", "end", "center", "between", "around", "evenly", "stretch"];
-  const getZeroAndEmpty = () => ["", "0", isArbitraryValue];
-  const getBreaks = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"];
-  const getNumberAndArbitrary = () => [isNumber$5, isArbitraryValue];
-  return {
-    cacheSize: 500,
-    separator: ":",
-    theme: {
-      colors: [isAny],
-      spacing: [isLength$4, isArbitraryLength],
-      blur: ["none", "", isTshirtSize, isArbitraryValue],
-      brightness: getNumberAndArbitrary(),
-      borderColor: [colors],
-      borderRadius: ["none", "", "full", isTshirtSize, isArbitraryValue],
-      borderSpacing: getSpacingWithArbitrary(),
-      borderWidth: getLengthWithEmptyAndArbitrary(),
-      contrast: getNumberAndArbitrary(),
-      grayscale: getZeroAndEmpty(),
-      hueRotate: getNumberAndArbitrary(),
-      invert: getZeroAndEmpty(),
-      gap: getSpacingWithArbitrary(),
-      gradientColorStops: [colors],
-      gradientColorStopPositions: [isPercent$1, isArbitraryLength],
-      inset: getSpacingWithAutoAndArbitrary(),
-      margin: getSpacingWithAutoAndArbitrary(),
-      opacity: getNumberAndArbitrary(),
-      padding: getSpacingWithArbitrary(),
-      saturate: getNumberAndArbitrary(),
-      scale: getNumberAndArbitrary(),
-      sepia: getZeroAndEmpty(),
-      skew: getNumberAndArbitrary(),
-      space: getSpacingWithArbitrary(),
-      translate: getSpacingWithArbitrary()
-    },
-    classGroups: {
-      // Layout
-      /**
-       * Aspect Ratio
-       * @see https://tailwindcss.com/docs/aspect-ratio
-       */
-      aspect: [{
-        aspect: ["auto", "square", "video", isArbitraryValue]
-      }],
-      /**
-       * Container
-       * @see https://tailwindcss.com/docs/container
-       */
-      container: ["container"],
-      /**
-       * Columns
-       * @see https://tailwindcss.com/docs/columns
-       */
-      columns: [{
-        columns: [isTshirtSize]
-      }],
-      /**
-       * Break After
-       * @see https://tailwindcss.com/docs/break-after
-       */
-      "break-after": [{
-        "break-after": getBreaks()
-      }],
-      /**
-       * Break Before
-       * @see https://tailwindcss.com/docs/break-before
-       */
-      "break-before": [{
-        "break-before": getBreaks()
-      }],
-      /**
-       * Break Inside
-       * @see https://tailwindcss.com/docs/break-inside
-       */
-      "break-inside": [{
-        "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"]
-      }],
-      /**
-       * Box Decoration Break
-       * @see https://tailwindcss.com/docs/box-decoration-break
-       */
-      "box-decoration": [{
-        "box-decoration": ["slice", "clone"]
-      }],
-      /**
-       * Box Sizing
-       * @see https://tailwindcss.com/docs/box-sizing
-       */
-      box: [{
-        box: ["border", "content"]
-      }],
-      /**
-       * Display
-       * @see https://tailwindcss.com/docs/display
-       */
-      display: ["block", "inline-block", "inline", "flex", "inline-flex", "table", "inline-table", "table-caption", "table-cell", "table-column", "table-column-group", "table-footer-group", "table-header-group", "table-row-group", "table-row", "flow-root", "grid", "inline-grid", "contents", "list-item", "hidden"],
-      /**
-       * Floats
-       * @see https://tailwindcss.com/docs/float
-       */
-      float: [{
-        float: ["right", "left", "none", "start", "end"]
-      }],
-      /**
-       * Clear
-       * @see https://tailwindcss.com/docs/clear
-       */
-      clear: [{
-        clear: ["left", "right", "both", "none", "start", "end"]
-      }],
-      /**
-       * Isolation
-       * @see https://tailwindcss.com/docs/isolation
-       */
-      isolation: ["isolate", "isolation-auto"],
-      /**
-       * Object Fit
-       * @see https://tailwindcss.com/docs/object-fit
-       */
-      "object-fit": [{
-        object: ["contain", "cover", "fill", "none", "scale-down"]
-      }],
-      /**
-       * Object Position
-       * @see https://tailwindcss.com/docs/object-position
-       */
-      "object-position": [{
-        object: [...getPositions(), isArbitraryValue]
-      }],
-      /**
-       * Overflow
-       * @see https://tailwindcss.com/docs/overflow
-       */
-      overflow: [{
-        overflow: getOverflow()
-      }],
-      /**
-       * Overflow X
-       * @see https://tailwindcss.com/docs/overflow
-       */
-      "overflow-x": [{
-        "overflow-x": getOverflow()
-      }],
-      /**
-       * Overflow Y
-       * @see https://tailwindcss.com/docs/overflow
-       */
-      "overflow-y": [{
-        "overflow-y": getOverflow()
-      }],
-      /**
-       * Overscroll Behavior
-       * @see https://tailwindcss.com/docs/overscroll-behavior
-       */
-      overscroll: [{
-        overscroll: getOverscroll()
-      }],
-      /**
-       * Overscroll Behavior X
-       * @see https://tailwindcss.com/docs/overscroll-behavior
-       */
-      "overscroll-x": [{
-        "overscroll-x": getOverscroll()
-      }],
-      /**
-       * Overscroll Behavior Y
-       * @see https://tailwindcss.com/docs/overscroll-behavior
-       */
-      "overscroll-y": [{
-        "overscroll-y": getOverscroll()
-      }],
-      /**
-       * Position
-       * @see https://tailwindcss.com/docs/position
-       */
-      position: ["static", "fixed", "absolute", "relative", "sticky"],
-      /**
-       * Top / Right / Bottom / Left
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      inset: [{
-        inset: [inset]
-      }],
-      /**
-       * Right / Left
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      "inset-x": [{
-        "inset-x": [inset]
-      }],
-      /**
-       * Top / Bottom
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      "inset-y": [{
-        "inset-y": [inset]
-      }],
-      /**
-       * Start
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      start: [{
-        start: [inset]
-      }],
-      /**
-       * End
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      end: [{
-        end: [inset]
-      }],
-      /**
-       * Top
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      top: [{
-        top: [inset]
-      }],
-      /**
-       * Right
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      right: [{
-        right: [inset]
-      }],
-      /**
-       * Bottom
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      bottom: [{
-        bottom: [inset]
-      }],
-      /**
-       * Left
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      left: [{
-        left: [inset]
-      }],
-      /**
-       * Visibility
-       * @see https://tailwindcss.com/docs/visibility
-       */
-      visibility: ["visible", "invisible", "collapse"],
-      /**
-       * Z-Index
-       * @see https://tailwindcss.com/docs/z-index
-       */
-      z: [{
-        z: ["auto", isInteger, isArbitraryValue]
-      }],
-      // Flexbox and Grid
-      /**
-       * Flex Basis
-       * @see https://tailwindcss.com/docs/flex-basis
-       */
-      basis: [{
-        basis: getSpacingWithAutoAndArbitrary()
-      }],
-      /**
-       * Flex Direction
-       * @see https://tailwindcss.com/docs/flex-direction
-       */
-      "flex-direction": [{
-        flex: ["row", "row-reverse", "col", "col-reverse"]
-      }],
-      /**
-       * Flex Wrap
-       * @see https://tailwindcss.com/docs/flex-wrap
-       */
-      "flex-wrap": [{
-        flex: ["wrap", "wrap-reverse", "nowrap"]
-      }],
-      /**
-       * Flex
-       * @see https://tailwindcss.com/docs/flex
-       */
-      flex: [{
-        flex: ["1", "auto", "initial", "none", isArbitraryValue]
-      }],
-      /**
-       * Flex Grow
-       * @see https://tailwindcss.com/docs/flex-grow
-       */
-      grow: [{
-        grow: getZeroAndEmpty()
-      }],
-      /**
-       * Flex Shrink
-       * @see https://tailwindcss.com/docs/flex-shrink
-       */
-      shrink: [{
-        shrink: getZeroAndEmpty()
-      }],
-      /**
-       * Order
-       * @see https://tailwindcss.com/docs/order
-       */
-      order: [{
-        order: ["first", "last", "none", isInteger, isArbitraryValue]
-      }],
-      /**
-       * Grid Template Columns
-       * @see https://tailwindcss.com/docs/grid-template-columns
-       */
-      "grid-cols": [{
-        "grid-cols": [isAny]
-      }],
-      /**
-       * Grid Column Start / End
-       * @see https://tailwindcss.com/docs/grid-column
-       */
-      "col-start-end": [{
-        col: ["auto", {
-          span: ["full", isInteger, isArbitraryValue]
-        }, isArbitraryValue]
-      }],
-      /**
-       * Grid Column Start
-       * @see https://tailwindcss.com/docs/grid-column
-       */
-      "col-start": [{
-        "col-start": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Column End
-       * @see https://tailwindcss.com/docs/grid-column
-       */
-      "col-end": [{
-        "col-end": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Template Rows
-       * @see https://tailwindcss.com/docs/grid-template-rows
-       */
-      "grid-rows": [{
-        "grid-rows": [isAny]
-      }],
-      /**
-       * Grid Row Start / End
-       * @see https://tailwindcss.com/docs/grid-row
-       */
-      "row-start-end": [{
-        row: ["auto", {
-          span: [isInteger, isArbitraryValue]
-        }, isArbitraryValue]
-      }],
-      /**
-       * Grid Row Start
-       * @see https://tailwindcss.com/docs/grid-row
-       */
-      "row-start": [{
-        "row-start": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Row End
-       * @see https://tailwindcss.com/docs/grid-row
-       */
-      "row-end": [{
-        "row-end": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Auto Flow
-       * @see https://tailwindcss.com/docs/grid-auto-flow
-       */
-      "grid-flow": [{
-        "grid-flow": ["row", "col", "dense", "row-dense", "col-dense"]
-      }],
-      /**
-       * Grid Auto Columns
-       * @see https://tailwindcss.com/docs/grid-auto-columns
-       */
-      "auto-cols": [{
-        "auto-cols": ["auto", "min", "max", "fr", isArbitraryValue]
-      }],
-      /**
-       * Grid Auto Rows
-       * @see https://tailwindcss.com/docs/grid-auto-rows
-       */
-      "auto-rows": [{
-        "auto-rows": ["auto", "min", "max", "fr", isArbitraryValue]
-      }],
-      /**
-       * Gap
-       * @see https://tailwindcss.com/docs/gap
-       */
-      gap: [{
-        gap: [gap]
-      }],
-      /**
-       * Gap X
-       * @see https://tailwindcss.com/docs/gap
-       */
-      "gap-x": [{
-        "gap-x": [gap]
-      }],
-      /**
-       * Gap Y
-       * @see https://tailwindcss.com/docs/gap
-       */
-      "gap-y": [{
-        "gap-y": [gap]
-      }],
-      /**
-       * Justify Content
-       * @see https://tailwindcss.com/docs/justify-content
-       */
-      "justify-content": [{
-        justify: ["normal", ...getAlign()]
-      }],
-      /**
-       * Justify Items
-       * @see https://tailwindcss.com/docs/justify-items
-       */
-      "justify-items": [{
-        "justify-items": ["start", "end", "center", "stretch"]
-      }],
-      /**
-       * Justify Self
-       * @see https://tailwindcss.com/docs/justify-self
-       */
-      "justify-self": [{
-        "justify-self": ["auto", "start", "end", "center", "stretch"]
-      }],
-      /**
-       * Align Content
-       * @see https://tailwindcss.com/docs/align-content
-       */
-      "align-content": [{
-        content: ["normal", ...getAlign(), "baseline"]
-      }],
-      /**
-       * Align Items
-       * @see https://tailwindcss.com/docs/align-items
-       */
-      "align-items": [{
-        items: ["start", "end", "center", "baseline", "stretch"]
-      }],
-      /**
-       * Align Self
-       * @see https://tailwindcss.com/docs/align-self
-       */
-      "align-self": [{
-        self: ["auto", "start", "end", "center", "stretch", "baseline"]
-      }],
-      /**
-       * Place Content
-       * @see https://tailwindcss.com/docs/place-content
-       */
-      "place-content": [{
-        "place-content": [...getAlign(), "baseline"]
-      }],
-      /**
-       * Place Items
-       * @see https://tailwindcss.com/docs/place-items
-       */
-      "place-items": [{
-        "place-items": ["start", "end", "center", "baseline", "stretch"]
-      }],
-      /**
-       * Place Self
-       * @see https://tailwindcss.com/docs/place-self
-       */
-      "place-self": [{
-        "place-self": ["auto", "start", "end", "center", "stretch"]
-      }],
-      // Spacing
-      /**
-       * Padding
-       * @see https://tailwindcss.com/docs/padding
-       */
-      p: [{
-        p: [padding]
-      }],
-      /**
-       * Padding X
-       * @see https://tailwindcss.com/docs/padding
-       */
-      px: [{
-        px: [padding]
-      }],
-      /**
-       * Padding Y
-       * @see https://tailwindcss.com/docs/padding
-       */
-      py: [{
-        py: [padding]
-      }],
-      /**
-       * Padding Start
-       * @see https://tailwindcss.com/docs/padding
-       */
-      ps: [{
-        ps: [padding]
-      }],
-      /**
-       * Padding End
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pe: [{
-        pe: [padding]
-      }],
-      /**
-       * Padding Top
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pt: [{
-        pt: [padding]
-      }],
-      /**
-       * Padding Right
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pr: [{
-        pr: [padding]
-      }],
-      /**
-       * Padding Bottom
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pb: [{
-        pb: [padding]
-      }],
-      /**
-       * Padding Left
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pl: [{
-        pl: [padding]
-      }],
-      /**
-       * Margin
-       * @see https://tailwindcss.com/docs/margin
-       */
-      m: [{
-        m: [margin]
-      }],
-      /**
-       * Margin X
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mx: [{
-        mx: [margin]
-      }],
-      /**
-       * Margin Y
-       * @see https://tailwindcss.com/docs/margin
-       */
-      my: [{
-        my: [margin]
-      }],
-      /**
-       * Margin Start
-       * @see https://tailwindcss.com/docs/margin
-       */
-      ms: [{
-        ms: [margin]
-      }],
-      /**
-       * Margin End
-       * @see https://tailwindcss.com/docs/margin
-       */
-      me: [{
-        me: [margin]
-      }],
-      /**
-       * Margin Top
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mt: [{
-        mt: [margin]
-      }],
-      /**
-       * Margin Right
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mr: [{
-        mr: [margin]
-      }],
-      /**
-       * Margin Bottom
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mb: [{
-        mb: [margin]
-      }],
-      /**
-       * Margin Left
-       * @see https://tailwindcss.com/docs/margin
-       */
-      ml: [{
-        ml: [margin]
-      }],
-      /**
-       * Space Between X
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-x": [{
-        "space-x": [space]
-      }],
-      /**
-       * Space Between X Reverse
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-x-reverse": ["space-x-reverse"],
-      /**
-       * Space Between Y
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-y": [{
-        "space-y": [space]
-      }],
-      /**
-       * Space Between Y Reverse
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-y-reverse": ["space-y-reverse"],
-      // Sizing
-      /**
-       * Width
-       * @see https://tailwindcss.com/docs/width
-       */
-      w: [{
-        w: ["auto", "min", "max", "fit", "svw", "lvw", "dvw", isArbitraryValue, spacing]
-      }],
-      /**
-       * Min-Width
-       * @see https://tailwindcss.com/docs/min-width
-       */
-      "min-w": [{
-        "min-w": [isArbitraryValue, spacing, "min", "max", "fit"]
-      }],
-      /**
-       * Max-Width
-       * @see https://tailwindcss.com/docs/max-width
-       */
-      "max-w": [{
-        "max-w": [isArbitraryValue, spacing, "none", "full", "min", "max", "fit", "prose", {
-          screen: [isTshirtSize]
-        }, isTshirtSize]
-      }],
-      /**
-       * Height
-       * @see https://tailwindcss.com/docs/height
-       */
-      h: [{
-        h: [isArbitraryValue, spacing, "auto", "min", "max", "fit", "svh", "lvh", "dvh"]
-      }],
-      /**
-       * Min-Height
-       * @see https://tailwindcss.com/docs/min-height
-       */
-      "min-h": [{
-        "min-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
-      }],
-      /**
-       * Max-Height
-       * @see https://tailwindcss.com/docs/max-height
-       */
-      "max-h": [{
-        "max-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
-      }],
-      /**
-       * Size
-       * @see https://tailwindcss.com/docs/size
-       */
-      size: [{
-        size: [isArbitraryValue, spacing, "auto", "min", "max", "fit"]
-      }],
-      // Typography
-      /**
-       * Font Size
-       * @see https://tailwindcss.com/docs/font-size
-       */
-      "font-size": [{
-        text: ["base", isTshirtSize, isArbitraryLength]
-      }],
-      /**
-       * Font Smoothing
-       * @see https://tailwindcss.com/docs/font-smoothing
-       */
-      "font-smoothing": ["antialiased", "subpixel-antialiased"],
-      /**
-       * Font Style
-       * @see https://tailwindcss.com/docs/font-style
-       */
-      "font-style": ["italic", "not-italic"],
-      /**
-       * Font Weight
-       * @see https://tailwindcss.com/docs/font-weight
-       */
-      "font-weight": [{
-        font: ["thin", "extralight", "light", "normal", "medium", "semibold", "bold", "extrabold", "black", isArbitraryNumber]
-      }],
-      /**
-       * Font Family
-       * @see https://tailwindcss.com/docs/font-family
-       */
-      "font-family": [{
-        font: [isAny]
-      }],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-normal": ["normal-nums"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-ordinal": ["ordinal"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-slashed-zero": ["slashed-zero"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-figure": ["lining-nums", "oldstyle-nums"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-spacing": ["proportional-nums", "tabular-nums"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-fraction": ["diagonal-fractions", "stacked-fractions"],
-      /**
-       * Letter Spacing
-       * @see https://tailwindcss.com/docs/letter-spacing
-       */
-      tracking: [{
-        tracking: ["tighter", "tight", "normal", "wide", "wider", "widest", isArbitraryValue]
-      }],
-      /**
-       * Line Clamp
-       * @see https://tailwindcss.com/docs/line-clamp
-       */
-      "line-clamp": [{
-        "line-clamp": ["none", isNumber$5, isArbitraryNumber]
-      }],
-      /**
-       * Line Height
-       * @see https://tailwindcss.com/docs/line-height
-       */
-      leading: [{
-        leading: ["none", "tight", "snug", "normal", "relaxed", "loose", isLength$4, isArbitraryValue]
-      }],
-      /**
-       * List Style Image
-       * @see https://tailwindcss.com/docs/list-style-image
-       */
-      "list-image": [{
-        "list-image": ["none", isArbitraryValue]
-      }],
-      /**
-       * List Style Type
-       * @see https://tailwindcss.com/docs/list-style-type
-       */
-      "list-style-type": [{
-        list: ["none", "disc", "decimal", isArbitraryValue]
-      }],
-      /**
-       * List Style Position
-       * @see https://tailwindcss.com/docs/list-style-position
-       */
-      "list-style-position": [{
-        list: ["inside", "outside"]
-      }],
-      /**
-       * Placeholder Color
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/placeholder-color
-       */
-      "placeholder-color": [{
-        placeholder: [colors]
-      }],
-      /**
-       * Placeholder Opacity
-       * @see https://tailwindcss.com/docs/placeholder-opacity
-       */
-      "placeholder-opacity": [{
-        "placeholder-opacity": [opacity]
-      }],
-      /**
-       * Text Alignment
-       * @see https://tailwindcss.com/docs/text-align
-       */
-      "text-alignment": [{
-        text: ["left", "center", "right", "justify", "start", "end"]
-      }],
-      /**
-       * Text Color
-       * @see https://tailwindcss.com/docs/text-color
-       */
-      "text-color": [{
-        text: [colors]
-      }],
-      /**
-       * Text Opacity
-       * @see https://tailwindcss.com/docs/text-opacity
-       */
-      "text-opacity": [{
-        "text-opacity": [opacity]
-      }],
-      /**
-       * Text Decoration
-       * @see https://tailwindcss.com/docs/text-decoration
-       */
-      "text-decoration": ["underline", "overline", "line-through", "no-underline"],
-      /**
-       * Text Decoration Style
-       * @see https://tailwindcss.com/docs/text-decoration-style
-       */
-      "text-decoration-style": [{
-        decoration: [...getLineStyles(), "wavy"]
-      }],
-      /**
-       * Text Decoration Thickness
-       * @see https://tailwindcss.com/docs/text-decoration-thickness
-       */
-      "text-decoration-thickness": [{
-        decoration: ["auto", "from-font", isLength$4, isArbitraryLength]
-      }],
-      /**
-       * Text Underline Offset
-       * @see https://tailwindcss.com/docs/text-underline-offset
-       */
-      "underline-offset": [{
-        "underline-offset": ["auto", isLength$4, isArbitraryValue]
-      }],
-      /**
-       * Text Decoration Color
-       * @see https://tailwindcss.com/docs/text-decoration-color
-       */
-      "text-decoration-color": [{
-        decoration: [colors]
-      }],
-      /**
-       * Text Transform
-       * @see https://tailwindcss.com/docs/text-transform
-       */
-      "text-transform": ["uppercase", "lowercase", "capitalize", "normal-case"],
-      /**
-       * Text Overflow
-       * @see https://tailwindcss.com/docs/text-overflow
-       */
-      "text-overflow": ["truncate", "text-ellipsis", "text-clip"],
-      /**
-       * Text Wrap
-       * @see https://tailwindcss.com/docs/text-wrap
-       */
-      "text-wrap": [{
-        text: ["wrap", "nowrap", "balance", "pretty"]
-      }],
-      /**
-       * Text Indent
-       * @see https://tailwindcss.com/docs/text-indent
-       */
-      indent: [{
-        indent: getSpacingWithArbitrary()
-      }],
-      /**
-       * Vertical Alignment
-       * @see https://tailwindcss.com/docs/vertical-align
-       */
-      "vertical-align": [{
-        align: ["baseline", "top", "middle", "bottom", "text-top", "text-bottom", "sub", "super", isArbitraryValue]
-      }],
-      /**
-       * Whitespace
-       * @see https://tailwindcss.com/docs/whitespace
-       */
-      whitespace: [{
-        whitespace: ["normal", "nowrap", "pre", "pre-line", "pre-wrap", "break-spaces"]
-      }],
-      /**
-       * Word Break
-       * @see https://tailwindcss.com/docs/word-break
-       */
-      break: [{
-        break: ["normal", "words", "all", "keep"]
-      }],
-      /**
-       * Hyphens
-       * @see https://tailwindcss.com/docs/hyphens
-       */
-      hyphens: [{
-        hyphens: ["none", "manual", "auto"]
-      }],
-      /**
-       * Content
-       * @see https://tailwindcss.com/docs/content
-       */
-      content: [{
-        content: ["none", isArbitraryValue]
-      }],
-      // Backgrounds
-      /**
-       * Background Attachment
-       * @see https://tailwindcss.com/docs/background-attachment
-       */
-      "bg-attachment": [{
-        bg: ["fixed", "local", "scroll"]
-      }],
-      /**
-       * Background Clip
-       * @see https://tailwindcss.com/docs/background-clip
-       */
-      "bg-clip": [{
-        "bg-clip": ["border", "padding", "content", "text"]
-      }],
-      /**
-       * Background Opacity
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/background-opacity
-       */
-      "bg-opacity": [{
-        "bg-opacity": [opacity]
-      }],
-      /**
-       * Background Origin
-       * @see https://tailwindcss.com/docs/background-origin
-       */
-      "bg-origin": [{
-        "bg-origin": ["border", "padding", "content"]
-      }],
-      /**
-       * Background Position
-       * @see https://tailwindcss.com/docs/background-position
-       */
-      "bg-position": [{
-        bg: [...getPositions(), isArbitraryPosition]
-      }],
-      /**
-       * Background Repeat
-       * @see https://tailwindcss.com/docs/background-repeat
-       */
-      "bg-repeat": [{
-        bg: ["no-repeat", {
-          repeat: ["", "x", "y", "round", "space"]
-        }]
-      }],
-      /**
-       * Background Size
-       * @see https://tailwindcss.com/docs/background-size
-       */
-      "bg-size": [{
-        bg: ["auto", "cover", "contain", isArbitrarySize]
-      }],
-      /**
-       * Background Image
-       * @see https://tailwindcss.com/docs/background-image
-       */
-      "bg-image": [{
-        bg: ["none", {
-          "gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"]
-        }, isArbitraryImage]
-      }],
-      /**
-       * Background Color
-       * @see https://tailwindcss.com/docs/background-color
-       */
-      "bg-color": [{
-        bg: [colors]
-      }],
-      /**
-       * Gradient Color Stops From Position
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-from-pos": [{
-        from: [gradientColorStopPositions]
-      }],
-      /**
-       * Gradient Color Stops Via Position
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-via-pos": [{
-        via: [gradientColorStopPositions]
-      }],
-      /**
-       * Gradient Color Stops To Position
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-to-pos": [{
-        to: [gradientColorStopPositions]
-      }],
-      /**
-       * Gradient Color Stops From
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-from": [{
-        from: [gradientColorStops]
-      }],
-      /**
-       * Gradient Color Stops Via
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-via": [{
-        via: [gradientColorStops]
-      }],
-      /**
-       * Gradient Color Stops To
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-to": [{
-        to: [gradientColorStops]
-      }],
-      // Borders
-      /**
-       * Border Radius
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      rounded: [{
-        rounded: [borderRadius]
-      }],
-      /**
-       * Border Radius Start
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-s": [{
-        "rounded-s": [borderRadius]
-      }],
-      /**
-       * Border Radius End
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-e": [{
-        "rounded-e": [borderRadius]
-      }],
-      /**
-       * Border Radius Top
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-t": [{
-        "rounded-t": [borderRadius]
-      }],
-      /**
-       * Border Radius Right
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-r": [{
-        "rounded-r": [borderRadius]
-      }],
-      /**
-       * Border Radius Bottom
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-b": [{
-        "rounded-b": [borderRadius]
-      }],
-      /**
-       * Border Radius Left
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-l": [{
-        "rounded-l": [borderRadius]
-      }],
-      /**
-       * Border Radius Start Start
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-ss": [{
-        "rounded-ss": [borderRadius]
-      }],
-      /**
-       * Border Radius Start End
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-se": [{
-        "rounded-se": [borderRadius]
-      }],
-      /**
-       * Border Radius End End
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-ee": [{
-        "rounded-ee": [borderRadius]
-      }],
-      /**
-       * Border Radius End Start
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-es": [{
-        "rounded-es": [borderRadius]
-      }],
-      /**
-       * Border Radius Top Left
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-tl": [{
-        "rounded-tl": [borderRadius]
-      }],
-      /**
-       * Border Radius Top Right
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-tr": [{
-        "rounded-tr": [borderRadius]
-      }],
-      /**
-       * Border Radius Bottom Right
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-br": [{
-        "rounded-br": [borderRadius]
-      }],
-      /**
-       * Border Radius Bottom Left
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-bl": [{
-        "rounded-bl": [borderRadius]
-      }],
-      /**
-       * Border Width
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w": [{
-        border: [borderWidth]
-      }],
-      /**
-       * Border Width X
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-x": [{
-        "border-x": [borderWidth]
-      }],
-      /**
-       * Border Width Y
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-y": [{
-        "border-y": [borderWidth]
-      }],
-      /**
-       * Border Width Start
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-s": [{
-        "border-s": [borderWidth]
-      }],
-      /**
-       * Border Width End
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-e": [{
-        "border-e": [borderWidth]
-      }],
-      /**
-       * Border Width Top
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-t": [{
-        "border-t": [borderWidth]
-      }],
-      /**
-       * Border Width Right
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-r": [{
-        "border-r": [borderWidth]
-      }],
-      /**
-       * Border Width Bottom
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-b": [{
-        "border-b": [borderWidth]
-      }],
-      /**
-       * Border Width Left
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-l": [{
-        "border-l": [borderWidth]
-      }],
-      /**
-       * Border Opacity
-       * @see https://tailwindcss.com/docs/border-opacity
-       */
-      "border-opacity": [{
-        "border-opacity": [opacity]
-      }],
-      /**
-       * Border Style
-       * @see https://tailwindcss.com/docs/border-style
-       */
-      "border-style": [{
-        border: [...getLineStyles(), "hidden"]
-      }],
-      /**
-       * Divide Width X
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-x": [{
-        "divide-x": [borderWidth]
-      }],
-      /**
-       * Divide Width X Reverse
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-x-reverse": ["divide-x-reverse"],
-      /**
-       * Divide Width Y
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-y": [{
-        "divide-y": [borderWidth]
-      }],
-      /**
-       * Divide Width Y Reverse
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-y-reverse": ["divide-y-reverse"],
-      /**
-       * Divide Opacity
-       * @see https://tailwindcss.com/docs/divide-opacity
-       */
-      "divide-opacity": [{
-        "divide-opacity": [opacity]
-      }],
-      /**
-       * Divide Style
-       * @see https://tailwindcss.com/docs/divide-style
-       */
-      "divide-style": [{
-        divide: getLineStyles()
-      }],
-      /**
-       * Border Color
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color": [{
-        border: [borderColor]
-      }],
-      /**
-       * Border Color X
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-x": [{
-        "border-x": [borderColor]
-      }],
-      /**
-       * Border Color Y
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-y": [{
-        "border-y": [borderColor]
-      }],
-      /**
-       * Border Color S
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-s": [{
-        "border-s": [borderColor]
-      }],
-      /**
-       * Border Color E
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-e": [{
-        "border-e": [borderColor]
-      }],
-      /**
-       * Border Color Top
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-t": [{
-        "border-t": [borderColor]
-      }],
-      /**
-       * Border Color Right
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-r": [{
-        "border-r": [borderColor]
-      }],
-      /**
-       * Border Color Bottom
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-b": [{
-        "border-b": [borderColor]
-      }],
-      /**
-       * Border Color Left
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-l": [{
-        "border-l": [borderColor]
-      }],
-      /**
-       * Divide Color
-       * @see https://tailwindcss.com/docs/divide-color
-       */
-      "divide-color": [{
-        divide: [borderColor]
-      }],
-      /**
-       * Outline Style
-       * @see https://tailwindcss.com/docs/outline-style
-       */
-      "outline-style": [{
-        outline: ["", ...getLineStyles()]
-      }],
-      /**
-       * Outline Offset
-       * @see https://tailwindcss.com/docs/outline-offset
-       */
-      "outline-offset": [{
-        "outline-offset": [isLength$4, isArbitraryValue]
-      }],
-      /**
-       * Outline Width
-       * @see https://tailwindcss.com/docs/outline-width
-       */
-      "outline-w": [{
-        outline: [isLength$4, isArbitraryLength]
-      }],
-      /**
-       * Outline Color
-       * @see https://tailwindcss.com/docs/outline-color
-       */
-      "outline-color": [{
-        outline: [colors]
-      }],
-      /**
-       * Ring Width
-       * @see https://tailwindcss.com/docs/ring-width
-       */
-      "ring-w": [{
-        ring: getLengthWithEmptyAndArbitrary()
-      }],
-      /**
-       * Ring Width Inset
-       * @see https://tailwindcss.com/docs/ring-width
-       */
-      "ring-w-inset": ["ring-inset"],
-      /**
-       * Ring Color
-       * @see https://tailwindcss.com/docs/ring-color
-       */
-      "ring-color": [{
-        ring: [colors]
-      }],
-      /**
-       * Ring Opacity
-       * @see https://tailwindcss.com/docs/ring-opacity
-       */
-      "ring-opacity": [{
-        "ring-opacity": [opacity]
-      }],
-      /**
-       * Ring Offset Width
-       * @see https://tailwindcss.com/docs/ring-offset-width
-       */
-      "ring-offset-w": [{
-        "ring-offset": [isLength$4, isArbitraryLength]
-      }],
-      /**
-       * Ring Offset Color
-       * @see https://tailwindcss.com/docs/ring-offset-color
-       */
-      "ring-offset-color": [{
-        "ring-offset": [colors]
-      }],
-      // Effects
-      /**
-       * Box Shadow
-       * @see https://tailwindcss.com/docs/box-shadow
-       */
-      shadow: [{
-        shadow: ["", "inner", "none", isTshirtSize, isArbitraryShadow]
-      }],
-      /**
-       * Box Shadow Color
-       * @see https://tailwindcss.com/docs/box-shadow-color
-       */
-      "shadow-color": [{
-        shadow: [isAny]
-      }],
-      /**
-       * Opacity
-       * @see https://tailwindcss.com/docs/opacity
-       */
-      opacity: [{
-        opacity: [opacity]
-      }],
-      /**
-       * Mix Blend Mode
-       * @see https://tailwindcss.com/docs/mix-blend-mode
-       */
-      "mix-blend": [{
-        "mix-blend": [...getBlendModes(), "plus-lighter", "plus-darker"]
-      }],
-      /**
-       * Background Blend Mode
-       * @see https://tailwindcss.com/docs/background-blend-mode
-       */
-      "bg-blend": [{
-        "bg-blend": getBlendModes()
-      }],
-      // Filters
-      /**
-       * Filter
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/filter
-       */
-      filter: [{
-        filter: ["", "none"]
-      }],
-      /**
-       * Blur
-       * @see https://tailwindcss.com/docs/blur
-       */
-      blur: [{
-        blur: [blur]
-      }],
-      /**
-       * Brightness
-       * @see https://tailwindcss.com/docs/brightness
-       */
-      brightness: [{
-        brightness: [brightness]
-      }],
-      /**
-       * Contrast
-       * @see https://tailwindcss.com/docs/contrast
-       */
-      contrast: [{
-        contrast: [contrast]
-      }],
-      /**
-       * Drop Shadow
-       * @see https://tailwindcss.com/docs/drop-shadow
-       */
-      "drop-shadow": [{
-        "drop-shadow": ["", "none", isTshirtSize, isArbitraryValue]
-      }],
-      /**
-       * Grayscale
-       * @see https://tailwindcss.com/docs/grayscale
-       */
-      grayscale: [{
-        grayscale: [grayscale]
-      }],
-      /**
-       * Hue Rotate
-       * @see https://tailwindcss.com/docs/hue-rotate
-       */
-      "hue-rotate": [{
-        "hue-rotate": [hueRotate]
-      }],
-      /**
-       * Invert
-       * @see https://tailwindcss.com/docs/invert
-       */
-      invert: [{
-        invert: [invert2]
-      }],
-      /**
-       * Saturate
-       * @see https://tailwindcss.com/docs/saturate
-       */
-      saturate: [{
-        saturate: [saturate]
-      }],
-      /**
-       * Sepia
-       * @see https://tailwindcss.com/docs/sepia
-       */
-      sepia: [{
-        sepia: [sepia]
-      }],
-      /**
-       * Backdrop Filter
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/backdrop-filter
-       */
-      "backdrop-filter": [{
-        "backdrop-filter": ["", "none"]
-      }],
-      /**
-       * Backdrop Blur
-       * @see https://tailwindcss.com/docs/backdrop-blur
-       */
-      "backdrop-blur": [{
-        "backdrop-blur": [blur]
-      }],
-      /**
-       * Backdrop Brightness
-       * @see https://tailwindcss.com/docs/backdrop-brightness
-       */
-      "backdrop-brightness": [{
-        "backdrop-brightness": [brightness]
-      }],
-      /**
-       * Backdrop Contrast
-       * @see https://tailwindcss.com/docs/backdrop-contrast
-       */
-      "backdrop-contrast": [{
-        "backdrop-contrast": [contrast]
-      }],
-      /**
-       * Backdrop Grayscale
-       * @see https://tailwindcss.com/docs/backdrop-grayscale
-       */
-      "backdrop-grayscale": [{
-        "backdrop-grayscale": [grayscale]
-      }],
-      /**
-       * Backdrop Hue Rotate
-       * @see https://tailwindcss.com/docs/backdrop-hue-rotate
-       */
-      "backdrop-hue-rotate": [{
-        "backdrop-hue-rotate": [hueRotate]
-      }],
-      /**
-       * Backdrop Invert
-       * @see https://tailwindcss.com/docs/backdrop-invert
-       */
-      "backdrop-invert": [{
-        "backdrop-invert": [invert2]
-      }],
-      /**
-       * Backdrop Opacity
-       * @see https://tailwindcss.com/docs/backdrop-opacity
-       */
-      "backdrop-opacity": [{
-        "backdrop-opacity": [opacity]
-      }],
-      /**
-       * Backdrop Saturate
-       * @see https://tailwindcss.com/docs/backdrop-saturate
-       */
-      "backdrop-saturate": [{
-        "backdrop-saturate": [saturate]
-      }],
-      /**
-       * Backdrop Sepia
-       * @see https://tailwindcss.com/docs/backdrop-sepia
-       */
-      "backdrop-sepia": [{
-        "backdrop-sepia": [sepia]
-      }],
-      // Tables
-      /**
-       * Border Collapse
-       * @see https://tailwindcss.com/docs/border-collapse
-       */
-      "border-collapse": [{
-        border: ["collapse", "separate"]
-      }],
-      /**
-       * Border Spacing
-       * @see https://tailwindcss.com/docs/border-spacing
-       */
-      "border-spacing": [{
-        "border-spacing": [borderSpacing]
-      }],
-      /**
-       * Border Spacing X
-       * @see https://tailwindcss.com/docs/border-spacing
-       */
-      "border-spacing-x": [{
-        "border-spacing-x": [borderSpacing]
-      }],
-      /**
-       * Border Spacing Y
-       * @see https://tailwindcss.com/docs/border-spacing
-       */
-      "border-spacing-y": [{
-        "border-spacing-y": [borderSpacing]
-      }],
-      /**
-       * Table Layout
-       * @see https://tailwindcss.com/docs/table-layout
-       */
-      "table-layout": [{
-        table: ["auto", "fixed"]
-      }],
-      /**
-       * Caption Side
-       * @see https://tailwindcss.com/docs/caption-side
-       */
-      caption: [{
-        caption: ["top", "bottom"]
-      }],
-      // Transitions and Animation
-      /**
-       * Tranisition Property
-       * @see https://tailwindcss.com/docs/transition-property
-       */
-      transition: [{
-        transition: ["none", "all", "", "colors", "opacity", "shadow", "transform", isArbitraryValue]
-      }],
-      /**
-       * Transition Duration
-       * @see https://tailwindcss.com/docs/transition-duration
-       */
-      duration: [{
-        duration: getNumberAndArbitrary()
-      }],
-      /**
-       * Transition Timing Function
-       * @see https://tailwindcss.com/docs/transition-timing-function
-       */
-      ease: [{
-        ease: ["linear", "in", "out", "in-out", isArbitraryValue]
-      }],
-      /**
-       * Transition Delay
-       * @see https://tailwindcss.com/docs/transition-delay
-       */
-      delay: [{
-        delay: getNumberAndArbitrary()
-      }],
-      /**
-       * Animation
-       * @see https://tailwindcss.com/docs/animation
-       */
-      animate: [{
-        animate: ["none", "spin", "ping", "pulse", "bounce", isArbitraryValue]
-      }],
-      // Transforms
-      /**
-       * Transform
-       * @see https://tailwindcss.com/docs/transform
-       */
-      transform: [{
-        transform: ["", "gpu", "none"]
-      }],
-      /**
-       * Scale
-       * @see https://tailwindcss.com/docs/scale
-       */
-      scale: [{
-        scale: [scale]
-      }],
-      /**
-       * Scale X
-       * @see https://tailwindcss.com/docs/scale
-       */
-      "scale-x": [{
-        "scale-x": [scale]
-      }],
-      /**
-       * Scale Y
-       * @see https://tailwindcss.com/docs/scale
-       */
-      "scale-y": [{
-        "scale-y": [scale]
-      }],
-      /**
-       * Rotate
-       * @see https://tailwindcss.com/docs/rotate
-       */
-      rotate: [{
-        rotate: [isInteger, isArbitraryValue]
-      }],
-      /**
-       * Translate X
-       * @see https://tailwindcss.com/docs/translate
-       */
-      "translate-x": [{
-        "translate-x": [translate]
-      }],
-      /**
-       * Translate Y
-       * @see https://tailwindcss.com/docs/translate
-       */
-      "translate-y": [{
-        "translate-y": [translate]
-      }],
-      /**
-       * Skew X
-       * @see https://tailwindcss.com/docs/skew
-       */
-      "skew-x": [{
-        "skew-x": [skew]
-      }],
-      /**
-       * Skew Y
-       * @see https://tailwindcss.com/docs/skew
-       */
-      "skew-y": [{
-        "skew-y": [skew]
-      }],
-      /**
-       * Transform Origin
-       * @see https://tailwindcss.com/docs/transform-origin
-       */
-      "transform-origin": [{
-        origin: ["center", "top", "top-right", "right", "bottom-right", "bottom", "bottom-left", "left", "top-left", isArbitraryValue]
-      }],
-      // Interactivity
-      /**
-       * Accent Color
-       * @see https://tailwindcss.com/docs/accent-color
-       */
-      accent: [{
-        accent: ["auto", colors]
-      }],
-      /**
-       * Appearance
-       * @see https://tailwindcss.com/docs/appearance
-       */
-      appearance: [{
-        appearance: ["none", "auto"]
-      }],
-      /**
-       * Cursor
-       * @see https://tailwindcss.com/docs/cursor
-       */
-      cursor: [{
-        cursor: ["auto", "default", "pointer", "wait", "text", "move", "help", "not-allowed", "none", "context-menu", "progress", "cell", "crosshair", "vertical-text", "alias", "copy", "no-drop", "grab", "grabbing", "all-scroll", "col-resize", "row-resize", "n-resize", "e-resize", "s-resize", "w-resize", "ne-resize", "nw-resize", "se-resize", "sw-resize", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "zoom-in", "zoom-out", isArbitraryValue]
-      }],
-      /**
-       * Caret Color
-       * @see https://tailwindcss.com/docs/just-in-time-mode#caret-color-utilities
-       */
-      "caret-color": [{
-        caret: [colors]
-      }],
-      /**
-       * Pointer Events
-       * @see https://tailwindcss.com/docs/pointer-events
-       */
-      "pointer-events": [{
-        "pointer-events": ["none", "auto"]
-      }],
-      /**
-       * Resize
-       * @see https://tailwindcss.com/docs/resize
-       */
-      resize: [{
-        resize: ["none", "y", "x", ""]
-      }],
-      /**
-       * Scroll Behavior
-       * @see https://tailwindcss.com/docs/scroll-behavior
-       */
-      "scroll-behavior": [{
-        scroll: ["auto", "smooth"]
-      }],
-      /**
-       * Scroll Margin
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-m": [{
-        "scroll-m": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin X
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mx": [{
-        "scroll-mx": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Y
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-my": [{
-        "scroll-my": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Start
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-ms": [{
-        "scroll-ms": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin End
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-me": [{
-        "scroll-me": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Top
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mt": [{
-        "scroll-mt": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Right
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mr": [{
-        "scroll-mr": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Bottom
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mb": [{
-        "scroll-mb": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Left
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-ml": [{
-        "scroll-ml": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-p": [{
-        "scroll-p": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding X
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-px": [{
-        "scroll-px": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Y
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-py": [{
-        "scroll-py": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Start
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-ps": [{
-        "scroll-ps": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding End
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pe": [{
-        "scroll-pe": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Top
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pt": [{
-        "scroll-pt": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Right
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pr": [{
-        "scroll-pr": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Bottom
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pb": [{
-        "scroll-pb": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Left
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pl": [{
-        "scroll-pl": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Snap Align
-       * @see https://tailwindcss.com/docs/scroll-snap-align
-       */
-      "snap-align": [{
-        snap: ["start", "end", "center", "align-none"]
-      }],
-      /**
-       * Scroll Snap Stop
-       * @see https://tailwindcss.com/docs/scroll-snap-stop
-       */
-      "snap-stop": [{
-        snap: ["normal", "always"]
-      }],
-      /**
-       * Scroll Snap Type
-       * @see https://tailwindcss.com/docs/scroll-snap-type
-       */
-      "snap-type": [{
-        snap: ["none", "x", "y", "both"]
-      }],
-      /**
-       * Scroll Snap Type Strictness
-       * @see https://tailwindcss.com/docs/scroll-snap-type
-       */
-      "snap-strictness": [{
-        snap: ["mandatory", "proximity"]
-      }],
-      /**
-       * Touch Action
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      touch: [{
-        touch: ["auto", "none", "manipulation"]
-      }],
-      /**
-       * Touch Action X
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      "touch-x": [{
-        "touch-pan": ["x", "left", "right"]
-      }],
-      /**
-       * Touch Action Y
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      "touch-y": [{
-        "touch-pan": ["y", "up", "down"]
-      }],
-      /**
-       * Touch Action Pinch Zoom
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      "touch-pz": ["touch-pinch-zoom"],
-      /**
-       * User Select
-       * @see https://tailwindcss.com/docs/user-select
-       */
-      select: [{
-        select: ["none", "text", "all", "auto"]
-      }],
-      /**
-       * Will Change
-       * @see https://tailwindcss.com/docs/will-change
-       */
-      "will-change": [{
-        "will-change": ["auto", "scroll", "contents", "transform", isArbitraryValue]
-      }],
-      // SVG
-      /**
-       * Fill
-       * @see https://tailwindcss.com/docs/fill
-       */
-      fill: [{
-        fill: [colors, "none"]
-      }],
-      /**
-       * Stroke Width
-       * @see https://tailwindcss.com/docs/stroke-width
-       */
-      "stroke-w": [{
-        stroke: [isLength$4, isArbitraryLength, isArbitraryNumber]
-      }],
-      /**
-       * Stroke
-       * @see https://tailwindcss.com/docs/stroke
-       */
-      stroke: [{
-        stroke: [colors, "none"]
-      }],
-      // Accessibility
-      /**
-       * Screen Readers
-       * @see https://tailwindcss.com/docs/screen-readers
-       */
-      sr: ["sr-only", "not-sr-only"],
-      /**
-       * Forced Color Adjust
-       * @see https://tailwindcss.com/docs/forced-color-adjust
-       */
-      "forced-color-adjust": [{
-        "forced-color-adjust": ["auto", "none"]
-      }]
-    },
-    conflictingClassGroups: {
-      overflow: ["overflow-x", "overflow-y"],
-      overscroll: ["overscroll-x", "overscroll-y"],
-      inset: ["inset-x", "inset-y", "start", "end", "top", "right", "bottom", "left"],
-      "inset-x": ["right", "left"],
-      "inset-y": ["top", "bottom"],
-      flex: ["basis", "grow", "shrink"],
-      gap: ["gap-x", "gap-y"],
-      p: ["px", "py", "ps", "pe", "pt", "pr", "pb", "pl"],
-      px: ["pr", "pl"],
-      py: ["pt", "pb"],
-      m: ["mx", "my", "ms", "me", "mt", "mr", "mb", "ml"],
-      mx: ["mr", "ml"],
-      my: ["mt", "mb"],
-      size: ["w", "h"],
-      "font-size": ["leading"],
-      "fvn-normal": ["fvn-ordinal", "fvn-slashed-zero", "fvn-figure", "fvn-spacing", "fvn-fraction"],
-      "fvn-ordinal": ["fvn-normal"],
-      "fvn-slashed-zero": ["fvn-normal"],
-      "fvn-figure": ["fvn-normal"],
-      "fvn-spacing": ["fvn-normal"],
-      "fvn-fraction": ["fvn-normal"],
-      "line-clamp": ["display", "overflow"],
-      rounded: ["rounded-s", "rounded-e", "rounded-t", "rounded-r", "rounded-b", "rounded-l", "rounded-ss", "rounded-se", "rounded-ee", "rounded-es", "rounded-tl", "rounded-tr", "rounded-br", "rounded-bl"],
-      "rounded-s": ["rounded-ss", "rounded-es"],
-      "rounded-e": ["rounded-se", "rounded-ee"],
-      "rounded-t": ["rounded-tl", "rounded-tr"],
-      "rounded-r": ["rounded-tr", "rounded-br"],
-      "rounded-b": ["rounded-br", "rounded-bl"],
-      "rounded-l": ["rounded-tl", "rounded-bl"],
-      "border-spacing": ["border-spacing-x", "border-spacing-y"],
-      "border-w": ["border-w-s", "border-w-e", "border-w-t", "border-w-r", "border-w-b", "border-w-l"],
-      "border-w-x": ["border-w-r", "border-w-l"],
-      "border-w-y": ["border-w-t", "border-w-b"],
-      "border-color": ["border-color-s", "border-color-e", "border-color-t", "border-color-r", "border-color-b", "border-color-l"],
-      "border-color-x": ["border-color-r", "border-color-l"],
-      "border-color-y": ["border-color-t", "border-color-b"],
-      "scroll-m": ["scroll-mx", "scroll-my", "scroll-ms", "scroll-me", "scroll-mt", "scroll-mr", "scroll-mb", "scroll-ml"],
-      "scroll-mx": ["scroll-mr", "scroll-ml"],
-      "scroll-my": ["scroll-mt", "scroll-mb"],
-      "scroll-p": ["scroll-px", "scroll-py", "scroll-ps", "scroll-pe", "scroll-pt", "scroll-pr", "scroll-pb", "scroll-pl"],
-      "scroll-px": ["scroll-pr", "scroll-pl"],
-      "scroll-py": ["scroll-pt", "scroll-pb"],
-      touch: ["touch-x", "touch-y", "touch-pz"],
-      "touch-x": ["touch"],
-      "touch-y": ["touch"],
-      "touch-pz": ["touch"]
-    },
-    conflictingClassGroupModifiers: {
-      "font-size": ["leading"]
-    }
-  };
-};
-const twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
-function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
-const badgeVariants = cva(
-  "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
-  {
-    variants: {
-      variant: {
-        default: "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
-        secondary: "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
-        destructive: "border-transparent bg-destructive text-destructive-foreground [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
-      }
-    },
-    defaultVariants: {
-      variant: "default"
-    }
-  }
-);
-function Badge({
-  className,
-  variant,
-  asChild = false,
-  ...props
-}) {
-  const Comp = asChild ? Slot : "span";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Comp,
-    {
-      "data-slot": "badge",
-      className: cn(badgeVariants({ variant }), className),
-      ...props
-    }
-  );
-}
-const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
-  {
-    variants: {
-      variant: {
-        default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
-        secondary: "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline"
-      },
-      size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
-        icon: "size-9"
-      }
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default"
-    }
-  }
-);
-function Button({
-  className,
-  variant,
-  size,
-  asChild = false,
-  ...props
-}) {
-  const Comp = asChild ? Slot : "button";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Comp,
-    {
-      "data-slot": "button",
-      className: cn(buttonVariants({ variant, size, className })),
-      ...props
-    }
-  );
-}
-const Route$4 = createFileRoute("/notifications")({
-  component: NotificationsPage
-});
-function formatRelativeTime(ts) {
-  const diff = Date.now() - ts;
-  const mins = Math.floor(diff / 6e4);
-  if (mins < 1) return "Just now";
-  if (mins < 60) return `${mins} minute${mins !== 1 ? "s" : ""} ago`;
-  const hrs = Math.floor(mins / 60);
-  if (hrs < 24) return `${hrs} hour${hrs !== 1 ? "s" : ""} ago`;
-  const days = Math.floor(hrs / 24);
-  return `${days} day${days !== 1 ? "s" : ""} ago`;
-}
-function NotificationCard({
-  notification,
-  onMarkRead
-}) {
-  const isWarning = notification.type === "Warning";
-  const Icon2 = isWarning ? TriangleAlert : Info;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      "data-ocid": `notification.card.${notification.id}`,
-      className: `relative flex gap-3 p-4 rounded-2xl bg-card border border-border transition-smooth ${notification.isRead ? "opacity-50" : ""}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: `shrink-0 w-10 h-10 rounded-xl flex items-center justify-center ${isWarning ? "bg-amber-500/15 text-amber-400" : "bg-blue-500/15 text-blue-400"}`,
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { size: 18, strokeWidth: 2 })
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "span",
-              {
-                className: `text-xs font-semibold uppercase tracking-wide ${isWarning ? "text-amber-400" : "text-blue-400"}`,
-                children: notification.type
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[11px] text-muted-foreground shrink-0", children: formatRelativeTime(notification.createdAt) })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-1 text-sm text-foreground leading-snug break-words", children: notification.message }),
-          !notification.isRead && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "button",
-            {
-              type: "button",
-              "data-ocid": `notification.mark_read.${notification.id}`,
-              onClick: () => onMarkRead(notification.id),
-              className: "mt-2 text-xs font-medium text-primary hover:text-primary/80 transition-colors duration-200 flex items-center gap-1",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(CheckCheck, { size: 13 }),
-                "Mark as read"
-              ]
-            }
-          )
-        ] }),
-        !notification.isRead && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute top-3 right-3 w-2 h-2 rounded-full bg-primary" })
-      ]
-    }
-  );
-}
-function NotificationsPage() {
-  const navigate = useNavigate();
-  const { isAuthenticated } = useCurrentUser();
-  const [notifications, setNotifications] = reactExports.useState(MOCK_NOTIFICATIONS);
-  const unreadCount = reactExports.useMemo(
-    () => notifications.filter((n2) => !n2.isRead).length,
-    [notifications]
-  );
-  if (!isAuthenticated) {
-    navigate({ to: "/" });
-    return null;
-  }
-  const markRead = (id) => setNotifications(
-    (prev) => prev.map((n2) => n2.id === id ? { ...n2, isRead: true } : n2)
-  );
-  const markAllRead = () => setNotifications((prev) => prev.map((n2) => ({ ...n2, isRead: true })));
-  const allRead = unreadCount === 0;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "notifications.page", className: "flex flex-col min-h-full", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "sticky top-0 z-20 bg-card border-b border-border px-4 pt-12 pb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "button",
-        {
-          type: "button",
-          "data-ocid": "notifications.back_button",
-          onClick: () => navigate({ to: "/dashboard" }),
-          className: "w-8 h-8 rounded-xl flex items-center justify-center hover:bg-muted transition-colors duration-200 -ml-1",
-          "aria-label": "Go back",
-          children: /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowLeft, { size: 18, className: "text-muted-foreground" })
-        }
-      ),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-1", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-xl font-bold font-display text-foreground", children: "Notifications" }),
-        !allRead && /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Badge,
-          {
-            "data-ocid": "notifications.unread_badge",
-            className: "bg-primary text-primary-foreground text-xs font-bold px-2 py-0.5 rounded-full h-5 min-w-[1.25rem] flex items-center justify-center",
-            children: unreadCount
-          }
-        )
-      ] }),
-      !allRead && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        Button,
-        {
-          type: "button",
-          variant: "ghost",
-          size: "sm",
-          "data-ocid": "notifications.mark_all_read_button",
-          onClick: markAllRead,
-          className: "text-xs text-primary hover:text-primary/80 hover:bg-primary/10 gap-1 h-8 px-3 rounded-xl",
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(CheckCheck, { size: 13 }),
-            "All read"
-          ]
-        }
-      )
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 px-4 py-4", children: notifications.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsx(EmptyState, {}) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-ocid": "notifications.list", className: "flex flex-col gap-3", children: notifications.map((n2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-        NotificationCard,
-        {
-          notification: n2,
-          onMarkRead: markRead
-        },
-        n2.id
-      )) }),
-      allRead && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsx(EmptyState, {}) })
-    ] }) })
-  ] });
-}
-function EmptyState() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      "data-ocid": "notifications.empty_state",
-      className: "flex flex-col items-center justify-center py-20 gap-4 text-center",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-20 h-20 rounded-3xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Bell, { size: 36, className: "text-muted-foreground", strokeWidth: 1.5 }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-semibold text-foreground", children: "No notifications yet" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1", children: "You're all caught up. Check back later." })
-        ] })
-      ]
-    }
-  );
-}
-function EnergyCard({
-  icon: Icon2,
-  label,
-  value,
-  unit: unit2,
-  accent = false,
-  className = "",
-  "data-ocid": dataOcid
-}) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      "data-ocid": dataOcid,
-      className: `rounded-2xl p-4 flex flex-col gap-2 ${accent ? "bg-primary/10 border border-primary/30" : "bg-card border border-border"} ${className}`,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: `w-9 h-9 rounded-xl flex items-center justify-center ${accent ? "bg-primary/20" : "bg-muted"}`,
-            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Icon2,
-              {
-                size: 18,
-                className: accent ? "text-primary" : "text-muted-foreground"
-              }
-            )
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-1", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-2xl font-semibold text-foreground font-display leading-none", children: [
-            value,
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-normal text-muted-foreground ml-1", children: unit2 })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground mt-1", children: label })
-        ] })
-      ]
-    }
-  );
-}
-function GaugeCircle({
-  percent,
-  size = 180,
-  strokeWidth = 12,
-  label,
-  sublabel,
-  className = ""
-}) {
-  const radius = (size - strokeWidth) / 2;
-  const circumference = 2 * Math.PI * radius;
-  const clampedPct = Math.min(100, Math.max(0, percent));
-  const dashOffset = circumference * (1 - clampedPct / 100);
-  const cx2 = size / 2;
-  const cy = size / 2;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      className: `relative inline-flex items-center justify-center ${className}`,
-      style: { width: size, height: size },
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "svg",
-          {
-            width: size,
-            height: size,
-            viewBox: `0 0 ${size} ${size}`,
-            className: "-rotate-90",
-            "aria-hidden": "true",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "circle",
-                {
-                  cx: cx2,
-                  cy,
-                  r: radius,
-                  fill: "none",
-                  stroke: "oklch(var(--border))",
-                  strokeWidth
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "circle",
-                {
-                  cx: cx2,
-                  cy,
-                  r: radius,
-                  fill: "none",
-                  stroke: "oklch(var(--primary))",
-                  strokeWidth,
-                  strokeLinecap: "round",
-                  strokeDasharray: circumference,
-                  strokeDashoffset: dashOffset,
-                  style: {
-                    transition: "stroke-dashoffset 0.8s cubic-bezier(0.4,0,0.2,1)"
-                  }
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "circle",
-                {
-                  cx: cx2,
-                  cy,
-                  r: radius,
-                  fill: "none",
-                  stroke: "oklch(var(--primary) / 0.25)",
-                  strokeWidth: strokeWidth + 6,
-                  strokeLinecap: "round",
-                  strokeDasharray: circumference,
-                  strokeDashoffset: dashOffset,
-                  style: {
-                    filter: "blur(4px)",
-                    transition: "stroke-dashoffset 0.8s cubic-bezier(0.4,0,0.2,1)"
-                  }
-                }
-              )
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 flex flex-col items-center justify-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-3xl font-bold text-foreground font-display leading-none", children: [
-            clampedPct,
-            "%"
-          ] }),
-          label && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground mt-1 text-center px-3", children: label }),
-          sublabel && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-primary font-medium mt-0.5", children: sublabel })
-        ] })
-      ]
-    }
-  );
 }
 var isArray$e = Array.isArray;
 var isArray_1 = isArray$e;
@@ -30054,7 +25359,7 @@ function isSymbol$6(value) {
 var isSymbol_1 = isSymbol$6;
 var isArray$d = isArray_1, isSymbol$5 = isSymbol_1;
 var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/, reIsPlainProp = /^\w*$/;
-function isKey$3(value, object2) {
+function isKey$4(value, object2) {
   if (isArray$d(value)) {
     return false;
   }
@@ -30064,24 +25369,24 @@ function isKey$3(value, object2) {
   }
   return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object2 != null && value in Object(object2);
 }
-var _isKey = isKey$3;
-function isObject$9(value) {
+var _isKey = isKey$4;
+function isObject$a(value) {
   var type = typeof value;
   return value != null && (type == "object" || type == "function");
 }
-var isObject_1 = isObject$9;
-const isObject$a = /* @__PURE__ */ getDefaultExportFromCjs(isObject_1);
-var baseGetTag$7 = _baseGetTag, isObject$8 = isObject_1;
+var isObject_1 = isObject$a;
+const isObject$b = /* @__PURE__ */ getDefaultExportFromCjs(isObject_1);
+var baseGetTag$7 = _baseGetTag, isObject$9 = isObject_1;
 var asyncTag = "[object AsyncFunction]", funcTag$1 = "[object Function]", genTag = "[object GeneratorFunction]", proxyTag = "[object Proxy]";
-function isFunction$2(value) {
-  if (!isObject$8(value)) {
+function isFunction$3(value) {
+  if (!isObject$9(value)) {
     return false;
   }
   var tag = baseGetTag$7(value);
   return tag == funcTag$1 || tag == genTag || tag == asyncTag || tag == proxyTag;
 }
-var isFunction_1 = isFunction$2;
-const isFunction$3 = /* @__PURE__ */ getDefaultExportFromCjs(isFunction_1);
+var isFunction_1 = isFunction$3;
+const isFunction$4 = /* @__PURE__ */ getDefaultExportFromCjs(isFunction_1);
 var root$7 = _root;
 var coreJsData$1 = root$7["__core-js_shared__"];
 var _coreJsData = coreJsData$1;
@@ -30110,7 +25415,7 @@ function toSource$2(func) {
   return "";
 }
 var _toSource = toSource$2;
-var isFunction$1 = isFunction_1, isMasked = _isMasked, isObject$7 = isObject_1, toSource$1 = _toSource;
+var isFunction$2 = isFunction_1, isMasked = _isMasked, isObject$8 = isObject_1, toSource$1 = _toSource;
 var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
 var reIsHostCtor = /^\[object .+?Constructor\]$/;
 var funcProto$1 = Function.prototype, objectProto$a = Object.prototype;
@@ -30120,10 +25425,10 @@ var reIsNative = RegExp(
   "^" + funcToString$1.call(hasOwnProperty$9).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
 );
 function baseIsNative$1(value) {
-  if (!isObject$7(value) || isMasked(value)) {
+  if (!isObject$8(value) || isMasked(value)) {
     return false;
   }
-  var pattern = isFunction$1(value) ? reIsNative : reIsHostCtor;
+  var pattern = isFunction$2(value) ? reIsNative : reIsHostCtor;
   return pattern.test(toSource$1(value));
 }
 var _baseIsNative = baseIsNative$1;
@@ -30374,7 +25679,7 @@ var _memoizeCapped = memoizeCapped$1;
 var memoizeCapped = _memoizeCapped;
 var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
 var reEscapeChar = /\\(\\)?/g;
-var stringToPath$1 = memoizeCapped(function(string2) {
+var stringToPath$2 = memoizeCapped(function(string2) {
   var result = [];
   if (string2.charCodeAt(0) === 46) {
     result.push("");
@@ -30384,7 +25689,7 @@ var stringToPath$1 = memoizeCapped(function(string2) {
   });
   return result;
 });
-var _stringToPath = stringToPath$1;
+var _stringToPath = stringToPath$2;
 function arrayMap$3(array2, iteratee) {
   var index2 = -1, length = array2 == null ? 0 : array2.length, result = Array(length);
   while (++index2 < length) {
@@ -30414,12 +25719,12 @@ function toString$4(value) {
   return value == null ? "" : baseToString(value);
 }
 var toString_1 = toString$4;
-var isArray$b = isArray_1, isKey$2 = _isKey, stringToPath = _stringToPath, toString$3 = toString_1;
+var isArray$b = isArray_1, isKey$3 = _isKey, stringToPath$1 = _stringToPath, toString$3 = toString_1;
 function castPath$2(value, object2) {
   if (isArray$b(value)) {
     return value;
   }
-  return isKey$2(value, object2) ? [value] : stringToPath(toString$3(value));
+  return isKey$3(value, object2) ? [value] : stringToPath$1(toString$3(value));
 }
 var _castPath = castPath$2;
 var isSymbol$3 = isSymbol_1;
@@ -30432,7 +25737,7 @@ function toKey$4(value) {
 }
 var _toKey = toKey$4;
 var castPath$1 = _castPath, toKey$3 = _toKey;
-function baseGet$3(object2, path) {
+function baseGet$4(object2, path) {
   path = castPath$1(path, object2);
   var index2 = 0, length = path.length;
   while (object2 != null && index2 < length) {
@@ -30440,14 +25745,14 @@ function baseGet$3(object2, path) {
   }
   return index2 && index2 == length ? object2 : void 0;
 }
-var _baseGet = baseGet$3;
-var baseGet$2 = _baseGet;
-function get$1(object2, path, defaultValue) {
-  var result = object2 == null ? void 0 : baseGet$2(object2, path);
+var _baseGet = baseGet$4;
+var baseGet$3 = _baseGet;
+function get$2(object2, path, defaultValue) {
+  var result = object2 == null ? void 0 : baseGet$3(object2, path);
   return result === void 0 ? defaultValue : result;
 }
-var get_1 = get$1;
-const get$2 = /* @__PURE__ */ getDefaultExportFromCjs(get_1);
+var get_1 = get$2;
+const get$3 = /* @__PURE__ */ getDefaultExportFromCjs(get_1);
 function isNil(value) {
   return value == null;
 }
@@ -30455,11 +25760,11 @@ var isNil_1 = isNil;
 const isNil$1 = /* @__PURE__ */ getDefaultExportFromCjs(isNil_1);
 var baseGetTag$6 = _baseGetTag, isArray$a = isArray_1, isObjectLike$7 = isObjectLike_1;
 var stringTag$2 = "[object String]";
-function isString$1(value) {
+function isString$2(value) {
   return typeof value == "string" || !isArray$a(value) && isObjectLike$7(value) && baseGetTag$6(value) == stringTag$2;
 }
-var isString_1 = isString$1;
-const isString$2 = /* @__PURE__ */ getDefaultExportFromCjs(isString_1);
+var isString_1 = isString$2;
+const isString$3 = /* @__PURE__ */ getDefaultExportFromCjs(isString_1);
 var reactIs = { exports: {} };
 var reactIs_production_min = {};
 /**
@@ -30567,14 +25872,14 @@ reactIs_production_min.typeOf = v;
 var reactIsExports = reactIs.exports;
 var baseGetTag$5 = _baseGetTag, isObjectLike$6 = isObjectLike_1;
 var numberTag$2 = "[object Number]";
-function isNumber$3(value) {
+function isNumber$4(value) {
   return typeof value == "number" || isObjectLike$6(value) && baseGetTag$5(value) == numberTag$2;
 }
-var isNumber_1 = isNumber$3;
-const isNumber$4 = /* @__PURE__ */ getDefaultExportFromCjs(isNumber_1);
-var isNumber$2 = isNumber_1;
+var isNumber_1 = isNumber$4;
+const isNumber$5 = /* @__PURE__ */ getDefaultExportFromCjs(isNumber_1);
+var isNumber$3 = isNumber_1;
 function isNaN$1(value) {
-  return isNumber$2(value) && value != +value;
+  return isNumber$3(value) && value != +value;
 }
 var _isNaN = isNaN$1;
 const isNan = /* @__PURE__ */ getDefaultExportFromCjs(_isNaN);
@@ -30587,17 +25892,17 @@ var mathSign$1 = function mathSign(value) {
   }
   return -1;
 };
-var isPercent = function isPercent2(value) {
-  return isString$2(value) && value.indexOf("%") === value.length - 1;
+var isPercent$1 = function isPercent(value) {
+  return isString$3(value) && value.indexOf("%") === value.length - 1;
 };
-var isNumber$1 = function isNumber(value) {
-  return isNumber$4(value) && !isNan(value);
+var isNumber$2 = function isNumber(value) {
+  return isNumber$5(value) && !isNan(value);
 };
 var isNullish = function isNullish2(value) {
   return isNil$1(value);
 };
 var isNumOrStr = function isNumOrStr2(value) {
-  return isNumber$1(value) || isString$2(value);
+  return isNumber$2(value) || isString$3(value);
 };
 var idCounter = 0;
 var uniqueId = function uniqueId2(prefix2) {
@@ -30607,11 +25912,11 @@ var uniqueId = function uniqueId2(prefix2) {
 var getPercentValue = function getPercentValue2(percent, totalValue) {
   var defaultValue = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 0;
   var validate = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : false;
-  if (!isNumber$1(percent) && !isString$2(percent)) {
+  if (!isNumber$2(percent) && !isString$3(percent)) {
     return defaultValue;
   }
   var value;
-  if (isPercent(percent)) {
+  if (isPercent$1(percent)) {
     var index2 = percent.indexOf("%");
     value = totalValue * parseFloat(percent.slice(0, index2)) / 100;
   } else {
@@ -30651,7 +25956,7 @@ var hasDuplicate = function hasDuplicate2(ary) {
   return false;
 };
 var interpolateNumber$2 = function interpolateNumber(numberA, numberB) {
-  if (isNumber$1(numberA) && isNumber$1(numberB)) {
+  if (isNumber$2(numberA) && isNumber$2(numberB)) {
     return function(t2) {
       return numberA + t2 * (numberB - numberA);
     };
@@ -30665,14 +25970,14 @@ function findEntryInArray(ary, specifiedKey, specifiedValue) {
     return null;
   }
   return ary.find(function(entry) {
-    return entry && (typeof specifiedKey === "function" ? specifiedKey(entry) : get$2(entry, specifiedKey)) === specifiedValue;
+    return entry && (typeof specifiedKey === "function" ? specifiedKey(entry) : get$3(entry, specifiedKey)) === specifiedValue;
   });
 }
 var compareValues = function compareValues2(a2, b2) {
-  if (isNumber$1(a2) && isNumber$1(b2)) {
+  if (isNumber$2(a2) && isNumber$2(b2)) {
     return a2 - b2;
   }
-  if (isString$2(a2) && isString$2(b2)) {
+  if (isString$3(a2) && isString$3(b2)) {
     return a2.localeCompare(b2);
   }
   if (a2 instanceof Date && b2 instanceof Date) {
@@ -31027,7 +26332,7 @@ var adaptEventHandlers = function adaptEventHandlers2(props, newHandler) {
   if (/* @__PURE__ */ reactExports.isValidElement(props)) {
     inputProps = props.props;
   }
-  if (!isObject$a(inputProps)) {
+  if (!isObject$b(inputProps)) {
     return null;
   }
   var out = {};
@@ -31047,7 +26352,7 @@ var getEventHandlerOfChild = function getEventHandlerOfChild2(originalHandler, d
   };
 };
 var adaptEventsOfChild = function adaptEventsOfChild2(props, data, index2) {
-  if (!isObject$a(props) || _typeof$I(props) !== "object") {
+  if (!isObject$b(props) || _typeof$I(props) !== "object") {
     return null;
   }
   var out = null;
@@ -31150,7 +26455,7 @@ function findAllByType(children, type) {
     types = [getDisplayName(type)];
   }
   toArray(children).forEach(function(child) {
-    var childType = get$2(child, "type.displayName") || get$2(child, "type.name");
+    var childType = get$3(child, "type.displayName") || get$3(child, "type.name");
     if (types.indexOf(childType) !== -1) {
       result.push(child);
     }
@@ -31166,14 +26471,14 @@ var validateWidthHeight = function validateWidthHeight2(el) {
     return false;
   }
   var _el$props = el.props, width = _el$props.width, height = _el$props.height;
-  if (!isNumber$1(width) || width <= 0 || !isNumber$1(height) || height <= 0) {
+  if (!isNumber$2(width) || width <= 0 || !isNumber$2(height) || height <= 0) {
     return false;
   }
   return true;
 };
 var SVG_TAGS = ["a", "altGlyph", "altGlyphDef", "altGlyphItem", "animate", "animateColor", "animateMotion", "animateTransform", "circle", "clipPath", "color-profile", "cursor", "defs", "desc", "ellipse", "feBlend", "feColormatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence", "filter", "font", "font-face", "font-face-format", "font-face-name", "font-face-url", "foreignObject", "g", "glyph", "glyphRef", "hkern", "image", "line", "lineGradient", "marker", "mask", "metadata", "missing-glyph", "mpath", "path", "pattern", "polygon", "polyline", "radialGradient", "rect", "script", "set", "stop", "style", "svg", "switch", "symbol", "text", "textPath", "title", "tref", "tspan", "use", "view", "vkern"];
 var isSvgElement = function isSvgElement2(child) {
-  return child && child.type && isString$2(child.type) && SVG_TAGS.indexOf(child.type) >= 0;
+  return child && child.type && isString$3(child.type) && SVG_TAGS.indexOf(child.type) >= 0;
 };
 var hasClipDot = function hasClipDot2(dot) {
   return dot && _typeof$H(dot) === "object" && "clipDot" in dot;
@@ -31181,7 +26486,7 @@ var hasClipDot = function hasClipDot2(dot) {
 var isValidSpreadableProp = function isValidSpreadableProp2(property2, key, includeEvents, svgElementType) {
   var _FilteredElementKeyMa;
   var matchingElementTypeKeys = (_FilteredElementKeyMa = FilteredElementKeyMap === null || FilteredElementKeyMap === void 0 ? void 0 : FilteredElementKeyMap[svgElementType]) !== null && _FilteredElementKeyMa !== void 0 ? _FilteredElementKeyMa : [];
-  return key.startsWith("data-") || !isFunction$3(property2) && (svgElementType && matchingElementTypeKeys.includes(key) || SVGElementPropKeys.includes(key)) || includeEvents && EventKeys.includes(key);
+  return key.startsWith("data-") || !isFunction$4(property2) && (svgElementType && matchingElementTypeKeys.includes(key) || SVGElementPropKeys.includes(key)) || includeEvents && EventKeys.includes(key);
 };
 var filterProps = function filterProps2(props, includeEvents, svgElementType) {
   if (!props || typeof props === "function" || typeof props === "boolean") {
@@ -31191,7 +26496,7 @@ var filterProps = function filterProps2(props, includeEvents, svgElementType) {
   if (/* @__PURE__ */ reactExports.isValidElement(props)) {
     inputProps = props.props;
   }
-  if (!isObject$a(inputProps)) {
+  if (!isObject$b(inputProps)) {
     return null;
   }
   var out = {};
@@ -32730,9 +28035,9 @@ var DefaultLegendContent = /* @__PURE__ */ function(_PureComponent) {
         if (entry.type === "none") {
           return null;
         }
-        var entryValue = !isFunction$3(entry.value) ? entry.value : null;
+        var entryValue = !isFunction$4(entry.value) ? entry.value : null;
         warn(
-          !isFunction$3(entry.value),
+          !isFunction$4(entry.value),
           `The name property is also required when using a function for the dataKey of a chart's cartesian components. Ex: <Bar name="Name of my Data"/>`
           // eslint-disable-line max-len
         );
@@ -33075,18 +28380,18 @@ function isIndex$3(value, length) {
 }
 var _isIndex = isIndex$3;
 var MAX_SAFE_INTEGER$1 = 9007199254740991;
-function isLength$3(value) {
+function isLength$4(value) {
   return typeof value == "number" && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER$1;
 }
-var isLength_1 = isLength$3;
-var baseGetTag$3 = _baseGetTag, isLength$2 = isLength_1, isObjectLike$3 = isObjectLike_1;
+var isLength_1 = isLength$4;
+var baseGetTag$3 = _baseGetTag, isLength$3 = isLength_1, isObjectLike$3 = isObjectLike_1;
 var argsTag$1 = "[object Arguments]", arrayTag$1 = "[object Array]", boolTag$1 = "[object Boolean]", dateTag = "[object Date]", errorTag = "[object Error]", funcTag = "[object Function]", mapTag$1 = "[object Map]", numberTag = "[object Number]", objectTag$3 = "[object Object]", regexpTag = "[object RegExp]", setTag$1 = "[object Set]", stringTag = "[object String]", weakMapTag$1 = "[object WeakMap]";
 var arrayBufferTag = "[object ArrayBuffer]", dataViewTag$1 = "[object DataView]", float32Tag = "[object Float32Array]", float64Tag = "[object Float64Array]", int8Tag = "[object Int8Array]", int16Tag = "[object Int16Array]", int32Tag = "[object Int32Array]", uint8Tag = "[object Uint8Array]", uint8ClampedTag = "[object Uint8ClampedArray]", uint16Tag = "[object Uint16Array]", uint32Tag = "[object Uint32Array]";
 var typedArrayTags = {};
 typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
 typedArrayTags[argsTag$1] = typedArrayTags[arrayTag$1] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag$1] = typedArrayTags[dataViewTag$1] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[funcTag] = typedArrayTags[mapTag$1] = typedArrayTags[numberTag] = typedArrayTags[objectTag$3] = typedArrayTags[regexpTag] = typedArrayTags[setTag$1] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag$1] = false;
 function baseIsTypedArray$1(value) {
-  return isObjectLike$3(value) && isLength$2(value.length) && !!typedArrayTags[baseGetTag$3(value)];
+  return isObjectLike$3(value) && isLength$3(value.length) && !!typedArrayTags[baseGetTag$3(value)];
 }
 var _baseIsTypedArray = baseIsTypedArray$1;
 function baseUnary$2(func) {
@@ -33168,9 +28473,9 @@ function baseKeys$1(object2) {
   return result;
 }
 var _baseKeys = baseKeys$1;
-var isFunction = isFunction_1, isLength$1 = isLength_1;
+var isFunction$1 = isFunction_1, isLength$2 = isLength_1;
 function isArrayLike$5(value) {
-  return value != null && isLength$1(value.length) && !isFunction(value);
+  return value != null && isLength$2(value.length) && !isFunction$1(value);
 }
 var isArrayLike_1 = isArrayLike$5;
 var arrayLikeKeys = _arrayLikeKeys, baseKeys = _baseKeys, isArrayLike$4 = isArrayLike_1;
@@ -33350,9 +28655,9 @@ function baseIsMatch$1(object2, source, matchData, customizer) {
   return true;
 }
 var _baseIsMatch = baseIsMatch$1;
-var isObject$6 = isObject_1;
+var isObject$7 = isObject_1;
 function isStrictComparable$2(value) {
-  return value === value && !isObject$6(value);
+  return value === value && !isObject$7(value);
 }
 var _isStrictComparable = isStrictComparable$2;
 var isStrictComparable$1 = _isStrictComparable, keys$3 = keys_1;
@@ -33389,7 +28694,7 @@ function baseHasIn$1(object2, key) {
   return object2 != null && key in Object(object2);
 }
 var _baseHasIn = baseHasIn$1;
-var castPath = _castPath, isArguments$1 = isArguments_1, isArray$6 = isArray_1, isIndex$1 = _isIndex, isLength = isLength_1, toKey$2 = _toKey;
+var castPath = _castPath, isArguments$1 = isArguments_1, isArray$6 = isArray_1, isIndex$1 = _isIndex, isLength$1 = isLength_1, toKey$2 = _toKey;
 function hasPath$1(object2, path, hasFunc) {
   path = castPath(path, object2);
   var index2 = -1, length = path.length, result = false;
@@ -33404,7 +28709,7 @@ function hasPath$1(object2, path, hasFunc) {
     return result;
   }
   length = object2 == null ? 0 : object2.length;
-  return !!length && isLength(length) && isIndex$1(key, length) && (isArray$6(object2) || isArguments$1(object2));
+  return !!length && isLength$1(length) && isIndex$1(key, length) && (isArray$6(object2) || isArguments$1(object2));
 }
 var _hasPath = hasPath$1;
 var baseHasIn = _baseHasIn, hasPath = _hasPath;
@@ -33412,14 +28717,14 @@ function hasIn$1(object2, path) {
   return object2 != null && hasPath(object2, path, baseHasIn);
 }
 var hasIn_1 = hasIn$1;
-var baseIsEqual$1 = _baseIsEqual, get = get_1, hasIn = hasIn_1, isKey$1 = _isKey, isStrictComparable = _isStrictComparable, matchesStrictComparable = _matchesStrictComparable, toKey$1 = _toKey;
+var baseIsEqual$1 = _baseIsEqual, get$1 = get_1, hasIn = hasIn_1, isKey$2 = _isKey, isStrictComparable = _isStrictComparable, matchesStrictComparable = _matchesStrictComparable, toKey$1 = _toKey;
 var COMPARE_PARTIAL_FLAG = 1, COMPARE_UNORDERED_FLAG = 2;
 function baseMatchesProperty$1(path, srcValue) {
-  if (isKey$1(path) && isStrictComparable(srcValue)) {
+  if (isKey$2(path) && isStrictComparable(srcValue)) {
     return matchesStrictComparable(toKey$1(path), srcValue);
   }
   return function(object2) {
-    var objValue = get(object2, path);
+    var objValue = get$1(object2, path);
     return objValue === void 0 && objValue === srcValue ? hasIn(object2, path) : baseIsEqual$1(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
   };
 }
@@ -33434,16 +28739,16 @@ function baseProperty$1(key) {
   };
 }
 var _baseProperty = baseProperty$1;
-var baseGet$1 = _baseGet;
+var baseGet$2 = _baseGet;
 function basePropertyDeep$1(path) {
   return function(object2) {
-    return baseGet$1(object2, path);
+    return baseGet$2(object2, path);
   };
 }
 var _basePropertyDeep = basePropertyDeep$1;
-var baseProperty = _baseProperty, basePropertyDeep = _basePropertyDeep, isKey = _isKey, toKey = _toKey;
+var baseProperty = _baseProperty, basePropertyDeep = _basePropertyDeep, isKey$1 = _isKey, toKey = _toKey;
 function property$1(path) {
-  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+  return isKey$1(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
 }
 var property_1 = property$1;
 var baseMatches = _baseMatches, baseMatchesProperty = _baseMatchesProperty, identity$a = identity_1, isArray$5 = isArray_1, property = property_1;
@@ -33567,7 +28872,7 @@ function getUniqPayload(payload, option, defaultUniqBy2) {
   if (option === true) {
     return uniqBy$1(payload, defaultUniqBy2);
   }
-  if (isFunction$3(option)) {
+  if (isFunction$4(option)) {
     return uniqBy$1(payload, option);
   }
   return payload;
@@ -33861,7 +29166,7 @@ var Legend = /* @__PURE__ */ function(_PureComponent) {
     key: "getWithHeight",
     value: function getWithHeight(item, chartWidth) {
       var _this$defaultProps$it = _objectSpread$x(_objectSpread$x({}, this.defaultProps), item.props), layout = _this$defaultProps$it.layout;
-      if (layout === "vertical" && isNumber$1(item.props.height)) {
+      if (layout === "vertical" && isNumber$2(item.props.height)) {
         return {
           height: item.props.height
         };
@@ -34000,13 +29305,13 @@ function compareMultiple$1(object2, other, orders) {
   return object2.index - other.index;
 }
 var _compareMultiple = compareMultiple$1;
-var arrayMap$1 = _arrayMap, baseGet = _baseGet, baseIteratee$6 = _baseIteratee, baseMap$1 = _baseMap, baseSortBy = _baseSortBy, baseUnary = _baseUnary, compareMultiple = _compareMultiple, identity$9 = identity_1, isArray$3 = isArray_1;
+var arrayMap$1 = _arrayMap, baseGet$1 = _baseGet, baseIteratee$6 = _baseIteratee, baseMap$1 = _baseMap, baseSortBy = _baseSortBy, baseUnary = _baseUnary, compareMultiple = _compareMultiple, identity$9 = identity_1, isArray$3 = isArray_1;
 function baseOrderBy$1(collection, iteratees, orders) {
   if (iteratees.length) {
     iteratees = arrayMap$1(iteratees, function(iteratee) {
       if (isArray$3(iteratee)) {
         return function(value) {
-          return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);
+          return baseGet$1(value, iteratee.length === 1 ? iteratee[0] : iteratee);
         };
       }
       return iteratee;
@@ -34112,9 +29417,9 @@ function baseRest$1(func, start) {
   return setToString(overRest(func, start, identity$7), func + "");
 }
 var _baseRest = baseRest$1;
-var eq = eq_1, isArrayLike$1 = isArrayLike_1, isIndex = _isIndex, isObject$5 = isObject_1;
+var eq = eq_1, isArrayLike$1 = isArrayLike_1, isIndex = _isIndex, isObject$6 = isObject_1;
 function isIterateeCall$4(value, index2, object2) {
-  if (!isObject$5(object2)) {
+  if (!isObject$6(object2)) {
     return false;
   }
   var type = typeof index2;
@@ -34371,11 +29676,11 @@ var TOOLTIP_HIDDEN = {
 };
 function getTooltipCSSClassName(_ref) {
   var coordinate = _ref.coordinate, translateX = _ref.translateX, translateY = _ref.translateY;
-  return clsx(CSS_CLASS_PREFIX, _defineProperty$A(_defineProperty$A(_defineProperty$A(_defineProperty$A({}, "".concat(CSS_CLASS_PREFIX, "-right"), isNumber$1(translateX) && coordinate && isNumber$1(coordinate.x) && translateX >= coordinate.x), "".concat(CSS_CLASS_PREFIX, "-left"), isNumber$1(translateX) && coordinate && isNumber$1(coordinate.x) && translateX < coordinate.x), "".concat(CSS_CLASS_PREFIX, "-bottom"), isNumber$1(translateY) && coordinate && isNumber$1(coordinate.y) && translateY >= coordinate.y), "".concat(CSS_CLASS_PREFIX, "-top"), isNumber$1(translateY) && coordinate && isNumber$1(coordinate.y) && translateY < coordinate.y));
+  return clsx(CSS_CLASS_PREFIX, _defineProperty$A(_defineProperty$A(_defineProperty$A(_defineProperty$A({}, "".concat(CSS_CLASS_PREFIX, "-right"), isNumber$2(translateX) && coordinate && isNumber$2(coordinate.x) && translateX >= coordinate.x), "".concat(CSS_CLASS_PREFIX, "-left"), isNumber$2(translateX) && coordinate && isNumber$2(coordinate.x) && translateX < coordinate.x), "".concat(CSS_CLASS_PREFIX, "-bottom"), isNumber$2(translateY) && coordinate && isNumber$2(coordinate.y) && translateY >= coordinate.y), "".concat(CSS_CLASS_PREFIX, "-top"), isNumber$2(translateY) && coordinate && isNumber$2(coordinate.y) && translateY < coordinate.y));
 }
 function getTooltipTranslateXY(_ref2) {
   var allowEscapeViewBox = _ref2.allowEscapeViewBox, coordinate = _ref2.coordinate, key = _ref2.key, offsetTopLeft = _ref2.offsetTopLeft, position = _ref2.position, reverseDirection = _ref2.reverseDirection, tooltipDimension = _ref2.tooltipDimension, viewBox = _ref2.viewBox, viewBoxDimension = _ref2.viewBoxDimension;
-  if (position && isNumber$1(position[key])) {
+  if (position && isNumber$2(position[key])) {
     return position[key];
   }
   var negative = coordinate[key] - tooltipDimension - offsetTopLeft;
@@ -34917,7 +30222,7 @@ function baseTrim$1(string2) {
   return string2 ? string2.slice(0, trimmedEndIndex(string2) + 1).replace(reTrimStart, "") : string2;
 }
 var _baseTrim = baseTrim$1;
-var baseTrim = _baseTrim, isObject$4 = isObject_1, isSymbol$1 = isSymbol_1;
+var baseTrim = _baseTrim, isObject$5 = isObject_1, isSymbol$1 = isSymbol_1;
 var NAN = 0 / 0;
 var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
 var reIsBinary = /^0b[01]+$/i;
@@ -34930,9 +30235,9 @@ function toNumber$2(value) {
   if (isSymbol$1(value)) {
     return NAN;
   }
-  if (isObject$4(value)) {
+  if (isObject$5(value)) {
     var other = typeof value.valueOf == "function" ? value.valueOf() : value;
-    value = isObject$4(other) ? other + "" : other;
+    value = isObject$5(other) ? other + "" : other;
   }
   if (typeof value != "string") {
     return value === 0 ? value : +value;
@@ -34942,7 +30247,7 @@ function toNumber$2(value) {
   return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;
 }
 var toNumber_1 = toNumber$2;
-var isObject$3 = isObject_1, now = now_1, toNumber$1 = toNumber_1;
+var isObject$4 = isObject_1, now = now_1, toNumber$1 = toNumber_1;
 var FUNC_ERROR_TEXT$1 = "Expected a function";
 var nativeMax$2 = Math.max, nativeMin = Math.min;
 function debounce$1(func, wait, options) {
@@ -34951,7 +30256,7 @@ function debounce$1(func, wait, options) {
     throw new TypeError(FUNC_ERROR_TEXT$1);
   }
   wait = toNumber$1(wait) || 0;
-  if (isObject$3(options)) {
+  if (isObject$4(options)) {
     leading = !!options.leading;
     maxing = "maxWait" in options;
     maxWait = maxing ? nativeMax$2(toNumber$1(options.maxWait) || 0, wait) : maxWait;
@@ -35027,14 +30332,14 @@ function debounce$1(func, wait, options) {
   return debounced;
 }
 var debounce_1 = debounce$1;
-var debounce = debounce_1, isObject$2 = isObject_1;
+var debounce = debounce_1, isObject$3 = isObject_1;
 var FUNC_ERROR_TEXT = "Expected a function";
 function throttle(func, wait, options) {
   var leading = true, trailing = true;
   if (typeof func != "function") {
     throw new TypeError(FUNC_ERROR_TEXT);
   }
-  if (isObject$2(options)) {
+  if (isObject$3(options)) {
     leading = "leading" in options ? !!options.leading : leading;
     trailing = "trailing" in options ? !!options.trailing : trailing;
   }
@@ -35199,10 +30504,10 @@ var ResponsiveContainer = /* @__PURE__ */ reactExports.forwardRef(function(_ref,
     if (containerWidth < 0 || containerHeight < 0) {
       return null;
     }
-    warn(isPercent(width) || isPercent(height), "The width(%s) and height(%s) are both fixed numbers,\n       maybe you don't need to use a ResponsiveContainer.", width, height);
+    warn(isPercent$1(width) || isPercent$1(height), "The width(%s) and height(%s) are both fixed numbers,\n       maybe you don't need to use a ResponsiveContainer.", width, height);
     warn(!aspect || aspect > 0, "The aspect(%s) must be greater than zero.", aspect);
-    var calculatedWidth = isPercent(width) ? containerWidth : width;
-    var calculatedHeight = isPercent(height) ? containerHeight : height;
+    var calculatedWidth = isPercent$1(width) ? containerWidth : width;
+    var calculatedHeight = isPercent$1(height) ? containerHeight : height;
     if (aspect && aspect > 0) {
       if (calculatedWidth) {
         calculatedHeight = calculatedWidth / aspect;
@@ -35720,7 +31025,7 @@ var calculateWordWidths = function calculateWordWidths2(_ref) {
 };
 var calculateWordsByLines = function calculateWordsByLines2(_ref2, initialWordsWithComputedWith, spaceWidth, lineWidth, scaleToFit) {
   var maxLines = _ref2.maxLines, children = _ref2.children, style2 = _ref2.style, breakAll = _ref2.breakAll;
-  var shouldLimitLines = isNumber$1(maxLines);
+  var shouldLimitLines = isNumber$2(maxLines);
   var text = children;
   var calculate = function calculate2() {
     var words = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : [];
@@ -35832,8 +31137,8 @@ var Text = function Text2(_ref5) {
   if (!isNumOrStr(propsX) || !isNumOrStr(propsY)) {
     return null;
   }
-  var x2 = propsX + (isNumber$1(dx) ? dx : 0);
-  var y2 = propsY + (isNumber$1(dy) ? dy : 0);
+  var x2 = propsX + (isNumber$2(dx) ? dx : 0);
+  var y2 = propsY + (isNumber$2(dy) ? dy : 0);
   var startDy;
   switch (verticalAnchor) {
     case "start":
@@ -35850,7 +31155,7 @@ var Text = function Text2(_ref5) {
   if (scaleToFit) {
     var lineWidth = wordsByLines[0].width;
     var width = props.width;
-    transforms.push("scale(".concat((isNumber$1(width) ? width / lineWidth : 1) / lineWidth, ")"));
+    transforms.push("scale(".concat((isNumber$2(width) ? width / lineWidth : 1) / lineWidth, ")"));
   }
   if (angle) {
     transforms.push("rotate(".concat(angle, ", ").concat(x2, ", ").concat(y2, ")"));
@@ -40335,9 +35640,9 @@ function getValueByDataKey(obj, dataKey, defaultValue) {
     return defaultValue;
   }
   if (isNumOrStr(dataKey)) {
-    return get$2(obj, dataKey, defaultValue);
+    return get$3(obj, dataKey, defaultValue);
   }
-  if (isFunction$3(dataKey)) {
+  if (isFunction$4(dataKey)) {
     return dataKey(obj);
   }
   return defaultValue;
@@ -40348,7 +35653,7 @@ function getDomainOfDataByKey(data, key, type, filterNil) {
   });
   if (type === "number") {
     var domain = flattenData.filter(function(entry) {
-      return isNumber$1(entry) || parseFloat(entry);
+      return isNumber$2(entry) || parseFloat(entry);
     });
     return domain.length ? [min$1(domain), max$1(domain)] : [Infinity, -Infinity];
   }
@@ -40557,10 +35862,10 @@ var appendOffsetOfLegend = function appendOffsetOfLegend2(offset, _unused, props
   if (legendProps) {
     var _ref4 = legendBox || {}, boxWidth = _ref4.width, boxHeight = _ref4.height;
     var align = legendProps.align, verticalAlign = legendProps.verticalAlign, layout = legendProps.layout;
-    if ((layout === "vertical" || layout === "horizontal" && verticalAlign === "middle") && align !== "center" && isNumber$1(offset[align])) {
+    if ((layout === "vertical" || layout === "horizontal" && verticalAlign === "middle") && align !== "center" && isNumber$2(offset[align])) {
       return _objectSpread$q(_objectSpread$q({}, offset), {}, _defineProperty$t({}, align, offset[align] + (boxWidth || 0)));
     }
-    if ((layout === "horizontal" || layout === "vertical" && align === "center") && verticalAlign !== "middle" && isNumber$1(offset[verticalAlign])) {
+    if ((layout === "horizontal" || layout === "vertical" && align === "center") && verticalAlign !== "middle" && isNumber$2(offset[verticalAlign])) {
       return _objectSpread$q(_objectSpread$q({}, offset), {}, _defineProperty$t({}, verticalAlign, offset[verticalAlign] + (boxHeight || 0)));
     }
   }
@@ -40778,14 +36083,14 @@ var parseScale = function parseScale2(axis, chartType, hasBar) {
       realScaleType: "linear"
     };
   }
-  if (isString$2(scale)) {
+  if (isString$3(scale)) {
     var name = "scale".concat(upperFirst$1(scale));
     return {
       scale: (d3Scales[name] || point)(),
       realScaleType: d3Scales[name] ? name : "point"
     };
   }
-  return isFunction$3(scale) ? {
+  return isFunction$4(scale) ? {
     scale
   } : {
     scale: point(),
@@ -40820,16 +36125,16 @@ var findPositionOfBar = function findPositionOfBar2(barPosition, child) {
   return null;
 };
 var truncateByDomain = function truncateByDomain2(value, domain) {
-  if (!domain || domain.length !== 2 || !isNumber$1(domain[0]) || !isNumber$1(domain[1])) {
+  if (!domain || domain.length !== 2 || !isNumber$2(domain[0]) || !isNumber$2(domain[1])) {
     return value;
   }
   var minValue = Math.min(domain[0], domain[1]);
   var maxValue = Math.max(domain[0], domain[1]);
   var result = [value[0], value[1]];
-  if (!isNumber$1(value[0]) || value[0] < minValue) {
+  if (!isNumber$2(value[0]) || value[0] < minValue) {
     result[0] = minValue;
   }
-  if (!isNumber$1(value[1]) || value[1] > maxValue) {
+  if (!isNumber$2(value[1]) || value[1] > maxValue) {
     result[1] = maxValue;
   }
   if (result[0] > maxValue) {
@@ -41037,7 +36342,7 @@ var getStackedDataOfItem = function getStackedDataOfItem2(item, stackGroups) {
 };
 var getDomainOfSingle = function getDomainOfSingle2(data) {
   return data.reduce(function(result, entry) {
-    return [min$1(entry.concat([result[0]]).filter(isNumber$1)), max$1(entry.concat([result[1]]).filter(isNumber$1))];
+    return [min$1(entry.concat([result[0]]).filter(isNumber$2)), max$1(entry.concat([result[1]]).filter(isNumber$2))];
   }, [Infinity, -Infinity]);
 };
 var getDomainOfStackGroups = function getDomainOfStackGroups2(stackGroups, startIndex, endIndex) {
@@ -41056,29 +36361,29 @@ var getDomainOfStackGroups = function getDomainOfStackGroups2(stackGroups, start
 var MIN_VALUE_REG = /^dataMin[\s]*-[\s]*([0-9]+([.]{1}[0-9]+){0,1})$/;
 var MAX_VALUE_REG = /^dataMax[\s]*\+[\s]*([0-9]+([.]{1}[0-9]+){0,1})$/;
 var parseSpecifiedDomain = function parseSpecifiedDomain2(specifiedDomain, dataDomain, allowDataOverflow) {
-  if (isFunction$3(specifiedDomain)) {
+  if (isFunction$4(specifiedDomain)) {
     return specifiedDomain(dataDomain, allowDataOverflow);
   }
   if (!Array.isArray(specifiedDomain)) {
     return dataDomain;
   }
   var domain = [];
-  if (isNumber$1(specifiedDomain[0])) {
+  if (isNumber$2(specifiedDomain[0])) {
     domain[0] = allowDataOverflow ? specifiedDomain[0] : Math.min(specifiedDomain[0], dataDomain[0]);
   } else if (MIN_VALUE_REG.test(specifiedDomain[0])) {
     var value = +MIN_VALUE_REG.exec(specifiedDomain[0])[1];
     domain[0] = dataDomain[0] - value;
-  } else if (isFunction$3(specifiedDomain[0])) {
+  } else if (isFunction$4(specifiedDomain[0])) {
     domain[0] = specifiedDomain[0](dataDomain[0]);
   } else {
     domain[0] = dataDomain[0];
   }
-  if (isNumber$1(specifiedDomain[1])) {
+  if (isNumber$2(specifiedDomain[1])) {
     domain[1] = allowDataOverflow ? specifiedDomain[1] : Math.max(specifiedDomain[1], dataDomain[1]);
   } else if (MAX_VALUE_REG.test(specifiedDomain[1])) {
     var _value = +MAX_VALUE_REG.exec(specifiedDomain[1])[1];
     domain[1] = dataDomain[1] + _value;
-  } else if (isFunction$3(specifiedDomain[1])) {
+  } else if (isFunction$4(specifiedDomain[1])) {
     domain[1] = specifiedDomain[1](dataDomain[1]);
   } else {
     domain[1] = dataDomain[1];
@@ -41110,7 +36415,7 @@ var parseDomainOfCategoryAxis = function parseDomainOfCategoryAxis2(specifiedDom
   if (!specifiedDomain || !specifiedDomain.length) {
     return calculatedDomain;
   }
-  if (isEqual$1(specifiedDomain, get$2(axisChild, "type.defaultProps.domain"))) {
+  if (isEqual$1(specifiedDomain, get$3(axisChild, "type.defaultProps.domain"))) {
     return calculatedDomain;
   }
   return specifiedDomain;
@@ -41403,7 +36708,7 @@ function _extends$j() {
 var getLabel = function getLabel2(props) {
   var value = props.value, formatter = props.formatter;
   var label = isNil$1(props.children) ? value : props.children;
-  if (isFunction$3(formatter)) {
+  if (isFunction$4(formatter)) {
     return formatter(label);
   }
   return label;
@@ -41618,7 +36923,7 @@ var getAttrsOfCartesianLabel = function getAttrsOfCartesianLabel2(props) {
       verticalAnchor: verticalEnd
     }, sizeAttrs);
   }
-  if (isObject$a(position) && (isNumber$1(position.x) || isPercent(position.x)) && (isNumber$1(position.y) || isPercent(position.y))) {
+  if (isObject$b(position) && (isNumber$2(position.x) || isPercent$1(position.x)) && (isNumber$2(position.y) || isPercent$1(position.y))) {
     return _objectSpread$o({
       x: x2 + getPercentValue(position.x, width),
       y: y2 + getPercentValue(position.y, height),
@@ -41634,7 +36939,7 @@ var getAttrsOfCartesianLabel = function getAttrsOfCartesianLabel2(props) {
   }, sizeAttrs);
 };
 var isPolar = function isPolar2(viewBox) {
-  return "cx" in viewBox && isNumber$1(viewBox.cx);
+  return "cx" in viewBox && isNumber$2(viewBox.cx);
 };
 function Label$2(_ref4) {
   var _ref4$offset = _ref4.offset, offset = _ref4$offset === void 0 ? 5 : _ref4$offset, restProps = _objectWithoutProperties$a(_ref4, _excluded$a);
@@ -41642,14 +36947,14 @@ function Label$2(_ref4) {
     offset
   }, restProps);
   var viewBox = props.viewBox, position = props.position, value = props.value, children = props.children, content = props.content, _props$className = props.className, className = _props$className === void 0 ? "" : _props$className, textBreakAll = props.textBreakAll;
-  if (!viewBox || isNil$1(value) && isNil$1(children) && !/* @__PURE__ */ reactExports.isValidElement(content) && !isFunction$3(content)) {
+  if (!viewBox || isNil$1(value) && isNil$1(children) && !/* @__PURE__ */ reactExports.isValidElement(content) && !isFunction$4(content)) {
     return null;
   }
   if (/* @__PURE__ */ reactExports.isValidElement(content)) {
     return /* @__PURE__ */ reactExports.cloneElement(content, props);
   }
   var label;
-  if (isFunction$3(content)) {
+  if (isFunction$4(content)) {
     label = /* @__PURE__ */ reactExports.createElement(content, props);
     if (/* @__PURE__ */ reactExports.isValidElement(label)) {
       return label;
@@ -41675,8 +36980,8 @@ var parseViewBox = function parseViewBox2(props) {
   if (labelViewBox) {
     return labelViewBox;
   }
-  if (isNumber$1(width) && isNumber$1(height)) {
-    if (isNumber$1(x2) && isNumber$1(y2)) {
+  if (isNumber$2(width) && isNumber$2(height)) {
+    if (isNumber$2(x2) && isNumber$2(y2)) {
       return {
         x: x2,
         y: y2,
@@ -41684,7 +36989,7 @@ var parseViewBox = function parseViewBox2(props) {
         height
       };
     }
-    if (isNumber$1(top) && isNumber$1(left)) {
+    if (isNumber$2(top) && isNumber$2(left)) {
       return {
         x: top,
         y: left,
@@ -41693,7 +36998,7 @@ var parseViewBox = function parseViewBox2(props) {
       };
     }
   }
-  if (isNumber$1(x2) && isNumber$1(y2)) {
+  if (isNumber$2(x2) && isNumber$2(y2)) {
     return {
       x: x2,
       y: y2,
@@ -41701,7 +37006,7 @@ var parseViewBox = function parseViewBox2(props) {
       height: 0
     };
   }
-  if (isNumber$1(cx2) && isNumber$1(cy)) {
+  if (isNumber$2(cx2) && isNumber$2(cy)) {
     return {
       cx: cx2,
       cy,
@@ -41747,14 +37052,14 @@ var parseLabel = function parseLabel2(label, viewBox) {
       viewBox
     });
   }
-  if (isFunction$3(label)) {
+  if (isFunction$4(label)) {
     return /* @__PURE__ */ React$4.createElement(Label$2, {
       key: "label-implicit",
       content: label,
       viewBox
     });
   }
-  if (isObject$a(label)) {
+  if (isObject$b(label)) {
     return /* @__PURE__ */ React$4.createElement(Label$2, _extends$j({
       viewBox
     }, label, {
@@ -41948,14 +37253,14 @@ function parseLabelList(label, data) {
       data
     });
   }
-  if (/* @__PURE__ */ React$4.isValidElement(label) || isFunction$3(label)) {
+  if (/* @__PURE__ */ React$4.isValidElement(label) || isFunction$4(label)) {
     return /* @__PURE__ */ React$4.createElement(LabelList, {
       key: "labelList-implicit",
       data,
       content: label
     });
   }
-  if (isObject$a(label)) {
+  if (isObject$b(label)) {
     return /* @__PURE__ */ React$4.createElement(LabelList, _extends$i({
       data
     }, label, {
@@ -42294,7 +37599,7 @@ var getY = function getY2(p2) {
   return p2.y;
 };
 var getCurveFactory = function getCurveFactory2(type, layout) {
-  if (isFunction$3(type)) {
+  if (isFunction$4(type)) {
     return type;
   }
   var name = "curve".concat(upperFirst$1(type));
@@ -42331,9 +37636,9 @@ var getPath$1 = function getPath(_ref) {
     lineFunction.defined(defined).curve(curveFactory);
     return lineFunction(areaPoints);
   }
-  if (layout === "vertical" && isNumber$1(baseLine)) {
+  if (layout === "vertical" && isNumber$2(baseLine)) {
     lineFunction = shapeArea().y(getY).x1(getX).x0(baseLine);
-  } else if (isNumber$1(baseLine)) {
+  } else if (isNumber$2(baseLine)) {
     lineFunction = shapeArea().x(getX).y1(getY).y0(baseLine);
   } else {
     lineFunction = shapeLine().x(getX).y(getY);
@@ -42814,7 +38119,7 @@ function createIsEqual({ circular, comparator, createState, equals, strict }) {
     return comparator(a2, b2, state);
   };
 }
-const deepEqual = createCustomEqual();
+const deepEqual$1 = createCustomEqual();
 createCustomEqual({ strict: true });
 createCustomEqual({ circular: true });
 createCustomEqual({
@@ -43681,7 +38986,7 @@ var Animate = /* @__PURE__ */ function(_PureComponent) {
         }
         return;
       }
-      if (deepEqual(prevProps.to, to) && prevProps.canBegin && prevProps.isActive) {
+      if (deepEqual$1(prevProps.to, to) && prevProps.canBegin && prevProps.isActive) {
         return;
       }
       var isTriggered = !prevProps.canBegin || !prevProps.isActive;
@@ -44253,7 +39558,7 @@ var Cross = function Cross2(_ref) {
     width,
     height
   }, rest);
-  if (!isNumber$1(x2) || !isNumber$1(y2) || !isNumber$1(width) || !isNumber$1(height) || !isNumber$1(top) || !isNumber$1(left)) {
+  if (!isNumber$2(x2) || !isNumber$2(y2) || !isNumber$2(width) || !isNumber$2(height) || !isNumber$2(top) || !isNumber$2(left)) {
     return null;
   }
   return /* @__PURE__ */ React$4.createElement("path", _extends$d({}, filterProps(props, true), {
@@ -44270,7 +39575,7 @@ var funcProto = Function.prototype, objectProto = Object.prototype;
 var funcToString = funcProto.toString;
 var hasOwnProperty = objectProto.hasOwnProperty;
 var objectCtorString = funcToString.call(Object);
-function isPlainObject(value) {
+function isPlainObject$1(value) {
   if (!isObjectLike$1(value) || baseGetTag$1(value) != objectTag) {
     return false;
   }
@@ -44281,15 +39586,15 @@ function isPlainObject(value) {
   var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
   return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
 }
-var isPlainObject_1 = isPlainObject;
-const isPlainObject$1 = /* @__PURE__ */ getDefaultExportFromCjs(isPlainObject_1);
+var isPlainObject_1 = isPlainObject$1;
+const isPlainObject$2 = /* @__PURE__ */ getDefaultExportFromCjs(isPlainObject_1);
 var baseGetTag = _baseGetTag, isObjectLike = isObjectLike_1;
 var boolTag = "[object Boolean]";
-function isBoolean$1(value) {
+function isBoolean$2(value) {
   return value === true || value === false || isObjectLike(value) && baseGetTag(value) == boolTag;
 }
-var isBoolean_1 = isBoolean$1;
-const isBoolean$2 = /* @__PURE__ */ getDefaultExportFromCjs(isBoolean_1);
+var isBoolean_1 = isBoolean$2;
+const isBoolean$3 = /* @__PURE__ */ getDefaultExportFromCjs(isBoolean_1);
 function _typeof$i(o) {
   "@babel/helpers - typeof";
   return _typeof$i = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o2) {
@@ -44595,9 +39900,9 @@ function Shape(_ref2) {
   var shape;
   if (/* @__PURE__ */ reactExports.isValidElement(option)) {
     shape = /* @__PURE__ */ reactExports.cloneElement(option, _objectSpread$e(_objectSpread$e({}, props), getPropsFromShapeOption(option)));
-  } else if (isFunction$3(option)) {
+  } else if (isFunction$4(option)) {
     shape = option(props);
-  } else if (isPlainObject$1(option) && !isBoolean$2(option)) {
+  } else if (isPlainObject$2(option) && !isBoolean$3(option)) {
     var nextProps = propTransformer(option, props);
     shape = /* @__PURE__ */ React$4.createElement(ShapeSelector, {
       shapeType,
@@ -45059,7 +40364,7 @@ var Brush = /* @__PURE__ */ function(_PureComponent) {
     value: function getTextOfTick(index2) {
       var _this$props3 = this.props, data = _this$props3.data, tickFormatter = _this$props3.tickFormatter, dataKey = _this$props3.dataKey;
       var text = getValueByDataKey(data[index2], dataKey, index2);
-      return isFunction$3(tickFormatter) ? tickFormatter(text, index2) : text;
+      return isFunction$4(tickFormatter) ? tickFormatter(text, index2) : text;
     }
   }, {
     key: "attachDragEndListener",
@@ -45300,7 +40605,7 @@ var Brush = /* @__PURE__ */ function(_PureComponent) {
     value: function render() {
       var _this$props11 = this.props, data = _this$props11.data, className = _this$props11.className, children = _this$props11.children, x2 = _this$props11.x, y2 = _this$props11.y, width = _this$props11.width, height = _this$props11.height, alwaysShowText = _this$props11.alwaysShowText;
       var _this$state5 = this.state, startX = _this$state5.startX, endX = _this$state5.endX, isTextActive = _this$state5.isTextActive, isSlideMoving = _this$state5.isSlideMoving, isTravellerMoving = _this$state5.isTravellerMoving, isTravellerFocused = _this$state5.isTravellerFocused;
-      if (!data || !data.length || !isNumber$1(x2) || !isNumber$1(y2) || !isNumber$1(width) || !isNumber$1(height) || width <= 0 || height <= 0) {
+      if (!data || !data.length || !isNumber$2(x2) || !isNumber$2(y2) || !isNumber$2(width) || !isNumber$2(height) || width <= 0 || height <= 0) {
         return null;
       }
       var layerClass = clsx("recharts-brush", className);
@@ -45347,7 +40652,7 @@ var Brush = /* @__PURE__ */ function(_PureComponent) {
       var rectangle;
       if (/* @__PURE__ */ React$4.isValidElement(option)) {
         rectangle = /* @__PURE__ */ React$4.cloneElement(option, props);
-      } else if (isFunction$3(option)) {
+      } else if (isFunction$4(option)) {
         rectangle = option(props);
       } else {
         rectangle = Brush2.renderDefaultTraveller(props);
@@ -45637,7 +40942,7 @@ var minPointSizeCallback = function minPointSizeCallback2(minPointSize) {
   var defaultValue = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 0;
   return function(value, index2) {
     if (typeof minPointSize === "number") return minPointSize;
-    var isValueNumberOrNil = isNumber$1(value) || isNullish(value);
+    var isValueNumberOrNil = isNumber$2(value) || isNullish(value);
     if (isValueNumberOrNil) {
       return minPointSize(value, index2);
     }
@@ -46733,7 +42038,7 @@ var renderLine = function renderLine2(option, props) {
   var line;
   if (/* @__PURE__ */ React$4.isValidElement(option)) {
     line = /* @__PURE__ */ React$4.cloneElement(option, props);
-  } else if (isFunction$3(option)) {
+  } else if (isFunction$4(option)) {
     line = option(props);
   } else {
     line = /* @__PURE__ */ React$4.createElement("line", _extends$8({}, props, {
@@ -47065,7 +42370,7 @@ _defineProperty$a(ReferenceDot, "renderDot", function(option, props) {
   var dot;
   if (/* @__PURE__ */ React$4.isValidElement(option)) {
     dot = /* @__PURE__ */ React$4.cloneElement(option, props);
-  } else if (isFunction$3(option)) {
+  } else if (isFunction$4(option)) {
     dot = option(props);
   } else {
     dot = /* @__PURE__ */ React$4.createElement(Dot, _extends$7({}, props, {
@@ -47285,7 +42590,7 @@ _defineProperty$9(ReferenceArea, "renderRect", function(option, props) {
   var rect;
   if (/* @__PURE__ */ React$4.isValidElement(option)) {
     rect = /* @__PURE__ */ React$4.cloneElement(option, props);
-  } else if (isFunction$3(option)) {
+  } else if (isFunction$4(option)) {
     rect = option(props);
   } else {
     rect = /* @__PURE__ */ React$4.createElement(Rectangle, _extends$6({}, props, {
@@ -47527,8 +42832,8 @@ function getTicks(props, fontSize, letterSpacing) {
   if (!ticks2 || !ticks2.length || !tick) {
     return [];
   }
-  if (isNumber$1(interval) || Global.isSsr) {
-    return getNumberIntervalTicks(ticks2, typeof interval === "number" && isNumber$1(interval) ? interval : 0);
+  if (isNumber$2(interval) || Global.isSsr) {
+    return getNumberIntervalTicks(ticks2, typeof interval === "number" && isNumber$2(interval) ? interval : 0);
   }
   var candidates = [];
   var sizeKey = orientation === "top" || orientation === "bottom" ? "width" : "height";
@@ -47540,7 +42845,7 @@ function getTicks(props, fontSize, letterSpacing) {
     height: 0
   };
   var getTickSize = function getTickSize2(content, index2) {
-    var value = isFunction$3(tickFormatter) ? tickFormatter(content.value, index2) : content.value;
+    var value = isFunction$4(tickFormatter) ? tickFormatter(content.value, index2) : content.value;
     return sizeKey === "width" ? getAngledTickWidth(getStringSize(value, {
       fontSize,
       letterSpacing
@@ -47769,7 +43074,7 @@ var CartesianAxis = /* @__PURE__ */ function(_Component) {
       var x1, x22, y1, y22, tx, ty;
       var sign2 = mirror ? -1 : 1;
       var finalTickSize = data.tickSize || tickSize;
-      var tickCoord = isNumber$1(data.tickCoord) ? data.tickCoord : data.coordinate;
+      var tickCoord = isNumber$2(data.tickCoord) ? data.tickCoord : data.coordinate;
       switch (orientation) {
         case "top":
           x1 = x22 = data.coordinate;
@@ -47875,7 +43180,7 @@ var CartesianAxis = /* @__PURE__ */ function(_Component) {
         });
       }
       return /* @__PURE__ */ React$4.createElement("line", _extends$5({}, props, {
-        className: clsx("recharts-cartesian-axis-line", get$2(axisLine, "className"))
+        className: clsx("recharts-cartesian-axis-line", get$3(axisLine, "className"))
       }));
     }
   }, {
@@ -47919,8 +43224,8 @@ var CartesianAxis = /* @__PURE__ */ function(_Component) {
             className: "recharts-cartesian-axis-tick",
             key: "tick-".concat(entry.value, "-").concat(entry.coordinate, "-").concat(entry.tickCoord)
           }, adaptEventsOfChild(_this2.props, entry, i)), tickLine && /* @__PURE__ */ React$4.createElement("line", _extends$5({}, tickLineProps, lineCoord, {
-            className: clsx("recharts-cartesian-axis-tick-line", get$2(tickLine, "className"))
-          })), tick && CartesianAxis2.renderTickItem(tick, tickProps, "".concat(isFunction$3(tickFormatter) ? tickFormatter(entry.value, i) : entry.value).concat(unit2 || "")));
+            className: clsx("recharts-cartesian-axis-tick-line", get$3(tickLine, "className"))
+          })), tick && CartesianAxis2.renderTickItem(tick, tickProps, "".concat(isFunction$4(tickFormatter) ? tickFormatter(entry.value, i) : entry.value).concat(unit2 || "")));
         });
         return /* @__PURE__ */ React$4.createElement("g", {
           className: "recharts-cartesian-axis-ticks"
@@ -47937,7 +43242,7 @@ var CartesianAxis = /* @__PURE__ */ function(_Component) {
       }
       var _this$props8 = this.props, ticks2 = _this$props8.ticks, noTicksProps = _objectWithoutProperties$3(_this$props8, _excluded3);
       var finalTicks = ticks2;
-      if (isFunction$3(ticksGenerator)) {
+      if (isFunction$4(ticksGenerator)) {
         finalTicks = ticks2 && ticks2.length > 0 ? ticksGenerator(this.props) : ticksGenerator(noTicksProps);
       }
       if (width <= 0 || height <= 0 || !finalTicks || !finalTicks.length) {
@@ -47959,7 +43264,7 @@ var CartesianAxis = /* @__PURE__ */ function(_Component) {
         tickItem = /* @__PURE__ */ React$4.cloneElement(option, _objectSpread$4(_objectSpread$4({}, props), {}, {
           className: combinedClassName
         }));
-      } else if (isFunction$3(option)) {
+      } else if (isFunction$4(option)) {
         tickItem = option(_objectSpread$4(_objectSpread$4({}, props), {}, {
           className: combinedClassName
         }));
@@ -48114,7 +43419,7 @@ function renderLineItem(option, props) {
   var lineItem;
   if (/* @__PURE__ */ React$4.isValidElement(option)) {
     lineItem = /* @__PURE__ */ React$4.cloneElement(option, props);
-  } else if (isFunction$3(option)) {
+  } else if (isFunction$4(option)) {
     lineItem = option(props);
   } else {
     var x1 = props.x1, y1 = props.y1, x2 = props.x2, y2 = props.y2, key = props.key, others = _objectWithoutProperties$2(props, _excluded$2);
@@ -48289,21 +43594,21 @@ function CartesianGrid(props) {
     horizontalFill: (_props$horizontalFill = props.horizontalFill) !== null && _props$horizontalFill !== void 0 ? _props$horizontalFill : defaultProps.horizontalFill,
     vertical: (_props$vertical3 = props.vertical) !== null && _props$vertical3 !== void 0 ? _props$vertical3 : defaultProps.vertical,
     verticalFill: (_props$verticalFill = props.verticalFill) !== null && _props$verticalFill !== void 0 ? _props$verticalFill : defaultProps.verticalFill,
-    x: isNumber$1(props.x) ? props.x : offset.left,
-    y: isNumber$1(props.y) ? props.y : offset.top,
-    width: isNumber$1(props.width) ? props.width : offset.width,
-    height: isNumber$1(props.height) ? props.height : offset.height
+    x: isNumber$2(props.x) ? props.x : offset.left,
+    y: isNumber$2(props.y) ? props.y : offset.top,
+    width: isNumber$2(props.width) ? props.width : offset.width,
+    height: isNumber$2(props.height) ? props.height : offset.height
   });
   var x2 = propsIncludingDefaults.x, y2 = propsIncludingDefaults.y, width = propsIncludingDefaults.width, height = propsIncludingDefaults.height, syncWithTicks = propsIncludingDefaults.syncWithTicks, horizontalValues = propsIncludingDefaults.horizontalValues, verticalValues = propsIncludingDefaults.verticalValues;
   var xAxis = useArbitraryXAxis();
   var yAxis = useYAxisWithFiniteDomainOrRandom();
-  if (!isNumber$1(width) || width <= 0 || !isNumber$1(height) || height <= 0 || !isNumber$1(x2) || x2 !== +x2 || !isNumber$1(y2) || y2 !== +y2) {
+  if (!isNumber$2(width) || width <= 0 || !isNumber$2(height) || height <= 0 || !isNumber$2(x2) || x2 !== +x2 || !isNumber$2(y2) || y2 !== +y2) {
     return null;
   }
   var verticalCoordinatesGenerator = propsIncludingDefaults.verticalCoordinatesGenerator || defaultVerticalCoordinatesGenerator;
   var horizontalCoordinatesGenerator = propsIncludingDefaults.horizontalCoordinatesGenerator || defaultHorizontalCoordinatesGenerator;
   var horizontalPoints = propsIncludingDefaults.horizontalPoints, verticalPoints = propsIncludingDefaults.verticalPoints;
-  if ((!horizontalPoints || !horizontalPoints.length) && isFunction$3(horizontalCoordinatesGenerator)) {
+  if ((!horizontalPoints || !horizontalPoints.length) && isFunction$4(horizontalCoordinatesGenerator)) {
     var isHorizontalValues = horizontalValues && horizontalValues.length;
     var generatorResult = horizontalCoordinatesGenerator({
       yAxis: yAxis ? _objectSpread$3(_objectSpread$3({}, yAxis), {}, {
@@ -48318,7 +43623,7 @@ function CartesianGrid(props) {
       horizontalPoints = generatorResult;
     }
   }
-  if ((!verticalPoints || !verticalPoints.length) && isFunction$3(verticalCoordinatesGenerator)) {
+  if ((!verticalPoints || !verticalPoints.length) && isFunction$4(verticalCoordinatesGenerator)) {
     var isVerticalValues = verticalValues && verticalValues.length;
     var _generatorResult = verticalCoordinatesGenerator({
       xAxis: xAxis ? _objectSpread$3(_objectSpread$3({}, xAxis), {}, {
@@ -48874,7 +44179,7 @@ var Line = /* @__PURE__ */ function(_PureComponent) {
       var dotItem;
       if (/* @__PURE__ */ React$4.isValidElement(option)) {
         dotItem = /* @__PURE__ */ React$4.cloneElement(option, props);
-      } else if (isFunction$3(option)) {
+      } else if (isFunction$4(option)) {
         dotItem = option(props);
       } else {
         var key = props.key, dotProps = _objectWithoutProperties$1(props, _excluded2$1);
@@ -49319,7 +44624,7 @@ var detectReferenceElementsDomain = function detectReferenceElementsDomain2(chil
   var finalDomain = domain;
   if (elements.length) {
     finalDomain = elements.reduce(function(result, el) {
-      if (el.props[idKey] === axisId && ifOverflowMatches(el.props, "extendDomain") && isNumber$1(el.props[valueKey])) {
+      if (el.props[idKey] === axisId && ifOverflowMatches(el.props, "extendDomain") && isNumber$2(el.props[valueKey])) {
         var value = el.props[valueKey];
         return [Math.min(result[0], value), Math.max(result[1], value)];
       }
@@ -49330,7 +44635,7 @@ var detectReferenceElementsDomain = function detectReferenceElementsDomain2(chil
     var key1 = "".concat(valueKey, "1");
     var key2 = "".concat(valueKey, "2");
     finalDomain = areas.reduce(function(result, el) {
-      if (el.props[idKey] === axisId && ifOverflowMatches(el.props, "extendDomain") && isNumber$1(el.props[key1]) && isNumber$1(el.props[key2])) {
+      if (el.props[idKey] === axisId && ifOverflowMatches(el.props, "extendDomain") && isNumber$2(el.props[key1]) && isNumber$2(el.props[key2])) {
         var value1 = el.props[key1];
         var value2 = el.props[key2];
         return [Math.min(result[0], value1, value2), Math.max(result[1], value1, value2)];
@@ -49340,7 +44645,7 @@ var detectReferenceElementsDomain = function detectReferenceElementsDomain2(chil
   }
   if (specifiedTicks && specifiedTicks.length) {
     finalDomain = specifiedTicks.reduce(function(result, tick) {
-      if (isNumber$1(tick)) {
+      if (isNumber$2(tick)) {
         return [Math.min(result[0], tick), Math.max(result[1], tick)];
       }
       return result;
@@ -49640,7 +44945,7 @@ function isDomainSpecifiedByUser(domain, allowDataOverflow, axisType) {
   if (axisType === "number" && allowDataOverflow === true && Array.isArray(domain)) {
     var domainStart = domain === null || domain === void 0 ? void 0 : domain[0];
     var domainEnd = domain === null || domain === void 0 ? void 0 : domain[1];
-    if (!!domainStart && !!domainEnd && isNumber$1(domainStart) && isNumber$1(domainEnd)) {
+    if (!!domainStart && !!domainEnd && isNumber$2(domainStart) && isNumber$2(domainEnd)) {
       return true;
     }
   }
@@ -50083,7 +45388,7 @@ var getDisplayedData = function getDisplayedData2(data, _ref) {
   if (itemsData.length > 0) {
     return itemsData;
   }
-  if (data && data.length && isNumber$1(dataStartIndex) && isNumber$1(dataEndIndex)) {
+  if (data && data.length && isNumber$2(dataStartIndex) && isNumber$2(dataEndIndex)) {
     return data.slice(dataStartIndex, dataEndIndex + 1);
   }
   return [];
@@ -50281,7 +45586,7 @@ var getAxisMapByItems = function getAxisMapByItems2(props, _ref3) {
         axisType
       }, Axis2.defaultProps), {}, {
         hide: true,
-        orientation: get$2(ORIENT_MAP, "".concat(axisType, ".").concat(index2 % 2), null),
+        orientation: get$3(ORIENT_MAP, "".concat(axisType, ".").concat(index2 % 2), null),
         domain,
         originalDomain,
         isCategorical,
@@ -50413,7 +45718,7 @@ var calculateOffset = function calculateOffset2(_ref5, prevLegendBBox) {
     var entry = xAxisMap[id];
     var orientation = entry.orientation;
     if (!entry.mirror && !entry.hide) {
-      return _objectSpread(_objectSpread({}, result), {}, _defineProperty({}, orientation, get$2(result, "".concat(orientation)) + entry.height));
+      return _objectSpread(_objectSpread({}, result), {}, _defineProperty({}, orientation, get$3(result, "".concat(orientation)) + entry.height));
     }
     return result;
   }, {
@@ -50635,7 +45940,7 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
           _this.setState(_nextState);
           _this.triggerSyncEvent(_nextState);
           var onMouseEnter = _this.props.onMouseEnter;
-          if (isFunction$3(onMouseEnter)) {
+          if (isFunction$4(onMouseEnter)) {
             onMouseEnter(_nextState, e3);
           }
         }
@@ -50650,7 +45955,7 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
         _this.setState(nextState);
         _this.triggerSyncEvent(nextState);
         var onMouseMove = _this.props.onMouseMove;
-        if (isFunction$3(onMouseMove)) {
+        if (isFunction$4(onMouseMove)) {
           onMouseMove(nextState, e3);
         }
       });
@@ -50686,14 +45991,14 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
         _this.setState(nextState);
         _this.triggerSyncEvent(nextState);
         var onMouseLeave = _this.props.onMouseLeave;
-        if (isFunction$3(onMouseLeave)) {
+        if (isFunction$4(onMouseLeave)) {
           onMouseLeave(nextState, e3);
         }
       });
       _defineProperty(_this, "handleOuterEvent", function(e3) {
         var eventName = getReactEventByType(e3);
-        var event = get$2(_this.props, "".concat(eventName));
-        if (eventName && isFunction$3(event)) {
+        var event = get$3(_this.props, "".concat(eventName));
+        if (eventName && isFunction$4(event)) {
           var _mouse;
           var mouse;
           if (/.*touch.*/i.test(eventName)) {
@@ -50713,21 +46018,21 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
           _this.setState(_nextState2);
           _this.triggerSyncEvent(_nextState2);
           var onClick = _this.props.onClick;
-          if (isFunction$3(onClick)) {
+          if (isFunction$4(onClick)) {
             onClick(_nextState2, e3);
           }
         }
       });
       _defineProperty(_this, "handleMouseDown", function(e3) {
         var onMouseDown = _this.props.onMouseDown;
-        if (isFunction$3(onMouseDown)) {
+        if (isFunction$4(onMouseDown)) {
           var _nextState3 = _this.getMouseInfo(e3);
           onMouseDown(_nextState3, e3);
         }
       });
       _defineProperty(_this, "handleMouseUp", function(e3) {
         var onMouseUp = _this.props.onMouseUp;
-        if (isFunction$3(onMouseUp)) {
+        if (isFunction$4(onMouseUp)) {
           var _nextState4 = _this.getMouseInfo(e3);
           onMouseUp(_nextState4, e3);
         }
@@ -50749,14 +46054,14 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
       });
       _defineProperty(_this, "handleDoubleClick", function(e3) {
         var onDoubleClick = _this.props.onDoubleClick;
-        if (isFunction$3(onDoubleClick)) {
+        if (isFunction$4(onDoubleClick)) {
           var _nextState5 = _this.getMouseInfo(e3);
           onDoubleClick(_nextState5, e3);
         }
       });
       _defineProperty(_this, "handleContextMenu", function(e3) {
         var onContextMenu = _this.props.onContextMenu;
-        if (isFunction$3(onContextMenu)) {
+        if (isFunction$4(onContextMenu)) {
           var _nextState6 = _this.getMouseInfo(e3);
           onContextMenu(_nextState6, e3);
         }
@@ -50842,8 +46147,8 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
         });
       });
       _defineProperty(_this, "renderPolarAxis", function(element, displayName, index2) {
-        var axisType = get$2(element, "type.axisType");
-        var axisMap = get$2(_this.state, "".concat(axisType, "Map"));
+        var axisType = get$3(element, "type.axisType");
+        var axisMap = get$3(_this.state, "".concat(axisType, "Map"));
         var elementDefaultProps = element.type.defaultProps;
         var elementProps = elementDefaultProps !== void 0 ? _objectSpread(_objectSpread({}, elementDefaultProps), element.props) : element.props;
         var axisOption = axisMap && axisMap[elementProps["".concat(axisType, "Id")]];
@@ -50924,9 +46229,9 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
           key: element.key || "_recharts-brush",
           onChange: combineEventHandlers(_this.handleBrushChange, element.props.onChange),
           data,
-          x: isNumber$1(element.props.x) ? element.props.x : offset.left,
-          y: isNumber$1(element.props.y) ? element.props.y : offset.top + offset.height + offset.brushBottom - (margin.bottom || 0),
-          width: isNumber$1(element.props.width) ? element.props.width : offset.width,
+          x: isNumber$2(element.props.x) ? element.props.x : offset.left,
+          y: isNumber$2(element.props.y) ? element.props.y : offset.top + offset.height + offset.brushBottom - (margin.bottom || 0),
+          width: isNumber$2(element.props.width) ? element.props.width : offset.width,
           startIndex: dataStartIndex,
           endIndex: dataEndIndex,
           updateId: "brush-".concat(updateId2)
@@ -51600,7 +46905,7 @@ var generateCategoricalChart = function generateCategoricalChart2(_ref6) {
     var dot;
     if (/* @__PURE__ */ reactExports.isValidElement(option)) {
       dot = /* @__PURE__ */ reactExports.cloneElement(option, props);
-    } else if (isFunction$3(option)) {
+    } else if (isFunction$4(option)) {
       dot = option(props);
     } else {
       dot = /* @__PURE__ */ React$4.createElement(Dot, props);
@@ -51644,7 +46949,6860 @@ var BarChart = generateCategoricalChart({
   }],
   formatAxisMap
 });
-const Route$3 = createFileRoute("/dashboard")({
+const Route$a = createFileRoute("/property-detail")({
+  component: PropertyDetailPage
+});
+function ChartTooltip$3({
+  active,
+  payload,
+  label
+}) {
+  if (!active || !(payload == null ? void 0 : payload.length)) return null;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-popover border border-border rounded-xl px-3 py-2 shadow-lg text-xs", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground mb-1 font-medium", children: label }),
+    payload.map((p2) => /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { style: { color: p2.color }, className: "font-semibold", children: [
+      p2.name,
+      ": ",
+      p2.value.toFixed(2),
+      " kWh"
+    ] }, p2.name))
+  ] });
+}
+function NotifCard({ notif }) {
+  const isWarning = notif.type === "Warning";
+  const timeAgo = (() => {
+    const diffMs = Date.now() - notif.createdAt;
+    const diffMins = Math.floor(diffMs / 6e4);
+    if (diffMins < 60) return `${diffMins}m ago`;
+    const diffHrs = Math.floor(diffMins / 60);
+    if (diffHrs < 24) return `${diffHrs}h ago`;
+    return `${Math.floor(diffHrs / 24)}d ago`;
+  })();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: `rounded-2xl border p-3 flex gap-3 ${isWarning ? "bg-destructive/10 border-destructive/30" : "bg-card border-border"}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: `w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 ${isWarning ? "bg-destructive/20" : "bg-primary/10"}`,
+            children: isWarning ? /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { size: 15, className: "text-destructive" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { size: 15, className: "text-primary" })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-foreground leading-snug", children: notif.message }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: timeAgo })
+        ] })
+      ]
+    }
+  );
+}
+function PropertyDetailPage() {
+  const navigate = useNavigate();
+  const search = useSearch({ strict: false });
+  const property2 = MOCK_PROPERTIES.find((p2) => p2.id === search.id) ?? MOCK_PROPERTIES[0];
+  const chartData = reactExports.useMemo(() => {
+    const all = generateMockEnergyData(24);
+    return all.filter((_, i) => i % 3 === 0);
+  }, []);
+  const totalSolarToday = reactExports.useMemo(() => {
+    return generateMockEnergyData(24).reduce((s2, d2) => s2 + d2.solar, 0).toFixed(1);
+  }, []);
+  const propertyNotifs = MOCK_NOTIFICATIONS.slice(0, 3);
+  const gridActive = property2.status === "Online";
+  const batteryPct = 78;
+  const batteryKwh = (batteryPct / 100 * property2.capacityKva).toFixed(1);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "property-detail.page",
+      className: "min-h-screen bg-background pb-24",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-lg mx-auto px-4 py-3 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "property-detail.back_button",
+              onClick: () => navigate({ to: "/properties" }),
+              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 transition-colors",
+              "aria-label": "Go back",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { size: 20, className: "text-foreground" })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-base font-semibold text-foreground font-display truncate", children: property2.title }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: property2.address })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "property-detail.analytics_button",
+              onClick: () => navigate({
+                to: "/property-analytics",
+                search: { id: property2.id }
+              }),
+              className: "flex items-center gap-1 text-xs text-primary font-medium px-3 py-1.5 rounded-xl bg-primary/10 hover:bg-primary/20 transition-colors",
+              children: [
+                "Analytics ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { size: 13 })
+              ]
+            }
+          )
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 space-y-4 pt-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-detail.estimate_card",
+              className: "bg-card border border-border rounded-3xl p-5",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-1", children: "Today's Usage" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-4xl font-bold text-foreground font-display tracking-tight", children: "₦2,450" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: "Current Estimate" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-detail.status_row",
+              className: "bg-card border border-border rounded-3xl p-4 flex flex-wrap gap-3 items-center",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary/10 border border-primary/20 text-xs font-semibold text-primary", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { size: 13 }),
+                  "Solar Active"
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "span",
+                  {
+                    className: `flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-semibold ${gridActive ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-400" : "bg-muted border-border text-muted-foreground"}`,
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "span",
+                        {
+                          className: `w-2 h-2 rounded-full ${gridActive ? "bg-emerald-400 animate-pulse" : "bg-muted-foreground"}`
+                        }
+                      ),
+                      "Grid ",
+                      gridActive ? "Connected" : "Disconnected"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1 text-xs text-muted-foreground ml-auto", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 12, className: "text-primary" }),
+                  "Discharge: 2.3 kW/h"
+                ] })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "grid grid-cols-2 gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                "data-ocid": "property-detail.consumed_card",
+                className: "bg-card border border-border rounded-2xl p-4 flex flex-col gap-1",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Total Consumed Today" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-2xl font-bold text-foreground font-mono", children: "12.4" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "kWh since online" })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                "data-ocid": "property-detail.grid_indicator",
+                className: "bg-card border border-border rounded-2xl p-4 flex flex-col items-center justify-center gap-2",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      className: `flex items-center gap-2 px-3 py-2 rounded-xl ${gridActive ? "bg-primary/10" : "bg-destructive/10"}`,
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          Zap,
+                          {
+                            size: 18,
+                            className: gridActive ? "text-primary" : "text-destructive"
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                          "span",
+                          {
+                            className: `text-sm font-bold ${gridActive ? "text-primary" : "text-destructive"}`,
+                            children: [
+                              "Grid ",
+                              gridActive ? "ON" : "OFF"
+                            ]
+                          }
+                        )
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground text-center", children: gridActive ? "Power available" : "No grid power" })
+                ]
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-detail.battery_card",
+              className: "bg-card border border-border rounded-3xl p-5 space-y-3",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(BatteryCharging, { size: 22, className: "text-primary" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-semibold text-foreground", children: "Battery" })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "span",
+                    {
+                      className: `text-sm font-bold ${"text-primary"}`,
+                      children: [
+                        batteryPct,
+                        "%"
+                      ]
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-3 bg-muted rounded-full overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    className: "h-full rounded-full transition-all duration-500",
+                    style: {
+                      width: `${batteryPct}%`,
+                      background: "oklch(var(--primary))"
+                    }
+                  }
+                ) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground", children: [
+                    batteryKwh,
+                    " kWh remaining of ",
+                    property2.capacityKva,
+                    " kWh"
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-lg", children: "Charging" })
+                ] })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-detail.notifications_section",
+              className: "space-y-2",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-sm font-semibold text-foreground px-1", children: "System Alerts" }),
+                propertyNotifs.map((n2) => /* @__PURE__ */ jsxRuntimeExports.jsx(NotifCard, { notif: n2 }, n2.id))
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-detail.solar_section",
+              className: "bg-card border border-border rounded-3xl p-5",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between mb-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-sm font-semibold text-foreground font-display", children: "Solar Generation Today" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-3xl font-bold text-primary font-mono mb-4", children: [
+                  totalSolarToday,
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-base font-normal text-muted-foreground ml-1", children: "kWh" })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { height: 180 }, children: /* @__PURE__ */ jsxRuntimeExports.jsx(ResponsiveContainer, { width: "100%", height: "100%", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  BarChart,
+                  {
+                    data: chartData,
+                    barCategoryGap: "30%",
+                    margin: { top: 0, right: 0, left: -20, bottom: 0 },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        XAxis,
+                        {
+                          dataKey: "hour",
+                          tick: {
+                            fontSize: 10,
+                            fill: "oklch(var(--muted-foreground))"
+                          },
+                          axisLine: false,
+                          tickLine: false
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        YAxis,
+                        {
+                          tick: {
+                            fontSize: 10,
+                            fill: "oklch(var(--muted-foreground))"
+                          },
+                          axisLine: false,
+                          tickLine: false,
+                          tickCount: 4
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Tooltip,
+                        {
+                          content: /* @__PURE__ */ jsxRuntimeExports.jsx(ChartTooltip$3, {}),
+                          cursor: { fill: "oklch(var(--muted) / 0.5)", radius: 4 }
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Bar,
+                        {
+                          dataKey: "solar",
+                          name: "Solar",
+                          fill: "oklch(var(--primary))",
+                          radius: [4, 4, 0, 0]
+                        }
+                      )
+                    ]
+                  }
+                ) }) })
+              ]
+            }
+          )
+        ] })
+      ]
+    }
+  );
+}
+const Route$9 = createFileRoute("/property-analytics")({
+  component: PropertyAnalyticsPage
+});
+const PERIODS$1 = ["Day", "Week", "Month", "All Time"];
+const LAST_7_DAYS = Array.from({ length: 7 }, (_, i) => {
+  const d2 = /* @__PURE__ */ new Date();
+  d2.setDate(d2.getDate() - (6 - i));
+  return {
+    date: d2.toLocaleDateString("en-GB", { day: "numeric", month: "short" }),
+    gridKwh: Number.parseFloat((Math.random() * 6 + 4).toFixed(1)),
+    solarKwh: Number.parseFloat((Math.random() * 10 + 8).toFixed(1)),
+    downtime: Number.parseFloat((Math.random() * 1.2).toFixed(1))
+  };
+});
+function getMockBreakdown(period) {
+  const factor = period === "Day" ? 1 : period === "Week" ? 7 : period === "Month" ? 30 : 365;
+  return {
+    gridUsed: Number.parseFloat((8.4 * factor * 0.08).toFixed(1)),
+    renewable: Number.parseFloat((14.2 * factor * 0.08).toFixed(1)),
+    downtime: Number.parseFloat((0.5 * Math.sqrt(factor)).toFixed(1))
+  };
+}
+function buildChartData(period) {
+  if (period === "Day")
+    return generateMockEnergyData(24).filter((_, i) => i % 3 === 0).map((d2) => ({ label: d2.hour, value: d2.solar }));
+  if (period === "Week")
+    return ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((label) => ({
+      label,
+      value: Number.parseFloat((Math.random() * 18 + 8).toFixed(2))
+    }));
+  if (period === "Month")
+    return Array.from({ length: 4 }, (_, i) => ({
+      label: `Wk ${i + 1}`,
+      value: Number.parseFloat((Math.random() * 80 + 50).toFixed(1))
+    }));
+  return [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ].map((label) => ({
+    label,
+    value: Number.parseFloat((Math.random() * 320 + 200).toFixed(1))
+  }));
+}
+function ChartTooltip$2({
+  active,
+  payload,
+  label
+}) {
+  if (!active || !(payload == null ? void 0 : payload.length)) return null;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-popover border border-border rounded-xl px-3 py-2 shadow-lg text-xs", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground mb-1", children: label }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "font-semibold text-primary", children: [
+      payload[0].value,
+      " kWh"
+    ] })
+  ] });
+}
+function PropertyAnalyticsPage() {
+  const navigate = useNavigate();
+  const search = useSearch({ strict: false });
+  const property2 = MOCK_PROPERTIES.find((p2) => p2.id === search.id) ?? MOCK_PROPERTIES[0];
+  const [period, setPeriod] = reactExports.useState("Day");
+  const [selectedDay, setSelectedDay] = reactExports.useState(null);
+  const breakdown = reactExports.useMemo(() => getMockBreakdown(period), [period]);
+  const chartData = reactExports.useMemo(() => buildChartData(period), [period]);
+  const activeBreakdown = selectedDay ? {
+    gridUsed: selectedDay.gridKwh,
+    renewable: selectedDay.solarKwh,
+    downtime: selectedDay.downtime
+  } : breakdown;
+  const totalBar = activeBreakdown.gridUsed + activeBreakdown.renewable;
+  const gridPct = totalBar > 0 ? activeBreakdown.gridUsed / totalBar * 100 : 50;
+  const renewPct = totalBar > 0 ? activeBreakdown.renewable / totalBar * 100 : 50;
+  const EMERALD = "oklch(0.65 0.19 142)";
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "property-analytics.page",
+      className: "min-h-screen bg-background pb-24",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-lg mx-auto px-4 py-3 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "property-analytics.back_button",
+              onClick: () => navigate({
+                to: "/property-detail",
+                search: { id: property2.id }
+              }),
+              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 transition-colors",
+              "aria-label": "Go back",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { size: 20, className: "text-foreground" })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-base font-semibold text-foreground font-display", children: "Energy Analytics" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: property2.title })
+          ] })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 space-y-5 pt-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              "data-ocid": "property-analytics.period_selector",
+              className: "flex bg-muted rounded-2xl p-1 gap-1",
+              role: "tablist",
+              children: PERIODS$1.map((p2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  role: "tab",
+                  "aria-selected": period === p2,
+                  "data-ocid": `property-analytics.period.${p2.toLowerCase().replace(" ", "-")}`,
+                  onClick: () => {
+                    setPeriod(p2);
+                    setSelectedDay(null);
+                  },
+                  className: [
+                    "flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-200",
+                    period === p2 ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
+                  ].join(" "),
+                  children: p2
+                },
+                p2
+              ))
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-analytics.breakdown_section",
+              className: "space-y-3",
+              children: [
+                selectedDay && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground px-1", children: [
+                  "Showing data for",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground font-medium", children: selectedDay.date }),
+                  " ",
+                  "—",
+                  " ",
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "button",
+                    {
+                      type: "button",
+                      className: "text-primary underline",
+                      onClick: () => setSelectedDay(null),
+                      children: "Reset"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-3 gap-3", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-2xl p-3 flex flex-col gap-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 13, className: "text-muted-foreground" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Grid Used" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl font-bold text-foreground font-mono", children: activeBreakdown.gridUsed }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "kWh" })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-2xl p-3 flex flex-col gap-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { size: 13, className: "text-primary" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Renewable" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl font-bold text-primary font-mono", children: activeBreakdown.renewable }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "kWh" })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-2xl p-3 flex flex-col gap-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingDown, { size: 13, className: "text-destructive" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: "Downtime" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl font-bold text-foreground font-mono", children: activeBreakdown.downtime }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "hours" })
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full h-4 rounded-full overflow-hidden flex", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "h-full",
+                      style: {
+                        width: `${gridPct}%`,
+                        background: "oklch(0.72 0.22 33)"
+                      }
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "h-full",
+                      style: {
+                        width: `${renewPct}%`,
+                        background: EMERALD
+                      }
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 text-xs text-muted-foreground", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "w-2.5 h-2.5 rounded-full inline-block",
+                        style: { background: "oklch(0.72 0.22 33)" }
+                      }
+                    ),
+                    "Grid ",
+                    gridPct.toFixed(0),
+                    "%"
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "span",
+                      {
+                        className: "w-2.5 h-2.5 rounded-full inline-block",
+                        style: { background: EMERALD }
+                      }
+                    ),
+                    "Renewable ",
+                    renewPct.toFixed(0),
+                    "%"
+                  ] })
+                ] })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-analytics.generation_chart",
+              className: "bg-card border border-border rounded-3xl p-5",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-sm font-semibold text-foreground font-display mb-4", children: "☀️ Energy from Renewables" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { height: 180 }, children: /* @__PURE__ */ jsxRuntimeExports.jsx(ResponsiveContainer, { width: "100%", height: "100%", children: period === "Day" ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  BarChart,
+                  {
+                    data: chartData,
+                    margin: { top: 0, right: 0, left: -20, bottom: 0 },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        XAxis,
+                        {
+                          dataKey: "label",
+                          tick: {
+                            fontSize: 10,
+                            fill: "oklch(var(--muted-foreground))"
+                          },
+                          axisLine: false,
+                          tickLine: false
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        YAxis,
+                        {
+                          tick: {
+                            fontSize: 10,
+                            fill: "oklch(var(--muted-foreground))"
+                          },
+                          axisLine: false,
+                          tickLine: false,
+                          tickCount: 4
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Tooltip, { content: /* @__PURE__ */ jsxRuntimeExports.jsx(ChartTooltip$2, {}) }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Bar, { dataKey: "value", fill: EMERALD, radius: [4, 4, 0, 0] })
+                    ]
+                  }
+                ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  LineChart,
+                  {
+                    data: chartData,
+                    margin: { top: 4, right: 4, left: -20, bottom: 0 },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        CartesianGrid,
+                        {
+                          strokeDasharray: "3 3",
+                          stroke: "oklch(var(--border))",
+                          vertical: false
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        XAxis,
+                        {
+                          dataKey: "label",
+                          tick: {
+                            fontSize: 10,
+                            fill: "oklch(var(--muted-foreground))"
+                          },
+                          axisLine: false,
+                          tickLine: false
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        YAxis,
+                        {
+                          tick: {
+                            fontSize: 10,
+                            fill: "oklch(var(--muted-foreground))"
+                          },
+                          axisLine: false,
+                          tickLine: false
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Tooltip, { content: /* @__PURE__ */ jsxRuntimeExports.jsx(ChartTooltip$2, {}) }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Line,
+                        {
+                          type: "monotone",
+                          dataKey: "value",
+                          stroke: EMERALD,
+                          strokeWidth: 2,
+                          dot: false,
+                          activeDot: { r: 4, fill: EMERALD, strokeWidth: 0 }
+                        }
+                      )
+                    ]
+                  }
+                ) }) })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-analytics.history_section",
+              className: "bg-card border border-border rounded-3xl overflow-hidden",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-4 py-3 border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-sm font-semibold text-foreground font-display", children: "Previous Days" }) }),
+                LAST_7_DAYS.map((day, idx) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "button",
+                  {
+                    type: "button",
+                    "data-ocid": `property-analytics.history_row.${idx + 1}`,
+                    onClick: () => setSelectedDay((selectedDay == null ? void 0 : selectedDay.date) === day.date ? null : day),
+                    className: `w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${idx < LAST_7_DAYS.length - 1 ? "border-b border-border" : ""} ${(selectedDay == null ? void 0 : selectedDay.date) === day.date ? "bg-primary/10" : "hover:bg-muted/40"}`,
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground w-14 flex-shrink-0", children: day.date }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 grid grid-cols-3 gap-1", children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-foreground", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: "G: " }),
+                          day.gridKwh,
+                          " kWh"
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-primary", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: "S: " }),
+                          day.solarKwh,
+                          " kWh"
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+                          day.downtime,
+                          "h off"
+                        ] })
+                      ] }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        ChevronLeft,
+                        {
+                          size: 14,
+                          className: `text-muted-foreground rotate-180 transition-transform ${(selectedDay == null ? void 0 : selectedDay.date) === day.date ? "text-primary" : ""}`
+                        }
+                      )
+                    ]
+                  },
+                  day.date
+                ))
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "section",
+            {
+              "data-ocid": "property-analytics.estimates_section",
+              className: "space-y-3",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-sm font-semibold text-foreground px-1", children: "Estimated Generation Value" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-3 gap-3", children: [
+                  { label: "Today", value: "₦1,240", sub: "est." },
+                  { label: "This Month", value: "₦18,500", sub: "est." },
+                  { label: "All Time", value: "₦142,000", sub: "total" }
+                ].map(({ label, value, sub }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    className: "bg-card border border-border rounded-2xl p-3 flex flex-col gap-1",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: label }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-bold text-primary font-mono leading-tight", children: value }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: sub })
+                    ]
+                  },
+                  label
+                )) })
+              ]
+            }
+          )
+        ] })
+      ]
+    }
+  );
+}
+var isCheckBoxInput = (element) => element.type === "checkbox";
+var isDateObject = (value) => value instanceof Date;
+var isNullOrUndefined = (value) => value == null;
+const isObjectType = (value) => typeof value === "object";
+var isObject$2 = (value) => !isNullOrUndefined(value) && !Array.isArray(value) && isObjectType(value) && !isDateObject(value);
+var getEventValue = (event) => isObject$2(event) && event.target ? isCheckBoxInput(event.target) ? event.target.checked : event.target.value : event;
+var getNodeParentName = (name) => name.substring(0, name.search(/\.\d+(\.|$)/)) || name;
+var isNameInFieldArray = (names, name) => names.has(getNodeParentName(name));
+var isPlainObject = (tempObject) => {
+  const prototypeCopy = tempObject.constructor && tempObject.constructor.prototype;
+  return isObject$2(prototypeCopy) && prototypeCopy.hasOwnProperty("isPrototypeOf");
+};
+var isWeb = typeof window !== "undefined" && typeof window.HTMLElement !== "undefined" && typeof document !== "undefined";
+function cloneObject(data) {
+  if (data instanceof Date) {
+    return new Date(data);
+  }
+  const isFileListInstance = typeof FileList !== "undefined" && data instanceof FileList;
+  if (isWeb && (data instanceof Blob || isFileListInstance)) {
+    return data;
+  }
+  const isArray2 = Array.isArray(data);
+  if (!isArray2 && !(isObject$2(data) && isPlainObject(data))) {
+    return data;
+  }
+  const copy2 = isArray2 ? [] : Object.create(Object.getPrototypeOf(data));
+  for (const key in data) {
+    if (Object.prototype.hasOwnProperty.call(data, key)) {
+      copy2[key] = cloneObject(data[key]);
+    }
+  }
+  return copy2;
+}
+var isKey = (value) => /^\w*$/.test(value);
+var isUndefined = (val) => val === void 0;
+var compact = (value) => Array.isArray(value) ? value.filter(Boolean) : [];
+var stringToPath = (input) => compact(input.replace(/["|']|\]/g, "").split(/\.|\[/));
+var get = (object2, path, defaultValue) => {
+  if (!path || !isObject$2(object2)) {
+    return defaultValue;
+  }
+  const result = (isKey(path) ? [path] : stringToPath(path)).reduce((result2, key) => isNullOrUndefined(result2) ? result2 : result2[key], object2);
+  return isUndefined(result) || result === object2 ? isUndefined(object2[path]) ? defaultValue : object2[path] : result;
+};
+var isBoolean$1 = (value) => typeof value === "boolean";
+var isFunction = (value) => typeof value === "function";
+var set = (object2, path, value) => {
+  let index2 = -1;
+  const tempPath = isKey(path) ? [path] : stringToPath(path);
+  const length = tempPath.length;
+  const lastIndex = length - 1;
+  while (++index2 < length) {
+    const key = tempPath[index2];
+    let newValue = value;
+    if (index2 !== lastIndex) {
+      const objValue = object2[key];
+      newValue = isObject$2(objValue) || Array.isArray(objValue) ? objValue : !isNaN(+tempPath[index2 + 1]) ? [] : {};
+    }
+    if (key === "__proto__" || key === "constructor" || key === "prototype") {
+      return;
+    }
+    object2[key] = newValue;
+    object2 = object2[key];
+  }
+};
+const EVENTS = {
+  BLUR: "blur",
+  FOCUS_OUT: "focusout",
+  SUBMIT: "submit",
+  TRIGGER: "trigger",
+  VALID: "valid"
+};
+const VALIDATION_MODE = {
+  onBlur: "onBlur",
+  onChange: "onChange",
+  onSubmit: "onSubmit",
+  onTouched: "onTouched",
+  all: "all"
+};
+const INPUT_VALIDATION_RULES = {
+  max: "max",
+  min: "min",
+  maxLength: "maxLength",
+  minLength: "minLength",
+  pattern: "pattern",
+  required: "required",
+  validate: "validate"
+};
+const FORM_ERROR_TYPE = "form";
+const ROOT_ERROR_TYPE = "root";
+const HookFormControlContext = React$4.createContext(null);
+HookFormControlContext.displayName = "HookFormControlContext";
+var getProxyFormState = (formState, control, localProxyFormState, isRoot = true) => {
+  const result = {
+    defaultValues: control._defaultValues
+  };
+  for (const key in formState) {
+    Object.defineProperty(result, key, {
+      get: () => {
+        const _key = key;
+        if (control._proxyFormState[_key] !== VALIDATION_MODE.all) {
+          control._proxyFormState[_key] = !isRoot || VALIDATION_MODE.all;
+        }
+        return formState[_key];
+      }
+    });
+  }
+  return result;
+};
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? React$4.useLayoutEffect : React$4.useEffect;
+var isString$1 = (value) => typeof value === "string";
+var generateWatchOutput = (names, _names, formValues, isGlobal, defaultValue) => {
+  if (isString$1(names)) {
+    isGlobal && _names.watch.add(names);
+    return get(formValues, names, defaultValue);
+  }
+  if (Array.isArray(names)) {
+    return names.map((fieldName) => (isGlobal && _names.watch.add(fieldName), get(formValues, fieldName)));
+  }
+  isGlobal && (_names.watchAll = true);
+  return formValues;
+};
+var isPrimitive = (value) => isNullOrUndefined(value) || !isObjectType(value);
+function deepEqual(object1, object2, _internal_visited = /* @__PURE__ */ new WeakSet()) {
+  if (isPrimitive(object1) || isPrimitive(object2)) {
+    return Object.is(object1, object2);
+  }
+  if (isDateObject(object1) && isDateObject(object2)) {
+    return Object.is(object1.getTime(), object2.getTime());
+  }
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+  if (_internal_visited.has(object1) || _internal_visited.has(object2)) {
+    return true;
+  }
+  _internal_visited.add(object1);
+  _internal_visited.add(object2);
+  for (const key of keys1) {
+    const val1 = object1[key];
+    if (!keys2.includes(key)) {
+      return false;
+    }
+    if (key !== "ref") {
+      const val2 = object2[key];
+      if (isDateObject(val1) && isDateObject(val2) || isObject$2(val1) && isObject$2(val2) || Array.isArray(val1) && Array.isArray(val2) ? !deepEqual(val1, val2, _internal_visited) : !Object.is(val1, val2)) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+const HookFormContext = React$4.createContext(null);
+HookFormContext.displayName = "HookFormContext";
+var appendErrors = (name, validateAllFieldCriteria, errors, type, message) => validateAllFieldCriteria ? {
+  ...errors[name],
+  types: {
+    ...errors[name] && errors[name].types ? errors[name].types : {},
+    [type]: message || true
+  }
+} : {};
+var convertToArrayPayload = (value) => Array.isArray(value) ? value : [value];
+var createSubject = () => {
+  let _observers2 = [];
+  const next = (value) => {
+    for (const observer of _observers2) {
+      observer.next && observer.next(value);
+    }
+  };
+  const subscribe2 = (observer) => {
+    _observers2.push(observer);
+    return {
+      unsubscribe: () => {
+        _observers2 = _observers2.filter((o) => o !== observer);
+      }
+    };
+  };
+  const unsubscribe = () => {
+    _observers2 = [];
+  };
+  return {
+    get observers() {
+      return _observers2;
+    },
+    next,
+    subscribe: subscribe2,
+    unsubscribe
+  };
+};
+function extractFormValues(fieldsState, formValues) {
+  const values = {};
+  for (const key in fieldsState) {
+    if (fieldsState.hasOwnProperty(key)) {
+      const fieldState = fieldsState[key];
+      const fieldValue = formValues[key];
+      if (fieldState && isObject$2(fieldState) && fieldValue) {
+        const nestedFieldsState = extractFormValues(fieldState, fieldValue);
+        if (isObject$2(nestedFieldsState)) {
+          values[key] = nestedFieldsState;
+        }
+      } else if (fieldsState[key]) {
+        values[key] = fieldValue;
+      }
+    }
+  }
+  return values;
+}
+var isEmptyObject = (value) => isObject$2(value) && !Object.keys(value).length;
+var isFileInput = (element) => element.type === "file";
+var isHTMLElement = (value) => {
+  if (!isWeb) {
+    return false;
+  }
+  const owner = value ? value.ownerDocument : 0;
+  return value instanceof (owner && owner.defaultView ? owner.defaultView.HTMLElement : HTMLElement);
+};
+var isMultipleSelect = (element) => element.type === `select-multiple`;
+var isRadioInput = (element) => element.type === "radio";
+var isRadioOrCheckbox = (ref) => isRadioInput(ref) || isCheckBoxInput(ref);
+var live = (ref) => isHTMLElement(ref) && ref.isConnected;
+function baseGet(object2, updatePath) {
+  const length = updatePath.slice(0, -1).length;
+  let index2 = 0;
+  while (index2 < length) {
+    object2 = isUndefined(object2) ? index2++ : object2[updatePath[index2++]];
+  }
+  return object2;
+}
+function isEmptyArray(obj) {
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key) && !isUndefined(obj[key])) {
+      return false;
+    }
+  }
+  return true;
+}
+function unset(object2, path) {
+  const paths = Array.isArray(path) ? path : isKey(path) ? [path] : stringToPath(path);
+  const childObject = paths.length === 1 ? object2 : baseGet(object2, paths);
+  const index2 = paths.length - 1;
+  const key = paths[index2];
+  if (childObject) {
+    delete childObject[key];
+  }
+  if (index2 !== 0 && (isObject$2(childObject) && isEmptyObject(childObject) || Array.isArray(childObject) && isEmptyArray(childObject))) {
+    unset(object2, paths.slice(0, -1));
+  }
+  return object2;
+}
+var objectHasFunction = (data) => {
+  for (const key in data) {
+    if (isFunction(data[key])) {
+      return true;
+    }
+  }
+  return false;
+};
+function isTraversable(value) {
+  return Array.isArray(value) || isObject$2(value) && !objectHasFunction(value);
+}
+function markFieldsDirty(data, fields = {}) {
+  for (const key in data) {
+    const value = data[key];
+    if (isTraversable(value)) {
+      fields[key] = Array.isArray(value) ? [] : {};
+      markFieldsDirty(value, fields[key]);
+    } else if (!isUndefined(value)) {
+      fields[key] = true;
+    }
+  }
+  return fields;
+}
+function getDirtyFields(data, formValues, dirtyFieldsFromValues) {
+  if (!dirtyFieldsFromValues) {
+    dirtyFieldsFromValues = markFieldsDirty(formValues);
+  }
+  for (const key in data) {
+    const value = data[key];
+    if (isTraversable(value)) {
+      if (isUndefined(formValues) || isPrimitive(dirtyFieldsFromValues[key])) {
+        dirtyFieldsFromValues[key] = markFieldsDirty(value, Array.isArray(value) ? [] : {});
+      } else {
+        getDirtyFields(value, isNullOrUndefined(formValues) ? {} : formValues[key], dirtyFieldsFromValues[key]);
+      }
+    } else {
+      const formValue = formValues[key];
+      dirtyFieldsFromValues[key] = !deepEqual(value, formValue);
+    }
+  }
+  return dirtyFieldsFromValues;
+}
+const defaultResult = {
+  value: false,
+  isValid: false
+};
+const validResult = { value: true, isValid: true };
+var getCheckboxValue = (options) => {
+  if (Array.isArray(options)) {
+    if (options.length > 1) {
+      const values = options.filter((option) => option && option.checked && !option.disabled).map((option) => option.value);
+      return { value: values, isValid: !!values.length };
+    }
+    return options[0].checked && !options[0].disabled ? (
+      // @ts-expect-error expected to work in the browser
+      options[0].attributes && !isUndefined(options[0].attributes.value) ? isUndefined(options[0].value) || options[0].value === "" ? validResult : { value: options[0].value, isValid: true } : validResult
+    ) : defaultResult;
+  }
+  return defaultResult;
+};
+var getFieldValueAs = (value, { valueAsNumber, valueAsDate, setValueAs }) => isUndefined(value) ? value : valueAsNumber ? value === "" ? NaN : value ? +value : value : valueAsDate && isString$1(value) ? new Date(value) : setValueAs ? setValueAs(value) : value;
+const defaultReturn = {
+  isValid: false,
+  value: null
+};
+var getRadioValue = (options) => Array.isArray(options) ? options.reduce((previous, option) => option && option.checked && !option.disabled ? {
+  isValid: true,
+  value: option.value
+} : previous, defaultReturn) : defaultReturn;
+function getFieldValue(_f2) {
+  const ref = _f2.ref;
+  if (isFileInput(ref)) {
+    return ref.files;
+  }
+  if (isRadioInput(ref)) {
+    return getRadioValue(_f2.refs).value;
+  }
+  if (isMultipleSelect(ref)) {
+    return [...ref.selectedOptions].map(({ value }) => value);
+  }
+  if (isCheckBoxInput(ref)) {
+    return getCheckboxValue(_f2.refs).value;
+  }
+  return getFieldValueAs(isUndefined(ref.value) ? _f2.ref.value : ref.value, _f2);
+}
+var getResolverOptions = (fieldsNames, _fields, criteriaMode, shouldUseNativeValidation) => {
+  const fields = {};
+  for (const name of fieldsNames) {
+    const field = get(_fields, name);
+    field && set(fields, name, field._f);
+  }
+  return {
+    criteriaMode,
+    names: [...fieldsNames],
+    fields,
+    shouldUseNativeValidation
+  };
+};
+var isRegex = (value) => value instanceof RegExp;
+var getRuleValue = (rule) => isUndefined(rule) ? rule : isRegex(rule) ? rule.source : isObject$2(rule) ? isRegex(rule.value) ? rule.value.source : rule.value : rule;
+var getValidationModes = (mode) => ({
+  isOnSubmit: !mode || mode === VALIDATION_MODE.onSubmit,
+  isOnBlur: mode === VALIDATION_MODE.onBlur,
+  isOnChange: mode === VALIDATION_MODE.onChange,
+  isOnAll: mode === VALIDATION_MODE.all,
+  isOnTouch: mode === VALIDATION_MODE.onTouched
+});
+const ASYNC_FUNCTION = "AsyncFunction";
+var hasPromiseValidation = (fieldReference) => !!fieldReference && !!fieldReference.validate && !!(isFunction(fieldReference.validate) && fieldReference.validate.constructor.name === ASYNC_FUNCTION || isObject$2(fieldReference.validate) && Object.values(fieldReference.validate).find((validateFunction) => validateFunction.constructor.name === ASYNC_FUNCTION));
+var hasValidation = (options) => options.mount && (options.required || options.min || options.max || options.maxLength || options.minLength || options.pattern || options.validate);
+var isWatched = (name, _names, isBlurEvent) => !isBlurEvent && (_names.watchAll || _names.watch.has(name) || [..._names.watch].some((watchName) => name.startsWith(watchName) && /^\.\w+/.test(name.slice(watchName.length))));
+const iterateFieldsByAction = (fields, action, fieldsNames, abortEarly) => {
+  for (const key of fieldsNames || Object.keys(fields)) {
+    const field = get(fields, key);
+    if (field) {
+      const { _f: _f2, ...currentField } = field;
+      if (_f2) {
+        if (_f2.refs && _f2.refs[0] && action(_f2.refs[0], key) && !abortEarly) {
+          return true;
+        } else if (_f2.ref && action(_f2.ref, _f2.name) && !abortEarly) {
+          return true;
+        } else {
+          if (iterateFieldsByAction(currentField, action)) {
+            break;
+          }
+        }
+      } else if (isObject$2(currentField)) {
+        if (iterateFieldsByAction(currentField, action)) {
+          break;
+        }
+      }
+    }
+  }
+  return;
+};
+function schemaErrorLookup(errors, _fields, name) {
+  const error = get(errors, name);
+  if (error || isKey(name)) {
+    return {
+      error,
+      name
+    };
+  }
+  const names = name.split(".");
+  while (names.length) {
+    const fieldName = names.join(".");
+    const field = get(_fields, fieldName);
+    const foundError = get(errors, fieldName);
+    if (field && !Array.isArray(field) && name !== fieldName) {
+      return { name };
+    }
+    if (foundError && foundError.type) {
+      return {
+        name: fieldName,
+        error: foundError
+      };
+    }
+    if (foundError && foundError.root && foundError.root.type) {
+      return {
+        name: `${fieldName}.root`,
+        error: foundError.root
+      };
+    }
+    names.pop();
+  }
+  return {
+    name
+  };
+}
+var shouldRenderFormState = (formStateData, _proxyFormState, updateFormState, isRoot) => {
+  updateFormState(formStateData);
+  const { name, ...formState } = formStateData;
+  return isEmptyObject(formState) || Object.keys(formState).length >= Object.keys(_proxyFormState).length || Object.keys(formState).find((key) => _proxyFormState[key] === (!isRoot || VALIDATION_MODE.all));
+};
+var shouldSubscribeByName = (name, signalName, exact) => !name || !signalName || name === signalName || convertToArrayPayload(name).some((currentName) => currentName && (exact ? currentName === signalName : currentName.startsWith(signalName) || signalName.startsWith(currentName)));
+var skipValidation = (isBlurEvent, isTouched, isSubmitted, reValidateMode, mode) => {
+  if (mode.isOnAll) {
+    return false;
+  } else if (!isSubmitted && mode.isOnTouch) {
+    return !(isTouched || isBlurEvent);
+  } else if (isSubmitted ? reValidateMode.isOnBlur : mode.isOnBlur) {
+    return !isBlurEvent;
+  } else if (isSubmitted ? reValidateMode.isOnChange : mode.isOnChange) {
+    return isBlurEvent;
+  }
+  return true;
+};
+var unsetEmptyArray = (ref, name) => !compact(get(ref, name)).length && unset(ref, name);
+var updateFieldArrayRootError = (errors, error, name) => {
+  const fieldArrayErrors = convertToArrayPayload(get(errors, name));
+  set(fieldArrayErrors, ROOT_ERROR_TYPE, error[name]);
+  set(errors, name, fieldArrayErrors);
+  return errors;
+};
+function getValidateError(result, ref, type = "validate") {
+  if (isString$1(result) || Array.isArray(result) && result.every(isString$1) || isBoolean$1(result) && !result) {
+    return {
+      type,
+      message: isString$1(result) ? result : "",
+      ref
+    };
+  }
+}
+var getValueAndMessage = (validationData) => isObject$2(validationData) && !isRegex(validationData) ? validationData : {
+  value: validationData,
+  message: ""
+};
+var validateField = async (field, disabledFieldNames, formValues, validateAllFieldCriteria, shouldUseNativeValidation, isFieldArray) => {
+  const { ref, refs, required, maxLength, minLength, min: min2, max: max2, pattern, validate, name, valueAsNumber, mount } = field._f;
+  const inputValue = get(formValues, name);
+  if (!mount || disabledFieldNames.has(name)) {
+    return {};
+  }
+  const inputRef = refs ? refs[0] : ref;
+  const setCustomValidity = (message) => {
+    if (shouldUseNativeValidation && inputRef.reportValidity) {
+      inputRef.setCustomValidity(isBoolean$1(message) ? "" : message || "");
+      inputRef.reportValidity();
+    }
+  };
+  const error = {};
+  const isRadio = isRadioInput(ref);
+  const isCheckBox = isCheckBoxInput(ref);
+  const isRadioOrCheckbox2 = isRadio || isCheckBox;
+  const isEmpty = (valueAsNumber || isFileInput(ref)) && isUndefined(ref.value) && isUndefined(inputValue) || isHTMLElement(ref) && ref.value === "" || inputValue === "" || Array.isArray(inputValue) && !inputValue.length;
+  const appendErrorsCurry = appendErrors.bind(null, name, validateAllFieldCriteria, error);
+  const getMinMaxMessage = (exceedMax, maxLengthMessage, minLengthMessage, maxType = INPUT_VALIDATION_RULES.maxLength, minType = INPUT_VALIDATION_RULES.minLength) => {
+    const message = exceedMax ? maxLengthMessage : minLengthMessage;
+    error[name] = {
+      type: exceedMax ? maxType : minType,
+      message,
+      ref,
+      ...appendErrorsCurry(exceedMax ? maxType : minType, message)
+    };
+  };
+  if (isFieldArray ? !Array.isArray(inputValue) || !inputValue.length : required && (!isRadioOrCheckbox2 && (isEmpty || isNullOrUndefined(inputValue)) || isBoolean$1(inputValue) && !inputValue || isCheckBox && !getCheckboxValue(refs).isValid || isRadio && !getRadioValue(refs).isValid)) {
+    const { value, message } = isString$1(required) ? { value: !!required, message: required } : getValueAndMessage(required);
+    if (value) {
+      error[name] = {
+        type: INPUT_VALIDATION_RULES.required,
+        message,
+        ref: inputRef,
+        ...appendErrorsCurry(INPUT_VALIDATION_RULES.required, message)
+      };
+      if (!validateAllFieldCriteria) {
+        setCustomValidity(message);
+        return error;
+      }
+    }
+  }
+  if (!isEmpty && (!isNullOrUndefined(min2) || !isNullOrUndefined(max2))) {
+    let exceedMax;
+    let exceedMin;
+    const maxOutput = getValueAndMessage(max2);
+    const minOutput = getValueAndMessage(min2);
+    if (!isNullOrUndefined(inputValue) && !isNaN(inputValue)) {
+      const valueNumber = ref.valueAsNumber || (inputValue ? +inputValue : inputValue);
+      if (!isNullOrUndefined(maxOutput.value)) {
+        exceedMax = valueNumber > maxOutput.value;
+      }
+      if (!isNullOrUndefined(minOutput.value)) {
+        exceedMin = valueNumber < minOutput.value;
+      }
+    } else {
+      const valueDate = ref.valueAsDate || new Date(inputValue);
+      const convertTimeToDate = (time2) => /* @__PURE__ */ new Date((/* @__PURE__ */ new Date()).toDateString() + " " + time2);
+      const isTime = ref.type == "time";
+      const isWeek = ref.type == "week";
+      if (isString$1(maxOutput.value) && inputValue) {
+        exceedMax = isTime ? convertTimeToDate(inputValue) > convertTimeToDate(maxOutput.value) : isWeek ? inputValue > maxOutput.value : valueDate > new Date(maxOutput.value);
+      }
+      if (isString$1(minOutput.value) && inputValue) {
+        exceedMin = isTime ? convertTimeToDate(inputValue) < convertTimeToDate(minOutput.value) : isWeek ? inputValue < minOutput.value : valueDate < new Date(minOutput.value);
+      }
+    }
+    if (exceedMax || exceedMin) {
+      getMinMaxMessage(!!exceedMax, maxOutput.message, minOutput.message, INPUT_VALIDATION_RULES.max, INPUT_VALIDATION_RULES.min);
+      if (!validateAllFieldCriteria) {
+        setCustomValidity(error[name].message);
+        return error;
+      }
+    }
+  }
+  if ((maxLength || minLength) && !isEmpty && (isString$1(inputValue) || isFieldArray && Array.isArray(inputValue))) {
+    const maxLengthOutput = getValueAndMessage(maxLength);
+    const minLengthOutput = getValueAndMessage(minLength);
+    const exceedMax = !isNullOrUndefined(maxLengthOutput.value) && inputValue.length > +maxLengthOutput.value;
+    const exceedMin = !isNullOrUndefined(minLengthOutput.value) && inputValue.length < +minLengthOutput.value;
+    if (exceedMax || exceedMin) {
+      getMinMaxMessage(exceedMax, maxLengthOutput.message, minLengthOutput.message);
+      if (!validateAllFieldCriteria) {
+        setCustomValidity(error[name].message);
+        return error;
+      }
+    }
+  }
+  if (pattern && !isEmpty && isString$1(inputValue)) {
+    const { value: patternValue, message } = getValueAndMessage(pattern);
+    if (isRegex(patternValue) && !inputValue.match(patternValue)) {
+      error[name] = {
+        type: INPUT_VALIDATION_RULES.pattern,
+        message,
+        ref,
+        ...appendErrorsCurry(INPUT_VALIDATION_RULES.pattern, message)
+      };
+      if (!validateAllFieldCriteria) {
+        setCustomValidity(message);
+        return error;
+      }
+    }
+  }
+  if (validate) {
+    if (isFunction(validate)) {
+      const result = await validate(inputValue, formValues);
+      const validateError = getValidateError(result, inputRef);
+      if (validateError) {
+        error[name] = {
+          ...validateError,
+          ...appendErrorsCurry(INPUT_VALIDATION_RULES.validate, validateError.message)
+        };
+        if (!validateAllFieldCriteria) {
+          setCustomValidity(validateError.message);
+          return error;
+        }
+      }
+    } else if (isObject$2(validate)) {
+      let validationResult = {};
+      for (const key in validate) {
+        if (!isEmptyObject(validationResult) && !validateAllFieldCriteria) {
+          break;
+        }
+        const validateError = getValidateError(await validate[key](inputValue, formValues), inputRef, key);
+        if (validateError) {
+          validationResult = {
+            ...validateError,
+            ...appendErrorsCurry(key, validateError.message)
+          };
+          setCustomValidity(validateError.message);
+          if (validateAllFieldCriteria) {
+            error[name] = validationResult;
+          }
+        }
+      }
+      if (!isEmptyObject(validationResult)) {
+        error[name] = {
+          ref: inputRef,
+          ...validationResult
+        };
+        if (!validateAllFieldCriteria) {
+          return error;
+        }
+      }
+    }
+  }
+  setCustomValidity(true);
+  return error;
+};
+const defaultOptions$1 = {
+  mode: VALIDATION_MODE.onSubmit,
+  reValidateMode: VALIDATION_MODE.onChange,
+  shouldFocusError: true
+};
+function createFormControl(props = {}) {
+  let _options2 = {
+    ...defaultOptions$1,
+    ...props
+  };
+  let _formState = {
+    submitCount: 0,
+    isDirty: false,
+    isReady: false,
+    isLoading: isFunction(_options2.defaultValues),
+    isValidating: false,
+    isSubmitted: false,
+    isSubmitting: false,
+    isSubmitSuccessful: false,
+    isValid: false,
+    touchedFields: {},
+    dirtyFields: {},
+    validatingFields: {},
+    errors: _options2.errors || {},
+    disabled: _options2.disabled || false
+  };
+  let _fields = {};
+  let _defaultValues = isObject$2(_options2.defaultValues) || isObject$2(_options2.values) ? cloneObject(_options2.defaultValues || _options2.values) || {} : {};
+  let _formValues = _options2.shouldUnregister ? {} : cloneObject(_defaultValues);
+  let _state = {
+    action: false,
+    mount: false,
+    watch: false,
+    keepIsValid: false
+  };
+  let _names = {
+    mount: /* @__PURE__ */ new Set(),
+    disabled: /* @__PURE__ */ new Set(),
+    unMount: /* @__PURE__ */ new Set(),
+    array: /* @__PURE__ */ new Set(),
+    watch: /* @__PURE__ */ new Set()
+  };
+  let delayErrorCallback;
+  let timer = 0;
+  const defaultProxyFormState = {
+    isDirty: false,
+    dirtyFields: false,
+    validatingFields: false,
+    touchedFields: false,
+    isValidating: false,
+    isValid: false,
+    errors: false
+  };
+  const _proxyFormState = {
+    ...defaultProxyFormState
+  };
+  let _proxySubscribeFormState = {
+    ..._proxyFormState
+  };
+  const _subjects = {
+    array: createSubject(),
+    state: createSubject()
+  };
+  const shouldDisplayAllAssociatedErrors = _options2.criteriaMode === VALIDATION_MODE.all;
+  const debounce2 = (callback) => (wait) => {
+    clearTimeout(timer);
+    timer = setTimeout(callback, wait);
+  };
+  const _setValid = async (shouldUpdateValid) => {
+    if (_state.keepIsValid) {
+      return;
+    }
+    if (!_options2.disabled && (_proxyFormState.isValid || _proxySubscribeFormState.isValid || shouldUpdateValid)) {
+      let isValid;
+      if (_options2.resolver) {
+        isValid = isEmptyObject((await _runSchema()).errors);
+        _updateIsValidating();
+      } else {
+        isValid = await executeBuiltInValidation({
+          fields: _fields,
+          onlyCheckValid: true,
+          eventType: EVENTS.VALID
+        });
+      }
+      if (isValid !== _formState.isValid) {
+        _subjects.state.next({
+          isValid
+        });
+      }
+    }
+  };
+  const _updateIsValidating = (names, isValidating) => {
+    if (!_options2.disabled && (_proxyFormState.isValidating || _proxyFormState.validatingFields || _proxySubscribeFormState.isValidating || _proxySubscribeFormState.validatingFields)) {
+      (names || Array.from(_names.mount)).forEach((name) => {
+        if (name) {
+          isValidating ? set(_formState.validatingFields, name, isValidating) : unset(_formState.validatingFields, name);
+        }
+      });
+      _subjects.state.next({
+        validatingFields: _formState.validatingFields,
+        isValidating: !isEmptyObject(_formState.validatingFields)
+      });
+    }
+  };
+  const _setFieldArray = (name, values = [], method, args, shouldSetValues = true, shouldUpdateFieldsAndState = true) => {
+    if (args && method && !_options2.disabled) {
+      _state.action = true;
+      if (shouldUpdateFieldsAndState && Array.isArray(get(_fields, name))) {
+        const fieldValues = method(get(_fields, name), args.argA, args.argB);
+        shouldSetValues && set(_fields, name, fieldValues);
+      }
+      if (shouldUpdateFieldsAndState && Array.isArray(get(_formState.errors, name))) {
+        const errors = method(get(_formState.errors, name), args.argA, args.argB);
+        shouldSetValues && set(_formState.errors, name, errors);
+        unsetEmptyArray(_formState.errors, name);
+      }
+      if ((_proxyFormState.touchedFields || _proxySubscribeFormState.touchedFields) && shouldUpdateFieldsAndState && Array.isArray(get(_formState.touchedFields, name))) {
+        const touchedFields = method(get(_formState.touchedFields, name), args.argA, args.argB);
+        shouldSetValues && set(_formState.touchedFields, name, touchedFields);
+      }
+      if (_proxyFormState.dirtyFields || _proxySubscribeFormState.dirtyFields) {
+        const fullDirtyFields = getDirtyFields(_defaultValues, _formValues);
+        const rootName = getNodeParentName(name);
+        set(_formState.dirtyFields, rootName, get(fullDirtyFields, rootName));
+      }
+      _subjects.state.next({
+        name,
+        isDirty: _getDirty(name, values),
+        dirtyFields: _formState.dirtyFields,
+        errors: _formState.errors,
+        isValid: _formState.isValid
+      });
+    } else {
+      set(_formValues, name, values);
+    }
+  };
+  const updateErrors = (name, error) => {
+    set(_formState.errors, name, error);
+    _subjects.state.next({
+      errors: _formState.errors
+    });
+  };
+  const _setErrors = (errors) => {
+    _formState.errors = errors;
+    _subjects.state.next({
+      errors: _formState.errors,
+      isValid: false
+    });
+  };
+  const updateValidAndValue = (name, shouldSkipSetValueAs, value, ref) => {
+    const field = get(_fields, name);
+    if (field) {
+      const defaultValue = get(_formValues, name, isUndefined(value) ? get(_defaultValues, name) : value);
+      isUndefined(defaultValue) || ref && ref.defaultChecked || shouldSkipSetValueAs ? set(_formValues, name, shouldSkipSetValueAs ? defaultValue : getFieldValue(field._f)) : setFieldValue(name, defaultValue);
+      _state.mount && !_state.action && _setValid();
+    }
+  };
+  const updateTouchAndDirty = (name, fieldValue, isBlurEvent, shouldDirty, shouldRender) => {
+    let shouldUpdateField = false;
+    let isPreviousDirty = false;
+    const output = {
+      name
+    };
+    if (!_options2.disabled) {
+      if (!isBlurEvent || shouldDirty) {
+        if (_proxyFormState.isDirty || _proxySubscribeFormState.isDirty) {
+          isPreviousDirty = _formState.isDirty;
+          _formState.isDirty = output.isDirty = _getDirty();
+          shouldUpdateField = isPreviousDirty !== output.isDirty;
+        }
+        const isCurrentFieldPristine = deepEqual(get(_defaultValues, name), fieldValue);
+        isPreviousDirty = !!get(_formState.dirtyFields, name);
+        isCurrentFieldPristine ? unset(_formState.dirtyFields, name) : set(_formState.dirtyFields, name, true);
+        output.dirtyFields = _formState.dirtyFields;
+        shouldUpdateField = shouldUpdateField || (_proxyFormState.dirtyFields || _proxySubscribeFormState.dirtyFields) && isPreviousDirty !== !isCurrentFieldPristine;
+      }
+      if (isBlurEvent) {
+        const isPreviousFieldTouched = get(_formState.touchedFields, name);
+        if (!isPreviousFieldTouched) {
+          set(_formState.touchedFields, name, isBlurEvent);
+          output.touchedFields = _formState.touchedFields;
+          shouldUpdateField = shouldUpdateField || (_proxyFormState.touchedFields || _proxySubscribeFormState.touchedFields) && isPreviousFieldTouched !== isBlurEvent;
+        }
+      }
+      shouldUpdateField && shouldRender && _subjects.state.next(output);
+    }
+    return shouldUpdateField ? output : {};
+  };
+  const shouldRenderByError = (name, isValid, error, fieldState) => {
+    const previousFieldError = get(_formState.errors, name);
+    const shouldUpdateValid = (_proxyFormState.isValid || _proxySubscribeFormState.isValid) && isBoolean$1(isValid) && _formState.isValid !== isValid;
+    if (_options2.delayError && error) {
+      delayErrorCallback = debounce2(() => updateErrors(name, error));
+      delayErrorCallback(_options2.delayError);
+    } else {
+      clearTimeout(timer);
+      delayErrorCallback = null;
+      error ? set(_formState.errors, name, error) : unset(_formState.errors, name);
+    }
+    if ((error ? !deepEqual(previousFieldError, error) : previousFieldError) || !isEmptyObject(fieldState) || shouldUpdateValid) {
+      const updatedFormState = {
+        ...fieldState,
+        ...shouldUpdateValid && isBoolean$1(isValid) ? { isValid } : {},
+        errors: _formState.errors,
+        name
+      };
+      _formState = {
+        ..._formState,
+        ...updatedFormState
+      };
+      _subjects.state.next(updatedFormState);
+    }
+  };
+  const _runSchema = async (name) => {
+    _updateIsValidating(name, true);
+    return await _options2.resolver(_formValues, _options2.context, getResolverOptions(name || _names.mount, _fields, _options2.criteriaMode, _options2.shouldUseNativeValidation));
+  };
+  const executeSchemaAndUpdateState = async (names) => {
+    const { errors } = await _runSchema(names);
+    _updateIsValidating(names);
+    if (names) {
+      for (const name of names) {
+        const error = get(errors, name);
+        error ? set(_formState.errors, name, error) : unset(_formState.errors, name);
+      }
+    } else {
+      _formState.errors = errors;
+    }
+    return errors;
+  };
+  const validateForm = async ({ name, eventType }) => {
+    if (props.validate) {
+      const result = await props.validate({
+        formValues: _formValues,
+        formState: _formState,
+        name,
+        eventType
+      });
+      if (isObject$2(result)) {
+        for (const key in result) {
+          const error = result[key];
+          if (error) {
+            setError(`${FORM_ERROR_TYPE}.${key}`, {
+              message: isString$1(result.message) ? result.message : "",
+              type: INPUT_VALIDATION_RULES.validate
+            });
+          }
+        }
+      } else if (isString$1(result) || !result) {
+        setError(FORM_ERROR_TYPE, {
+          message: result || "",
+          type: INPUT_VALIDATION_RULES.validate
+        });
+      } else {
+        clearErrors(FORM_ERROR_TYPE);
+      }
+      return result;
+    }
+    return true;
+  };
+  const executeBuiltInValidation = async ({ fields, onlyCheckValid, name, eventType, context = {
+    valid: true,
+    runRootValidation: false
+  } }) => {
+    if (props.validate) {
+      context.runRootValidation = true;
+      const result = await validateForm({
+        name,
+        eventType
+      });
+      if (!result) {
+        context.valid = false;
+        if (onlyCheckValid) {
+          return context.valid;
+        }
+      }
+    }
+    for (const name2 in fields) {
+      const field = fields[name2];
+      if (field) {
+        const { _f: _f2, ...fieldValue } = field;
+        if (_f2) {
+          const isFieldArrayRoot = _names.array.has(_f2.name);
+          const isPromiseFunction = field._f && hasPromiseValidation(field._f);
+          if (isPromiseFunction && _proxyFormState.validatingFields) {
+            _updateIsValidating([_f2.name], true);
+          }
+          const fieldError = await validateField(field, _names.disabled, _formValues, shouldDisplayAllAssociatedErrors, _options2.shouldUseNativeValidation && !onlyCheckValid, isFieldArrayRoot);
+          if (isPromiseFunction && _proxyFormState.validatingFields) {
+            _updateIsValidating([_f2.name]);
+          }
+          if (fieldError[_f2.name]) {
+            context.valid = false;
+            if (onlyCheckValid) {
+              break;
+            }
+          }
+          !onlyCheckValid && (get(fieldError, _f2.name) ? isFieldArrayRoot ? updateFieldArrayRootError(_formState.errors, fieldError, _f2.name) : set(_formState.errors, _f2.name, fieldError[_f2.name]) : unset(_formState.errors, _f2.name));
+          if (props.shouldUseNativeValidation && fieldError[_f2.name]) {
+            break;
+          }
+        }
+        !isEmptyObject(fieldValue) && await executeBuiltInValidation({
+          context,
+          onlyCheckValid,
+          fields: fieldValue,
+          name: name2,
+          eventType
+        });
+      }
+    }
+    return context.valid;
+  };
+  const _removeUnmounted = () => {
+    for (const name of _names.unMount) {
+      const field = get(_fields, name);
+      field && (field._f.refs ? field._f.refs.every((ref) => !live(ref)) : !live(field._f.ref)) && unregister(name);
+    }
+    _names.unMount = /* @__PURE__ */ new Set();
+  };
+  const _getDirty = (name, data) => !_options2.disabled && (name && data && set(_formValues, name, data), !deepEqual(getValues(), _defaultValues));
+  const _getWatch = (names, defaultValue, isGlobal) => generateWatchOutput(names, _names, {
+    ..._state.mount ? _formValues : isUndefined(defaultValue) ? _defaultValues : isString$1(names) ? { [names]: defaultValue } : defaultValue
+  }, isGlobal, defaultValue);
+  const _getFieldArray = (name) => compact(get(_state.mount ? _formValues : _defaultValues, name, _options2.shouldUnregister ? get(_defaultValues, name, []) : []));
+  const setFieldValue = (name, value, options = {}) => {
+    const field = get(_fields, name);
+    let fieldValue = value;
+    if (field) {
+      const fieldReference = field._f;
+      if (fieldReference) {
+        !fieldReference.disabled && set(_formValues, name, getFieldValueAs(value, fieldReference));
+        fieldValue = isHTMLElement(fieldReference.ref) && isNullOrUndefined(value) ? "" : value;
+        if (isMultipleSelect(fieldReference.ref)) {
+          [...fieldReference.ref.options].forEach((optionRef) => optionRef.selected = fieldValue.includes(optionRef.value));
+        } else if (fieldReference.refs) {
+          if (isCheckBoxInput(fieldReference.ref)) {
+            fieldReference.refs.forEach((checkboxRef) => {
+              if (!checkboxRef.defaultChecked || !checkboxRef.disabled) {
+                if (Array.isArray(fieldValue)) {
+                  checkboxRef.checked = !!fieldValue.find((data) => data === checkboxRef.value);
+                } else {
+                  checkboxRef.checked = fieldValue === checkboxRef.value || !!fieldValue;
+                }
+              }
+            });
+          } else {
+            fieldReference.refs.forEach((radioRef) => radioRef.checked = radioRef.value === fieldValue);
+          }
+        } else if (isFileInput(fieldReference.ref)) {
+          fieldReference.ref.value = "";
+        } else {
+          fieldReference.ref.value = fieldValue;
+          if (!fieldReference.ref.type) {
+            _subjects.state.next({
+              name,
+              values: cloneObject(_formValues)
+            });
+          }
+        }
+      }
+    }
+    (options.shouldDirty || options.shouldTouch) && updateTouchAndDirty(name, fieldValue, options.shouldTouch, options.shouldDirty, true);
+    options.shouldValidate && trigger(name);
+  };
+  const setValues = (name, value, options) => {
+    for (const fieldKey in value) {
+      if (!value.hasOwnProperty(fieldKey)) {
+        return;
+      }
+      const fieldValue = value[fieldKey];
+      const fieldName = name + "." + fieldKey;
+      const field = get(_fields, fieldName);
+      (_names.array.has(name) || isObject$2(fieldValue) || field && !field._f) && !isDateObject(fieldValue) ? setValues(fieldName, fieldValue, options) : setFieldValue(fieldName, fieldValue, options);
+    }
+  };
+  const setValue = (name, value, options = {}) => {
+    const field = get(_fields, name);
+    const isFieldArray = _names.array.has(name);
+    const cloneValue = cloneObject(value);
+    set(_formValues, name, cloneValue);
+    if (isFieldArray) {
+      _subjects.array.next({
+        name,
+        values: cloneObject(_formValues)
+      });
+      if ((_proxyFormState.isDirty || _proxyFormState.dirtyFields || _proxySubscribeFormState.isDirty || _proxySubscribeFormState.dirtyFields) && options.shouldDirty) {
+        _subjects.state.next({
+          name,
+          dirtyFields: getDirtyFields(_defaultValues, _formValues),
+          isDirty: _getDirty(name, cloneValue)
+        });
+      }
+    } else {
+      field && !field._f && !isNullOrUndefined(cloneValue) ? setValues(name, cloneValue, options) : setFieldValue(name, cloneValue, options);
+    }
+    if (isWatched(name, _names)) {
+      _subjects.state.next({
+        ..._formState,
+        name,
+        values: cloneObject(_formValues)
+      });
+    } else {
+      _subjects.state.next({
+        name: _state.mount ? name : void 0,
+        values: cloneObject(_formValues)
+      });
+    }
+  };
+  const onChange = async (event) => {
+    _state.mount = true;
+    const target = event.target;
+    let name = target.name;
+    let isFieldValueUpdated = true;
+    const field = get(_fields, name);
+    const _updateIsFieldValueUpdated = (fieldValue) => {
+      isFieldValueUpdated = Number.isNaN(fieldValue) || isDateObject(fieldValue) && isNaN(fieldValue.getTime()) || deepEqual(fieldValue, get(_formValues, name, fieldValue));
+    };
+    const validationModeBeforeSubmit = getValidationModes(_options2.mode);
+    const validationModeAfterSubmit = getValidationModes(_options2.reValidateMode);
+    if (field) {
+      let error;
+      let isValid;
+      const fieldValue = target.type ? getFieldValue(field._f) : getEventValue(event);
+      const isBlurEvent = event.type === EVENTS.BLUR || event.type === EVENTS.FOCUS_OUT;
+      const shouldSkipValidation = !hasValidation(field._f) && !props.validate && !_options2.resolver && !get(_formState.errors, name) && !field._f.deps || skipValidation(isBlurEvent, get(_formState.touchedFields, name), _formState.isSubmitted, validationModeAfterSubmit, validationModeBeforeSubmit);
+      const watched = isWatched(name, _names, isBlurEvent);
+      set(_formValues, name, fieldValue);
+      if (isBlurEvent) {
+        if (!target || !target.readOnly) {
+          field._f.onBlur && field._f.onBlur(event);
+          delayErrorCallback && delayErrorCallback(0);
+        }
+      } else if (field._f.onChange) {
+        field._f.onChange(event);
+      }
+      const fieldState = updateTouchAndDirty(name, fieldValue, isBlurEvent);
+      const shouldRender = !isEmptyObject(fieldState) || watched;
+      !isBlurEvent && _subjects.state.next({
+        name,
+        type: event.type,
+        values: cloneObject(_formValues)
+      });
+      if (shouldSkipValidation) {
+        if (_proxyFormState.isValid || _proxySubscribeFormState.isValid) {
+          if (_options2.mode === "onBlur") {
+            if (isBlurEvent) {
+              _setValid();
+            }
+          } else if (!isBlurEvent) {
+            _setValid();
+          }
+        }
+        return shouldRender && _subjects.state.next({ name, ...watched ? {} : fieldState });
+      }
+      if (!_options2.resolver && props.validate) {
+        await validateForm({
+          name,
+          eventType: event.type
+        });
+      }
+      !isBlurEvent && watched && _subjects.state.next({ ..._formState });
+      if (_options2.resolver) {
+        const { errors } = await _runSchema([name]);
+        _updateIsValidating([name]);
+        _updateIsFieldValueUpdated(fieldValue);
+        if (isFieldValueUpdated) {
+          const previousErrorLookupResult = schemaErrorLookup(_formState.errors, _fields, name);
+          const errorLookupResult = schemaErrorLookup(errors, _fields, previousErrorLookupResult.name || name);
+          error = errorLookupResult.error;
+          name = errorLookupResult.name;
+          isValid = isEmptyObject(errors);
+        }
+      } else {
+        _updateIsValidating([name], true);
+        error = (await validateField(field, _names.disabled, _formValues, shouldDisplayAllAssociatedErrors, _options2.shouldUseNativeValidation))[name];
+        _updateIsValidating([name]);
+        _updateIsFieldValueUpdated(fieldValue);
+        if (isFieldValueUpdated) {
+          if (error) {
+            isValid = false;
+          } else if (_proxyFormState.isValid || _proxySubscribeFormState.isValid) {
+            isValid = await executeBuiltInValidation({
+              fields: _fields,
+              onlyCheckValid: true,
+              name,
+              eventType: event.type
+            });
+          }
+        }
+      }
+      if (isFieldValueUpdated) {
+        field._f.deps && (!Array.isArray(field._f.deps) || field._f.deps.length > 0) && trigger(field._f.deps);
+        shouldRenderByError(name, isValid, error, fieldState);
+      }
+    }
+  };
+  const _focusInput = (ref, key) => {
+    if (get(_formState.errors, key) && ref.focus) {
+      ref.focus();
+      return 1;
+    }
+    return;
+  };
+  const trigger = async (name, options = {}) => {
+    let isValid;
+    let validationResult;
+    const fieldNames = convertToArrayPayload(name);
+    if (_options2.resolver) {
+      const errors = await executeSchemaAndUpdateState(isUndefined(name) ? name : fieldNames);
+      isValid = isEmptyObject(errors);
+      validationResult = name ? !fieldNames.some((name2) => get(errors, name2)) : isValid;
+    } else if (name) {
+      validationResult = (await Promise.all(fieldNames.map(async (fieldName) => {
+        const field = get(_fields, fieldName);
+        return await executeBuiltInValidation({
+          fields: field && field._f ? { [fieldName]: field } : field,
+          eventType: EVENTS.TRIGGER
+        });
+      }))).every(Boolean);
+      !(!validationResult && !_formState.isValid) && _setValid();
+    } else {
+      validationResult = isValid = await executeBuiltInValidation({
+        fields: _fields,
+        name,
+        eventType: EVENTS.TRIGGER
+      });
+    }
+    _subjects.state.next({
+      ...!isString$1(name) || (_proxyFormState.isValid || _proxySubscribeFormState.isValid) && isValid !== _formState.isValid ? {} : { name },
+      ..._options2.resolver || !name ? { isValid } : {},
+      errors: _formState.errors
+    });
+    options.shouldFocus && !validationResult && iterateFieldsByAction(_fields, _focusInput, name ? fieldNames : _names.mount);
+    return validationResult;
+  };
+  const getValues = (fieldNames, config2) => {
+    let values = {
+      ..._state.mount ? _formValues : _defaultValues
+    };
+    if (config2) {
+      values = extractFormValues(config2.dirtyFields ? _formState.dirtyFields : _formState.touchedFields, values);
+    }
+    return isUndefined(fieldNames) ? values : isString$1(fieldNames) ? get(values, fieldNames) : fieldNames.map((name) => get(values, name));
+  };
+  const getFieldState = (name, formState) => ({
+    invalid: !!get((formState || _formState).errors, name),
+    isDirty: !!get((formState || _formState).dirtyFields, name),
+    error: get((formState || _formState).errors, name),
+    isValidating: !!get(_formState.validatingFields, name),
+    isTouched: !!get((formState || _formState).touchedFields, name)
+  });
+  const clearErrors = (name) => {
+    const names = name ? convertToArrayPayload(name) : void 0;
+    names === null || names === void 0 ? void 0 : names.forEach((inputName) => unset(_formState.errors, inputName));
+    if (names) {
+      names.forEach((inputName) => {
+        _subjects.state.next({
+          name: inputName,
+          errors: _formState.errors
+        });
+      });
+    } else {
+      _subjects.state.next({
+        errors: {}
+      });
+    }
+  };
+  const setError = (name, error, options) => {
+    const ref = (get(_fields, name, { _f: {} })._f || {}).ref;
+    const currentError = get(_formState.errors, name) || {};
+    const { ref: currentRef, message, type, ...restOfErrorTree } = currentError;
+    set(_formState.errors, name, {
+      ...restOfErrorTree,
+      ...error,
+      ref
+    });
+    _subjects.state.next({
+      name,
+      errors: _formState.errors,
+      isValid: false
+    });
+    options && options.shouldFocus && ref && ref.focus && ref.focus();
+  };
+  const watch = (name, defaultValue) => isFunction(name) ? _subjects.state.subscribe({
+    next: (payload) => "values" in payload && name(_getWatch(void 0, defaultValue), payload)
+  }) : _getWatch(name, defaultValue, true);
+  const _subscribe = (props2) => _subjects.state.subscribe({
+    next: (formState) => {
+      if (shouldSubscribeByName(props2.name, formState.name, props2.exact) && shouldRenderFormState(formState, props2.formState || _proxyFormState, _setFormState, props2.reRenderRoot)) {
+        props2.callback({
+          values: { ..._formValues },
+          ..._formState,
+          ...formState,
+          defaultValues: _defaultValues
+        });
+      }
+    }
+  }).unsubscribe;
+  const subscribe2 = (props2) => {
+    _state.mount = true;
+    _proxySubscribeFormState = {
+      ..._proxySubscribeFormState,
+      ...props2.formState
+    };
+    return _subscribe({
+      ...props2,
+      formState: {
+        ...defaultProxyFormState,
+        ...props2.formState
+      }
+    });
+  };
+  const unregister = (name, options = {}) => {
+    for (const fieldName of name ? convertToArrayPayload(name) : _names.mount) {
+      _names.mount.delete(fieldName);
+      _names.array.delete(fieldName);
+      if (!options.keepValue) {
+        unset(_fields, fieldName);
+        unset(_formValues, fieldName);
+      }
+      !options.keepError && unset(_formState.errors, fieldName);
+      !options.keepDirty && unset(_formState.dirtyFields, fieldName);
+      !options.keepTouched && unset(_formState.touchedFields, fieldName);
+      !options.keepIsValidating && unset(_formState.validatingFields, fieldName);
+      !_options2.shouldUnregister && !options.keepDefaultValue && unset(_defaultValues, fieldName);
+    }
+    _subjects.state.next({
+      values: cloneObject(_formValues)
+    });
+    _subjects.state.next({
+      ..._formState,
+      ...!options.keepDirty ? {} : { isDirty: _getDirty() }
+    });
+    !options.keepIsValid && _setValid();
+  };
+  const _setDisabledField = ({ disabled, name }) => {
+    if (isBoolean$1(disabled) && _state.mount || !!disabled || _names.disabled.has(name)) {
+      const wasDisabled = _names.disabled.has(name);
+      const isDisabled = !!disabled;
+      const disabledStateChanged = wasDisabled !== isDisabled;
+      disabled ? _names.disabled.add(name) : _names.disabled.delete(name);
+      disabledStateChanged && _state.mount && !_state.action && _setValid();
+    }
+  };
+  const register = (name, options = {}) => {
+    let field = get(_fields, name);
+    const disabledIsDefined = isBoolean$1(options.disabled) || isBoolean$1(_options2.disabled);
+    set(_fields, name, {
+      ...field || {},
+      _f: {
+        ...field && field._f ? field._f : { ref: { name } },
+        name,
+        mount: true,
+        ...options
+      }
+    });
+    _names.mount.add(name);
+    if (field) {
+      _setDisabledField({
+        disabled: isBoolean$1(options.disabled) ? options.disabled : _options2.disabled,
+        name
+      });
+    } else {
+      updateValidAndValue(name, true, options.value);
+    }
+    return {
+      ...disabledIsDefined ? { disabled: options.disabled || _options2.disabled } : {},
+      ..._options2.progressive ? {
+        required: !!options.required,
+        min: getRuleValue(options.min),
+        max: getRuleValue(options.max),
+        minLength: getRuleValue(options.minLength),
+        maxLength: getRuleValue(options.maxLength),
+        pattern: getRuleValue(options.pattern)
+      } : {},
+      name,
+      onChange,
+      onBlur: onChange,
+      ref: (ref) => {
+        if (ref) {
+          register(name, options);
+          field = get(_fields, name);
+          const fieldRef = isUndefined(ref.value) ? ref.querySelectorAll ? ref.querySelectorAll("input,select,textarea")[0] || ref : ref : ref;
+          const radioOrCheckbox = isRadioOrCheckbox(fieldRef);
+          const refs = field._f.refs || [];
+          if (radioOrCheckbox ? refs.find((option) => option === fieldRef) : fieldRef === field._f.ref) {
+            return;
+          }
+          set(_fields, name, {
+            _f: {
+              ...field._f,
+              ...radioOrCheckbox ? {
+                refs: [
+                  ...refs.filter(live),
+                  fieldRef,
+                  ...Array.isArray(get(_defaultValues, name)) ? [{}] : []
+                ],
+                ref: { type: fieldRef.type, name }
+              } : { ref: fieldRef }
+            }
+          });
+          updateValidAndValue(name, false, void 0, fieldRef);
+        } else {
+          field = get(_fields, name, {});
+          if (field._f) {
+            field._f.mount = false;
+          }
+          (_options2.shouldUnregister || options.shouldUnregister) && !(isNameInFieldArray(_names.array, name) && _state.action) && _names.unMount.add(name);
+        }
+      }
+    };
+  };
+  const _focusError = () => _options2.shouldFocusError && iterateFieldsByAction(_fields, _focusInput, _names.mount);
+  const _disableForm = (disabled) => {
+    if (isBoolean$1(disabled)) {
+      _subjects.state.next({ disabled });
+      iterateFieldsByAction(_fields, (ref, name) => {
+        const currentField = get(_fields, name);
+        if (currentField) {
+          ref.disabled = currentField._f.disabled || disabled;
+          if (Array.isArray(currentField._f.refs)) {
+            currentField._f.refs.forEach((inputRef) => {
+              inputRef.disabled = currentField._f.disabled || disabled;
+            });
+          }
+        }
+      }, 0, false);
+    }
+  };
+  const handleSubmit = (onValid, onInvalid) => async (e3) => {
+    let onValidError = void 0;
+    if (e3) {
+      e3.preventDefault && e3.preventDefault();
+      e3.persist && e3.persist();
+    }
+    let fieldValues = cloneObject(_formValues);
+    _subjects.state.next({
+      isSubmitting: true
+    });
+    if (_options2.resolver) {
+      const { errors, values } = await _runSchema();
+      _updateIsValidating();
+      _formState.errors = errors;
+      fieldValues = cloneObject(values);
+    } else {
+      await executeBuiltInValidation({
+        fields: _fields,
+        eventType: EVENTS.SUBMIT
+      });
+    }
+    if (_names.disabled.size) {
+      for (const name of _names.disabled) {
+        unset(fieldValues, name);
+      }
+    }
+    unset(_formState.errors, ROOT_ERROR_TYPE);
+    if (isEmptyObject(_formState.errors)) {
+      _subjects.state.next({
+        errors: {}
+      });
+      try {
+        await onValid(fieldValues, e3);
+      } catch (error) {
+        onValidError = error;
+      }
+    } else {
+      if (onInvalid) {
+        await onInvalid({ ..._formState.errors }, e3);
+      }
+      _focusError();
+      setTimeout(_focusError);
+    }
+    _subjects.state.next({
+      isSubmitted: true,
+      isSubmitting: false,
+      isSubmitSuccessful: isEmptyObject(_formState.errors) && !onValidError,
+      submitCount: _formState.submitCount + 1,
+      errors: _formState.errors
+    });
+    if (onValidError) {
+      throw onValidError;
+    }
+  };
+  const resetField = (name, options = {}) => {
+    if (get(_fields, name)) {
+      if (isUndefined(options.defaultValue)) {
+        setValue(name, cloneObject(get(_defaultValues, name)));
+      } else {
+        setValue(name, options.defaultValue);
+        set(_defaultValues, name, cloneObject(options.defaultValue));
+      }
+      if (!options.keepTouched) {
+        unset(_formState.touchedFields, name);
+      }
+      if (!options.keepDirty) {
+        unset(_formState.dirtyFields, name);
+        _formState.isDirty = options.defaultValue ? _getDirty(name, cloneObject(get(_defaultValues, name))) : _getDirty();
+      }
+      if (!options.keepError) {
+        unset(_formState.errors, name);
+        _proxyFormState.isValid && _setValid();
+      }
+      _subjects.state.next({ ..._formState });
+    }
+  };
+  const _reset = (formValues, keepStateOptions = {}) => {
+    const updatedValues = formValues ? cloneObject(formValues) : _defaultValues;
+    const cloneUpdatedValues = cloneObject(updatedValues);
+    const isEmptyResetValues = isEmptyObject(formValues);
+    const values = isEmptyResetValues ? _defaultValues : cloneUpdatedValues;
+    if (!keepStateOptions.keepDefaultValues) {
+      _defaultValues = updatedValues;
+    }
+    if (!keepStateOptions.keepValues) {
+      if (keepStateOptions.keepDirtyValues) {
+        const fieldsToCheck = /* @__PURE__ */ new Set([
+          ..._names.mount,
+          ...Object.keys(getDirtyFields(_defaultValues, _formValues))
+        ]);
+        for (const fieldName of Array.from(fieldsToCheck)) {
+          const isDirty = get(_formState.dirtyFields, fieldName);
+          const existingValue = get(_formValues, fieldName);
+          const newValue = get(values, fieldName);
+          if (isDirty && !isUndefined(existingValue)) {
+            set(values, fieldName, existingValue);
+          } else if (!isDirty && !isUndefined(newValue)) {
+            setValue(fieldName, newValue);
+          }
+        }
+      } else {
+        if (isWeb && isUndefined(formValues)) {
+          for (const name of _names.mount) {
+            const field = get(_fields, name);
+            if (field && field._f) {
+              const fieldReference = Array.isArray(field._f.refs) ? field._f.refs[0] : field._f.ref;
+              if (isHTMLElement(fieldReference)) {
+                const form = fieldReference.closest("form");
+                if (form) {
+                  form.reset();
+                  break;
+                }
+              }
+            }
+          }
+        }
+        if (keepStateOptions.keepFieldsRef) {
+          for (const fieldName of _names.mount) {
+            setValue(fieldName, get(values, fieldName));
+          }
+        } else {
+          _fields = {};
+        }
+      }
+      _formValues = _options2.shouldUnregister ? keepStateOptions.keepDefaultValues ? cloneObject(_defaultValues) : {} : cloneObject(values);
+      _subjects.array.next({
+        values: { ...values }
+      });
+      _subjects.state.next({
+        values: { ...values }
+      });
+    }
+    _names = {
+      mount: keepStateOptions.keepDirtyValues ? _names.mount : /* @__PURE__ */ new Set(),
+      unMount: /* @__PURE__ */ new Set(),
+      array: /* @__PURE__ */ new Set(),
+      disabled: /* @__PURE__ */ new Set(),
+      watch: /* @__PURE__ */ new Set(),
+      watchAll: false,
+      focus: ""
+    };
+    _state.mount = !_proxyFormState.isValid || !!keepStateOptions.keepIsValid || !!keepStateOptions.keepDirtyValues || !_options2.shouldUnregister && !isEmptyObject(values);
+    _state.watch = !!_options2.shouldUnregister;
+    _state.keepIsValid = !!keepStateOptions.keepIsValid;
+    _state.action = false;
+    if (!keepStateOptions.keepErrors) {
+      _formState.errors = {};
+    }
+    _subjects.state.next({
+      submitCount: keepStateOptions.keepSubmitCount ? _formState.submitCount : 0,
+      isDirty: isEmptyResetValues ? false : keepStateOptions.keepDirty ? _formState.isDirty : !!(keepStateOptions.keepDefaultValues && !deepEqual(formValues, _defaultValues)),
+      isSubmitted: keepStateOptions.keepIsSubmitted ? _formState.isSubmitted : false,
+      dirtyFields: isEmptyResetValues ? {} : keepStateOptions.keepDirtyValues ? keepStateOptions.keepDefaultValues && _formValues ? getDirtyFields(_defaultValues, _formValues) : _formState.dirtyFields : keepStateOptions.keepDefaultValues && formValues ? getDirtyFields(_defaultValues, formValues) : keepStateOptions.keepDirty ? _formState.dirtyFields : {},
+      touchedFields: keepStateOptions.keepTouched ? _formState.touchedFields : {},
+      errors: keepStateOptions.keepErrors ? _formState.errors : {},
+      isSubmitSuccessful: keepStateOptions.keepIsSubmitSuccessful ? _formState.isSubmitSuccessful : false,
+      isSubmitting: false,
+      defaultValues: _defaultValues
+    });
+  };
+  const reset = (formValues, keepStateOptions) => _reset(isFunction(formValues) ? formValues(_formValues) : formValues, { ..._options2.resetOptions, ...keepStateOptions });
+  const setFocus = (name, options = {}) => {
+    const field = get(_fields, name);
+    const fieldReference = field && field._f;
+    if (fieldReference) {
+      const fieldRef = fieldReference.refs ? fieldReference.refs[0] : fieldReference.ref;
+      if (fieldRef.focus) {
+        setTimeout(() => {
+          fieldRef.focus();
+          options.shouldSelect && isFunction(fieldRef.select) && fieldRef.select();
+        });
+      }
+    }
+  };
+  const _setFormState = (updatedFormState) => {
+    _formState = {
+      ..._formState,
+      ...updatedFormState
+    };
+  };
+  const _resetDefaultValues = () => isFunction(_options2.defaultValues) && _options2.defaultValues().then((values) => {
+    reset(values, _options2.resetOptions);
+    _subjects.state.next({
+      isLoading: false
+    });
+  });
+  const methods = {
+    control: {
+      register,
+      unregister,
+      getFieldState,
+      handleSubmit,
+      setError,
+      _subscribe,
+      _runSchema,
+      _updateIsValidating,
+      _focusError,
+      _getWatch,
+      _getDirty,
+      _setValid,
+      _setFieldArray,
+      _setDisabledField,
+      _setErrors,
+      _getFieldArray,
+      _reset,
+      _resetDefaultValues,
+      _removeUnmounted,
+      _disableForm,
+      _subjects,
+      _proxyFormState,
+      get _fields() {
+        return _fields;
+      },
+      get _formValues() {
+        return _formValues;
+      },
+      get _state() {
+        return _state;
+      },
+      set _state(value) {
+        _state = value;
+      },
+      get _defaultValues() {
+        return _defaultValues;
+      },
+      get _names() {
+        return _names;
+      },
+      set _names(value) {
+        _names = value;
+      },
+      get _formState() {
+        return _formState;
+      },
+      get _options() {
+        return _options2;
+      },
+      set _options(value) {
+        _options2 = {
+          ..._options2,
+          ...value
+        };
+      }
+    },
+    subscribe: subscribe2,
+    trigger,
+    register,
+    handleSubmit,
+    watch,
+    setValue,
+    getValues,
+    reset,
+    resetField,
+    clearErrors,
+    unregister,
+    setError,
+    setFocus,
+    getFieldState
+  };
+  return {
+    ...methods,
+    formControl: methods
+  };
+}
+function useForm(props = {}) {
+  const _formControl = React$4.useRef(void 0);
+  const _values = React$4.useRef(void 0);
+  const [formState, updateFormState] = React$4.useState({
+    isDirty: false,
+    isValidating: false,
+    isLoading: isFunction(props.defaultValues),
+    isSubmitted: false,
+    isSubmitting: false,
+    isSubmitSuccessful: false,
+    isValid: false,
+    submitCount: 0,
+    dirtyFields: {},
+    touchedFields: {},
+    validatingFields: {},
+    errors: props.errors || {},
+    disabled: props.disabled || false,
+    isReady: false,
+    defaultValues: isFunction(props.defaultValues) ? void 0 : props.defaultValues
+  });
+  if (!_formControl.current) {
+    if (props.formControl) {
+      _formControl.current = {
+        ...props.formControl,
+        formState
+      };
+      if (props.defaultValues && !isFunction(props.defaultValues)) {
+        props.formControl.reset(props.defaultValues, props.resetOptions);
+      }
+    } else {
+      const { formControl, ...rest } = createFormControl(props);
+      _formControl.current = {
+        ...rest,
+        formState
+      };
+    }
+  }
+  const control = _formControl.current.control;
+  control._options = props;
+  useIsomorphicLayoutEffect(() => {
+    const sub = control._subscribe({
+      formState: control._proxyFormState,
+      callback: () => updateFormState({ ...control._formState }),
+      reRenderRoot: true
+    });
+    updateFormState((data) => ({
+      ...data,
+      isReady: true
+    }));
+    control._formState.isReady = true;
+    return sub;
+  }, [control]);
+  React$4.useEffect(() => control._disableForm(props.disabled), [control, props.disabled]);
+  React$4.useEffect(() => {
+    if (props.mode) {
+      control._options.mode = props.mode;
+    }
+    if (props.reValidateMode) {
+      control._options.reValidateMode = props.reValidateMode;
+    }
+  }, [control, props.mode, props.reValidateMode]);
+  React$4.useEffect(() => {
+    if (props.errors) {
+      control._setErrors(props.errors);
+      control._focusError();
+    }
+  }, [control, props.errors]);
+  React$4.useEffect(() => {
+    props.shouldUnregister && control._subjects.state.next({
+      values: control._getWatch()
+    });
+  }, [control, props.shouldUnregister]);
+  React$4.useEffect(() => {
+    if (control._proxyFormState.isDirty) {
+      const isDirty = control._getDirty();
+      if (isDirty !== formState.isDirty) {
+        control._subjects.state.next({
+          isDirty
+        });
+      }
+    }
+  }, [control, formState.isDirty]);
+  React$4.useEffect(() => {
+    var _a2;
+    if (props.values && !deepEqual(props.values, _values.current)) {
+      control._reset(props.values, {
+        keepFieldsRef: true,
+        ...control._options.resetOptions
+      });
+      if (!((_a2 = control._options.resetOptions) === null || _a2 === void 0 ? void 0 : _a2.keepIsValid)) {
+        control._setValid();
+      }
+      _values.current = props.values;
+      updateFormState((state) => ({ ...state }));
+    } else {
+      control._resetDefaultValues();
+    }
+  }, [control, props.values]);
+  React$4.useEffect(() => {
+    if (!control._state.mount) {
+      control._setValid();
+      control._state.mount = true;
+    }
+    if (control._state.watch) {
+      control._state.watch = false;
+      control._subjects.state.next({ ...control._formState });
+    }
+    control._removeUnmounted();
+  });
+  _formControl.current.formState = React$4.useMemo(() => getProxyFormState(formState, control), [control, formState]);
+  return _formControl.current;
+}
+const Route$8 = createFileRoute("/property")({ component: PropertyPage });
+function StatusBadge({ status }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "span",
+    {
+      className: `inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full ${status === "Online" ? "bg-primary/15 text-primary" : "bg-destructive/15 text-destructive"}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "span",
+          {
+            className: `w-1.5 h-1.5 rounded-full ${status === "Online" ? "bg-primary animate-pulse" : "bg-destructive"}`
+          }
+        ),
+        status
+      ]
+    }
+  );
+}
+function QrScannerModal({ onMockScan, onClose }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
+    {
+      "data-ocid": "qr_scanner.dialog",
+      tabIndex: -1,
+      className: "fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm px-4",
+      onClick: (e3) => {
+        if (e3.target === e3.currentTarget) onClose();
+      },
+      onKeyDown: (e3) => {
+        if (e3.target === e3.currentTarget && (e3.key === "Enter" || e3.key === " "))
+          onClose();
+      },
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-3xl p-6 w-full max-w-sm flex flex-col items-center gap-5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between w-full", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display", children: "Scan QR Code" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "qr_scanner.close_button",
+              onClick: onClose,
+              className: "w-8 h-8 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 text-muted-foreground transition-colors duration-200",
+              "aria-label": "Close QR scanner",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-[280px] h-[280px] bg-black rounded-2xl overflow-hidden border-2 border-primary/60 flex items-center justify-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-primary rounded-tl-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-primary rounded-tr-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-primary rounded-bl-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-primary rounded-br-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-x-3 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent qr-scanline" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center gap-2 opacity-40", children: /* @__PURE__ */ jsxRuntimeExports.jsx(QrCode, { size: 56, className: "text-primary", strokeWidth: 1.2 }) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground text-center", children: "Point camera at QR code" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "qr_scanner.mock_scan_button",
+            onClick: () => onMockScan("SUN-3K-PRO"),
+            className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors duration-200",
+            children: "Use Mock QR"
+          }
+        )
+      ] })
+    }
+  );
+}
+function AddSolarDialog({
+  propertyTitle,
+  onClose,
+  onSubmit
+}) {
+  const [showQr, setShowQr] = reactExports.useState(false);
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors }
+  } = useForm();
+  const handleMockScan = (value) => {
+    setValue("modelNumber", value);
+    setShowQr(false);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "data-ocid": "add_solar.dialog",
+        className: "fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm px-4 pb-4 sm:pb-0",
+        tabIndex: -1,
+        onClick: (e3) => {
+          if (e3.target === e3.currentTarget) onClose();
+        },
+        onKeyDown: (e3) => {
+          if (e3.target === e3.currentTarget && (e3.key === "Enter" || e3.key === " "))
+            onClose();
+        },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-3xl p-6 w-full max-w-sm flex flex-col gap-5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display", children: "Add Solar System" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: propertyTitle })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "add_solar.close_button",
+                onClick: onClose,
+                className: "w-8 h-8 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 text-muted-foreground transition-colors duration-200",
+                "aria-label": "Close dialog",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "form",
+            {
+              onSubmit: handleSubmit(onSubmit),
+              className: "flex flex-col gap-4",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "label",
+                    {
+                      htmlFor: "solar-model-number",
+                      className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                      children: "Model Number"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "input",
+                      {
+                        id: "solar-model-number",
+                        "data-ocid": "add_solar.model_number_input",
+                        ...register("modelNumber", { required: "Required" }),
+                        placeholder: "e.g. SUN-3K-PRO",
+                        className: "flex-1 bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "button",
+                      {
+                        type: "button",
+                        "data-ocid": "add_solar.qr_scan_button",
+                        onClick: () => setShowQr(true),
+                        className: "flex items-center gap-1.5 px-3 py-2 rounded-xl bg-primary/10 border border-primary/30 text-primary text-xs font-semibold hover:bg-primary/20 transition-colors duration-200",
+                        "aria-label": "Scan QR code",
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(QrCode, { size: 14 }),
+                          "Scan"
+                        ]
+                      }
+                    )
+                  ] }),
+                  errors.modelNumber && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      "data-ocid": "add_solar.model_number_field_error",
+                      className: "text-xs text-destructive",
+                      children: errors.modelNumber.message
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "label",
+                    {
+                      htmlFor: "solar-capacity",
+                      className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                      children: "Capacity (kVA)"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "input",
+                    {
+                      id: "solar-capacity",
+                      "data-ocid": "add_solar.capacity_input",
+                      type: "number",
+                      step: "0.1",
+                      ...register("capacityKva", {
+                        required: "Required",
+                        valueAsNumber: true,
+                        min: { value: 0.1, message: "Must be > 0" }
+                      }),
+                      placeholder: "e.g. 5",
+                      className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    }
+                  ),
+                  errors.capacityKva && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      "data-ocid": "add_solar.capacity_field_error",
+                      className: "text-xs text-destructive",
+                      children: errors.capacityKva.message
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "label",
+                    {
+                      htmlFor: "solar-meter-number",
+                      className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                      children: "Meter Number"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "input",
+                    {
+                      id: "solar-meter-number",
+                      "data-ocid": "add_solar.meter_number_input",
+                      ...register("meterNumber", { required: "Required" }),
+                      placeholder: "e.g. MTR-045892",
+                      className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    }
+                  ),
+                  errors.meterNumber && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      "data-ocid": "add_solar.meter_field_error",
+                      className: "text-xs text-destructive",
+                      children: errors.meterNumber.message
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    type: "submit",
+                    "data-ocid": "add_solar.submit_button",
+                    className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors duration-200 mt-1",
+                    children: "Link Solar System"
+                  }
+                )
+              ]
+            }
+          )
+        ] })
+      }
+    ),
+    showQr && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      QrScannerModal,
+      {
+        onMockScan: handleMockScan,
+        onClose: () => setShowQr(false)
+      }
+    )
+  ] });
+}
+const HOUSE_TYPES = ["Home", "Office", "Beach House", "Other"];
+function AddPropertyDialog({ onClose, onSubmit }) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm({
+    defaultValues: { houseType: "Home" }
+  });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
+    {
+      "data-ocid": "add_property.dialog",
+      tabIndex: -1,
+      className: "fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm px-4 pb-4 sm:pb-0",
+      onClick: (e3) => {
+        if (e3.target === e3.currentTarget) onClose();
+      },
+      onKeyDown: (e3) => {
+        if (e3.target === e3.currentTarget && (e3.key === "Enter" || e3.key === " "))
+          onClose();
+      },
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-card border border-border rounded-3xl p-6 w-full max-w-sm flex flex-col gap-5 max-h-[90vh] overflow-y-auto", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display", children: "Add Property" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "add_property.close_button",
+              onClick: onClose,
+              className: "w-8 h-8 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/80 text-muted-foreground transition-colors duration-200",
+              "aria-label": "Close dialog",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleSubmit(onSubmit), className: "flex flex-col gap-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "label",
+              {
+                htmlFor: "property-title",
+                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                children: "Property Name"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "input",
+              {
+                id: "property-title",
+                "data-ocid": "add_property.name_input",
+                ...register("title", { required: "Property name is required" }),
+                placeholder: "e.g. Main House",
+                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              }
+            ),
+            errors.title && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                "data-ocid": "add_property.name_field_error",
+                className: "text-xs text-destructive",
+                children: errors.title.message
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "label",
+              {
+                htmlFor: "property-address",
+                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                children: "Address"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "input",
+              {
+                id: "property-address",
+                "data-ocid": "add_property.address_input",
+                ...register("address", { required: "Address is required" }),
+                placeholder: "e.g. 14 Adeleke Street, Lekki",
+                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              }
+            ),
+            errors.address && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                "data-ocid": "add_property.address_field_error",
+                className: "text-xs text-destructive",
+                children: errors.address.message
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "label",
+              {
+                htmlFor: "property-meter-number",
+                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                children: "Meter Number"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "input",
+              {
+                id: "property-meter-number",
+                "data-ocid": "add_property.meter_input",
+                ...register("meterNumber", {
+                  required: "Meter number is required"
+                }),
+                placeholder: "e.g. MTR-045892",
+                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              }
+            ),
+            errors.meterNumber && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                "data-ocid": "add_property.meter_field_error",
+                className: "text-xs text-destructive",
+                children: errors.meterNumber.message
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "label",
+              {
+                htmlFor: "property-capacity",
+                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                children: "Capacity (kVA)"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "input",
+              {
+                id: "property-capacity",
+                "data-ocid": "add_property.capacity_input",
+                type: "number",
+                step: "0.5",
+                ...register("capacityKva", {
+                  required: "Capacity is required",
+                  valueAsNumber: true,
+                  min: { value: 0.5, message: "Must be > 0" }
+                }),
+                placeholder: "e.g. 5",
+                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+              }
+            ),
+            errors.capacityKva && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                "data-ocid": "add_property.capacity_field_error",
+                className: "text-xs text-destructive",
+                children: errors.capacityKva.message
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "label",
+              {
+                htmlFor: "property-house-type",
+                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                children: "House Type"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "select",
+              {
+                id: "property-house-type",
+                "data-ocid": "add_property.house_type_select",
+                ...register("houseType"),
+                className: "bg-muted border border-input rounded-xl px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring appearance-none",
+                children: HOUSE_TYPES.map((t2) => /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: t2, children: t2 }, t2))
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "submit",
+              "data-ocid": "add_property.submit_button",
+              className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors duration-200 mt-1",
+              children: "Add Property"
+            }
+          )
+        ] })
+      ] })
+    }
+  );
+}
+function PropertyCard({
+  property: property2,
+  index: index2,
+  onDelete,
+  onAddSolar
+}) {
+  const handleDelete = () => {
+    if (window.confirm("Delete this property?")) {
+      onDelete(property2.id);
+    }
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": `property.item.${index2}`,
+      className: "bg-card border border-border rounded-3xl overflow-hidden transition-smooth hover:border-primary/30",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-5 pt-5 pb-3 flex items-start justify-between gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-base font-semibold text-foreground font-display truncate", children: property2.title }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 mt-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                MapPin,
+                {
+                  size: 12,
+                  className: "text-muted-foreground flex-shrink-0",
+                  strokeWidth: 1.8
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground truncate", children: property2.address })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(StatusBadge, { status: property2.status })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mx-5 border-t border-border" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-5 py-3 flex items-center gap-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 12, className: "text-primary", strokeWidth: 1.8 }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+              property2.capacityKva,
+              " kVA"
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Hash$2, { size: 12, className: "text-muted-foreground", strokeWidth: 1.8 }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground font-mono", children: property2.modelNumber || "—" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-5 pb-5 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `property.solar_button.${index2}`,
+              onClick: () => onAddSolar(property2),
+              className: "flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-primary/10 border border-primary/25 text-primary text-xs font-semibold hover:bg-primary/20 transition-colors duration-200",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 13 }),
+                "Add Solar"
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `property.edit_button.${index2}`,
+              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/70 text-muted-foreground transition-colors duration-200",
+              "aria-label": "Edit property",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { size: 14, strokeWidth: 1.8 })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `property.delete_button.${index2}`,
+              onClick: handleDelete,
+              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-destructive/10 hover:bg-destructive/20 text-destructive transition-colors duration-200",
+              "aria-label": "Delete property",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trash2, { size: 14, strokeWidth: 1.8 })
+            }
+          )
+        ] })
+      ]
+    }
+  );
+}
+function PropertyPage() {
+  const navigate = useNavigate();
+  const { isAuthenticated } = useCurrentUser();
+  const [properties, setProperties] = reactExports.useState(MOCK_PROPERTIES);
+  const [showAddProperty, setShowAddProperty] = reactExports.useState(false);
+  const [solarTarget, setSolarTarget] = reactExports.useState(null);
+  const listRef = reactExports.useRef(null);
+  reactExports.useEffect(() => {
+    if (!isAuthenticated) navigate({ to: "/" });
+  }, [isAuthenticated, navigate]);
+  if (!isAuthenticated) return null;
+  const handleAddProperty = (data) => {
+    const newProp = {
+      id: String(Date.now()),
+      userId: "user-1",
+      title: data.title,
+      address: data.address,
+      meterNumber: data.meterNumber,
+      capacityKva: data.capacityKva,
+      modelNumber: "",
+      status: "Online"
+    };
+    setProperties((prev) => [...prev, newProp]);
+    setShowAddProperty(false);
+    ue.success("Property added!");
+  };
+  const handleDeleteProperty = (id) => {
+    setProperties((prev) => prev.filter((p2) => p2.id !== id));
+    ue.success("Property removed.");
+  };
+  const handleAddSolar = (data) => {
+    if (!solarTarget) return;
+    setProperties(
+      (prev) => prev.map(
+        (p2) => p2.id === solarTarget.id ? {
+          ...p2,
+          modelNumber: data.modelNumber,
+          capacityKva: data.capacityKva,
+          meterNumber: data.meterNumber
+        } : p2
+      )
+    );
+    setSolarTarget(null);
+    ue.success("Solar system linked!");
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "property.page", className: "min-h-screen bg-background pb-28", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-lg mx-auto px-4 py-4 flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-lg font-semibold text-foreground font-display", children: "My Properties" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "button",
+        {
+          type: "button",
+          "data-ocid": "property.add_property_button",
+          onClick: () => setShowAddProperty(true),
+          className: "flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-4 py-2.5 rounded-2xl hover:bg-primary/90 transition-colors duration-200",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 16 }),
+            "Add Property"
+          ]
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 pt-5", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 mb-5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xl font-bold text-foreground font-display", children: properties.length }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: "Properties" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-px h-4 bg-border" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary animate-pulse" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground", children: [
+            properties.filter((p2) => p2.status === "Online").length,
+            " Online"
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-px h-4 bg-border" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-destructive" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground", children: [
+            properties.filter((p2) => p2.status === "Offline").length,
+            " Offline"
+          ] })
+        ] })
+      ] }),
+      properties.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          "data-ocid": "property.empty_state",
+          className: "flex flex-col items-center justify-center py-20 gap-4 text-center",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-16 rounded-3xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+              House,
+              {
+                size: 28,
+                className: "text-muted-foreground",
+                strokeWidth: 1.5
+              }
+            ) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-semibold text-foreground font-display", children: "No properties yet" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1", children: "Add your first property to start monitoring." })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "property.empty_add_button",
+                onClick: () => setShowAddProperty(true),
+                className: "flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-2xl hover:bg-primary/90 transition-colors duration-200",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 16 }),
+                  "Add Property"
+                ]
+              }
+            )
+          ]
+        }
+      ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "div",
+        {
+          ref: listRef,
+          "data-ocid": "property.list",
+          className: "flex flex-col gap-4",
+          children: properties.map((property2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            PropertyCard,
+            {
+              property: property2,
+              index: i + 1,
+              onDelete: handleDeleteProperty,
+              onAddSolar: (p2) => setSolarTarget(p2)
+            },
+            property2.id
+          ))
+        }
+      )
+    ] }),
+    showAddProperty && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      AddPropertyDialog,
+      {
+        onClose: () => setShowAddProperty(false),
+        onSubmit: handleAddProperty
+      }
+    ),
+    solarTarget && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      AddSolarDialog,
+      {
+        propertyTitle: solarTarget.title,
+        onClose: () => setSolarTarget(null),
+        onSubmit: handleAddSolar
+      }
+    )
+  ] });
+}
+const Route$7 = createFileRoute("/properties")({
+  component: PropertiesPage
+});
+function StatusDot({ status }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "span",
+    {
+      className: `inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full ${status === "Online" ? "bg-primary/15 text-primary" : "bg-destructive/15 text-destructive"}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "span",
+          {
+            className: `w-1.5 h-1.5 rounded-full flex-shrink-0 ${status === "Online" ? "bg-primary animate-pulse" : "bg-destructive"}`
+          }
+        ),
+        status
+      ]
+    }
+  );
+}
+function PropertyGridCard({
+  property: property2,
+  index: index2
+}) {
+  const navigate = useNavigate();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "button",
+    {
+      type: "button",
+      "data-ocid": `properties.grid_item.${index2}`,
+      onClick: () => navigate({ to: "/dashboard" }),
+      className: "bg-card border border-border rounded-2xl p-4 flex flex-col gap-3 text-left hover:border-primary/40 transition-colors duration-200 active:scale-[0.98]",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { size: 18, className: "text-primary", strokeWidth: 1.8 }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(StatusDot, { status: property2.status })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-foreground font-display truncate leading-tight", children: property2.title }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] text-muted-foreground truncate mt-0.5", children: property2.address })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 11, className: "text-primary", strokeWidth: 1.8 }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-[11px] text-muted-foreground", children: [
+            property2.capacityKva,
+            " kVA"
+          ] })
+        ] })
+      ]
+    }
+  );
+}
+function PropertyListRow({
+  property: property2,
+  index: index2
+}) {
+  const navigate = useNavigate();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "button",
+    {
+      type: "button",
+      "data-ocid": `properties.list_item.${index2}`,
+      onClick: () => navigate({ to: "/dashboard" }),
+      className: "w-full bg-card border border-border rounded-2xl px-4 py-4 flex items-center gap-4 text-left hover:border-primary/40 transition-colors duration-200 active:scale-[0.99]",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { size: 18, className: "text-primary", strokeWidth: 1.8 }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-foreground font-display truncate", children: property2.title }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 mt-0.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              MapPin,
+              {
+                size: 10,
+                className: "text-muted-foreground flex-shrink-0",
+                strokeWidth: 1.8
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground truncate", children: property2.address })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mt-1.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 10, className: "text-primary" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-[11px] text-muted-foreground", children: [
+                property2.capacityKva,
+                " kVA"
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Hash$2, { size: 10, className: "text-muted-foreground" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[11px] text-muted-foreground font-mono", children: property2.modelNumber || "—" })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-end gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(StatusDot, { status: property2.status }),
+          property2.status === "Online" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Wifi, { size: 13, className: "text-primary" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(WifiOff, { size: 13, className: "text-muted-foreground" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronRight, { size: 16, className: "text-muted-foreground flex-shrink-0" })
+      ]
+    }
+  );
+}
+function PropertiesPage() {
+  const navigate = useNavigate();
+  const { isAuthenticated } = useCurrentUser();
+  const [viewMode, setViewMode] = reactExports.useState("grid");
+  const [showAll, setShowAll] = reactExports.useState(false);
+  reactExports.useEffect(() => {
+    if (!isAuthenticated) navigate({ to: "/" });
+  }, [isAuthenticated, navigate]);
+  if (!isAuthenticated) return null;
+  const properties = MOCK_PROPERTIES;
+  const MAX_GRID = 4;
+  const visibleProps = viewMode === "grid" && !showAll ? properties.slice(0, MAX_GRID) : properties;
+  const hasMore = viewMode === "grid" && !showAll && properties.length > MAX_GRID;
+  const onlineCount = properties.filter((p2) => p2.status === "Online").length;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "properties.page",
+      className: "min-h-screen bg-background pb-28",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-lg mx-auto px-4 py-4 flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-lg font-semibold text-foreground font-display", children: "My Properties" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground", children: [
+              onlineCount,
+              " of ",
+              properties.length,
+              " online"
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center bg-muted rounded-xl p-1 gap-0.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": "properties.grid_view_toggle",
+                  onClick: () => {
+                    setViewMode("grid");
+                    setShowAll(false);
+                  },
+                  className: `w-8 h-7 flex items-center justify-center rounded-lg transition-colors duration-200 ${viewMode === "grid" ? "bg-card shadow-sm text-primary" : "text-muted-foreground"}`,
+                  "aria-label": "Grid view",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(Grid3x3, { size: 14 })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  type: "button",
+                  "data-ocid": "properties.list_view_toggle",
+                  onClick: () => setViewMode("list"),
+                  className: `w-8 h-7 flex items-center justify-center rounded-lg transition-colors duration-200 ${viewMode === "list" ? "bg-card shadow-sm text-primary" : "text-muted-foreground"}`,
+                  "aria-label": "List view",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(List, { size: 14 })
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              Link,
+              {
+                to: "/property",
+                "data-ocid": "properties.add_button",
+                className: "flex items-center gap-1.5 bg-primary text-primary-foreground text-xs font-semibold px-3 py-2 rounded-xl hover:bg-primary/90 transition-colors duration-200",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 14 }),
+                  "Add"
+                ]
+              }
+            )
+          ] })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 pt-5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-4 mb-5 px-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xl font-bold text-foreground font-display", children: properties.length }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: "Properties" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-px h-4 bg-border" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary animate-pulse" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-sm text-muted-foreground", children: [
+                onlineCount,
+                " Online"
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-px h-4 bg-border" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Battery, { size: 13, className: "text-primary" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm text-muted-foreground", children: "Active" })
+            ] })
+          ] }),
+          viewMode === "grid" && /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-ocid": "properties.grid", className: "grid grid-cols-2 gap-3", children: visibleProps.map((prop, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyGridCard, { property: prop, index: i + 1 }, prop.id)) }),
+            hasMore && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-end mt-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "properties.show_all_button",
+                onClick: () => setShowAll(true),
+                className: "text-xs text-primary font-semibold px-3 py-1.5 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors duration-200",
+                children: [
+                  "Show all (",
+                  properties.length,
+                  ")"
+                ]
+              }
+            ) })
+          ] }),
+          viewMode === "list" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-ocid": "properties.list", className: "flex flex-col gap-3", children: visibleProps.map((prop, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(PropertyListRow, { property: prop, index: i + 1 }, prop.id)) }),
+          properties.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              "data-ocid": "properties.empty_state",
+              className: "flex flex-col items-center justify-center py-20 gap-4 text-center",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-16 rounded-3xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Building2,
+                  {
+                    size: 28,
+                    className: "text-muted-foreground",
+                    strokeWidth: 1.5
+                  }
+                ) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-semibold text-foreground font-display", children: "No properties yet" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1", children: "Add your first property to start monitoring." })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  Link,
+                  {
+                    to: "/property",
+                    "data-ocid": "properties.empty_add_button",
+                    className: "flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-2xl hover:bg-primary/90 transition-colors duration-200",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { size: 16 }),
+                      "Add Property"
+                    ]
+                  }
+                )
+              ]
+            }
+          )
+        ] })
+      ]
+    }
+  );
+}
+function setRef(ref, value) {
+  if (typeof ref === "function") {
+    return ref(value);
+  } else if (ref !== null && ref !== void 0) {
+    ref.current = value;
+  }
+}
+function composeRefs(...refs) {
+  return (node) => {
+    let hasCleanup = false;
+    const cleanups = refs.map((ref) => {
+      const cleanup = setRef(ref, node);
+      if (!hasCleanup && typeof cleanup == "function") {
+        hasCleanup = true;
+      }
+      return cleanup;
+    });
+    if (hasCleanup) {
+      return () => {
+        for (let i = 0; i < cleanups.length; i++) {
+          const cleanup = cleanups[i];
+          if (typeof cleanup == "function") {
+            cleanup();
+          } else {
+            setRef(refs[i], null);
+          }
+        }
+      };
+    }
+  };
+}
+var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+var use = React$5[" use ".trim().toString()];
+function isPromiseLike(value) {
+  return typeof value === "object" && value !== null && "then" in value;
+}
+function isLazyComponent(element) {
+  return element != null && typeof element === "object" && "$$typeof" in element && element.$$typeof === REACT_LAZY_TYPE && "_payload" in element && isPromiseLike(element._payload);
+}
+// @__NO_SIDE_EFFECTS__
+function createSlot(ownerName) {
+  const SlotClone = /* @__PURE__ */ createSlotClone(ownerName);
+  const Slot2 = reactExports.forwardRef((props, forwardedRef) => {
+    let { children, ...slotProps } = props;
+    if (isLazyComponent(children) && typeof use === "function") {
+      children = use(children._payload);
+    }
+    const childrenArray = reactExports.Children.toArray(children);
+    const slottable = childrenArray.find(isSlottable);
+    if (slottable) {
+      const newElement = slottable.props.children;
+      const newChildren = childrenArray.map((child) => {
+        if (child === slottable) {
+          if (reactExports.Children.count(newElement) > 1) return reactExports.Children.only(null);
+          return reactExports.isValidElement(newElement) ? newElement.props.children : null;
+        } else {
+          return child;
+        }
+      });
+      return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children: reactExports.isValidElement(newElement) ? reactExports.cloneElement(newElement, void 0, newChildren) : null });
+    }
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children });
+  });
+  Slot2.displayName = `${ownerName}.Slot`;
+  return Slot2;
+}
+var Slot = /* @__PURE__ */ createSlot("Slot");
+// @__NO_SIDE_EFFECTS__
+function createSlotClone(ownerName) {
+  const SlotClone = reactExports.forwardRef((props, forwardedRef) => {
+    let { children, ...slotProps } = props;
+    if (isLazyComponent(children) && typeof use === "function") {
+      children = use(children._payload);
+    }
+    if (reactExports.isValidElement(children)) {
+      const childrenRef = getElementRef(children);
+      const props2 = mergeProps(slotProps, children.props);
+      if (children.type !== reactExports.Fragment) {
+        props2.ref = forwardedRef ? composeRefs(forwardedRef, childrenRef) : childrenRef;
+      }
+      return reactExports.cloneElement(children, props2);
+    }
+    return reactExports.Children.count(children) > 1 ? reactExports.Children.only(null) : null;
+  });
+  SlotClone.displayName = `${ownerName}.SlotClone`;
+  return SlotClone;
+}
+var SLOTTABLE_IDENTIFIER = Symbol("radix.slottable");
+function isSlottable(child) {
+  return reactExports.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER;
+}
+function mergeProps(slotProps, childProps) {
+  const overrideProps = { ...childProps };
+  for (const propName in childProps) {
+    const slotPropValue = slotProps[propName];
+    const childPropValue = childProps[propName];
+    const isHandler = /^on[A-Z]/.test(propName);
+    if (isHandler) {
+      if (slotPropValue && childPropValue) {
+        overrideProps[propName] = (...args) => {
+          const result = childPropValue(...args);
+          slotPropValue(...args);
+          return result;
+        };
+      } else if (slotPropValue) {
+        overrideProps[propName] = slotPropValue;
+      }
+    } else if (propName === "style") {
+      overrideProps[propName] = { ...slotPropValue, ...childPropValue };
+    } else if (propName === "className") {
+      overrideProps[propName] = [slotPropValue, childPropValue].filter(Boolean).join(" ");
+    }
+  }
+  return { ...slotProps, ...overrideProps };
+}
+function getElementRef(element) {
+  var _a2, _b2;
+  let getter = (_a2 = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a2.get;
+  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element.ref;
+  }
+  getter = (_b2 = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b2.get;
+  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element.props.ref;
+  }
+  return element.props.ref || element.ref;
+}
+const falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
+const cx = clsx;
+const cva = (base, config2) => (props) => {
+  var _config_compoundVariants;
+  if ((config2 === null || config2 === void 0 ? void 0 : config2.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+  const { variants, defaultVariants } = config2;
+  const getVariantClassNames = Object.keys(variants).map((variant) => {
+    const variantProp = props === null || props === void 0 ? void 0 : props[variant];
+    const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
+    if (variantProp === null) return null;
+    const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
+    return variants[variant][variantKey];
+  });
+  const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
+    let [key, value] = param;
+    if (value === void 0) {
+      return acc;
+    }
+    acc[key] = value;
+    return acc;
+  }, {});
+  const getCompoundVariantClassNames = config2 === null || config2 === void 0 ? void 0 : (_config_compoundVariants = config2.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
+    let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
+    return Object.entries(compoundVariantOptions).every((param2) => {
+      let [key, value] = param2;
+      return Array.isArray(value) ? value.includes({
+        ...defaultVariants,
+        ...propsWithoutUndefined
+      }[key]) : {
+        ...defaultVariants,
+        ...propsWithoutUndefined
+      }[key] === value;
+    }) ? [
+      ...acc,
+      cvClass,
+      cvClassName
+    ] : acc;
+  }, []);
+  return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+};
+const CLASS_PART_SEPARATOR = "-";
+const createClassGroupUtils = (config2) => {
+  const classMap = createClassMap(config2);
+  const {
+    conflictingClassGroups,
+    conflictingClassGroupModifiers
+  } = config2;
+  const getClassGroupId = (className) => {
+    const classParts = className.split(CLASS_PART_SEPARATOR);
+    if (classParts[0] === "" && classParts.length !== 1) {
+      classParts.shift();
+    }
+    return getGroupRecursive(classParts, classMap) || getGroupIdForArbitraryProperty(className);
+  };
+  const getConflictingClassGroupIds = (classGroupId, hasPostfixModifier) => {
+    const conflicts = conflictingClassGroups[classGroupId] || [];
+    if (hasPostfixModifier && conflictingClassGroupModifiers[classGroupId]) {
+      return [...conflicts, ...conflictingClassGroupModifiers[classGroupId]];
+    }
+    return conflicts;
+  };
+  return {
+    getClassGroupId,
+    getConflictingClassGroupIds
+  };
+};
+const getGroupRecursive = (classParts, classPartObject) => {
+  var _a2;
+  if (classParts.length === 0) {
+    return classPartObject.classGroupId;
+  }
+  const currentClassPart = classParts[0];
+  const nextClassPartObject = classPartObject.nextPart.get(currentClassPart);
+  const classGroupFromNextClassPart = nextClassPartObject ? getGroupRecursive(classParts.slice(1), nextClassPartObject) : void 0;
+  if (classGroupFromNextClassPart) {
+    return classGroupFromNextClassPart;
+  }
+  if (classPartObject.validators.length === 0) {
+    return void 0;
+  }
+  const classRest = classParts.join(CLASS_PART_SEPARATOR);
+  return (_a2 = classPartObject.validators.find(({
+    validator
+  }) => validator(classRest))) == null ? void 0 : _a2.classGroupId;
+};
+const arbitraryPropertyRegex = /^\[(.+)\]$/;
+const getGroupIdForArbitraryProperty = (className) => {
+  if (arbitraryPropertyRegex.test(className)) {
+    const arbitraryPropertyClassName = arbitraryPropertyRegex.exec(className)[1];
+    const property2 = arbitraryPropertyClassName == null ? void 0 : arbitraryPropertyClassName.substring(0, arbitraryPropertyClassName.indexOf(":"));
+    if (property2) {
+      return "arbitrary.." + property2;
+    }
+  }
+};
+const createClassMap = (config2) => {
+  const {
+    theme,
+    prefix: prefix2
+  } = config2;
+  const classMap = {
+    nextPart: /* @__PURE__ */ new Map(),
+    validators: []
+  };
+  const prefixedClassGroupEntries = getPrefixedClassGroupEntries(Object.entries(config2.classGroups), prefix2);
+  prefixedClassGroupEntries.forEach(([classGroupId, classGroup]) => {
+    processClassesRecursively(classGroup, classMap, classGroupId, theme);
+  });
+  return classMap;
+};
+const processClassesRecursively = (classGroup, classPartObject, classGroupId, theme) => {
+  classGroup.forEach((classDefinition) => {
+    if (typeof classDefinition === "string") {
+      const classPartObjectToEdit = classDefinition === "" ? classPartObject : getPart(classPartObject, classDefinition);
+      classPartObjectToEdit.classGroupId = classGroupId;
+      return;
+    }
+    if (typeof classDefinition === "function") {
+      if (isThemeGetter(classDefinition)) {
+        processClassesRecursively(classDefinition(theme), classPartObject, classGroupId, theme);
+        return;
+      }
+      classPartObject.validators.push({
+        validator: classDefinition,
+        classGroupId
+      });
+      return;
+    }
+    Object.entries(classDefinition).forEach(([key, classGroup2]) => {
+      processClassesRecursively(classGroup2, getPart(classPartObject, key), classGroupId, theme);
+    });
+  });
+};
+const getPart = (classPartObject, path) => {
+  let currentClassPartObject = classPartObject;
+  path.split(CLASS_PART_SEPARATOR).forEach((pathPart) => {
+    if (!currentClassPartObject.nextPart.has(pathPart)) {
+      currentClassPartObject.nextPart.set(pathPart, {
+        nextPart: /* @__PURE__ */ new Map(),
+        validators: []
+      });
+    }
+    currentClassPartObject = currentClassPartObject.nextPart.get(pathPart);
+  });
+  return currentClassPartObject;
+};
+const isThemeGetter = (func) => func.isThemeGetter;
+const getPrefixedClassGroupEntries = (classGroupEntries, prefix2) => {
+  if (!prefix2) {
+    return classGroupEntries;
+  }
+  return classGroupEntries.map(([classGroupId, classGroup]) => {
+    const prefixedClassGroup = classGroup.map((classDefinition) => {
+      if (typeof classDefinition === "string") {
+        return prefix2 + classDefinition;
+      }
+      if (typeof classDefinition === "object") {
+        return Object.fromEntries(Object.entries(classDefinition).map(([key, value]) => [prefix2 + key, value]));
+      }
+      return classDefinition;
+    });
+    return [classGroupId, prefixedClassGroup];
+  });
+};
+const createLruCache = (maxCacheSize) => {
+  if (maxCacheSize < 1) {
+    return {
+      get: () => void 0,
+      set: () => {
+      }
+    };
+  }
+  let cacheSize = 0;
+  let cache = /* @__PURE__ */ new Map();
+  let previousCache = /* @__PURE__ */ new Map();
+  const update = (key, value) => {
+    cache.set(key, value);
+    cacheSize++;
+    if (cacheSize > maxCacheSize) {
+      cacheSize = 0;
+      previousCache = cache;
+      cache = /* @__PURE__ */ new Map();
+    }
+  };
+  return {
+    get(key) {
+      let value = cache.get(key);
+      if (value !== void 0) {
+        return value;
+      }
+      if ((value = previousCache.get(key)) !== void 0) {
+        update(key, value);
+        return value;
+      }
+    },
+    set(key, value) {
+      if (cache.has(key)) {
+        cache.set(key, value);
+      } else {
+        update(key, value);
+      }
+    }
+  };
+};
+const IMPORTANT_MODIFIER = "!";
+const createParseClassName = (config2) => {
+  const {
+    separator,
+    experimentalParseClassName
+  } = config2;
+  const isSeparatorSingleCharacter = separator.length === 1;
+  const firstSeparatorCharacter = separator[0];
+  const separatorLength = separator.length;
+  const parseClassName = (className) => {
+    const modifiers = [];
+    let bracketDepth = 0;
+    let modifierStart = 0;
+    let postfixModifierPosition;
+    for (let index2 = 0; index2 < className.length; index2++) {
+      let currentCharacter = className[index2];
+      if (bracketDepth === 0) {
+        if (currentCharacter === firstSeparatorCharacter && (isSeparatorSingleCharacter || className.slice(index2, index2 + separatorLength) === separator)) {
+          modifiers.push(className.slice(modifierStart, index2));
+          modifierStart = index2 + separatorLength;
+          continue;
+        }
+        if (currentCharacter === "/") {
+          postfixModifierPosition = index2;
+          continue;
+        }
+      }
+      if (currentCharacter === "[") {
+        bracketDepth++;
+      } else if (currentCharacter === "]") {
+        bracketDepth--;
+      }
+    }
+    const baseClassNameWithImportantModifier = modifiers.length === 0 ? className : className.substring(modifierStart);
+    const hasImportantModifier = baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
+    const baseClassName = hasImportantModifier ? baseClassNameWithImportantModifier.substring(1) : baseClassNameWithImportantModifier;
+    const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart : void 0;
+    return {
+      modifiers,
+      hasImportantModifier,
+      baseClassName,
+      maybePostfixModifierPosition
+    };
+  };
+  if (experimentalParseClassName) {
+    return (className) => experimentalParseClassName({
+      className,
+      parseClassName
+    });
+  }
+  return parseClassName;
+};
+const sortModifiers = (modifiers) => {
+  if (modifiers.length <= 1) {
+    return modifiers;
+  }
+  const sortedModifiers = [];
+  let unsortedModifiers = [];
+  modifiers.forEach((modifier) => {
+    const isArbitraryVariant = modifier[0] === "[";
+    if (isArbitraryVariant) {
+      sortedModifiers.push(...unsortedModifiers.sort(), modifier);
+      unsortedModifiers = [];
+    } else {
+      unsortedModifiers.push(modifier);
+    }
+  });
+  sortedModifiers.push(...unsortedModifiers.sort());
+  return sortedModifiers;
+};
+const createConfigUtils = (config2) => ({
+  cache: createLruCache(config2.cacheSize),
+  parseClassName: createParseClassName(config2),
+  ...createClassGroupUtils(config2)
+});
+const SPLIT_CLASSES_REGEX = /\s+/;
+const mergeClassList = (classList, configUtils) => {
+  const {
+    parseClassName,
+    getClassGroupId,
+    getConflictingClassGroupIds
+  } = configUtils;
+  const classGroupsInConflict = [];
+  const classNames = classList.trim().split(SPLIT_CLASSES_REGEX);
+  let result = "";
+  for (let index2 = classNames.length - 1; index2 >= 0; index2 -= 1) {
+    const originalClassName = classNames[index2];
+    const {
+      modifiers,
+      hasImportantModifier,
+      baseClassName,
+      maybePostfixModifierPosition
+    } = parseClassName(originalClassName);
+    let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
+    let classGroupId = getClassGroupId(hasPostfixModifier ? baseClassName.substring(0, maybePostfixModifierPosition) : baseClassName);
+    if (!classGroupId) {
+      if (!hasPostfixModifier) {
+        result = originalClassName + (result.length > 0 ? " " + result : result);
+        continue;
+      }
+      classGroupId = getClassGroupId(baseClassName);
+      if (!classGroupId) {
+        result = originalClassName + (result.length > 0 ? " " + result : result);
+        continue;
+      }
+      hasPostfixModifier = false;
+    }
+    const variantModifier = sortModifiers(modifiers).join(":");
+    const modifierId = hasImportantModifier ? variantModifier + IMPORTANT_MODIFIER : variantModifier;
+    const classId = modifierId + classGroupId;
+    if (classGroupsInConflict.includes(classId)) {
+      continue;
+    }
+    classGroupsInConflict.push(classId);
+    const conflictGroups = getConflictingClassGroupIds(classGroupId, hasPostfixModifier);
+    for (let i = 0; i < conflictGroups.length; ++i) {
+      const group = conflictGroups[i];
+      classGroupsInConflict.push(modifierId + group);
+    }
+    result = originalClassName + (result.length > 0 ? " " + result : result);
+  }
+  return result;
+};
+function twJoin() {
+  let index2 = 0;
+  let argument;
+  let resolvedValue;
+  let string2 = "";
+  while (index2 < arguments.length) {
+    if (argument = arguments[index2++]) {
+      if (resolvedValue = toValue(argument)) {
+        string2 && (string2 += " ");
+        string2 += resolvedValue;
+      }
+    }
+  }
+  return string2;
+}
+const toValue = (mix) => {
+  if (typeof mix === "string") {
+    return mix;
+  }
+  let resolvedValue;
+  let string2 = "";
+  for (let k2 = 0; k2 < mix.length; k2++) {
+    if (mix[k2]) {
+      if (resolvedValue = toValue(mix[k2])) {
+        string2 && (string2 += " ");
+        string2 += resolvedValue;
+      }
+    }
+  }
+  return string2;
+};
+function createTailwindMerge(createConfigFirst, ...createConfigRest) {
+  let configUtils;
+  let cacheGet;
+  let cacheSet;
+  let functionToCall = initTailwindMerge;
+  function initTailwindMerge(classList) {
+    const config2 = createConfigRest.reduce((previousConfig, createConfigCurrent) => createConfigCurrent(previousConfig), createConfigFirst());
+    configUtils = createConfigUtils(config2);
+    cacheGet = configUtils.cache.get;
+    cacheSet = configUtils.cache.set;
+    functionToCall = tailwindMerge;
+    return tailwindMerge(classList);
+  }
+  function tailwindMerge(classList) {
+    const cachedResult = cacheGet(classList);
+    if (cachedResult) {
+      return cachedResult;
+    }
+    const result = mergeClassList(classList, configUtils);
+    cacheSet(classList, result);
+    return result;
+  }
+  return function callTailwindMerge() {
+    return functionToCall(twJoin.apply(null, arguments));
+  };
+}
+const fromTheme = (key) => {
+  const themeGetter = (theme) => theme[key] || [];
+  themeGetter.isThemeGetter = true;
+  return themeGetter;
+};
+const arbitraryValueRegex = /^\[(?:([a-z-]+):)?(.+)\]$/i;
+const fractionRegex = /^\d+\/\d+$/;
+const stringLengths = /* @__PURE__ */ new Set(["px", "full", "screen"]);
+const tshirtUnitRegex = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/;
+const lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/;
+const colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix)\(.+\)$/;
+const shadowRegex = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/;
+const imageRegex = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/;
+const isLength = (value) => isNumber$1(value) || stringLengths.has(value) || fractionRegex.test(value);
+const isArbitraryLength = (value) => getIsArbitraryValue(value, "length", isLengthOnly);
+const isNumber$1 = (value) => Boolean(value) && !Number.isNaN(Number(value));
+const isArbitraryNumber = (value) => getIsArbitraryValue(value, "number", isNumber$1);
+const isInteger = (value) => Boolean(value) && Number.isInteger(Number(value));
+const isPercent2 = (value) => value.endsWith("%") && isNumber$1(value.slice(0, -1));
+const isArbitraryValue = (value) => arbitraryValueRegex.test(value);
+const isTshirtSize = (value) => tshirtUnitRegex.test(value);
+const sizeLabels = /* @__PURE__ */ new Set(["length", "size", "percentage"]);
+const isArbitrarySize = (value) => getIsArbitraryValue(value, sizeLabels, isNever);
+const isArbitraryPosition = (value) => getIsArbitraryValue(value, "position", isNever);
+const imageLabels = /* @__PURE__ */ new Set(["image", "url"]);
+const isArbitraryImage = (value) => getIsArbitraryValue(value, imageLabels, isImage);
+const isArbitraryShadow = (value) => getIsArbitraryValue(value, "", isShadow);
+const isAny = () => true;
+const getIsArbitraryValue = (value, label, testValue) => {
+  const result = arbitraryValueRegex.exec(value);
+  if (result) {
+    if (result[1]) {
+      return typeof label === "string" ? result[1] === label : label.has(result[1]);
+    }
+    return testValue(result[2]);
+  }
+  return false;
+};
+const isLengthOnly = (value) => (
+  // `colorFunctionRegex` check is necessary because color functions can have percentages in them which which would be incorrectly classified as lengths.
+  // For example, `hsl(0 0% 0%)` would be classified as a length without this check.
+  // I could also use lookbehind assertion in `lengthUnitRegex` but that isn't supported widely enough.
+  lengthUnitRegex.test(value) && !colorFunctionRegex.test(value)
+);
+const isNever = () => false;
+const isShadow = (value) => shadowRegex.test(value);
+const isImage = (value) => imageRegex.test(value);
+const getDefaultConfig = () => {
+  const colors = fromTheme("colors");
+  const spacing = fromTheme("spacing");
+  const blur = fromTheme("blur");
+  const brightness = fromTheme("brightness");
+  const borderColor = fromTheme("borderColor");
+  const borderRadius = fromTheme("borderRadius");
+  const borderSpacing = fromTheme("borderSpacing");
+  const borderWidth = fromTheme("borderWidth");
+  const contrast = fromTheme("contrast");
+  const grayscale = fromTheme("grayscale");
+  const hueRotate = fromTheme("hueRotate");
+  const invert2 = fromTheme("invert");
+  const gap = fromTheme("gap");
+  const gradientColorStops = fromTheme("gradientColorStops");
+  const gradientColorStopPositions = fromTheme("gradientColorStopPositions");
+  const inset = fromTheme("inset");
+  const margin = fromTheme("margin");
+  const opacity = fromTheme("opacity");
+  const padding = fromTheme("padding");
+  const saturate = fromTheme("saturate");
+  const scale = fromTheme("scale");
+  const sepia = fromTheme("sepia");
+  const skew = fromTheme("skew");
+  const space = fromTheme("space");
+  const translate = fromTheme("translate");
+  const getOverscroll = () => ["auto", "contain", "none"];
+  const getOverflow = () => ["auto", "hidden", "clip", "visible", "scroll"];
+  const getSpacingWithAutoAndArbitrary = () => ["auto", isArbitraryValue, spacing];
+  const getSpacingWithArbitrary = () => [isArbitraryValue, spacing];
+  const getLengthWithEmptyAndArbitrary = () => ["", isLength, isArbitraryLength];
+  const getNumberWithAutoAndArbitrary = () => ["auto", isNumber$1, isArbitraryValue];
+  const getPositions = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"];
+  const getLineStyles = () => ["solid", "dashed", "dotted", "double", "none"];
+  const getBlendModes = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"];
+  const getAlign = () => ["start", "end", "center", "between", "around", "evenly", "stretch"];
+  const getZeroAndEmpty = () => ["", "0", isArbitraryValue];
+  const getBreaks = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"];
+  const getNumberAndArbitrary = () => [isNumber$1, isArbitraryValue];
+  return {
+    cacheSize: 500,
+    separator: ":",
+    theme: {
+      colors: [isAny],
+      spacing: [isLength, isArbitraryLength],
+      blur: ["none", "", isTshirtSize, isArbitraryValue],
+      brightness: getNumberAndArbitrary(),
+      borderColor: [colors],
+      borderRadius: ["none", "", "full", isTshirtSize, isArbitraryValue],
+      borderSpacing: getSpacingWithArbitrary(),
+      borderWidth: getLengthWithEmptyAndArbitrary(),
+      contrast: getNumberAndArbitrary(),
+      grayscale: getZeroAndEmpty(),
+      hueRotate: getNumberAndArbitrary(),
+      invert: getZeroAndEmpty(),
+      gap: getSpacingWithArbitrary(),
+      gradientColorStops: [colors],
+      gradientColorStopPositions: [isPercent2, isArbitraryLength],
+      inset: getSpacingWithAutoAndArbitrary(),
+      margin: getSpacingWithAutoAndArbitrary(),
+      opacity: getNumberAndArbitrary(),
+      padding: getSpacingWithArbitrary(),
+      saturate: getNumberAndArbitrary(),
+      scale: getNumberAndArbitrary(),
+      sepia: getZeroAndEmpty(),
+      skew: getNumberAndArbitrary(),
+      space: getSpacingWithArbitrary(),
+      translate: getSpacingWithArbitrary()
+    },
+    classGroups: {
+      // Layout
+      /**
+       * Aspect Ratio
+       * @see https://tailwindcss.com/docs/aspect-ratio
+       */
+      aspect: [{
+        aspect: ["auto", "square", "video", isArbitraryValue]
+      }],
+      /**
+       * Container
+       * @see https://tailwindcss.com/docs/container
+       */
+      container: ["container"],
+      /**
+       * Columns
+       * @see https://tailwindcss.com/docs/columns
+       */
+      columns: [{
+        columns: [isTshirtSize]
+      }],
+      /**
+       * Break After
+       * @see https://tailwindcss.com/docs/break-after
+       */
+      "break-after": [{
+        "break-after": getBreaks()
+      }],
+      /**
+       * Break Before
+       * @see https://tailwindcss.com/docs/break-before
+       */
+      "break-before": [{
+        "break-before": getBreaks()
+      }],
+      /**
+       * Break Inside
+       * @see https://tailwindcss.com/docs/break-inside
+       */
+      "break-inside": [{
+        "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"]
+      }],
+      /**
+       * Box Decoration Break
+       * @see https://tailwindcss.com/docs/box-decoration-break
+       */
+      "box-decoration": [{
+        "box-decoration": ["slice", "clone"]
+      }],
+      /**
+       * Box Sizing
+       * @see https://tailwindcss.com/docs/box-sizing
+       */
+      box: [{
+        box: ["border", "content"]
+      }],
+      /**
+       * Display
+       * @see https://tailwindcss.com/docs/display
+       */
+      display: ["block", "inline-block", "inline", "flex", "inline-flex", "table", "inline-table", "table-caption", "table-cell", "table-column", "table-column-group", "table-footer-group", "table-header-group", "table-row-group", "table-row", "flow-root", "grid", "inline-grid", "contents", "list-item", "hidden"],
+      /**
+       * Floats
+       * @see https://tailwindcss.com/docs/float
+       */
+      float: [{
+        float: ["right", "left", "none", "start", "end"]
+      }],
+      /**
+       * Clear
+       * @see https://tailwindcss.com/docs/clear
+       */
+      clear: [{
+        clear: ["left", "right", "both", "none", "start", "end"]
+      }],
+      /**
+       * Isolation
+       * @see https://tailwindcss.com/docs/isolation
+       */
+      isolation: ["isolate", "isolation-auto"],
+      /**
+       * Object Fit
+       * @see https://tailwindcss.com/docs/object-fit
+       */
+      "object-fit": [{
+        object: ["contain", "cover", "fill", "none", "scale-down"]
+      }],
+      /**
+       * Object Position
+       * @see https://tailwindcss.com/docs/object-position
+       */
+      "object-position": [{
+        object: [...getPositions(), isArbitraryValue]
+      }],
+      /**
+       * Overflow
+       * @see https://tailwindcss.com/docs/overflow
+       */
+      overflow: [{
+        overflow: getOverflow()
+      }],
+      /**
+       * Overflow X
+       * @see https://tailwindcss.com/docs/overflow
+       */
+      "overflow-x": [{
+        "overflow-x": getOverflow()
+      }],
+      /**
+       * Overflow Y
+       * @see https://tailwindcss.com/docs/overflow
+       */
+      "overflow-y": [{
+        "overflow-y": getOverflow()
+      }],
+      /**
+       * Overscroll Behavior
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */
+      overscroll: [{
+        overscroll: getOverscroll()
+      }],
+      /**
+       * Overscroll Behavior X
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */
+      "overscroll-x": [{
+        "overscroll-x": getOverscroll()
+      }],
+      /**
+       * Overscroll Behavior Y
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */
+      "overscroll-y": [{
+        "overscroll-y": getOverscroll()
+      }],
+      /**
+       * Position
+       * @see https://tailwindcss.com/docs/position
+       */
+      position: ["static", "fixed", "absolute", "relative", "sticky"],
+      /**
+       * Top / Right / Bottom / Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      inset: [{
+        inset: [inset]
+      }],
+      /**
+       * Right / Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      "inset-x": [{
+        "inset-x": [inset]
+      }],
+      /**
+       * Top / Bottom
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      "inset-y": [{
+        "inset-y": [inset]
+      }],
+      /**
+       * Start
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      start: [{
+        start: [inset]
+      }],
+      /**
+       * End
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      end: [{
+        end: [inset]
+      }],
+      /**
+       * Top
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      top: [{
+        top: [inset]
+      }],
+      /**
+       * Right
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      right: [{
+        right: [inset]
+      }],
+      /**
+       * Bottom
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      bottom: [{
+        bottom: [inset]
+      }],
+      /**
+       * Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      left: [{
+        left: [inset]
+      }],
+      /**
+       * Visibility
+       * @see https://tailwindcss.com/docs/visibility
+       */
+      visibility: ["visible", "invisible", "collapse"],
+      /**
+       * Z-Index
+       * @see https://tailwindcss.com/docs/z-index
+       */
+      z: [{
+        z: ["auto", isInteger, isArbitraryValue]
+      }],
+      // Flexbox and Grid
+      /**
+       * Flex Basis
+       * @see https://tailwindcss.com/docs/flex-basis
+       */
+      basis: [{
+        basis: getSpacingWithAutoAndArbitrary()
+      }],
+      /**
+       * Flex Direction
+       * @see https://tailwindcss.com/docs/flex-direction
+       */
+      "flex-direction": [{
+        flex: ["row", "row-reverse", "col", "col-reverse"]
+      }],
+      /**
+       * Flex Wrap
+       * @see https://tailwindcss.com/docs/flex-wrap
+       */
+      "flex-wrap": [{
+        flex: ["wrap", "wrap-reverse", "nowrap"]
+      }],
+      /**
+       * Flex
+       * @see https://tailwindcss.com/docs/flex
+       */
+      flex: [{
+        flex: ["1", "auto", "initial", "none", isArbitraryValue]
+      }],
+      /**
+       * Flex Grow
+       * @see https://tailwindcss.com/docs/flex-grow
+       */
+      grow: [{
+        grow: getZeroAndEmpty()
+      }],
+      /**
+       * Flex Shrink
+       * @see https://tailwindcss.com/docs/flex-shrink
+       */
+      shrink: [{
+        shrink: getZeroAndEmpty()
+      }],
+      /**
+       * Order
+       * @see https://tailwindcss.com/docs/order
+       */
+      order: [{
+        order: ["first", "last", "none", isInteger, isArbitraryValue]
+      }],
+      /**
+       * Grid Template Columns
+       * @see https://tailwindcss.com/docs/grid-template-columns
+       */
+      "grid-cols": [{
+        "grid-cols": [isAny]
+      }],
+      /**
+       * Grid Column Start / End
+       * @see https://tailwindcss.com/docs/grid-column
+       */
+      "col-start-end": [{
+        col: ["auto", {
+          span: ["full", isInteger, isArbitraryValue]
+        }, isArbitraryValue]
+      }],
+      /**
+       * Grid Column Start
+       * @see https://tailwindcss.com/docs/grid-column
+       */
+      "col-start": [{
+        "col-start": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Column End
+       * @see https://tailwindcss.com/docs/grid-column
+       */
+      "col-end": [{
+        "col-end": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Template Rows
+       * @see https://tailwindcss.com/docs/grid-template-rows
+       */
+      "grid-rows": [{
+        "grid-rows": [isAny]
+      }],
+      /**
+       * Grid Row Start / End
+       * @see https://tailwindcss.com/docs/grid-row
+       */
+      "row-start-end": [{
+        row: ["auto", {
+          span: [isInteger, isArbitraryValue]
+        }, isArbitraryValue]
+      }],
+      /**
+       * Grid Row Start
+       * @see https://tailwindcss.com/docs/grid-row
+       */
+      "row-start": [{
+        "row-start": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Row End
+       * @see https://tailwindcss.com/docs/grid-row
+       */
+      "row-end": [{
+        "row-end": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Auto Flow
+       * @see https://tailwindcss.com/docs/grid-auto-flow
+       */
+      "grid-flow": [{
+        "grid-flow": ["row", "col", "dense", "row-dense", "col-dense"]
+      }],
+      /**
+       * Grid Auto Columns
+       * @see https://tailwindcss.com/docs/grid-auto-columns
+       */
+      "auto-cols": [{
+        "auto-cols": ["auto", "min", "max", "fr", isArbitraryValue]
+      }],
+      /**
+       * Grid Auto Rows
+       * @see https://tailwindcss.com/docs/grid-auto-rows
+       */
+      "auto-rows": [{
+        "auto-rows": ["auto", "min", "max", "fr", isArbitraryValue]
+      }],
+      /**
+       * Gap
+       * @see https://tailwindcss.com/docs/gap
+       */
+      gap: [{
+        gap: [gap]
+      }],
+      /**
+       * Gap X
+       * @see https://tailwindcss.com/docs/gap
+       */
+      "gap-x": [{
+        "gap-x": [gap]
+      }],
+      /**
+       * Gap Y
+       * @see https://tailwindcss.com/docs/gap
+       */
+      "gap-y": [{
+        "gap-y": [gap]
+      }],
+      /**
+       * Justify Content
+       * @see https://tailwindcss.com/docs/justify-content
+       */
+      "justify-content": [{
+        justify: ["normal", ...getAlign()]
+      }],
+      /**
+       * Justify Items
+       * @see https://tailwindcss.com/docs/justify-items
+       */
+      "justify-items": [{
+        "justify-items": ["start", "end", "center", "stretch"]
+      }],
+      /**
+       * Justify Self
+       * @see https://tailwindcss.com/docs/justify-self
+       */
+      "justify-self": [{
+        "justify-self": ["auto", "start", "end", "center", "stretch"]
+      }],
+      /**
+       * Align Content
+       * @see https://tailwindcss.com/docs/align-content
+       */
+      "align-content": [{
+        content: ["normal", ...getAlign(), "baseline"]
+      }],
+      /**
+       * Align Items
+       * @see https://tailwindcss.com/docs/align-items
+       */
+      "align-items": [{
+        items: ["start", "end", "center", "baseline", "stretch"]
+      }],
+      /**
+       * Align Self
+       * @see https://tailwindcss.com/docs/align-self
+       */
+      "align-self": [{
+        self: ["auto", "start", "end", "center", "stretch", "baseline"]
+      }],
+      /**
+       * Place Content
+       * @see https://tailwindcss.com/docs/place-content
+       */
+      "place-content": [{
+        "place-content": [...getAlign(), "baseline"]
+      }],
+      /**
+       * Place Items
+       * @see https://tailwindcss.com/docs/place-items
+       */
+      "place-items": [{
+        "place-items": ["start", "end", "center", "baseline", "stretch"]
+      }],
+      /**
+       * Place Self
+       * @see https://tailwindcss.com/docs/place-self
+       */
+      "place-self": [{
+        "place-self": ["auto", "start", "end", "center", "stretch"]
+      }],
+      // Spacing
+      /**
+       * Padding
+       * @see https://tailwindcss.com/docs/padding
+       */
+      p: [{
+        p: [padding]
+      }],
+      /**
+       * Padding X
+       * @see https://tailwindcss.com/docs/padding
+       */
+      px: [{
+        px: [padding]
+      }],
+      /**
+       * Padding Y
+       * @see https://tailwindcss.com/docs/padding
+       */
+      py: [{
+        py: [padding]
+      }],
+      /**
+       * Padding Start
+       * @see https://tailwindcss.com/docs/padding
+       */
+      ps: [{
+        ps: [padding]
+      }],
+      /**
+       * Padding End
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pe: [{
+        pe: [padding]
+      }],
+      /**
+       * Padding Top
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pt: [{
+        pt: [padding]
+      }],
+      /**
+       * Padding Right
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pr: [{
+        pr: [padding]
+      }],
+      /**
+       * Padding Bottom
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pb: [{
+        pb: [padding]
+      }],
+      /**
+       * Padding Left
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pl: [{
+        pl: [padding]
+      }],
+      /**
+       * Margin
+       * @see https://tailwindcss.com/docs/margin
+       */
+      m: [{
+        m: [margin]
+      }],
+      /**
+       * Margin X
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mx: [{
+        mx: [margin]
+      }],
+      /**
+       * Margin Y
+       * @see https://tailwindcss.com/docs/margin
+       */
+      my: [{
+        my: [margin]
+      }],
+      /**
+       * Margin Start
+       * @see https://tailwindcss.com/docs/margin
+       */
+      ms: [{
+        ms: [margin]
+      }],
+      /**
+       * Margin End
+       * @see https://tailwindcss.com/docs/margin
+       */
+      me: [{
+        me: [margin]
+      }],
+      /**
+       * Margin Top
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mt: [{
+        mt: [margin]
+      }],
+      /**
+       * Margin Right
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mr: [{
+        mr: [margin]
+      }],
+      /**
+       * Margin Bottom
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mb: [{
+        mb: [margin]
+      }],
+      /**
+       * Margin Left
+       * @see https://tailwindcss.com/docs/margin
+       */
+      ml: [{
+        ml: [margin]
+      }],
+      /**
+       * Space Between X
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-x": [{
+        "space-x": [space]
+      }],
+      /**
+       * Space Between X Reverse
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-x-reverse": ["space-x-reverse"],
+      /**
+       * Space Between Y
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-y": [{
+        "space-y": [space]
+      }],
+      /**
+       * Space Between Y Reverse
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-y-reverse": ["space-y-reverse"],
+      // Sizing
+      /**
+       * Width
+       * @see https://tailwindcss.com/docs/width
+       */
+      w: [{
+        w: ["auto", "min", "max", "fit", "svw", "lvw", "dvw", isArbitraryValue, spacing]
+      }],
+      /**
+       * Min-Width
+       * @see https://tailwindcss.com/docs/min-width
+       */
+      "min-w": [{
+        "min-w": [isArbitraryValue, spacing, "min", "max", "fit"]
+      }],
+      /**
+       * Max-Width
+       * @see https://tailwindcss.com/docs/max-width
+       */
+      "max-w": [{
+        "max-w": [isArbitraryValue, spacing, "none", "full", "min", "max", "fit", "prose", {
+          screen: [isTshirtSize]
+        }, isTshirtSize]
+      }],
+      /**
+       * Height
+       * @see https://tailwindcss.com/docs/height
+       */
+      h: [{
+        h: [isArbitraryValue, spacing, "auto", "min", "max", "fit", "svh", "lvh", "dvh"]
+      }],
+      /**
+       * Min-Height
+       * @see https://tailwindcss.com/docs/min-height
+       */
+      "min-h": [{
+        "min-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
+      }],
+      /**
+       * Max-Height
+       * @see https://tailwindcss.com/docs/max-height
+       */
+      "max-h": [{
+        "max-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
+      }],
+      /**
+       * Size
+       * @see https://tailwindcss.com/docs/size
+       */
+      size: [{
+        size: [isArbitraryValue, spacing, "auto", "min", "max", "fit"]
+      }],
+      // Typography
+      /**
+       * Font Size
+       * @see https://tailwindcss.com/docs/font-size
+       */
+      "font-size": [{
+        text: ["base", isTshirtSize, isArbitraryLength]
+      }],
+      /**
+       * Font Smoothing
+       * @see https://tailwindcss.com/docs/font-smoothing
+       */
+      "font-smoothing": ["antialiased", "subpixel-antialiased"],
+      /**
+       * Font Style
+       * @see https://tailwindcss.com/docs/font-style
+       */
+      "font-style": ["italic", "not-italic"],
+      /**
+       * Font Weight
+       * @see https://tailwindcss.com/docs/font-weight
+       */
+      "font-weight": [{
+        font: ["thin", "extralight", "light", "normal", "medium", "semibold", "bold", "extrabold", "black", isArbitraryNumber]
+      }],
+      /**
+       * Font Family
+       * @see https://tailwindcss.com/docs/font-family
+       */
+      "font-family": [{
+        font: [isAny]
+      }],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-normal": ["normal-nums"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-ordinal": ["ordinal"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-slashed-zero": ["slashed-zero"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-figure": ["lining-nums", "oldstyle-nums"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-spacing": ["proportional-nums", "tabular-nums"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-fraction": ["diagonal-fractions", "stacked-fractions"],
+      /**
+       * Letter Spacing
+       * @see https://tailwindcss.com/docs/letter-spacing
+       */
+      tracking: [{
+        tracking: ["tighter", "tight", "normal", "wide", "wider", "widest", isArbitraryValue]
+      }],
+      /**
+       * Line Clamp
+       * @see https://tailwindcss.com/docs/line-clamp
+       */
+      "line-clamp": [{
+        "line-clamp": ["none", isNumber$1, isArbitraryNumber]
+      }],
+      /**
+       * Line Height
+       * @see https://tailwindcss.com/docs/line-height
+       */
+      leading: [{
+        leading: ["none", "tight", "snug", "normal", "relaxed", "loose", isLength, isArbitraryValue]
+      }],
+      /**
+       * List Style Image
+       * @see https://tailwindcss.com/docs/list-style-image
+       */
+      "list-image": [{
+        "list-image": ["none", isArbitraryValue]
+      }],
+      /**
+       * List Style Type
+       * @see https://tailwindcss.com/docs/list-style-type
+       */
+      "list-style-type": [{
+        list: ["none", "disc", "decimal", isArbitraryValue]
+      }],
+      /**
+       * List Style Position
+       * @see https://tailwindcss.com/docs/list-style-position
+       */
+      "list-style-position": [{
+        list: ["inside", "outside"]
+      }],
+      /**
+       * Placeholder Color
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/placeholder-color
+       */
+      "placeholder-color": [{
+        placeholder: [colors]
+      }],
+      /**
+       * Placeholder Opacity
+       * @see https://tailwindcss.com/docs/placeholder-opacity
+       */
+      "placeholder-opacity": [{
+        "placeholder-opacity": [opacity]
+      }],
+      /**
+       * Text Alignment
+       * @see https://tailwindcss.com/docs/text-align
+       */
+      "text-alignment": [{
+        text: ["left", "center", "right", "justify", "start", "end"]
+      }],
+      /**
+       * Text Color
+       * @see https://tailwindcss.com/docs/text-color
+       */
+      "text-color": [{
+        text: [colors]
+      }],
+      /**
+       * Text Opacity
+       * @see https://tailwindcss.com/docs/text-opacity
+       */
+      "text-opacity": [{
+        "text-opacity": [opacity]
+      }],
+      /**
+       * Text Decoration
+       * @see https://tailwindcss.com/docs/text-decoration
+       */
+      "text-decoration": ["underline", "overline", "line-through", "no-underline"],
+      /**
+       * Text Decoration Style
+       * @see https://tailwindcss.com/docs/text-decoration-style
+       */
+      "text-decoration-style": [{
+        decoration: [...getLineStyles(), "wavy"]
+      }],
+      /**
+       * Text Decoration Thickness
+       * @see https://tailwindcss.com/docs/text-decoration-thickness
+       */
+      "text-decoration-thickness": [{
+        decoration: ["auto", "from-font", isLength, isArbitraryLength]
+      }],
+      /**
+       * Text Underline Offset
+       * @see https://tailwindcss.com/docs/text-underline-offset
+       */
+      "underline-offset": [{
+        "underline-offset": ["auto", isLength, isArbitraryValue]
+      }],
+      /**
+       * Text Decoration Color
+       * @see https://tailwindcss.com/docs/text-decoration-color
+       */
+      "text-decoration-color": [{
+        decoration: [colors]
+      }],
+      /**
+       * Text Transform
+       * @see https://tailwindcss.com/docs/text-transform
+       */
+      "text-transform": ["uppercase", "lowercase", "capitalize", "normal-case"],
+      /**
+       * Text Overflow
+       * @see https://tailwindcss.com/docs/text-overflow
+       */
+      "text-overflow": ["truncate", "text-ellipsis", "text-clip"],
+      /**
+       * Text Wrap
+       * @see https://tailwindcss.com/docs/text-wrap
+       */
+      "text-wrap": [{
+        text: ["wrap", "nowrap", "balance", "pretty"]
+      }],
+      /**
+       * Text Indent
+       * @see https://tailwindcss.com/docs/text-indent
+       */
+      indent: [{
+        indent: getSpacingWithArbitrary()
+      }],
+      /**
+       * Vertical Alignment
+       * @see https://tailwindcss.com/docs/vertical-align
+       */
+      "vertical-align": [{
+        align: ["baseline", "top", "middle", "bottom", "text-top", "text-bottom", "sub", "super", isArbitraryValue]
+      }],
+      /**
+       * Whitespace
+       * @see https://tailwindcss.com/docs/whitespace
+       */
+      whitespace: [{
+        whitespace: ["normal", "nowrap", "pre", "pre-line", "pre-wrap", "break-spaces"]
+      }],
+      /**
+       * Word Break
+       * @see https://tailwindcss.com/docs/word-break
+       */
+      break: [{
+        break: ["normal", "words", "all", "keep"]
+      }],
+      /**
+       * Hyphens
+       * @see https://tailwindcss.com/docs/hyphens
+       */
+      hyphens: [{
+        hyphens: ["none", "manual", "auto"]
+      }],
+      /**
+       * Content
+       * @see https://tailwindcss.com/docs/content
+       */
+      content: [{
+        content: ["none", isArbitraryValue]
+      }],
+      // Backgrounds
+      /**
+       * Background Attachment
+       * @see https://tailwindcss.com/docs/background-attachment
+       */
+      "bg-attachment": [{
+        bg: ["fixed", "local", "scroll"]
+      }],
+      /**
+       * Background Clip
+       * @see https://tailwindcss.com/docs/background-clip
+       */
+      "bg-clip": [{
+        "bg-clip": ["border", "padding", "content", "text"]
+      }],
+      /**
+       * Background Opacity
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/background-opacity
+       */
+      "bg-opacity": [{
+        "bg-opacity": [opacity]
+      }],
+      /**
+       * Background Origin
+       * @see https://tailwindcss.com/docs/background-origin
+       */
+      "bg-origin": [{
+        "bg-origin": ["border", "padding", "content"]
+      }],
+      /**
+       * Background Position
+       * @see https://tailwindcss.com/docs/background-position
+       */
+      "bg-position": [{
+        bg: [...getPositions(), isArbitraryPosition]
+      }],
+      /**
+       * Background Repeat
+       * @see https://tailwindcss.com/docs/background-repeat
+       */
+      "bg-repeat": [{
+        bg: ["no-repeat", {
+          repeat: ["", "x", "y", "round", "space"]
+        }]
+      }],
+      /**
+       * Background Size
+       * @see https://tailwindcss.com/docs/background-size
+       */
+      "bg-size": [{
+        bg: ["auto", "cover", "contain", isArbitrarySize]
+      }],
+      /**
+       * Background Image
+       * @see https://tailwindcss.com/docs/background-image
+       */
+      "bg-image": [{
+        bg: ["none", {
+          "gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"]
+        }, isArbitraryImage]
+      }],
+      /**
+       * Background Color
+       * @see https://tailwindcss.com/docs/background-color
+       */
+      "bg-color": [{
+        bg: [colors]
+      }],
+      /**
+       * Gradient Color Stops From Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-from-pos": [{
+        from: [gradientColorStopPositions]
+      }],
+      /**
+       * Gradient Color Stops Via Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-via-pos": [{
+        via: [gradientColorStopPositions]
+      }],
+      /**
+       * Gradient Color Stops To Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-to-pos": [{
+        to: [gradientColorStopPositions]
+      }],
+      /**
+       * Gradient Color Stops From
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-from": [{
+        from: [gradientColorStops]
+      }],
+      /**
+       * Gradient Color Stops Via
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-via": [{
+        via: [gradientColorStops]
+      }],
+      /**
+       * Gradient Color Stops To
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-to": [{
+        to: [gradientColorStops]
+      }],
+      // Borders
+      /**
+       * Border Radius
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      rounded: [{
+        rounded: [borderRadius]
+      }],
+      /**
+       * Border Radius Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-s": [{
+        "rounded-s": [borderRadius]
+      }],
+      /**
+       * Border Radius End
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-e": [{
+        "rounded-e": [borderRadius]
+      }],
+      /**
+       * Border Radius Top
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-t": [{
+        "rounded-t": [borderRadius]
+      }],
+      /**
+       * Border Radius Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-r": [{
+        "rounded-r": [borderRadius]
+      }],
+      /**
+       * Border Radius Bottom
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-b": [{
+        "rounded-b": [borderRadius]
+      }],
+      /**
+       * Border Radius Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-l": [{
+        "rounded-l": [borderRadius]
+      }],
+      /**
+       * Border Radius Start Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-ss": [{
+        "rounded-ss": [borderRadius]
+      }],
+      /**
+       * Border Radius Start End
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-se": [{
+        "rounded-se": [borderRadius]
+      }],
+      /**
+       * Border Radius End End
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-ee": [{
+        "rounded-ee": [borderRadius]
+      }],
+      /**
+       * Border Radius End Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-es": [{
+        "rounded-es": [borderRadius]
+      }],
+      /**
+       * Border Radius Top Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-tl": [{
+        "rounded-tl": [borderRadius]
+      }],
+      /**
+       * Border Radius Top Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-tr": [{
+        "rounded-tr": [borderRadius]
+      }],
+      /**
+       * Border Radius Bottom Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-br": [{
+        "rounded-br": [borderRadius]
+      }],
+      /**
+       * Border Radius Bottom Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-bl": [{
+        "rounded-bl": [borderRadius]
+      }],
+      /**
+       * Border Width
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w": [{
+        border: [borderWidth]
+      }],
+      /**
+       * Border Width X
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-x": [{
+        "border-x": [borderWidth]
+      }],
+      /**
+       * Border Width Y
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-y": [{
+        "border-y": [borderWidth]
+      }],
+      /**
+       * Border Width Start
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-s": [{
+        "border-s": [borderWidth]
+      }],
+      /**
+       * Border Width End
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-e": [{
+        "border-e": [borderWidth]
+      }],
+      /**
+       * Border Width Top
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-t": [{
+        "border-t": [borderWidth]
+      }],
+      /**
+       * Border Width Right
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-r": [{
+        "border-r": [borderWidth]
+      }],
+      /**
+       * Border Width Bottom
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-b": [{
+        "border-b": [borderWidth]
+      }],
+      /**
+       * Border Width Left
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-l": [{
+        "border-l": [borderWidth]
+      }],
+      /**
+       * Border Opacity
+       * @see https://tailwindcss.com/docs/border-opacity
+       */
+      "border-opacity": [{
+        "border-opacity": [opacity]
+      }],
+      /**
+       * Border Style
+       * @see https://tailwindcss.com/docs/border-style
+       */
+      "border-style": [{
+        border: [...getLineStyles(), "hidden"]
+      }],
+      /**
+       * Divide Width X
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-x": [{
+        "divide-x": [borderWidth]
+      }],
+      /**
+       * Divide Width X Reverse
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-x-reverse": ["divide-x-reverse"],
+      /**
+       * Divide Width Y
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-y": [{
+        "divide-y": [borderWidth]
+      }],
+      /**
+       * Divide Width Y Reverse
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-y-reverse": ["divide-y-reverse"],
+      /**
+       * Divide Opacity
+       * @see https://tailwindcss.com/docs/divide-opacity
+       */
+      "divide-opacity": [{
+        "divide-opacity": [opacity]
+      }],
+      /**
+       * Divide Style
+       * @see https://tailwindcss.com/docs/divide-style
+       */
+      "divide-style": [{
+        divide: getLineStyles()
+      }],
+      /**
+       * Border Color
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color": [{
+        border: [borderColor]
+      }],
+      /**
+       * Border Color X
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-x": [{
+        "border-x": [borderColor]
+      }],
+      /**
+       * Border Color Y
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-y": [{
+        "border-y": [borderColor]
+      }],
+      /**
+       * Border Color S
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-s": [{
+        "border-s": [borderColor]
+      }],
+      /**
+       * Border Color E
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-e": [{
+        "border-e": [borderColor]
+      }],
+      /**
+       * Border Color Top
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-t": [{
+        "border-t": [borderColor]
+      }],
+      /**
+       * Border Color Right
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-r": [{
+        "border-r": [borderColor]
+      }],
+      /**
+       * Border Color Bottom
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-b": [{
+        "border-b": [borderColor]
+      }],
+      /**
+       * Border Color Left
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-l": [{
+        "border-l": [borderColor]
+      }],
+      /**
+       * Divide Color
+       * @see https://tailwindcss.com/docs/divide-color
+       */
+      "divide-color": [{
+        divide: [borderColor]
+      }],
+      /**
+       * Outline Style
+       * @see https://tailwindcss.com/docs/outline-style
+       */
+      "outline-style": [{
+        outline: ["", ...getLineStyles()]
+      }],
+      /**
+       * Outline Offset
+       * @see https://tailwindcss.com/docs/outline-offset
+       */
+      "outline-offset": [{
+        "outline-offset": [isLength, isArbitraryValue]
+      }],
+      /**
+       * Outline Width
+       * @see https://tailwindcss.com/docs/outline-width
+       */
+      "outline-w": [{
+        outline: [isLength, isArbitraryLength]
+      }],
+      /**
+       * Outline Color
+       * @see https://tailwindcss.com/docs/outline-color
+       */
+      "outline-color": [{
+        outline: [colors]
+      }],
+      /**
+       * Ring Width
+       * @see https://tailwindcss.com/docs/ring-width
+       */
+      "ring-w": [{
+        ring: getLengthWithEmptyAndArbitrary()
+      }],
+      /**
+       * Ring Width Inset
+       * @see https://tailwindcss.com/docs/ring-width
+       */
+      "ring-w-inset": ["ring-inset"],
+      /**
+       * Ring Color
+       * @see https://tailwindcss.com/docs/ring-color
+       */
+      "ring-color": [{
+        ring: [colors]
+      }],
+      /**
+       * Ring Opacity
+       * @see https://tailwindcss.com/docs/ring-opacity
+       */
+      "ring-opacity": [{
+        "ring-opacity": [opacity]
+      }],
+      /**
+       * Ring Offset Width
+       * @see https://tailwindcss.com/docs/ring-offset-width
+       */
+      "ring-offset-w": [{
+        "ring-offset": [isLength, isArbitraryLength]
+      }],
+      /**
+       * Ring Offset Color
+       * @see https://tailwindcss.com/docs/ring-offset-color
+       */
+      "ring-offset-color": [{
+        "ring-offset": [colors]
+      }],
+      // Effects
+      /**
+       * Box Shadow
+       * @see https://tailwindcss.com/docs/box-shadow
+       */
+      shadow: [{
+        shadow: ["", "inner", "none", isTshirtSize, isArbitraryShadow]
+      }],
+      /**
+       * Box Shadow Color
+       * @see https://tailwindcss.com/docs/box-shadow-color
+       */
+      "shadow-color": [{
+        shadow: [isAny]
+      }],
+      /**
+       * Opacity
+       * @see https://tailwindcss.com/docs/opacity
+       */
+      opacity: [{
+        opacity: [opacity]
+      }],
+      /**
+       * Mix Blend Mode
+       * @see https://tailwindcss.com/docs/mix-blend-mode
+       */
+      "mix-blend": [{
+        "mix-blend": [...getBlendModes(), "plus-lighter", "plus-darker"]
+      }],
+      /**
+       * Background Blend Mode
+       * @see https://tailwindcss.com/docs/background-blend-mode
+       */
+      "bg-blend": [{
+        "bg-blend": getBlendModes()
+      }],
+      // Filters
+      /**
+       * Filter
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/filter
+       */
+      filter: [{
+        filter: ["", "none"]
+      }],
+      /**
+       * Blur
+       * @see https://tailwindcss.com/docs/blur
+       */
+      blur: [{
+        blur: [blur]
+      }],
+      /**
+       * Brightness
+       * @see https://tailwindcss.com/docs/brightness
+       */
+      brightness: [{
+        brightness: [brightness]
+      }],
+      /**
+       * Contrast
+       * @see https://tailwindcss.com/docs/contrast
+       */
+      contrast: [{
+        contrast: [contrast]
+      }],
+      /**
+       * Drop Shadow
+       * @see https://tailwindcss.com/docs/drop-shadow
+       */
+      "drop-shadow": [{
+        "drop-shadow": ["", "none", isTshirtSize, isArbitraryValue]
+      }],
+      /**
+       * Grayscale
+       * @see https://tailwindcss.com/docs/grayscale
+       */
+      grayscale: [{
+        grayscale: [grayscale]
+      }],
+      /**
+       * Hue Rotate
+       * @see https://tailwindcss.com/docs/hue-rotate
+       */
+      "hue-rotate": [{
+        "hue-rotate": [hueRotate]
+      }],
+      /**
+       * Invert
+       * @see https://tailwindcss.com/docs/invert
+       */
+      invert: [{
+        invert: [invert2]
+      }],
+      /**
+       * Saturate
+       * @see https://tailwindcss.com/docs/saturate
+       */
+      saturate: [{
+        saturate: [saturate]
+      }],
+      /**
+       * Sepia
+       * @see https://tailwindcss.com/docs/sepia
+       */
+      sepia: [{
+        sepia: [sepia]
+      }],
+      /**
+       * Backdrop Filter
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/backdrop-filter
+       */
+      "backdrop-filter": [{
+        "backdrop-filter": ["", "none"]
+      }],
+      /**
+       * Backdrop Blur
+       * @see https://tailwindcss.com/docs/backdrop-blur
+       */
+      "backdrop-blur": [{
+        "backdrop-blur": [blur]
+      }],
+      /**
+       * Backdrop Brightness
+       * @see https://tailwindcss.com/docs/backdrop-brightness
+       */
+      "backdrop-brightness": [{
+        "backdrop-brightness": [brightness]
+      }],
+      /**
+       * Backdrop Contrast
+       * @see https://tailwindcss.com/docs/backdrop-contrast
+       */
+      "backdrop-contrast": [{
+        "backdrop-contrast": [contrast]
+      }],
+      /**
+       * Backdrop Grayscale
+       * @see https://tailwindcss.com/docs/backdrop-grayscale
+       */
+      "backdrop-grayscale": [{
+        "backdrop-grayscale": [grayscale]
+      }],
+      /**
+       * Backdrop Hue Rotate
+       * @see https://tailwindcss.com/docs/backdrop-hue-rotate
+       */
+      "backdrop-hue-rotate": [{
+        "backdrop-hue-rotate": [hueRotate]
+      }],
+      /**
+       * Backdrop Invert
+       * @see https://tailwindcss.com/docs/backdrop-invert
+       */
+      "backdrop-invert": [{
+        "backdrop-invert": [invert2]
+      }],
+      /**
+       * Backdrop Opacity
+       * @see https://tailwindcss.com/docs/backdrop-opacity
+       */
+      "backdrop-opacity": [{
+        "backdrop-opacity": [opacity]
+      }],
+      /**
+       * Backdrop Saturate
+       * @see https://tailwindcss.com/docs/backdrop-saturate
+       */
+      "backdrop-saturate": [{
+        "backdrop-saturate": [saturate]
+      }],
+      /**
+       * Backdrop Sepia
+       * @see https://tailwindcss.com/docs/backdrop-sepia
+       */
+      "backdrop-sepia": [{
+        "backdrop-sepia": [sepia]
+      }],
+      // Tables
+      /**
+       * Border Collapse
+       * @see https://tailwindcss.com/docs/border-collapse
+       */
+      "border-collapse": [{
+        border: ["collapse", "separate"]
+      }],
+      /**
+       * Border Spacing
+       * @see https://tailwindcss.com/docs/border-spacing
+       */
+      "border-spacing": [{
+        "border-spacing": [borderSpacing]
+      }],
+      /**
+       * Border Spacing X
+       * @see https://tailwindcss.com/docs/border-spacing
+       */
+      "border-spacing-x": [{
+        "border-spacing-x": [borderSpacing]
+      }],
+      /**
+       * Border Spacing Y
+       * @see https://tailwindcss.com/docs/border-spacing
+       */
+      "border-spacing-y": [{
+        "border-spacing-y": [borderSpacing]
+      }],
+      /**
+       * Table Layout
+       * @see https://tailwindcss.com/docs/table-layout
+       */
+      "table-layout": [{
+        table: ["auto", "fixed"]
+      }],
+      /**
+       * Caption Side
+       * @see https://tailwindcss.com/docs/caption-side
+       */
+      caption: [{
+        caption: ["top", "bottom"]
+      }],
+      // Transitions and Animation
+      /**
+       * Tranisition Property
+       * @see https://tailwindcss.com/docs/transition-property
+       */
+      transition: [{
+        transition: ["none", "all", "", "colors", "opacity", "shadow", "transform", isArbitraryValue]
+      }],
+      /**
+       * Transition Duration
+       * @see https://tailwindcss.com/docs/transition-duration
+       */
+      duration: [{
+        duration: getNumberAndArbitrary()
+      }],
+      /**
+       * Transition Timing Function
+       * @see https://tailwindcss.com/docs/transition-timing-function
+       */
+      ease: [{
+        ease: ["linear", "in", "out", "in-out", isArbitraryValue]
+      }],
+      /**
+       * Transition Delay
+       * @see https://tailwindcss.com/docs/transition-delay
+       */
+      delay: [{
+        delay: getNumberAndArbitrary()
+      }],
+      /**
+       * Animation
+       * @see https://tailwindcss.com/docs/animation
+       */
+      animate: [{
+        animate: ["none", "spin", "ping", "pulse", "bounce", isArbitraryValue]
+      }],
+      // Transforms
+      /**
+       * Transform
+       * @see https://tailwindcss.com/docs/transform
+       */
+      transform: [{
+        transform: ["", "gpu", "none"]
+      }],
+      /**
+       * Scale
+       * @see https://tailwindcss.com/docs/scale
+       */
+      scale: [{
+        scale: [scale]
+      }],
+      /**
+       * Scale X
+       * @see https://tailwindcss.com/docs/scale
+       */
+      "scale-x": [{
+        "scale-x": [scale]
+      }],
+      /**
+       * Scale Y
+       * @see https://tailwindcss.com/docs/scale
+       */
+      "scale-y": [{
+        "scale-y": [scale]
+      }],
+      /**
+       * Rotate
+       * @see https://tailwindcss.com/docs/rotate
+       */
+      rotate: [{
+        rotate: [isInteger, isArbitraryValue]
+      }],
+      /**
+       * Translate X
+       * @see https://tailwindcss.com/docs/translate
+       */
+      "translate-x": [{
+        "translate-x": [translate]
+      }],
+      /**
+       * Translate Y
+       * @see https://tailwindcss.com/docs/translate
+       */
+      "translate-y": [{
+        "translate-y": [translate]
+      }],
+      /**
+       * Skew X
+       * @see https://tailwindcss.com/docs/skew
+       */
+      "skew-x": [{
+        "skew-x": [skew]
+      }],
+      /**
+       * Skew Y
+       * @see https://tailwindcss.com/docs/skew
+       */
+      "skew-y": [{
+        "skew-y": [skew]
+      }],
+      /**
+       * Transform Origin
+       * @see https://tailwindcss.com/docs/transform-origin
+       */
+      "transform-origin": [{
+        origin: ["center", "top", "top-right", "right", "bottom-right", "bottom", "bottom-left", "left", "top-left", isArbitraryValue]
+      }],
+      // Interactivity
+      /**
+       * Accent Color
+       * @see https://tailwindcss.com/docs/accent-color
+       */
+      accent: [{
+        accent: ["auto", colors]
+      }],
+      /**
+       * Appearance
+       * @see https://tailwindcss.com/docs/appearance
+       */
+      appearance: [{
+        appearance: ["none", "auto"]
+      }],
+      /**
+       * Cursor
+       * @see https://tailwindcss.com/docs/cursor
+       */
+      cursor: [{
+        cursor: ["auto", "default", "pointer", "wait", "text", "move", "help", "not-allowed", "none", "context-menu", "progress", "cell", "crosshair", "vertical-text", "alias", "copy", "no-drop", "grab", "grabbing", "all-scroll", "col-resize", "row-resize", "n-resize", "e-resize", "s-resize", "w-resize", "ne-resize", "nw-resize", "se-resize", "sw-resize", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "zoom-in", "zoom-out", isArbitraryValue]
+      }],
+      /**
+       * Caret Color
+       * @see https://tailwindcss.com/docs/just-in-time-mode#caret-color-utilities
+       */
+      "caret-color": [{
+        caret: [colors]
+      }],
+      /**
+       * Pointer Events
+       * @see https://tailwindcss.com/docs/pointer-events
+       */
+      "pointer-events": [{
+        "pointer-events": ["none", "auto"]
+      }],
+      /**
+       * Resize
+       * @see https://tailwindcss.com/docs/resize
+       */
+      resize: [{
+        resize: ["none", "y", "x", ""]
+      }],
+      /**
+       * Scroll Behavior
+       * @see https://tailwindcss.com/docs/scroll-behavior
+       */
+      "scroll-behavior": [{
+        scroll: ["auto", "smooth"]
+      }],
+      /**
+       * Scroll Margin
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-m": [{
+        "scroll-m": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin X
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mx": [{
+        "scroll-mx": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Y
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-my": [{
+        "scroll-my": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Start
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-ms": [{
+        "scroll-ms": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin End
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-me": [{
+        "scroll-me": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Top
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mt": [{
+        "scroll-mt": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Right
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mr": [{
+        "scroll-mr": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Bottom
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mb": [{
+        "scroll-mb": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Left
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-ml": [{
+        "scroll-ml": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-p": [{
+        "scroll-p": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding X
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-px": [{
+        "scroll-px": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Y
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-py": [{
+        "scroll-py": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Start
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-ps": [{
+        "scroll-ps": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding End
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pe": [{
+        "scroll-pe": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Top
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pt": [{
+        "scroll-pt": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Right
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pr": [{
+        "scroll-pr": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Bottom
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pb": [{
+        "scroll-pb": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Left
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pl": [{
+        "scroll-pl": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Snap Align
+       * @see https://tailwindcss.com/docs/scroll-snap-align
+       */
+      "snap-align": [{
+        snap: ["start", "end", "center", "align-none"]
+      }],
+      /**
+       * Scroll Snap Stop
+       * @see https://tailwindcss.com/docs/scroll-snap-stop
+       */
+      "snap-stop": [{
+        snap: ["normal", "always"]
+      }],
+      /**
+       * Scroll Snap Type
+       * @see https://tailwindcss.com/docs/scroll-snap-type
+       */
+      "snap-type": [{
+        snap: ["none", "x", "y", "both"]
+      }],
+      /**
+       * Scroll Snap Type Strictness
+       * @see https://tailwindcss.com/docs/scroll-snap-type
+       */
+      "snap-strictness": [{
+        snap: ["mandatory", "proximity"]
+      }],
+      /**
+       * Touch Action
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      touch: [{
+        touch: ["auto", "none", "manipulation"]
+      }],
+      /**
+       * Touch Action X
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      "touch-x": [{
+        "touch-pan": ["x", "left", "right"]
+      }],
+      /**
+       * Touch Action Y
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      "touch-y": [{
+        "touch-pan": ["y", "up", "down"]
+      }],
+      /**
+       * Touch Action Pinch Zoom
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      "touch-pz": ["touch-pinch-zoom"],
+      /**
+       * User Select
+       * @see https://tailwindcss.com/docs/user-select
+       */
+      select: [{
+        select: ["none", "text", "all", "auto"]
+      }],
+      /**
+       * Will Change
+       * @see https://tailwindcss.com/docs/will-change
+       */
+      "will-change": [{
+        "will-change": ["auto", "scroll", "contents", "transform", isArbitraryValue]
+      }],
+      // SVG
+      /**
+       * Fill
+       * @see https://tailwindcss.com/docs/fill
+       */
+      fill: [{
+        fill: [colors, "none"]
+      }],
+      /**
+       * Stroke Width
+       * @see https://tailwindcss.com/docs/stroke-width
+       */
+      "stroke-w": [{
+        stroke: [isLength, isArbitraryLength, isArbitraryNumber]
+      }],
+      /**
+       * Stroke
+       * @see https://tailwindcss.com/docs/stroke
+       */
+      stroke: [{
+        stroke: [colors, "none"]
+      }],
+      // Accessibility
+      /**
+       * Screen Readers
+       * @see https://tailwindcss.com/docs/screen-readers
+       */
+      sr: ["sr-only", "not-sr-only"],
+      /**
+       * Forced Color Adjust
+       * @see https://tailwindcss.com/docs/forced-color-adjust
+       */
+      "forced-color-adjust": [{
+        "forced-color-adjust": ["auto", "none"]
+      }]
+    },
+    conflictingClassGroups: {
+      overflow: ["overflow-x", "overflow-y"],
+      overscroll: ["overscroll-x", "overscroll-y"],
+      inset: ["inset-x", "inset-y", "start", "end", "top", "right", "bottom", "left"],
+      "inset-x": ["right", "left"],
+      "inset-y": ["top", "bottom"],
+      flex: ["basis", "grow", "shrink"],
+      gap: ["gap-x", "gap-y"],
+      p: ["px", "py", "ps", "pe", "pt", "pr", "pb", "pl"],
+      px: ["pr", "pl"],
+      py: ["pt", "pb"],
+      m: ["mx", "my", "ms", "me", "mt", "mr", "mb", "ml"],
+      mx: ["mr", "ml"],
+      my: ["mt", "mb"],
+      size: ["w", "h"],
+      "font-size": ["leading"],
+      "fvn-normal": ["fvn-ordinal", "fvn-slashed-zero", "fvn-figure", "fvn-spacing", "fvn-fraction"],
+      "fvn-ordinal": ["fvn-normal"],
+      "fvn-slashed-zero": ["fvn-normal"],
+      "fvn-figure": ["fvn-normal"],
+      "fvn-spacing": ["fvn-normal"],
+      "fvn-fraction": ["fvn-normal"],
+      "line-clamp": ["display", "overflow"],
+      rounded: ["rounded-s", "rounded-e", "rounded-t", "rounded-r", "rounded-b", "rounded-l", "rounded-ss", "rounded-se", "rounded-ee", "rounded-es", "rounded-tl", "rounded-tr", "rounded-br", "rounded-bl"],
+      "rounded-s": ["rounded-ss", "rounded-es"],
+      "rounded-e": ["rounded-se", "rounded-ee"],
+      "rounded-t": ["rounded-tl", "rounded-tr"],
+      "rounded-r": ["rounded-tr", "rounded-br"],
+      "rounded-b": ["rounded-br", "rounded-bl"],
+      "rounded-l": ["rounded-tl", "rounded-bl"],
+      "border-spacing": ["border-spacing-x", "border-spacing-y"],
+      "border-w": ["border-w-s", "border-w-e", "border-w-t", "border-w-r", "border-w-b", "border-w-l"],
+      "border-w-x": ["border-w-r", "border-w-l"],
+      "border-w-y": ["border-w-t", "border-w-b"],
+      "border-color": ["border-color-s", "border-color-e", "border-color-t", "border-color-r", "border-color-b", "border-color-l"],
+      "border-color-x": ["border-color-r", "border-color-l"],
+      "border-color-y": ["border-color-t", "border-color-b"],
+      "scroll-m": ["scroll-mx", "scroll-my", "scroll-ms", "scroll-me", "scroll-mt", "scroll-mr", "scroll-mb", "scroll-ml"],
+      "scroll-mx": ["scroll-mr", "scroll-ml"],
+      "scroll-my": ["scroll-mt", "scroll-mb"],
+      "scroll-p": ["scroll-px", "scroll-py", "scroll-ps", "scroll-pe", "scroll-pt", "scroll-pr", "scroll-pb", "scroll-pl"],
+      "scroll-px": ["scroll-pr", "scroll-pl"],
+      "scroll-py": ["scroll-pt", "scroll-pb"],
+      touch: ["touch-x", "touch-y", "touch-pz"],
+      "touch-x": ["touch"],
+      "touch-y": ["touch"],
+      "touch-pz": ["touch"]
+    },
+    conflictingClassGroupModifiers: {
+      "font-size": ["leading"]
+    }
+  };
+};
+const twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
+function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+const badgeVariants = cva(
+  "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
+  {
+    variants: {
+      variant: {
+        default: "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
+        secondary: "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+        destructive: "border-transparent bg-destructive text-destructive-foreground [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+        outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
+      }
+    },
+    defaultVariants: {
+      variant: "default"
+    }
+  }
+);
+function Badge({
+  className,
+  variant,
+  asChild = false,
+  ...props
+}) {
+  const Comp = asChild ? Slot : "span";
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Comp,
+    {
+      "data-slot": "badge",
+      className: cn(badgeVariants({ variant }), className),
+      ...props
+    }
+  );
+}
+const buttonVariants = cva(
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+        destructive: "bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+        outline: "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        secondary: "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+        link: "text-primary underline-offset-4 hover:underline"
+      },
+      size: {
+        default: "h-9 px-4 py-2 has-[>svg]:px-3",
+        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        icon: "size-9"
+      }
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default"
+    }
+  }
+);
+function Button({
+  className,
+  variant,
+  size,
+  asChild = false,
+  ...props
+}) {
+  const Comp = asChild ? Slot : "button";
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Comp,
+    {
+      "data-slot": "button",
+      className: cn(buttonVariants({ variant, size, className })),
+      ...props
+    }
+  );
+}
+const Route$6 = createFileRoute("/notifications")({
+  component: NotificationsPage
+});
+function formatRelativeTime(ts) {
+  const diff = Date.now() - ts;
+  const mins = Math.floor(diff / 6e4);
+  if (mins < 1) return "Just now";
+  if (mins < 60) return `${mins} minute${mins !== 1 ? "s" : ""} ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs} hour${hrs !== 1 ? "s" : ""} ago`;
+  const days = Math.floor(hrs / 24);
+  return `${days} day${days !== 1 ? "s" : ""} ago`;
+}
+function NotificationCard({
+  notification,
+  onMarkRead,
+  onDismiss
+}) {
+  const isWarning = notification.type === "Warning";
+  const Icon2 = isWarning ? TriangleAlert : Info;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": `notification.card.${notification.id}`,
+      className: `relative flex gap-3 p-4 rounded-2xl bg-card border border-border transition-smooth ${notification.isRead ? "opacity-60" : ""}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: `shrink-0 w-10 h-10 rounded-xl flex items-center justify-center ${isWarning ? "bg-amber-500/15 text-amber-400" : "bg-blue-500/15 text-blue-400"}`,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { size: 18, strokeWidth: 2 })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "span",
+              {
+                className: `text-xs font-semibold uppercase tracking-wide ${isWarning ? "text-amber-400" : "text-blue-400"}`,
+                children: notification.type
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[11px] text-muted-foreground shrink-0 pr-6", children: formatRelativeTime(notification.createdAt) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-1 text-sm text-foreground leading-snug break-words", children: notification.message }),
+          !notification.isRead && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": `notification.mark_read.${notification.id}`,
+              onClick: () => onMarkRead(notification.id),
+              className: "mt-2 text-xs font-medium text-primary hover:text-primary/80 transition-colors duration-200 flex items-center gap-1",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(CheckCheck, { size: 13 }),
+                "Mark as read"
+              ]
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "button",
+          {
+            type: "button",
+            "data-ocid": `notification.dismiss.${notification.id}`,
+            onClick: () => onDismiss(notification.id),
+            "aria-label": "Dismiss notification",
+            className: "absolute top-3 right-3 w-6 h-6 rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors duration-200",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 13 })
+          }
+        ),
+        !notification.isRead && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "absolute bottom-3 right-3 w-2 h-2 rounded-full bg-primary" })
+      ]
+    }
+  );
+}
+function NotificationsPage() {
+  const navigate = useNavigate();
+  const { isAuthenticated } = useCurrentUser();
+  const [notifications, setNotifications] = reactExports.useState(MOCK_NOTIFICATIONS);
+  const [activeFilter, setActiveFilter] = reactExports.useState("All");
+  const unreadCount = reactExports.useMemo(
+    () => notifications.filter((n2) => !n2.isRead).length,
+    [notifications]
+  );
+  if (!isAuthenticated) {
+    navigate({ to: "/" });
+    return null;
+  }
+  const markRead = (id) => setNotifications(
+    (prev) => prev.map((n2) => n2.id === id ? { ...n2, isRead: true } : n2)
+  );
+  const dismiss = (id) => setNotifications((prev) => prev.filter((n2) => n2.id !== id));
+  const markAllRead = () => setNotifications((prev) => prev.map((n2) => ({ ...n2, isRead: true })));
+  const allRead = unreadCount === 0;
+  const filteredNotifications = notifications.filter((n2) => {
+    if (activeFilter === "All") return true;
+    if (activeFilter === "Warning") return n2.type === "Warning";
+    return n2.type === "Info";
+  });
+  const FILTERS = ["All", "Warning", "Information"];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { "data-ocid": "notifications.page", className: "flex flex-col min-h-full", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "sticky top-0 z-20 bg-card border-b border-border px-4 pt-12 pb-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "button",
+          {
+            type: "button",
+            "data-ocid": "notifications.back_button",
+            onClick: () => navigate({ to: "/dashboard" }),
+            className: "w-8 h-8 rounded-xl flex items-center justify-center hover:bg-muted transition-colors duration-200 -ml-1",
+            "aria-label": "Go back",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowLeft, { size: 18, className: "text-muted-foreground" })
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-xl font-bold font-display text-foreground", children: "Notifications" }),
+          !allRead && /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Badge,
+            {
+              "data-ocid": "notifications.unread_badge",
+              className: "bg-primary text-primary-foreground text-xs font-bold px-2 py-0.5 rounded-full h-5 min-w-[1.25rem] flex items-center justify-center",
+              children: unreadCount
+            }
+          )
+        ] }),
+        !allRead && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Button,
+          {
+            type: "button",
+            variant: "ghost",
+            size: "sm",
+            "data-ocid": "notifications.mark_all_read_button",
+            onClick: markAllRead,
+            className: "text-xs text-primary hover:text-primary/80 hover:bg-primary/10 gap-1 h-8 px-3 rounded-xl",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(CheckCheck, { size: 13 }),
+              "All read"
+            ]
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "div",
+        {
+          "data-ocid": "notifications.filter_bar",
+          className: "flex gap-2 mt-3",
+          role: "tablist",
+          "aria-label": "Filter notifications",
+          children: FILTERS.map((f2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              role: "tab",
+              "aria-selected": activeFilter === f2,
+              "data-ocid": `notifications.filter.${f2.toLowerCase()}`,
+              onClick: () => setActiveFilter(f2),
+              className: [
+                "px-3 py-1.5 rounded-xl text-xs font-semibold border transition-colors duration-200",
+                activeFilter === f2 ? "bg-primary text-primary-foreground border-primary" : "bg-muted/50 text-muted-foreground border-border hover:text-foreground hover:border-primary/40"
+              ].join(" "),
+              children: f2 === "Information" ? /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { size: 11 }),
+                f2
+              ] }) : f2 === "Warning" ? /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { size: 11 }),
+                f2
+              ] }) : f2
+            },
+            f2
+          ))
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-1 px-4 py-4", children: filteredNotifications.length === 0 ? /* @__PURE__ */ jsxRuntimeExports.jsx(EmptyState, {}) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-ocid": "notifications.list", className: "flex flex-col gap-3", children: filteredNotifications.map((n2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      NotificationCard,
+      {
+        notification: n2,
+        onMarkRead: markRead,
+        onDismiss: dismiss
+      },
+      n2.id
+    )) }) })
+  ] });
+}
+function EmptyState() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "notifications.empty_state",
+      className: "flex flex-col items-center justify-center py-20 gap-4 text-center",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-20 h-20 rounded-3xl bg-muted flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Bell, { size: 36, className: "text-muted-foreground", strokeWidth: 1.5 }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-semibold text-foreground", children: "No notifications yet" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1", children: "You're all caught up. Check back later." })
+        ] })
+      ]
+    }
+  );
+}
+const Route$5 = createFileRoute("/empty-dashboard")({
+  component: EmptyDashboardPage
+});
+function EmptyDashboardPage() {
+  const navigate = useNavigate();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "empty_dashboard.page",
+      className: "min-h-screen bg-background flex flex-col items-center justify-between overflow-hidden",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full px-6 pt-10 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 18, className: "text-primary", strokeWidth: 2.2 }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-base font-bold text-foreground font-display tracking-tight", children: "Sabi Solar" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "data-ocid": "empty_dashboard.illustration",
+            className: "w-full flex-1 flex items-center justify-center px-4 py-6",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "svg",
+              {
+                viewBox: "0 0 400 300",
+                xmlns: "http://www.w3.org/2000/svg",
+                className: "w-full max-w-sm",
+                "aria-label": "Landscape with wind turbines",
+                role: "img",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("defs", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "sky", x1: "0", y1: "0", x2: "0", y2: "1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0%", stopColor: "#0d1b3e" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "55%", stopColor: "#1a3a5c" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "100%", stopColor: "#2a5a4a" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "hill1", x1: "0", y1: "0", x2: "0", y2: "1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0%", stopColor: "#1e7a4a" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "100%", stopColor: "#145534" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "hill2", x1: "0", y1: "0", x2: "0", y2: "1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0%", stopColor: "#25904e" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "100%", stopColor: "#1a6638" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("linearGradient", { id: "hill3", x1: "0", y1: "0", x2: "0", y2: "1", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0%", stopColor: "#2ecc71" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "100%", stopColor: "#1e9950" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("radialGradient", { id: "sun", cx: "50%", cy: "50%", r: "50%", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "0%", stopColor: "#ffd700", stopOpacity: "0.9" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "60%", stopColor: "#ffa500", stopOpacity: "0.6" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("stop", { offset: "100%", stopColor: "#ff8c00", stopOpacity: "0" })
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs("filter", { id: "glow", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("feGaussianBlur", { stdDeviation: "3", result: "coloredBlur" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsxs("feMerge", { children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("feMergeNode", { in: "coloredBlur" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("feMergeNode", { in: "SourceGraphic" })
+                      ] })
+                    ] })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { width: "400", height: "300", fill: "url(#sky)" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "320", cy: "65", r: "36", fill: "url(#sun)", opacity: "0.7" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "circle",
+                    {
+                      cx: "320",
+                      cy: "65",
+                      r: "18",
+                      fill: "#ffd700",
+                      opacity: "0.9",
+                      filter: "url(#glow)"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "40", cy: "30", r: "1.2", fill: "#ffffff", opacity: "0.7" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "80", cy: "18", r: "1", fill: "#ffffff", opacity: "0.5" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "130", cy: "40", r: "0.8", fill: "#ffffff", opacity: "0.6" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "180", cy: "22", r: "1.2", fill: "#ffffff", opacity: "0.4" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "220", cy: "50", r: "0.8", fill: "#ffffff", opacity: "0.5" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "260", cy: "28", r: "1", fill: "#ffffff", opacity: "0.3" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "62", cy: "55", r: "0.8", fill: "#ffffff", opacity: "0.4" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "150", cy: "12", r: "0.7", fill: "#ffffff", opacity: "0.6" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "ellipse",
+                    {
+                      cx: "70",
+                      cy: "70",
+                      rx: "40",
+                      ry: "14",
+                      fill: "#ffffff",
+                      opacity: "0.08"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "ellipse",
+                    {
+                      cx: "90",
+                      cy: "63",
+                      rx: "28",
+                      ry: "11",
+                      fill: "#ffffff",
+                      opacity: "0.07"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "ellipse",
+                    {
+                      cx: "200",
+                      cy: "45",
+                      rx: "35",
+                      ry: "12",
+                      fill: "#ffffff",
+                      opacity: "0.06"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "ellipse",
+                    {
+                      cx: "215",
+                      cy: "38",
+                      rx: "22",
+                      ry: "9",
+                      fill: "#ffffff",
+                      opacity: "0.05"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M0 240 Q80 170 160 195 Q240 220 320 185 Q370 168 400 180 L400 300 L0 300 Z",
+                      fill: "url(#hill1)",
+                      opacity: "0.7"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M0 260 Q60 210 140 225 Q220 240 290 210 Q350 192 400 210 L400 300 L0 300 Z",
+                      fill: "url(#hill2)"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M0 280 Q100 250 200 265 Q300 278 400 258 L400 300 L0 300 Z",
+                      fill: "url(#hill3)"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "68",
+                      y1: "185",
+                      x2: "68",
+                      y2: "255",
+                      stroke: "#c8e6c9",
+                      strokeWidth: "3",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "63", y: "181", width: "10", height: "7", rx: "2", fill: "#a5d6a7" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "68",
+                      y1: "184",
+                      x2: "68",
+                      y2: "148",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "68",
+                      y1: "184",
+                      x2: "100",
+                      y2: "204",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "68",
+                      y1: "184",
+                      x2: "36",
+                      y2: "204",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "68", cy: "184", r: "3.5", fill: "#2ecc71" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "165",
+                      y1: "178",
+                      x2: "165",
+                      y2: "235",
+                      stroke: "#c8e6c9",
+                      strokeWidth: "3",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "160", y: "174", width: "10", height: "7", rx: "2", fill: "#a5d6a7" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "165",
+                      y1: "177",
+                      x2: "165",
+                      y2: "144",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "165",
+                      y1: "177",
+                      x2: "195",
+                      y2: "196",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "165",
+                      y1: "177",
+                      x2: "135",
+                      y2: "196",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "165", cy: "177", r: "3.5", fill: "#2ecc71" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "258",
+                      y1: "172",
+                      x2: "258",
+                      y2: "228",
+                      stroke: "#c8e6c9",
+                      strokeWidth: "3",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "253", y: "168", width: "10", height: "7", rx: "2", fill: "#a5d6a7" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "258",
+                      y1: "171",
+                      x2: "258",
+                      y2: "138",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "258",
+                      y1: "171",
+                      x2: "288",
+                      y2: "190",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "258",
+                      y1: "171",
+                      x2: "228",
+                      y2: "190",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "258", cy: "171", r: "3.5", fill: "#2ecc71" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "352",
+                      y1: "168",
+                      x2: "352",
+                      y2: "220",
+                      stroke: "#c8e6c9",
+                      strokeWidth: "3",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("rect", { x: "347", y: "164", width: "10", height: "7", rx: "2", fill: "#a5d6a7" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "352",
+                      y1: "167",
+                      x2: "352",
+                      y2: "136",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "352",
+                      y1: "167",
+                      x2: "380",
+                      y2: "185",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "line",
+                    {
+                      x1: "352",
+                      y1: "167",
+                      x2: "324",
+                      y2: "185",
+                      stroke: "#81c784",
+                      strokeWidth: "2.5",
+                      strokeLinecap: "round"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "352", cy: "167", r: "3.5", fill: "#2ecc71" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M20 295 Q25 285 30 295",
+                      stroke: "#2ecc71",
+                      strokeWidth: "1.5",
+                      fill: "none"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M50 298 Q55 288 60 298",
+                      stroke: "#27ae60",
+                      strokeWidth: "1.5",
+                      fill: "none"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M120 292 Q125 282 130 292",
+                      stroke: "#2ecc71",
+                      strokeWidth: "1.5",
+                      fill: "none"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M200 290 Q205 280 210 290",
+                      stroke: "#27ae60",
+                      strokeWidth: "1.5",
+                      fill: "none"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M280 293 Q285 283 290 293",
+                      stroke: "#2ecc71",
+                      strokeWidth: "1.5",
+                      fill: "none"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "path",
+                    {
+                      d: "M350 291 Q355 281 360 291",
+                      stroke: "#27ae60",
+                      strokeWidth: "1.5",
+                      fill: "none"
+                    }
+                  )
+                ]
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full max-w-sm mx-auto px-6 pb-12 flex flex-col items-center gap-4 text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "h1",
+            {
+              "data-ocid": "empty_dashboard.heading",
+              className: "text-2xl font-bold text-foreground font-display leading-tight",
+              children: "No Data Found"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed max-w-[260px]", children: "Connect your solar system to start monitoring your energy in real time." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "empty_dashboard.connect_button",
+              onClick: () => navigate({ to: "/connect-solar" }),
+              className: "mt-2 w-full flex items-center justify-center gap-2.5 py-4 rounded-full bg-primary text-primary-foreground text-base font-semibold hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-primary/25",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 20, strokeWidth: 2.2 }),
+                "Connect Solar"
+              ]
+            }
+          )
+        ] })
+      ]
+    }
+  );
+}
+function EnergyCard({
+  icon: Icon2,
+  label,
+  value,
+  unit: unit2,
+  accent = false,
+  className = "",
+  "data-ocid": dataOcid
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": dataOcid,
+      className: `rounded-2xl p-4 flex flex-col gap-2 ${accent ? "bg-primary/10 border border-primary/30" : "bg-card border border-border"} ${className}`,
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: `w-9 h-9 rounded-xl flex items-center justify-center ${accent ? "bg-primary/20" : "bg-muted"}`,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Icon2,
+              {
+                size: 18,
+                className: accent ? "text-primary" : "text-muted-foreground"
+              }
+            )
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-2xl font-semibold text-foreground font-display leading-none", children: [
+            value,
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-normal text-muted-foreground ml-1", children: unit2 })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground mt-1", children: label })
+        ] })
+      ]
+    }
+  );
+}
+function GaugeCircle({
+  percent,
+  size = 180,
+  strokeWidth = 12,
+  label,
+  sublabel,
+  className = ""
+}) {
+  const radius = (size - strokeWidth) / 2;
+  const circumference = 2 * Math.PI * radius;
+  const clampedPct = Math.min(100, Math.max(0, percent));
+  const dashOffset = circumference * (1 - clampedPct / 100);
+  const cx2 = size / 2;
+  const cy = size / 2;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: `relative inline-flex items-center justify-center ${className}`,
+      style: { width: size, height: size },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "svg",
+          {
+            width: size,
+            height: size,
+            viewBox: `0 0 ${size} ${size}`,
+            className: "-rotate-90",
+            "aria-hidden": "true",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "circle",
+                {
+                  cx: cx2,
+                  cy,
+                  r: radius,
+                  fill: "none",
+                  stroke: "oklch(var(--border))",
+                  strokeWidth
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "circle",
+                {
+                  cx: cx2,
+                  cy,
+                  r: radius,
+                  fill: "none",
+                  stroke: "oklch(var(--primary))",
+                  strokeWidth,
+                  strokeLinecap: "round",
+                  strokeDasharray: circumference,
+                  strokeDashoffset: dashOffset,
+                  style: {
+                    transition: "stroke-dashoffset 0.8s cubic-bezier(0.4,0,0.2,1)"
+                  }
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "circle",
+                {
+                  cx: cx2,
+                  cy,
+                  r: radius,
+                  fill: "none",
+                  stroke: "oklch(var(--primary) / 0.25)",
+                  strokeWidth: strokeWidth + 6,
+                  strokeLinecap: "round",
+                  strokeDasharray: circumference,
+                  strokeDashoffset: dashOffset,
+                  style: {
+                    filter: "blur(4px)",
+                    transition: "stroke-dashoffset 0.8s cubic-bezier(0.4,0,0.2,1)"
+                  }
+                }
+              )
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 flex flex-col items-center justify-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-3xl font-bold text-foreground font-display leading-none", children: [
+            clampedPct,
+            "%"
+          ] }),
+          label && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground mt-1 text-center px-3", children: label }),
+          sublabel && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-primary font-medium mt-0.5", children: sublabel })
+        ] })
+      ]
+    }
+  );
+}
+const Route$4 = createFileRoute("/dashboard")({
   component: DashboardPage
 });
 function ChartTooltip$1({ active, payload, label }) {
@@ -51779,11 +53937,26 @@ function DashboardPage() {
   );
   const [lastRefresh, setLastRefresh] = reactExports.useState(/* @__PURE__ */ new Date());
   const [isRefreshing, setIsRefreshing] = reactExports.useState(false);
+  const [showSuccessOverlay, setShowSuccessOverlay] = reactExports.useState(false);
   reactExports.useEffect(() => {
     if (!isAuthenticated) {
       navigate({ to: "/" });
     }
   }, [isAuthenticated, navigate]);
+  reactExports.useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("connected") === "true") {
+      sessionStorage.setItem("solarConnected", "true");
+      setShowSuccessOverlay(true);
+      const cleanUrl = window.location.pathname;
+      window.history.replaceState({}, "", cleanUrl);
+    }
+  }, []);
+  reactExports.useEffect(() => {
+    if (!showSuccessOverlay) return;
+    const id = setTimeout(() => setShowSuccessOverlay(false), 5e3);
+    return () => clearTimeout(id);
+  }, [showSuccessOverlay]);
   const refresh = reactExports.useCallback(() => {
     setIsRefreshing(true);
     setTimeout(() => {
@@ -51826,14 +53999,27 @@ function DashboardPage() {
               " 👋"
             ] })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            PropertySelector,
-            {
-              properties: MOCK_PROPERTIES,
-              selected: selectedProperty,
-              onChange: setSelectedProperty
-            }
-          )
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                type: "button",
+                "aria-label": "Properties",
+                "data-ocid": "dashboard.properties_button",
+                onClick: () => navigate({ to: "/properties" }),
+                className: "p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(House, { size: 18, className: "text-white" })
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              PropertySelector,
+              {
+                properties: MOCK_PROPERTIES,
+                selected: selectedProperty,
+                onChange: setSelectedProperty
+              }
+            )
+          ] })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 space-y-5 pt-5", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -51886,34 +54072,61 @@ function DashboardPage() {
               className: "grid grid-cols-3 gap-3",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  EnergyCard,
+                  "button",
                   {
-                    "data-ocid": "dashboard.metric.consumed",
-                    icon: Flame,
-                    label: "Consumed",
-                    value: "12.4",
-                    unit: "kWh"
+                    type: "button",
+                    onClick: () => navigate({ to: "/analytics" }),
+                    className: "text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl",
+                    "aria-label": "View energy statistics",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      EnergyCard,
+                      {
+                        "data-ocid": "dashboard.metric.consumed",
+                        icon: Flame,
+                        label: "Consumed",
+                        value: "12.4",
+                        unit: "kWh"
+                      }
+                    )
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  EnergyCard,
+                  "button",
                   {
-                    "data-ocid": "dashboard.metric.capacity",
-                    icon: Zap,
-                    label: "Capacity",
-                    value: selectedProperty.capacityKva.toFixed(1),
-                    unit: "kVA",
-                    accent: true
+                    type: "button",
+                    onClick: () => navigate({ to: "/analytics" }),
+                    className: "text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl",
+                    "aria-label": "View capacity statistics",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      EnergyCard,
+                      {
+                        "data-ocid": "dashboard.metric.capacity",
+                        icon: Zap,
+                        label: "Capacity",
+                        value: selectedProperty.capacityKva.toFixed(1),
+                        unit: "kVA",
+                        accent: true
+                      }
+                    )
                   }
                 ),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  EnergyCard,
+                  "button",
                   {
-                    "data-ocid": "dashboard.metric.co2",
-                    icon: Leaf,
-                    label: "CO₂ Saved",
-                    value: "8.2",
-                    unit: "tCO₂e"
+                    type: "button",
+                    onClick: () => navigate({ to: "/analytics" }),
+                    className: "text-left cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-2xl",
+                    "aria-label": "View CO2 statistics",
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      EnergyCard,
+                      {
+                        "data-ocid": "dashboard.metric.co2",
+                        icon: Leaf,
+                        label: "CO₂ Saved",
+                        value: "8.2",
+                        unit: "tCO₂e"
+                      }
+                    )
                   }
                 )
               ]
@@ -52062,7 +54275,319 @@ function DashboardPage() {
               ]
             }
           )
-        ] })
+        ] }),
+        showSuccessOverlay && /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            "data-ocid": "dashboard.success_overlay",
+            className: "fixed inset-0 z-50 flex items-center justify-center p-6",
+            style: { backgroundColor: "rgba(0,0,0,0.85)" },
+            "aria-hidden": "true",
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                "data-ocid": "dashboard.success_dialog",
+                className: "relative bg-card rounded-3xl p-8 max-w-xs w-full flex flex-col items-center gap-5 shadow-2xl border border-border",
+                style: {
+                  animation: "successCardIn 0.35s cubic-bezier(0.34,1.56,0.64,1) both"
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "button",
+                    {
+                      type: "button",
+                      "data-ocid": "dashboard.success_overlay.close_button",
+                      onClick: () => setShowSuccessOverlay(false),
+                      "aria-label": "Close",
+                      className: "absolute top-4 right-4 w-8 h-8 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-colors duration-200",
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: "w-24 h-24 rounded-full bg-primary/10 border-4 border-primary flex items-center justify-center",
+                      style: {
+                        animation: "checkIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s both"
+                      },
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        CircleCheck,
+                        {
+                          size: 48,
+                          className: "text-primary",
+                          strokeWidth: 1.5
+                        }
+                      )
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-xl font-bold text-foreground font-display", children: "Connected Successfully!" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground mt-1.5 leading-relaxed", children: "Your solar system is now being monitored." })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "button",
+                    {
+                      type: "button",
+                      "data-ocid": "dashboard.success_overlay.dismiss_button",
+                      onClick: () => setShowSuccessOverlay(false),
+                      className: "w-full py-3 rounded-2xl bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-colors duration-200",
+                      children: "Go to Dashboard"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Closes automatically in 5 seconds" })
+                ]
+              }
+            )
+          }
+        )
+      ]
+    }
+  );
+}
+const Route$3 = createFileRoute("/connect-solar")({
+  component: ConnectSolarPage
+});
+function InlineQrScanner({ onDetected }) {
+  const [detected, setDetected] = reactExports.useState(false);
+  const timerRef = reactExports.useRef(null);
+  reactExports.useEffect(() => {
+    timerRef.current = setTimeout(() => {
+      setDetected(true);
+      onDetected("SB-2024-MOCK-001");
+    }, 3e3);
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [onDetected]);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "connect_solar.qr_scanner",
+      className: "flex flex-col items-center gap-3 mt-2",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-[240px] h-[240px] bg-black rounded-2xl overflow-hidden border-2 border-primary/60 flex items-center justify-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 left-3 w-7 h-7 border-t-2 border-l-2 border-primary rounded-tl-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-3 right-3 w-7 h-7 border-t-2 border-r-2 border-primary rounded-tr-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-3 left-3 w-7 h-7 border-b-2 border-l-2 border-primary rounded-bl-lg" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute bottom-3 right-3 w-7 h-7 border-b-2 border-r-2 border-primary rounded-br-lg" }),
+          !detected && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-x-3 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent qr-scanline" }),
+          detected ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              CircleCheck,
+              {
+                size: 48,
+                className: "text-primary",
+                strokeWidth: 1.5
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-primary font-semibold", children: "Code detected!" })
+          ] }) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+            QrCode,
+            {
+              size: 56,
+              className: "text-primary opacity-30",
+              strokeWidth: 1.2
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground text-center", children: detected ? /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-primary font-medium", children: "✓ Code captured — review below" }) : "Point camera at QR code on the back of your inverter" })
+      ]
+    }
+  );
+}
+function ConnectSolarPage() {
+  const navigate = useNavigate();
+  const [activeMode, setActiveMode] = reactExports.useState(null);
+  const [inverterCode, setInverterCode] = reactExports.useState("");
+  const [isConnecting, setIsConnecting] = reactExports.useState(false);
+  const handleQrDetected = (code) => {
+    setInverterCode(code);
+  };
+  const handleConnect = () => {
+    if (!inverterCode.trim()) return;
+    setIsConnecting(true);
+    setTimeout(() => {
+      try {
+        sessionStorage.setItem("solarConnected", "true");
+      } catch {
+      }
+      navigate({ to: "/dashboard", search: { connected: "true" } });
+    }, 1200);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      "data-ocid": "connect_solar.page",
+      className: "min-h-screen bg-background pb-24",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-40 bg-card border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-lg mx-auto px-4 py-3 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "connect_solar.back_button",
+              onClick: () => navigate({ to: "/empty-dashboard" }),
+              className: "w-9 h-9 flex items-center justify-center rounded-xl bg-muted hover:bg-muted/70 text-foreground transition-colors duration-200",
+              "aria-label": "Go back",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronLeft, { size: 20 })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "flex-1 text-center text-base font-semibold text-foreground font-display", children: "Connect Solar" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9", "aria-hidden": "true" })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "max-w-lg mx-auto px-4 pt-6 space-y-5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground text-center", children: "Choose how you'd like to link your inverter" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "connect_solar.scan_qr_card",
+                onClick: () => setActiveMode((m2) => m2 === "qr" ? null : "qr"),
+                className: `flex flex-col items-center gap-3 p-5 rounded-3xl border transition-all duration-200 text-left ${activeMode === "qr" ? "bg-primary/10 border-primary/50 shadow-lg shadow-primary/10" : "bg-card border-border hover:border-primary/30"}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: `w-12 h-12 rounded-2xl flex items-center justify-center ${activeMode === "qr" ? "bg-primary/20" : "bg-muted"}`,
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        QrCode,
+                        {
+                          size: 24,
+                          className: activeMode === "qr" ? "text-primary" : "text-muted-foreground",
+                          strokeWidth: 1.8
+                        }
+                      )
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "p",
+                      {
+                        className: `text-sm font-semibold ${activeMode === "qr" ? "text-primary" : "text-foreground"}`,
+                        children: "Scan QR Code"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5 leading-snug", children: "Point camera at QR on the back of your inverter" })
+                  ] })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                type: "button",
+                "data-ocid": "connect_solar.manual_card",
+                onClick: () => setActiveMode((m2) => m2 === "manual" ? null : "manual"),
+                className: `flex flex-col items-center gap-3 p-5 rounded-3xl border transition-all duration-200 text-left ${activeMode === "manual" ? "bg-primary/10 border-primary/50 shadow-lg shadow-primary/10" : "bg-card border-border hover:border-primary/30"}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: `w-12 h-12 rounded-2xl flex items-center justify-center ${activeMode === "manual" ? "bg-primary/20" : "bg-muted"}`,
+                      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Keyboard,
+                        {
+                          size: 24,
+                          className: activeMode === "manual" ? "text-primary" : "text-muted-foreground",
+                          strokeWidth: 1.8
+                        }
+                      )
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      "p",
+                      {
+                        className: `text-sm font-semibold ${activeMode === "manual" ? "text-primary" : "text-foreground"}`,
+                        children: "Enter Manually"
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5 leading-snug", children: "Type the serial code from the back of your device" })
+                  ] })
+                ]
+              }
+            )
+          ] }),
+          activeMode === "qr" && /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              "data-ocid": "connect_solar.qr_panel",
+              className: "bg-card border border-border rounded-3xl p-5 flex flex-col items-center",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(InlineQrScanner, { onDetected: handleQrDetected })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "label",
+              {
+                htmlFor: "inverter-code",
+                className: "text-xs font-medium text-muted-foreground uppercase tracking-wide",
+                children: "Inverter Code"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "input",
+              {
+                id: "inverter-code",
+                "data-ocid": "connect_solar.inverter_code_input",
+                type: "text",
+                value: inverterCode,
+                onChange: (e3) => setInverterCode(e3.target.value),
+                placeholder: "e.g. SB-2024-XXXX-001",
+                className: "w-full bg-muted border border-input rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring font-mono"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              type: "button",
+              "data-ocid": "connect_solar.connect_button",
+              onClick: handleConnect,
+              disabled: !inverterCode.trim() || isConnecting,
+              className: "w-full flex items-center justify-center gap-2.5 py-4 rounded-full bg-primary text-primary-foreground text-base font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-primary/20",
+              children: isConnecting ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "svg",
+                  {
+                    className: "animate-spin w-5 h-5",
+                    viewBox: "0 0 24 24",
+                    fill: "none",
+                    "aria-hidden": "true",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "circle",
+                        {
+                          cx: "12",
+                          cy: "12",
+                          r: "10",
+                          stroke: "currentColor",
+                          strokeWidth: "3",
+                          strokeOpacity: "0.25"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "path",
+                        {
+                          d: "M12 2a10 10 0 0 1 10 10",
+                          stroke: "currentColor",
+                          strokeWidth: "3",
+                          strokeLinecap: "round"
+                        }
+                      )
+                    ]
+                  }
+                ),
+                "Connecting…"
+              ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 20, strokeWidth: 2.2 }),
+                "Connect"
+              ] })
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(BottomNav, {})
       ]
     }
   );
@@ -52441,7 +54966,12 @@ function AuthPage() {
       phone: ""
     });
     ue.success("Welcome to Sabi Solar!");
-    navigate({ to: "/dashboard" });
+    const alreadyConnected = sessionStorage.getItem("solarConnected") === "true";
+    if (alreadyConnected) {
+      navigate({ to: "/dashboard" });
+    } else {
+      navigate({ to: "/empty-dashboard" });
+    }
   }
   const loginFields = mode === "login";
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -54669,6 +57199,17 @@ function OnboardingPage() {
   const navigate = useNavigate();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [current, setCurrent] = reactExports.useState(0);
+  const [showSplash, setShowSplash] = reactExports.useState(
+    () => !sessionStorage.getItem("splashShown")
+  );
+  reactExports.useEffect(() => {
+    if (!showSplash) return;
+    const id = setTimeout(() => {
+      setShowSplash(false);
+      sessionStorage.setItem("splashShown", "true");
+    }, 2500);
+    return () => clearTimeout(id);
+  }, [showSplash]);
   reactExports.useEffect(() => {
     if (!emblaApi) return;
     const onSelect = () => setCurrent(emblaApi.selectedScrollSnap());
@@ -54686,6 +57227,36 @@ function OnboardingPage() {
       emblaApi == null ? void 0 : emblaApi.scrollNext();
     }
   };
+  if (showSplash) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        "data-ocid": "splash.page",
+        className: "fixed inset-0 w-screen h-screen z-50 overflow-hidden",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: "/splash-bg.jpg",
+              alt: "Sabi Solar",
+              className: "absolute inset-0 w-full h-full object-cover"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-black/60" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 flex flex-col items-center justify-center h-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col items-center gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-20 h-20 rounded-3xl bg-emerald-400/20 border-2 border-emerald-400/50 flex items-center justify-center shadow-xl", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Zap, { size: 40, className: "text-emerald-400", strokeWidth: 1.5 }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-4xl font-bold text-white tracking-tight font-display", children: "Sabi Solar" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg text-emerald-400 mt-1", children: "Smart Energy Monitoring" })
+          ] }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute bottom-16 left-0 right-0 flex justify-center gap-2 z-10", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-emerald-400 animate-pulse" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-emerald-400 animate-pulse [animation-delay:0.2s]" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-emerald-400 animate-pulse [animation-delay:0.4s]" })
+          ] })
+        ]
+      }
+    );
+  }
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
@@ -54770,45 +57341,81 @@ function OnboardingPage() {
     }
   );
 }
-const PropertyRoute = Route$5.update({
+const SettingsRoute = Route$b.update({
+  id: "/settings",
+  path: "/settings",
+  getParentRoute: () => Route$c
+});
+const PropertyDetailRoute = Route$a.update({
+  id: "/property-detail",
+  path: "/property-detail",
+  getParentRoute: () => Route$c
+});
+const PropertyAnalyticsRoute = Route$9.update({
+  id: "/property-analytics",
+  path: "/property-analytics",
+  getParentRoute: () => Route$c
+});
+const PropertyRoute = Route$8.update({
   id: "/property",
   path: "/property",
-  getParentRoute: () => Route$6
+  getParentRoute: () => Route$c
 });
-const NotificationsRoute = Route$4.update({
+const PropertiesRoute = Route$7.update({
+  id: "/properties",
+  path: "/properties",
+  getParentRoute: () => Route$c
+});
+const NotificationsRoute = Route$6.update({
   id: "/notifications",
   path: "/notifications",
-  getParentRoute: () => Route$6
+  getParentRoute: () => Route$c
 });
-const DashboardRoute = Route$3.update({
+const EmptyDashboardRoute = Route$5.update({
+  id: "/empty-dashboard",
+  path: "/empty-dashboard",
+  getParentRoute: () => Route$c
+});
+const DashboardRoute = Route$4.update({
   id: "/dashboard",
   path: "/dashboard",
-  getParentRoute: () => Route$6
+  getParentRoute: () => Route$c
+});
+const ConnectSolarRoute = Route$3.update({
+  id: "/connect-solar",
+  path: "/connect-solar",
+  getParentRoute: () => Route$c
 });
 const AuthRoute = Route$2.update({
   id: "/auth",
   path: "/auth",
-  getParentRoute: () => Route$6
+  getParentRoute: () => Route$c
 });
 const AnalyticsRoute = Route$1.update({
   id: "/analytics",
   path: "/analytics",
-  getParentRoute: () => Route$6
+  getParentRoute: () => Route$c
 });
 const IndexRoute = Route2.update({
   id: "/",
   path: "/",
-  getParentRoute: () => Route$6
+  getParentRoute: () => Route$c
 });
 const rootRouteChildren = {
   IndexRoute,
   AnalyticsRoute,
   AuthRoute,
+  ConnectSolarRoute,
   DashboardRoute,
+  EmptyDashboardRoute,
   NotificationsRoute,
-  PropertyRoute
+  PropertiesRoute,
+  PropertyRoute,
+  PropertyAnalyticsRoute,
+  PropertyDetailRoute,
+  SettingsRoute
 };
-const routeTree = Route$6._addFileChildren(rootRouteChildren)._addFileTypes();
+const routeTree = Route$c._addFileChildren(rootRouteChildren)._addFileTypes();
 const router = createRouter({ routeTree });
 function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router });

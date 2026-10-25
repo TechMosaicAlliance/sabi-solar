@@ -72,7 +72,13 @@ function AuthPage() {
       phone: "",
     });
     toast.success("Welcome to Sabi Solar!");
-    navigate({ to: "/dashboard" });
+    const alreadyConnected =
+      sessionStorage.getItem("solarConnected") === "true";
+    if (alreadyConnected) {
+      navigate({ to: "/dashboard" });
+    } else {
+      navigate({ to: "/empty-dashboard" });
+    }
   }
 
   const loginFields = mode === "login";

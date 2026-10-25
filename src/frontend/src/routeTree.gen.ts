@@ -9,16 +9,42 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as PropertyDetailRouteImport } from './routes/property-detail'
+import { Route as PropertyAnalyticsRouteImport } from './routes/property-analytics'
 import { Route as PropertyRouteImport } from './routes/property'
+import { Route as PropertiesRouteImport } from './routes/properties'
 import { Route as NotificationsRouteImport } from './routes/notifications'
+import { Route as EmptyDashboardRouteImport } from './routes/empty-dashboard'
 import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as ConnectSolarRouteImport } from './routes/connect-solar'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AnalyticsRouteImport } from './routes/analytics'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertyDetailRoute = PropertyDetailRouteImport.update({
+  id: '/property-detail',
+  path: '/property-detail',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertyAnalyticsRoute = PropertyAnalyticsRouteImport.update({
+  id: '/property-analytics',
+  path: '/property-analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PropertyRoute = PropertyRouteImport.update({
   id: '/property',
   path: '/property',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertiesRoute = PropertiesRouteImport.update({
+  id: '/properties',
+  path: '/properties',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NotificationsRoute = NotificationsRouteImport.update({
@@ -26,9 +52,19 @@ const NotificationsRoute = NotificationsRouteImport.update({
   path: '/notifications',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EmptyDashboardRoute = EmptyDashboardRouteImport.update({
+  id: '/empty-dashboard',
+  path: '/empty-dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DashboardRoute = DashboardRouteImport.update({
   id: '/dashboard',
   path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConnectSolarRoute = ConnectSolarRouteImport.update({
+  id: '/connect-solar',
+  path: '/connect-solar',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -51,26 +87,44 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/auth': typeof AuthRoute
+  '/connect-solar': typeof ConnectSolarRoute
   '/dashboard': typeof DashboardRoute
+  '/empty-dashboard': typeof EmptyDashboardRoute
   '/notifications': typeof NotificationsRoute
+  '/properties': typeof PropertiesRoute
   '/property': typeof PropertyRoute
+  '/property-analytics': typeof PropertyAnalyticsRoute
+  '/property-detail': typeof PropertyDetailRoute
+  '/settings': typeof SettingsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/auth': typeof AuthRoute
+  '/connect-solar': typeof ConnectSolarRoute
   '/dashboard': typeof DashboardRoute
+  '/empty-dashboard': typeof EmptyDashboardRoute
   '/notifications': typeof NotificationsRoute
+  '/properties': typeof PropertiesRoute
   '/property': typeof PropertyRoute
+  '/property-analytics': typeof PropertyAnalyticsRoute
+  '/property-detail': typeof PropertyDetailRoute
+  '/settings': typeof SettingsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/auth': typeof AuthRoute
+  '/connect-solar': typeof ConnectSolarRoute
   '/dashboard': typeof DashboardRoute
+  '/empty-dashboard': typeof EmptyDashboardRoute
   '/notifications': typeof NotificationsRoute
+  '/properties': typeof PropertiesRoute
   '/property': typeof PropertyRoute
+  '/property-analytics': typeof PropertyAnalyticsRoute
+  '/property-detail': typeof PropertyDetailRoute
+  '/settings': typeof SettingsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -78,43 +132,95 @@ export interface FileRouteTypes {
     | '/'
     | '/analytics'
     | '/auth'
+    | '/connect-solar'
     | '/dashboard'
+    | '/empty-dashboard'
     | '/notifications'
+    | '/properties'
     | '/property'
+    | '/property-analytics'
+    | '/property-detail'
+    | '/settings'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/analytics'
     | '/auth'
+    | '/connect-solar'
     | '/dashboard'
+    | '/empty-dashboard'
     | '/notifications'
+    | '/properties'
     | '/property'
+    | '/property-analytics'
+    | '/property-detail'
+    | '/settings'
   id:
     | '__root__'
     | '/'
     | '/analytics'
     | '/auth'
+    | '/connect-solar'
     | '/dashboard'
+    | '/empty-dashboard'
     | '/notifications'
+    | '/properties'
     | '/property'
+    | '/property-analytics'
+    | '/property-detail'
+    | '/settings'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AnalyticsRoute: typeof AnalyticsRoute
   AuthRoute: typeof AuthRoute
+  ConnectSolarRoute: typeof ConnectSolarRoute
   DashboardRoute: typeof DashboardRoute
+  EmptyDashboardRoute: typeof EmptyDashboardRoute
   NotificationsRoute: typeof NotificationsRoute
+  PropertiesRoute: typeof PropertiesRoute
   PropertyRoute: typeof PropertyRoute
+  PropertyAnalyticsRoute: typeof PropertyAnalyticsRoute
+  PropertyDetailRoute: typeof PropertyDetailRoute
+  SettingsRoute: typeof SettingsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/property-detail': {
+      id: '/property-detail'
+      path: '/property-detail'
+      fullPath: '/property-detail'
+      preLoaderRoute: typeof PropertyDetailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/property-analytics': {
+      id: '/property-analytics'
+      path: '/property-analytics'
+      fullPath: '/property-analytics'
+      preLoaderRoute: typeof PropertyAnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/property': {
       id: '/property'
       path: '/property'
       fullPath: '/property'
       preLoaderRoute: typeof PropertyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/properties': {
+      id: '/properties'
+      path: '/properties'
+      fullPath: '/properties'
+      preLoaderRoute: typeof PropertiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/notifications': {
@@ -124,11 +230,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NotificationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/empty-dashboard': {
+      id: '/empty-dashboard'
+      path: '/empty-dashboard'
+      fullPath: '/empty-dashboard'
+      preLoaderRoute: typeof EmptyDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/dashboard': {
       id: '/dashboard'
       path: '/dashboard'
       fullPath: '/dashboard'
       preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/connect-solar': {
+      id: '/connect-solar'
+      path: '/connect-solar'
+      fullPath: '/connect-solar'
+      preLoaderRoute: typeof ConnectSolarRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -159,9 +279,15 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AnalyticsRoute: AnalyticsRoute,
   AuthRoute: AuthRoute,
+  ConnectSolarRoute: ConnectSolarRoute,
   DashboardRoute: DashboardRoute,
+  EmptyDashboardRoute: EmptyDashboardRoute,
   NotificationsRoute: NotificationsRoute,
+  PropertiesRoute: PropertiesRoute,
   PropertyRoute: PropertyRoute,
+  PropertyAnalyticsRoute: PropertyAnalyticsRoute,
+  PropertyDetailRoute: PropertyDetailRoute,
+  SettingsRoute: SettingsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
